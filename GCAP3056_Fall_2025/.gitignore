@@ -1,0 +1,31 @@
+# Student information - do not commit
+**/list of students
+**/list_of_students
+**/student_emails.txt
+student_emails.txt
+list of students
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hong Kong Weather Warnings and Signals｜Hong Kong Observatory(HKO)｜Weather Warnings</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Hong Kong Weather Warnings and Signals">
+    <meta name="description" content="Weather warnings and signals in effect today in Hong Kong">
+    <meta name="recordId" content="2018123100000036663">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Hong Kong Weather Warnings and Signals" />
+	<meta property="og:description" content="Updated at {{Update_Time | formatHKTFullDateTime2}} &amp;nbsp; &amp;nbsp; &amp;nbsp; Brief Description of Warning Symbols Explanations Warning symbol with red flashing rectangle means warning now in force Warning symbol without red flashing" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/dailywx/wxwarntoday.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+				
+		
+.table_warning_css>tr:nth-child(1)>td:nth-child(1) {
+	max-width: 100px !important;
+}
+
+
+@media screen and (max-width: 570px) {
+		#div_warnslist{
+			overflow: auto !important;
+		}
+}
+
+@media screen and (max-width: 800px) {
+   .updated_at_timestamp{
+      float:none !important;
+       }
+}
+
+div.hkoweb_outer {	
+	width: 100% !important;
+}
+
+body .signal_table{
+	margin-bottom: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+body .signal_table>table{
+	width: 100%;
+	min-width: 600px;
+}
+body .signal_table>table td{
+	padding: 10px;
+}
+
+
+
+
+	#div_warnslist0{
+	display:none;
+	}
+	
+	.style1{
+	color:#FFFFFF;
+	background-color:#1a58ab;
+    padding: 10px 20px;
+	}
+	
+	.new-div_warnslist-weather-icon-img{
+     margin: 12px 19px;
+
+	}
+	
+	body #wrap .container{
+	padding: unset !important;
+	width: unset !important;
+	
+	}
+	
+	.container .div_warnslist2 .part-2 {
+    padding: 14px 0px 16px 0px ;
+    border-right: 1px solid #d2d2d2;
+	}
+		
+	.container .div_warnslist2 .content{
+	color:#2c5499 ;
+	}
+	
+	.container .div_warnslist2 .part-3 {
+    padding: 14px 0px 16px 0px ;
+    border-right: 1px solid #d2d2d2;
+	}
+	
+	.container .div_warnslist2 .part-4 {
+	padding: 14px 0px 16px 0px ;
+	border: 0px solid #d2d2d2;
+
+	}
+	
+	div.hkoweb_outer {
+    width: 100% !important;
+    }
+	
+	.hkoweb_inner.hkoweb_bg_lightgrey{
+	padding:0;
+	}
+	
+	.div_warnslist2 .innner-content {
+    margin-bottom: 1px; 
+	border-bottom: 1px solid #d2d2d2;
+	display: -ms-flex; display: -webkit-flex; display: flex; 
+	}
+	
+	.hkoweb_outer.hkoweb_bg_other {
+    background-color: unset;
+    border: 1px solid #d2d2d2;
+    }
+
+	
+	.div_warnslist2 .upper_msg{
+	border-bottom: 1px solid #eeeeee;
+    padding: 5px 2px;
+	}
+	
+	.div_warnslist2 .lower_msg{
+    padding: 5px 2px;
+	}
+	
+	.active-warning{
+	color: #e60000 ;
+	}
+	
+	.mobile-ver-history-table .left_msg_1{
+    padding: 25px 0px;
+    text-align: center;
+	
+	}
+	
+	.mobile-ver-history-table .left_msg_2{
+    padding: 25px 0px;
+    text-align: center;
+	}
+	
+	.mobile-ver-history-table .right_msg_1{
+    padding: 25px 0px;
+    text-align: center;
+	}
+	
+	
+	.div_warnslist2 .mobile-ver-history-table .innner-content{
+	border-bottom: 1px solid rgb(238, 238, 238) ;
+	}
+	
+  #explanationTbl .self_align_center
+  {
+  padding: 10px 0 ;
+ border-width: 0px 1px 0px 1px !important;
+  }
+
+table.table_border_1, table.table_border_1>tbody>tr>td, table.table_border_1>tbody>tr>th, table.table_border_1>tr>td, table.table_border_1>tr>th {
+    border: 1px #d2d2d2 solid !important;
+}
+
+	
+	@media screen and (max-width: 1200px) {
+		.div_warnslist2{
+		font-size: 11px ;
+		}
+	}
+	
+	
+	@media screen and (max-width: 400px) {
+	
+	.mobile-ver-history-table .new-div_warnslist-weather-icon-img{
+	margin:12px 0px;
+		}
+		
+    .mobile-ver-history-table{
+	font-size: 11px ;
+	}
+
+	}
+	
+
+@media screen and (max-width: 1000px) {   
+.div_warnslist2 .innner-content {
+display:unset ;
+      } 
+}
+
+
+
+
+
+
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '0';
+var section_id = '2018010100000010788';
+
+                                 
+
+ 
+$( document ).ready(function() {
+    console.log( "ready!" );
+$(".flip").click(function(){
+
+if(document.getElementsByClassName('wrapper-expandable')[0].classList.contains('active')){
+$(".flip").attr("aria-expanded", "false");
+}else{
+$(".flip").attr("aria-expanded", "true");
+}
+
+
+
+
+});
+});
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Hong Kong Weather Warnings and Signals</h1>
+                <div class="border_blank">
+                    <div><em>Updated at {{Update_Time | formatHKTFullDateTime2}}</em>
+<div id="warning_pic_div" style="margin: 0; position: relative;" class="self_align_center">
+<table class="style10" style="max-width: 400px;">
+<tbody>
+<tr style="height: 60px;">
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ed.htm"><img alt="Very Hot Weather Warning" :src="iconlist.WHOT.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ec.htm"><img alt="Amber Rainstorm Warning Signal" :src="iconlist.WRAINA.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ec.htm"><img alt="Red Rainstorm Warning Signal" :src="iconlist.WRAINR.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ec.htm"><img alt="Black Rainstorm Warning Signal" :src="iconlist.WRAINB.getImg()" style="border: 0px;" /></a></td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ea.htm"><img alt="Stand By Signal No. 1" :src="iconlist.TC1.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ea.htm"><img alt="Strong Wind Signal No. 3" :src="iconlist.TC3.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ea.htm"><img alt="No. 8 Southeast Gale or Storm Signal" :src="iconlist.TC8SE.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ea.htm"><img alt="No. 8 Southwest Gale or Storm Signal" :src="iconlist.TC8SW.getImg()" style="border: 0px;" /></a></td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ea.htm"><img alt="No. 8 Northeast Gale or Storm Signal" :src="iconlist.TC8NE.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ea.htm"><img alt="No. 8 Northwest Gale or Storm Signal" :src="iconlist.TC8NW.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ea.htm"><img alt="Increasing Gale or Storm Signal No. 9" :src="iconlist.TC9.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ea.htm"><img alt="Hurricane Signal No. 10" :src="iconlist.TC10.getImg()" style="border: 0px;" /></a></td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/eg.htm"><img alt="Thunderstorm Warning" :src="iconlist.WTS.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ef.htm"><img alt="Special Announcement Of Flooding In Northern New Territories" :src="iconlist.WFNTSA.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/eh.htm"><img alt="Landslip Warning" :src="iconlist.WL.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center">&nbsp;</td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ee.htm"><img alt="Cold Weather Warning" :src="iconlist.WCOLD.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ej.htm"><img alt="Strong Monsoon Signal" :src="iconlist.WMSGNL.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ek.htm"><img alt="Frost Warning" :src="iconlist.WFROST.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center">&nbsp;</td>
+</tr>
+<tr style="height: 60px;">
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ei.htm"><img alt="Red Fire Danger Warning" :src="iconlist.WFIRER.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/ei.htm"><img alt="Yellow Fire Danger Warning" :src="iconlist.WFIREY.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center"><a href="../../../textonly/warning/el.htm"><img alt="Tsunami Warning" :src="iconlist.WTM.getImg()" style="border: 0px;" /></a></td>
+<td style="width: 80px;" class="self_align_center">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<a href="warnlegend.htm" style="text-decoration: none; width: 150px; margin-left: 20px;"> <span class="style14">Brief Description of Warning Symbols</span> </a>
+<div class="place_list_box">
+<div class="mybox wrapper-expandable">
+<div class="mybox_title expandable-title">
+<div class="expandable-txt wxicon_desc"><a class="flip" href="#" aria-expanded="false"><span class="arrow"><span class="arrow-top"></span><span class="arrow-bottom"></span></span>Explanations</a></div>
+</div>
+<div class="mybox_cont box-style-wrapper">
+<div id="explanationTbl" style="display: block;" class="self_align_center">
+<table title="Table of explanations" class="table_align_center table_border_1 table_cellspacing_0">
+<tbody>
+<tr>
+<td class="self_align_center">
+	<img style="margin:10px;" alt="Warning symbol with red flashing rectangle" src="../../../en/wxinfo/dailywx/images/explaine.issuing.gif" />
+	<br/>
+	<p>
+	Warning symbol with red flashing rectangle means warning <strong>now in force</strong>
+	</p>
+</td>
+<td class="self_align_center">
+	<img style="margin:10px;" alt="Warning symbol without red flashing rectangle" src="../../../en/wxinfo/dailywx/images/explaine.gif" />
+	<br/>
+	<p>
+	Warning symbol without red flashing rectangle means warning that <strong>has been in force today but has been cancelled</strong>
+	</p>
+</td>
+<td class="self_align_center">
+	<img style="margin:12px;" alt="Warning symbol in grey shade" src="../../../en/wxinfo/dailywx/images/explaine_dim.gif" />
+	<br/>
+	<p>
+	Warning symbol in grey shade means warning that <strong>has not been in force</strong> today
+	</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="hkoweb_outer hkoweb_bg_other">
+<div class="hkoweb_inner hkoweb_bg_lightgrey">
+<div>
+<div v-if="tcwarns.length&gt;0" class="container div_warnslist2 hidden-xs hidden-sm" style="width: 100% !important;">
+<div class="row">
+<div class="style1 col-xs-12"><strong style="font-size: large;">Tropical Cyclone Warning Signal(s)</strong></div>
+</div>
+<div class="row innner-content" v-for="(item, index) in tcwarns">
+<div class="col-xs-2 col-md-1"><span class="content"> <img :alt="item.WarningName" :src="item.Icon" class="new-div_warnslist-weather-icon-img" /> </span></div>
+<div class="col-xs-3 col-md-2 part-2">
+<div class="upper_msg">Warnings and Signals</div>
+<div class="content lower_msg">{{item.Type}}{{item.WarningName}}</div>
+</div>
+<div class="col-xs-3 col-md-4 part-3">
+<div class="row">
+<div class="col-xs-1 upper_msg"><span><strong>&nbsp; </strong></span></div>
+<div class="col-xs-2 upper_msg"><span><strong>Issue Time</strong></span></div>
+<div class="col-xs-2 upper_msg"><span><strong>hh:mm</strong></span></div>
+<div class="col-xs-7 upper_msg"><span><strong>dd/mm/yyyy</strong></span></div>
+</div>
+<div class="row">
+<div class="col-xs-1 lower_msg"><span><strong> </strong></span></div>
+<div class="col-xs-2 lower_msg"><span><strong> </strong></span></div>
+<div class="col-xs-2 lower_msg">{{item.IssueTime|formatTimeEN}}</div>
+<div class="col-xs-7 lower_msg">{{item.IssueTime|formatDateEN2}}</div>
+</div>
+</div>
+<div class="col-xs-3 col-md-3 part-4">
+<div class="row" v-if="item.expired">
+<div class="col-xs-1 upper_msg"><span><strong>&nbsp;</strong></span></div>
+<div class="col-xs-4 upper_msg"><span><strong>Cancel Time</strong></span></div>
+<div class="col-xs-3 upper_msg"><span><strong>hh:mm</strong></span></div>
+<div class="col-xs-4 upper_msg"><span><strong>dd/mm/yyyy</strong></span></div>
+</div>
+<div class="row" v-if="item.expired">
+<div class="col-xs-1 lower_msg"><span><strong>&nbsp;</strong></span></div>
+<div class="col-xs-4 lower_msg"><span><strong>&nbsp;</strong></span></div>
+<div class="col-xs-3 lower_msg">{{item.ExpireTime|formatTimeEN}}</div>
+<div class="col-xs-4 lower_msg">{{item.ExpireTime|formatDateEN2}}</div>
+</div>
+<div v-else="">
+<div class="row">
+<div class="col-xs-1 upper_msg"><span><strong>&nbsp;</strong></span></div>
+<div class="col-xs-4 upper_msg"><span><strong>Cancel Time</strong></span></div>
+<div class="col-xs-3 upper_msg"><span><strong>hh:mm</strong></span></div>
+<div class="col-xs-4 upper_msg"><span><strong>dd/mm/yyyy</strong></span></div>
+</div>
+<div class="row">
+<div class="col-xs-1 lower_msg"><span><strong>&nbsp;</strong></span></div>
+<div class="col-xs-4 lower_msg"><span><strong>&nbsp;</strong></span></div>
+<div class="col-xs-6 active-warning lower_msg">Now in force</div>
+<div class="col-xs-1 lower_msg"><span style="color: #d70000;"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mobile ver TC history table-->
+<div v-if="tcwarns.length&gt;0" class="container div_warnslist2 hidden-md hidden-lg hidden-xl mobile-ver-history-table" style="width: 100% !important;">
+<div class="row">
+<div class="style1 col-xs-12"><strong style="font-size: large;">Tropical Cyclone Warning Signal(s)</strong></div>
+</div>
+<div class="row innner-content" v-for="(item, index) in tcwarns">
+<div class="row innner-content">
+<div class="col-xs-4">
+<div class="left_msg_1">Warnings and Signals</div>
+</div>
+<div class="col-xs-8" style="border-left: 1px solid #eeeeee;"><img :alt="item.WarningName" :src="item.Icon" class="new-div_warnslist-weather-icon-img" /> <span class="content">{{item.Type}}{{item.WarningName}}</span></div>
+</div>
+<div class="row">
+<div class="col-xs-4" style="border-bottom: 1px solid #eeeeee;">
+<div class="left_msg_2">Issue Time</div>
+</div>
+<div class="col-xs-8 right_msg_1" style="border-left: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee;">
+<div class="col-xs-1 ">&nbsp;</div>
+<div class="col-xs-5 ">{{item.IssueTime|formatTimeEN}}</div>
+<div class="col-xs-6 ">{{item.IssueTime|formatDateEN2}}</div>
+</div>
+</div>
+<div class="row">
+<div v-if="item.expired">
+<div class="col-xs-4" style="border-bottom: 1px solid #eeeeee;">
+<div class="left_msg_2">Cancel Time</div>
+</div>
+<div class="col-xs-8 right_msg_1" style="border-left: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee;">
+<div class="col-xs-1 ">&nbsp;</div>
+<div class="col-xs-5 ">{{item.ExpireTime|formatTimeEN}}</div>
+<div class="col-xs-6 ">{{item.ExpireTime|formatDateEN2}}</div>
+</div>
+</div>
+<div v-else="">
+<div class="col-xs-4" style="border-bottom: 1px solid #eeeeee;">
+<div class="left_msg_2">Cancel Time</div>
+</div>
+<div class="col-xs-8 right_msg_1" style="border-left: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee;">
+<div class="col-xs-1 ">&nbsp;</div>
+<div class="col-xs-10 " style="color: #e60000;">Now in force</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div v-for="(warn, key) in warnslist" class="container div_warnslist2 hidden-xs hidden-sm" style="width: 100% !important;">
+<div class="row">
+<div class="style1 col-xs-12"><strong style="font-size: large;">{{warn[0].WarningName}}</strong></div>
+</div>
+<div v-for="(item, index) in warn">
+<div class="row innner-content">
+<div class="col-xs-2 col-md-1"><img :alt="item.WarningName" :src="item.Icon" class="new-div_warnslist-weather-icon-img" /></div>
+<div class="col-xs-3 col-md-2 part-2">
+<div class="upper_msg">Warnings and Signals</div>
+<div class="content lower_msg">{{item.Type}}{{item.WarningName}}</div>
+</div>
+<div class="col-xs-3 col-md-4 part-3">
+<div class="row">
+<div class="col-xs-1 upper_msg"><span><strong>&nbsp; </strong></span></div>
+<div class="col-xs-2 upper_msg"><span><strong>Issue Time</strong></span></div>
+<div class="col-xs-2 upper_msg"><span><strong>hh:mm</strong></span></div>
+<div class="col-xs-7 upper_msg"><span><strong>dd/mm/yyyy</strong></span></div>
+</div>
+<div class="row">
+<div class="col-xs-1 lower_msg"><span><strong> </strong></span></div>
+<div class="col-xs-2 lower_msg"><span><strong> </strong></span></div>
+<div class="col-xs-2 lower_msg">{{item.IssueTime|formatTimeEN}}</div>
+<div class="col-xs-7 lower_msg">{{item.IssueTime|formatDateEN2}}</div>
+</div>
+</div>
+<div class="col-xs-3 col-md-3 part-4">
+<div class="row" v-if="item.expired">
+<div class="col-xs-5 upper_msg"><span><strong>Cancel Time</strong></span></div>
+<div class="col-xs-3 upper_msg"><span><strong>hh:mm</strong></span></div>
+<div class="col-xs-4 upper_msg"><span><strong>dd/mm/yyyy</strong></span></div>
+</div>
+<div class="row" v-if="item.expired">
+<div class="col-xs-1 lower_msg"><span><strong>&nbsp;</strong></span></div>
+<div class="col-xs-4 lower_msg"><span><strong>&nbsp;</strong></span></div>
+<div class="col-xs-3 lower_msg">{{item.ExpireTime|formatTimeEN}}</div>
+<div class="col-xs-4 lower_msg">{{item.ExpireTime|formatDateEN2}}</div>
+</div>
+<div v-else="">
+<div class="row">
+<div class="col-xs-5 upper_msg"><span><strong>Cancel Time</strong></span></div>
+<div class="col-xs-3 upper_msg"><span><strong>hh:mm</strong></span></div>
+<div class="col-xs-4 upper_msg"><span><strong>dd/mm/yyyy</strong></span></div>
+</div>
+<div class="row">
+<div class="col-xs-1 lower_msg"><span><strong>&nbsp;</strong></span></div>
+<div class="col-xs-4 lower_msg"><span><strong>&nbsp;</strong></span></div>
+<div class="col-xs-6 active-warning lower_msg">Now in force</div>
+<div class="col-xs-1 lower_msg"><span style="color: #d70000;"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mobile ver history table-->
+<div v-for="(warn, key) in warnslist" class="container div_warnslist2 hidden-md hidden-lg hidden-xl mobile-ver-history-table" style="width: 100% !important;">
+<div class="row">
+<div class="style1 col-xs-12"><strong style="font-size: large;">{{warn[0].WarningName}}</strong></div>
+</div>
+<div v-for="(item, index) in warn">
+<div class="row innner-content">
+<div class="col-xs-4">
+<div class="left_msg_1">Warnings and Signals</div>
+</div>
+<div class="col-xs-8" style="border-left: 1px solid #eeeeee;"><img :alt="item.WarningName" :src="item.Icon" class="new-div_warnslist-weather-icon-img" /> <span class="content">{{item.Type}}{{item.WarningName}}</span></div>
+</div>
+<div class="row">
+<div class="col-xs-4" style="border-bottom: 1px solid #eeeeee;">
+<div class="left_msg_2">Issue Time</div>
+</div>
+<div class="col-xs-8 right_msg_1" style="border-left: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee;">
+<div class="col-xs-1 ">&nbsp;</div>
+<div class="col-xs-5 ">{{item.IssueTime|formatTimeEN}}</div>
+<div class="col-xs-6 ">{{item.IssueTime|formatDateEN2}}</div>
+</div>
+</div>
+<div class="row">
+<div v-if="item.expired">
+<div class="col-xs-4" style="border-bottom: 1px solid #eeeeee;">
+<div class="left_msg_2">Cancel Time</div>
+</div>
+<div class="col-xs-8 right_msg_1" style="border-left: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee;">
+<div class="col-xs-1 ">&nbsp;</div>
+<div class="col-xs-5 ">{{item.ExpireTime|formatTimeEN}}</div>
+<div class="col-xs-6 ">{{item.ExpireTime|formatDateEN2}}</div>
+</div>
+</div>
+<div v-else="">
+<div class="col-xs-4" style="border-bottom: 1px solid #eeeeee;">
+<div class="left_msg_2">Cancel Time</div>
+</div>
+<div class="col-xs-8 right_msg_1" style="border-left: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee;">
+<div class="col-xs-1 ">&nbsp;</div>
+<div class="col-xs-10 " style="color: #e60000;">Now in force</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p style="margin: 10px 0 10px 20px;"><a href="../../../en/wxinfo/climat/warndb/warndba.shtml">HKO Warnings/Signals Database</a><br /><a href="../../../en/cis/warndb.htm">Warnings &amp; Signals Database</a></p>
+</div>
+</div>
+</div>
+<script>
+function dateTimeRewrite(dt) {
+	var d = dt.toString().substring(0, 8);
+	var t = dt.toString().substring(8, 12);
+	d = d.substring(0, 4)+'-'+d.substring(4,6)+'-'+d.substring(6, 8);
+		console.log(d.substring(0, 2));
+	if(t.length > 0) t = t.substring(0, 2)+':'+t.substring(2, 4);
+	return d+' '+t;
+}
+
+if (!String.prototype.startsWith) {
+    Object.defineProperty(String.prototype, 'startsWith', {
+        value: function(search, rawPos) {
+            pos = rawPos > 0 ? rawPos|0 : 0;
+            return this.substring(pos, pos + search.length) === search;
+        }
+    });
+}
+var WARN = function(iconprefix){
+        this.iconprefix = iconprefix;
+        this.issuing = false;
+        this.cancelled = false;
+        this.getImg = function(){
+		console.log(this.issuing,this.iconprefix);
+                if(this.issuing)
+                        return 'images/'+this.iconprefix+'.issuing.gif';
+                else if(this.cancelled)
+                        return 'images/'+this.iconprefix+'.gif';
+                else
+                        return 'grey/images/'+this.iconprefix+'_dim.gif';
+        }
+}
+var vue = new Vue({
+        el: '#mainContent',
+        router: router,
+        data: function () {
+                return {
+                        warnslist:[],
+                        tcwarns:[],
+                        iconlist:{
+                                TC1             :new WARN('tc1'),
+                                TC3             :new WARN('tc3'),
+                                TC8NE   :new WARN('tc8ne'),
+                                TC8NW   :new WARN('tc8nw'),
+                                TC8SE   :new WARN('tc8se'),
+                                TC8SW   :new WARN('tc8sw'),
+                                TC9             :new WARN('tc9'),
+                                TC10    :new WARN('tc10'),
+                                WCOLD   :new WARN('cold'),
+                                WFIRER  :new WARN('firer'),
+                                WFIREY  :new WARN('firey'),
+                                WFNTSA  :new WARN('ntfl'),
+                                WFROST  :new WARN('frost'),
+                                WHOT    :new WARN('vhot'),
+                                WL              :new WARN('landslip'),
+                                WMSGNL  :new WARN('msn'),
+                                WRAINA  :new WARN('raina'),
+                                WRAINR  :new WARN('rainr'),
+                                WRAINB  :new WARN('rainb'),
+                                WTM    :new WARN('tsunami-warn'),
+                                WTS             :new WARN('ts')
+                        },
+                        Valid_From_0:'',
+                        Valid_To_0:'',
+                        Valid_From_1:'',
+                        Valid_To_1:'',
+						Update_Time:''
+                }
+        },
+        methods: {
+
+        },
+        mounted: function (){
+        moment.locale('zh-hk');
+        var self = this;
+                $.getJSON('../../../wxinfo/dailywx/wxwarntoday.json', function(data){
+                        var warns = {};
+						 self.Update_Time = data.UPDATE_TIME;
+						 var  current_date = moment(dateTimeRewrite(data.UPDATE_TIME),'YYYY-MM-DD').lang(langtxt).format('DD/MMM/YYYY');
+						$("h1").append("("+current_date+")");
+                        $.each(data.WARNING_DATABASE, function(){
+                                var expireTime = moment(this.ExpireTime);
+								try{ 
+									this.Icon = this.Icon.replace('/images_e/', 'images/');
+								}catch(e){
+									console.log(e);
+								}
+                                this.expired = expireTime.isBefore();
+								
+								/*
+								if(this.WarningCode.startsWith("WRAIN")){
+										this.WarningCode = "WRAIN";
+								}else if(this.WarningCode.startsWith("WFIRE")){
+										this.WarningCode = "WFIRE";
+								}else if(this.WarningCode.startsWith("WMSGNL")){
+										this.WarningCode = "WMSGNL";
+								}
+								*/
+								if(this.WarningCode.startsWith("WMSGNL")){
+										this.WarningCode = "WMSGNL";
+								}
+										
+                                if(typeof self.iconlist[this.WarningCode] !== 'undefined'){
+									if(this.expired)
+										self.iconlist[this.WarningCode].cancelled=true;
+									else
+										self.iconlist[this.WarningCode].issuing=true;
+                                }
+                                if(this.WarningCode.startsWith("TC")){
+									self.tcwarns.push(this);
+                                }else {
+									var key = this.WarningCode;
+								  
+									if(typeof warns[key] === 'undefined'){
+										warns[key] = [];
+									}	
+									warns[key].push(this);
+                                }
+                        });
+						//console.log(warns);
+                        $.each(warns, function(index, value){
+							if(value.length>0){
+								self.warnslist.push(value);
+							}
+                        });
+
+                /*
+                        self.$data.Upd_Time_Str = data.DYN_DAT_HKO_RGDTOURIST.Boluo.Upd_Time_Str;
+                        self.$data.Valid_From_0 = data.DYN_DAT_HKO_RGDTOURIST.Boluo.Valid_From_0;
+                        self.$data.Valid_To_0 = data.DYN_DAT_HKO_RGDTOURIST.Boluo.Valid_To_0;
+                        self.$data.Valid_From_1 = data.DYN_DAT_HKO_RGDTOURIST.Boluo.Valid_From_1;
+                        self.$data.Valid_To_1 = data.DYN_DAT_HKO_RGDTOURIST.Boluo.Valid_To_1;
+                        $.each(data.DYN_DAT_HKO_RGDTOURIST, function(k,v){
+                                self.$data.list.push(v);
+                        });
+                        self.$data.list.sort((a,b) => (a.Eng_City_Name > b.Eng_City_Name) ? 1 : ((b.Eng_City_Name > a.Eng_City_Name) ? -1 : 0));
+                */
+                });
+        }
+});
+
+
+var last_revision_date = '5 June 2019';
+
+
+</script>
+<script>var last_revision_date = '16 October 2023';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

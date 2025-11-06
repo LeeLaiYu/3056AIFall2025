@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>HKO e-Bulletin on Educational Resources</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HKO e-Bulletin on Educational Resources">
+    <meta name="description" content="HKO e-Bulletin on Educational Resources">
+    <meta name="recordId" content="2018123100000027520">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="HKO e-Bulletin on Educational Resources" />
+	<meta property="og:description" content="Personal Information &amp;nbsp; Email Address &amp;nbsp;&amp;nbsp;&amp;nbsp; Personal Data (Privacy) Ordinance NotificationThe personal data provided by means of the form will be used for subscribing the &quot;HKO e-Bulletin on Educational Resources&quot;." />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/education/ebulletin/ebulletin_reg.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="../../../css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="../../../css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="../../../css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="../../../css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="../../../css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="../../../css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style>
+	.headerArea:after {
+		background-image: url(../../../images/setion_banner/satc.jpg);
+	}
+		
+	#result_content {
+		display: none;
+	}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/jquery-ui.min.js"></script>
+    <script src="../../../js/jquery.cookie.js"></script>
+    <script src="../../../js/jquery.easing.js"></script>
+    <script src="../../../js/jquery.flexslider.js"></script>
+    <script src="../../../js/menu.js"></script>
+    <script src="../../../js/bootstrap.js"></script>
+	
+    <script>
+		
+var menu_id = '';
+var section_id = '2018010100000010197'; 
+var email1 = getURLParameter("email1");
+var email2 = getURLParameter("email2");
+var email3 = getURLParameter("email3");
+
+if(email1!==null || email2!==null || email3!==null){
+
+	if(email1===null){
+		email1 = '';
+	}
+	if(email2===null){
+		email2 = '';
+	} 
+	if(email3===null){
+		email3 = '';
+	}
+
+	 
+	try{
+		var url = '/cgi-bin/hko/ebulletin_rego_e.pl';
+		var form = $("#formid");
+		
+		$.ajax({
+			   type: "POST",
+			   url: url,
+			   data: "email1="+email1+"&email2="+email2+"&email3="+email3,
+			   //data: { email1 : email1 , email2 : email2 , email3 : email3 },
+			   //data: form.serialize(), // serializes the form's elements.
+			   success: function(data)
+			   {
+			   console.log(data);
+					$("#result_content").show();
+					//$("#result_content").html($($.parseHTML(data)).find('h1').parent().html());
+					var h3result = $($.parseHTML(data)).find('h3').html();
+					if (typeof h3result !== 'undefined'){
+						//success 
+						$("#result_content").html('<H2 align="center">Subscription of HKO e-Bulletin on Educational Resources</H2><H3 align="center">The following email addresses are added to the e-Bulletin recipient list. Thank you.</H3><p class="self_align_center">'+email1+'<BR/>'+email2+'<BR/>'+email3+'<BR/></p>');
+					}else{ 
+						//fail
+						$("#result_content").html('<H2 align="center">Subscription of HKO e-Bulletin on Educational Resources</H2><H3><center>Sorry !</center></H3><center>We can not handle your request as you have not input your <B>email address</B>.</center>');
+					}
+ 
+					$("#formdiv").hide();
+
+			   }
+			 });
+
+	}catch(e){}
+}
+// Redirect to eforms.weather.gov.hk
+window.location.replace("https://eforms.weather.gov.hk/eforms_v2/ebulletin_reg_e.fm");
+function formsubmit(){
+ 
+	try{
+		var url = '/cgi-bin/hko/ebulletin_reg_e.pl';
+		var form = $("#formid");
+
+		$.ajax({
+			   type: "POST",
+			   url: url,
+			   data: form.serialize(), // serializes the form's elements.
+			   success: function(data)
+			   {
+					$("#result_content").show();
+					//$("#result_content").html($($.parseHTML(data)).find('h1').parent().html());
+					var h3result = $($.parseHTML(data)).find('h3').html();
+					if (typeof h3result !== 'undefined'){
+						//success
+						$("#result_content").html('<H2 align="center">Subscription of HKO e-Bulletin on Educational Resources</H2><H3><center>Thank you for your registration.  Your email address is added to the e-Bulletin recipient list.</H3></center>');
+					}else{
+					
+						//fail
+						$("#result_content").html('<H3 align="center">Subscription of HKO e-Bulletin on Educational Resources</H3><H2><center>Sorry !</center></H2><center>We can not handle your request as you have not input your <B>email address</B>.</center>');
+					}
+ 
+					$("#formdiv").hide();
+
+			   }
+			 });
+
+	}catch(e){}
+
+}
+
+
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">跳至主要內容</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script>createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script>pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1 class="no_h1">HKO e-Bulletin on Educational Resources</h1>
+                <div class="border_blank">
+                    <!--Content Start-->
+
+				<div id="result_content">
+</div>					
+					
+<div id="formdiv">			
+
+<div class="self_align_left"><h2>If you wish to receive the "HKO e-Bulletin on Educational Resources", please complete the form:</h2><br></div>
+
+<form action="" id="formid" method=post onsubmit="formsubmit();return false;">
+
+<table style="width:100%;" class="table_border_0 table_cellpadding_5 table_cellspacing_0 blueballBtn row2_table">
+
+<tbody>
+
+<tr class="td_valign_top">
+
+<td colspan=2 style="background-color:#4071bb;"><span style="color:#ffffff;"><strong>Personal Information</strong></span></td></tr>
+
+<tr class="td_valign_top">
+
+<td colspan=2>&nbsp;</td></tr>
+
+<tr class="td_valign_top">
+
+<td>Email Address</td>
+
+<td><input onblur="this.style.backgroundColor='#ffffff'" style="width:100%; max-width:357px;BORDER-RIGHT: #000066 1px solid; BORDER-TOP: #000066 1px solid; BORDER-LEFT: #000066 1px solid; COLOR: #000066; BORDER-BOTTOM: #000066 1px solid;" onfocus="this.style.backgroundColor='#fdf2cc'" maxlength=512 name=email title="Email Address"> </td></tr></tbody></table>
+
+<div>
+
+<div class="self_align_center"><br><input type=submit value="Submit" name=send title="Submit">&nbsp;&nbsp;&nbsp; <input type=reset value="Cancel" name=cancel title="Cancel"> </div></div></form>
+<br/>
+<div><span style="font-size:83%;"><span style="text-decoration:underline;">Personal Data (Privacy) Ordinance Notification</span><br>The personal data provided by means of the form will be used for subscribing the "HKO e-Bulletin on Educational Resources". You have the right to request access to and to correct personal data in accordance with section 18, 22 and Principle 6 of Schedule 1 to the Personal Data (Privacy) Ordinance. <br></span></div>
+
+
+</div>
+							<!--Content End-->
+<script>var last_revision_date = '2 January 2013';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script>pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script>createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

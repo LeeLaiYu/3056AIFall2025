@@ -1,0 +1,1304 @@
+[
+  {
+    "url": "https://data.gov.hk/en-datasets/category/city-management",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/climate-and-weather",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/commerce-and-industry",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/social-welfare",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/development",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/education",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/legislature",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/employment-and-labour",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/environment",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/finance",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/food",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/health",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/housing",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/law-and-security",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/population",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/recreation-and-culture",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/information-technology-and-broadcasting",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/tourism",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/transport",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/category/miscellaneous",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  },
+  {
+    "url": "https://data.gov.hk/en-datasets/",
+    "title": "Datasets",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "organization": "Hong Kong Observatory",
+    "tags": [],
+    "formats": [],
+    "last_updated": "",
+    "license": "",
+    "resources": [
+      {
+        "name": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Subscribe RSS",
+        "url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+        "format": "xml"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "Download Queue",
+        "url": "https://data.gov.hk/en/download-queue",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      },
+      {
+        "name": "API Specification",
+        "url": "https://data.gov.hk/en/help/api-spec",
+        "format": "unknown"
+      },
+      {
+        "name": "CKAN API Development Guide",
+        "url": "https://data.gov.hk/en/help/ckan-api-development-guide",
+        "format": "unknown"
+      }
+    ]
+  }
+]

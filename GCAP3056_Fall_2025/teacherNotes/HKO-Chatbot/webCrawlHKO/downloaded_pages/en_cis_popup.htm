@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Station｜Hong Kong Observatory(HKO)｜Climate Information Service</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Weather Station">
+    <meta name="description" content="Weather Station">
+    <meta name="recordId" content="2018123100000007252">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Weather Station" />
+	<meta property="og:description" content="Display Meteorological Element: All Wind Air Temperature Rainfall Station Name: Please Select Station Station Name : Station Type : Latitude (N): Longitude (E): Elevation above mean sea-level (m): Date of" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/cis/popup.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+		    td.remark{  color: #000000;    font-weight: normal;  font-size: 15pt;}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '42';
+var section_id = '2018010100000010126';
+
+   $(document).ready(function(e) {
+			$('img[usemap]').rwdImageMaps();
+			genMap0();
+		});
+
+
+	var stnid = new Array("HKO","HKA","SHA","LFS","TKL","CPH","BHD","HKS","WGL","GI","JKB","CCH","KP","EPC","PLC","KAT","SLW","SKG","TAP","TYW","SEK","TMS","TC","NLS","KLT","SE","TP","NGP","VP1","PEN","SSH","WLP",
+	"CP1","TWN","HKP","SKW","TU1","KSC","HPV","STY","WTS","KTG","SSP","TY1","KFB","TW","LAM","TUN","SF","NP","HUD","SHW","TMT","YTS","SC","SW","TO","CCB","TPK",
+	"R12","R21","R22","R23","R24","R25","CDA","R18","R27","R28","R29","R31","PPC","QU1","R11","SE1","YYC","WCN","R30","CSW","R32","TBT","QUB","SHP","TMW","TPKT","WAG","WB2","WB3","WB8","BR1","YLP","TMR","TME","TTC","CWB","TLS","YCT");
+	var stnName = new Array("Hong Kong Observatory","Hong Kong International Airport","Sha Tin","Lau Fau Shan","Ta Kwu Ling","Ching Pak House(Tsing Yi)","Bluff Head","Wong Chuk Hang","Waglan Island","Green Island","Tseung Kwan O","Cheung Chau","King's Park","Ping Chau","Tai Mei Tuk","Kat O","Sha Lo Wan","Sai Kung","Tap Mun","Pak Tam Chung (Tsak Yue Wu)","Shek Kong","Tai Mo Shan","Tate's Cairn","Nei Lak Shan","Kowloon City","Kai Tak","Tai Po(Conservation Studies Centre)","Ngong Ping","The Peak","Peng Chau","Sheung Shui",
+	"Wetland Park","Central Pier","Tsuen Wan","Hong Kong Park","Shau Kei Wan","Tuen Mun Children and Juvenile Home","Kau Sai Chau","Happy Valley","Stanley","Wong Tai Sin","Kwan Tong","Sham Shui Po","New Tsing Yi Station","Kadoorie Farm and Botanic Garden","Tsuen Wan Shing Mun Valley","Lamma Island","Tuen Mun Government Offices","Star Ferry(Kowloon)","North Point","Shell Oil Depot","Siu Ho Wan","Tai Mo To","Yi Tung Shan","Sha Chau","Sham Wat","Tai O","Cheung Chau Beach","Tai Po Kau","Discovery Bay",
+	"Tap Shek Kok","Tsim Bei Tsui","Tai Po Wong Shiu Chi Secondary School","Sha Tau Kok","Pak Tam Au","Cape D'Aguilar","Hong Kong Adventist College(Sai Kung)","Yuen Long","Au Tau","Lok Ma Chau","Tai Mei Tuk Pumping Station","Po Pin Chau","Quarry Bay","Ngong Ping Fresh Water Reservoir","Kai Tak Runway Park",
+	"Yau Yat Chuen","Central Plaza","Kat O Fisheries Research Sub-Station","Cheung Sha Wan","Leung Shuen Wan","Tsim Bei Tsui","Quarry Bay","Shek Pik","Tai Miu Wan","Tai Po Kau","Waglan Island","Automatic Weather Buoy No.2 (Hong Kong International Airport, West)","Automatic Weather Buoy No.3 (Hong Kong International Airport, East)","Automatic Weather Buoy No.8 (Hong Kong International Airport, East)","Beas River","Yuen Long Park","Tuen Mun Reservoir","Tap Mun East","Tai Tan Camp","Clear Water Bay","Tai Lung","Tai Po(Yuen Chau Tsai Park)");
+        var manAws = new Array("HKO","HKA");
+        var wbAws = new Array("WB2","WB8");
+        var rfAws = new Array("R12","R21","R22","R23","R24","CDA","R18","R28","R29","R31","QU1","R11","PPC","TMR","TTC");
+        var windAws = new Array("TUN","SF","NP","HUD","TMT","YTS","SC","TO","CCB","TPK","TME");
+        var tideAws = new Array("TBT","QUB","SHP","TMW","TPKT","WAG");
+        var stopAws = new Array("WCN","CSW","R30","YYC","R32","WB3","SW","R27","R25","TP","SHW");
+        var height = new Array("32","6","6","31","15","122","94","5","56","88","38","72","65","29","51","10","61","4","15","5","16","955","575","747","92","3","15","593","406","34","10","4","19","142","26","53","28","39","5","31","21","90","11","8","307","35","7","69","18","26","43","15","15","752","31","13","105","27","12","106","28","8","23","39","106","45","122","102","3","67","24","68","7","479","3.8","64","378","10","30","23","","","","","","","9","9","9","10.9","8","98","48","19","66","21","6");
+        var startdata = new Array("01/01/1884","01/06/1997","01/10/1984","16/09/1985","14/10/1985","01/07/1987","13/03/1989","01/08/1989","22/08/1989","11/09/1989","01/12/1991","30/03/1992","01/07/1992","01/01/1993","01/01/1993","01/01/1993","25/02/1993","03/03/1993","15/09/1993","01/10/1995","04/11/1996","20/12/1996","18/12/1997","12/02/1998","04/09/1998","04/09/1998","03/02/1999","01/01/2002","17/02/2003","01/06/2004","09/07/2004","10/11/2005",
+        "20/12/2005","25/04/2006","04/09/2007","17/09/2007","01/01/2007","03/07/2008","01/12/2008","12/06/2009","27/03/2009","21/10/2009","09/03/2010","23/08/2010","01/12/2010","07/12/2010","25/07/2011","23/10/1987","15/12/1987","04/09/1998","01/12/1992","08/09/1997","17/10/1997","30/10/1997","22/11/1997","14/08/1998","24/05/2004","14/09/2009","01/12/2010",
+        "30/12/1984","30/12/1984","30/12/1984","30/12/1984","30/12/1984","30/12/1984","01/03/2023","30/06/1985","30/06/1985","30/06/1985","30/06/1985","30/06/1985","06/06/2014","13/06/2006","01/09/2006","17/12/2014","30/10/1998","04/05/1993","30/06/1985","15/08/1988","30/09/1985","01/12/1974","01/01/1986","01/01/1998","01/01/1996","01/12/1963","01/12/1976","16/08/2002","28/01/2003","01/01/2012","06/12/2012","20/03/2015","1/01/2016","06/07/2017","01/04/2017","20/12/2018","14/02/2020","01/04/2022");
+        var lastdata = new Array("","","","","","","","","","","","","","","","","","","","","","","","","","","31/03/2022","","","","","",
+        "","","","","","","","","","","","","","","","","","","","06/12/2022","","","","14/04/2014","","","",
+        "","","","","","28/12/2017","","","31/12/2015","","","","","","","","31/12/2007","31/12/2007","31/12/2008","17/12/2010","30/03/2014","","","","","","","","11/04/2012","","","","","","","","","");
+        var latdeg = new Array("22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22",
+        "22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22",
+        "22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22","22");
+        var latminsec = new Array(
+        "18\'07\"","18\'34\"","24\'09\"","28\'08\"","31\'43\"","20\'53\"","11\'51\"","14\'52\"","10\'56\"","17\'06\"","18\'57\"","12\'04\"","18\'43\"","32\'48\"","28\'31\"","32\'11\"","17\'28\"","22\'32\"","28\'17\"","24\'10\"",
+        "26\'10\"","24\'38\"","21\'28\"","15\'48\"","20\'06\"","18\'35\"","26\'46\"","15\'31\"","15\'51\"","17\'28\"","30\'07\"","28\'00\"",
+        "17\'20\"","23\'01\"","16\'42\"","16\'54\"","23\'09\"","22\'13\"","16\'14\"","12\'51\"","20\'22\"","19\'07\"","20\'09\"","20\'39\"","25\'58\"","22\'32\"","13\'34\"","23\'26\"","17\'35\"","17\'40\"","20\'48\"","18\'21\"",
+        "19\'47\"","15\'33\"","20\'45\"","16\'07\"","15\'22\"","12\'39\"","26\'33\"",
+        "17\'29\"","22\'45\"","29\'11\"","26\'44\"","32\'15\"","24\'47\"","12\'34\"","18\'27\"","25\'08\"","27\'00\"",
+        "30\'42\"","28\'42\"","21\'42\"","17\'28\"","15\'20\"","18\'18\"","19\'57\"","16\'53\"","32\'10\"","19\'58\"",
+        "21\'07\"","29\'14\"","17\'28\"","13\'13\"","16\'11\"","26\'33\"","10\'59\"","17\'28\"","19\'11\"","18\'21\"","29\'36\"","26\'27\"","24\'27\"","28\'06\"","26\'07\"","15\'48\"","29\'05\"","26\'54\"");
+        var londeg = new Array("114","113","114","113","114","114","114","114","114","114","114","114","114","114","114","114","113","114","114","114",
+        "114","114","114","113","114","114","114","113","114","114","114","114",
+        "114","114","114","114","113","114","114","114","114","114","114","114","114","114","114","113","114","114","114","113",
+        "113","113","113","113","113","114","114",
+        "114","113","114","114","114","114","114","114","113","114","114","114","114","114","113","114","114","114","114","114",
+        "114","114","114","113","114","114","114","113","113","113","114","114","113","114","114","114","114","114");
+        var lonminsec = new Array(
+        "10\'27\"","55\'19\"","12\'36\"","59\'01\"","09\'24\"","06\'33\"","12\'43\"","10\'25\"","18\'12\"","06\'46\"","15\'20\"","01\'36\"","10\'22\"","25\'42\"","14\'15\"","18\'07\"","54\'25\"","16\'28\"","21\'38\"","19\'23\"",
+        "05\'05\"","07\'28\"","13\'04\"","54\'40\"","11\'05\"","12\'48\"","10\'44\"","54\'46\"","09\'18\"","02\'36\"","06\'40\"","00\'32\"",
+        "09\'21\"","06\'28\"","09\'44\"","14\'10\"","57\'51\"","18\'45\"","11\'01\"","13\'07\"","12\'19\"","13\'29\"","08\'13\"","06\'36\"","07\'15\"","07\'26\"","06\'31\"","58\'36\"","10\'07\"","11\'59\"","05\'11\"","58\'45\"",
+        "58\'00\"","57\'51\"","53\'28\"","53\'13\"","51\'17\"","01\'45\"","11\'03\"",
+        "00\'33\"","55\'12\"","00\'42\"","10\'18\"","12\'40\"","19\'47\"","15\'17\"","17\'13\"","59\'46\"","03\'11\"",
+        "04\'49\"","14\'20\"","22\'17\"","12\'48\"","54\'41\"","13\'1\"","10\'21\"","10\'16\"","08\'07\"","09\'14\"",
+        "21\'11\"","00\'51\"","12\'48\"","53\'40\"","17\'19\"","11\'02\"","18\'10\"","52\'56\"","57\'41\"","57\'14\"","06\'18\"","01\'06\"","59\'14\"","21\'47\"","20\'03\"","17\'59\"","07\'03\"","10\'38\"");
+        var xcoord1 = new Array(396,106,437,174,375,320,444,395,546,325,490,225,394,694,470,544,84,514,609,570,292,337,446,90,409,440,399,96,374,244,
+        323,202,375,320,383,467,152,556,406,449,431,455,352,322,333,340,321,166,389,425,293,168,154,150,64,60,24,226,407,204,96,200,389,438,576,489,527,189,254,286,
+        471,633,450,82,445,396,397,553,377,616,213,439,71,529,419,546,56,154,138,315,217,181,618,578,543,328,402);
+        var xcoord2 = new Array(333,322,206,121,46,268,465,400,480,354,314,460,318,22,119,36,344,238,117,205,163,195,262,377,291,317,140,391,381,345,
+        78,124,349,229,363,357,227,246,372,442,285,309,287,283,165,238,428,223,347,343,277,329,296,388,277,374,392,445,159,345,236,100,149,35,191,448,324,183,144,66,
+        105,257,347,392,331,294,360,46,293,272,98,344,433,372,155,493,345,311,327,92,163,191,125,162,378,103,146);
+        var ycoord1 = new Array(411,122,452,189,390,335,458,409,560,339,505,240,409,709,485,559,99,529,622,585,307,352,461,105,424,455,417,111,388,258,
+        338,217,389,335,397,481,167,571,420,463,446,470,367,337,348,355,335,180,403,439,309,184,168,166,80,76,40,242,421,219,
+        111,215,404,452,591,504,542,204,269,301,486,648,465,97,461,411,412,569,392,631,228,451,86,544,434,561,72,168,154,330,231,195,631,594,558,347,418);
+        var ycoord2 = new Array(349,338,222,137,62,284,480,415,495,369,330,476,334,38,135,52,360,254,132,221,179,211,278,393,307,333,152,407,396,360,
+        94,140,364,245,378,372,243,262,387,457,301,325,303,299,181,254,443,238,362,358,293,345,311,404,293,390,408,461,174,361,
+        252,115,164,50,206,464,340,198,159,81,120,273,363,408,345,310,373,60,309,288,113,361,449,388,170,509,361,326,343,106,177,206,139,178,391,119,160);
+	function putData(item) {
+		if(stnid[item] == 'HKO'){
+			window.opener.changeHko();
+			window.close();
+		}else{
+			window.opener.document.getElementById('aws').value = stnid[item];
+			window.opener.changeYearDropDown();
+			window.close();
+		}
+	}
+	function Map_showLayers(stn){
+		Map_hideLayers();
+		$("#select2").val(stn);
+		document.getElementById('awo').innerHTML = stnName[stn];
+		document.getElementById('latitude').innerHTML = latdeg[stn] + '<span lang=EN-US>°</span>' + latminsec[stn];
+		document.getElementById('longitude').innerHTML = londeg[stn] + '<span lang=EN-US>°</span>' + lonminsec[stn];
+		document.getElementById('height').innerHTML = height[stn];
+		document.getElementById('firstDate').innerHTML = startdata[stn];
+		if(stnid[stn] == 'SW' || stnid[stn] == 'R27' || stnid[stn] == 'YYC' || stnid[stn] == 'WCN' || stnid[stn] == 'R30' || stnid[stn] == 'CSW' || stnid[stn] == 'R32' || stnid[stn] == 'WB3'){
+			r=eval("stopDate.style");r.display='';
+			document.getElementById('lastDate').innerHTML = lastdata[stn];
+		}
+		if(stnid[stn] == 'HKO'){
+			document.getElementById('type').innerHTML = 'Manned Weather Station';
+		}else if(stnid[stn] == 'HKA'){
+			document.getElementById('type').innerHTML = 'Manned Weather Station (Reference Synoptic Station)';
+		}else if(jQuery.inArray(stnid[stn],rfAws) != -1){
+			document.getElementById('type').innerHTML = 'Automatic Rainfall Station';
+		}else if(jQuery.inArray(stnid[stn],windAws) != -1){
+			document.getElementById('type').innerHTML = 'Automatic Wind Station';
+		}else if(jQuery.inArray(stnid[stn],tideAws) != -1){
+			document.getElementById('type').innerHTML = 'Tide Gauge Station';
+		}else if(jQuery.inArray(stnid[stn],stopAws) != -1){
+			document.getElementById('type').innerHTML = 'Terminated Weather Station';
+		}else if(jQuery.inArray(stnid[stn],wbAws) != -1){
+			document.getElementById('type').innerHTML = 'Automatic Weather Buoy';
+		}else{
+			document.getElementById('type').innerHTML = 'Automatic Weather Station';
+		}
+	}
+	function Map_hideLayers(){
+		document.getElementById('awo').innerHTML = '';
+		document.getElementById('latitude').innerHTML = '';
+		document.getElementById('longitude').innerHTML = '';
+		document.getElementById('height').innerHTML = '';
+		document.getElementById('firstDate').innerHTML = '';
+		document.getElementById('type').innerHTML = '';
+		r=eval("stopDate.style");r.display='none';
+	}
+	//Current Map_Value
+	var default_Map_Value = "0";
+	function go2page(selObj) {
+		if(selObj.options[selObj.selectedIndex].value != default_Map_Value) {
+			default_Map_Value = selObj.options[selObj.selectedIndex].value;
+			Map_hideLayers();
+			showmap(''+selObj.options[selObj.selectedIndex].value);
+		}
+	}
+	function showmap(i){
+	  for(x=0;x<4;x++){
+		  $("#e"+x+"map").hide();
+		  // r=eval("e"+i+"map.style");r.display='none';
+	  }
+      $("#e"+i+"map").show();
+	  if (i=="0") { genMap0(); }
+	  else if (i=="1") { genMap1(); }
+	  else if (i=="2") { genMap2(); }
+	  else if (i=="3") { genMap3(); }
+	}
+	function genMap0() {
+		var stnid = new Array("HKO","HKA","SHA","LFS","TKL","CPH","BHD","HKS","WGL","GI","JKB","CCH","KP","EPC","PLC","KAT","SLW","SKG","TAP","TYW","SEK","TMS","TC","NLS","KLT","SE","TP","NGP","VP1","PEN","SSH","WLP",
+				"CP1","TWN","HKP","SKW","TU1","KSC","HPV","STY","WTS","KTG","SSP","TY1","KFB","TW","LAM","TUN","SF","NP","HUD","SHW","TMT","YTS","SC","SW","TO","CCB","TPK",
+				"R12","R21","R22","R23","R24","R25","CDA","R18","R27","R28","R29","R31","PPC","R19","R11","SE1","YYC","WCN","R30","CSW","R32","TBT","QUB","SHP","TMW","TPKT","WAG","WB2","WB3","WB8","BR1","YLP","TMR","TME","TTC","CWB","TLS","YCT");
+		var genMap0Str = "";
+		var genSel0Str = '<option value="">(Please Select Station)</option>';
+		for(var i=0; i<stnid.length; i++){
+		  genMap0Str += '  <area href="javascript:putData(' + i + ')" shape="rect" coords="';
+		  genMap0Str += xcoord1[i] + ',' + xcoord2[i] + ',' + (ycoord1[i]) + ',' + (ycoord2[i]);
+		  genMap0Str += '" alt="' + stnName[i] + '" onMouseOver=Map_showLayers(\'';
+		  // genMap0Str += i + '\') onMouseOut=Map_hideLayers()>';
+		  genMap0Str += i + '\') >';
+		  genSel0Str += '<option value="'+i+'">'+stnName[i]+'</option>';
+		}
+		$("#HKMap0").html(genMap0Str);
+		$("#select2").html(genSel0Str);
+	}
+	function genMap1() {
+		var stnid = new Array("HKO","HKA","SHA","LFS","TKL","CPH","BHD","HKS","WGL","GI","JKB","CCH","KP","EPC","PLC","KAT","SLW","SKG","TAP","TYW","SEK","TMS","TC","NLS","KLT","SE","TP","NGP","VP1","PEN","SSH","WLP",
+				"CP1","TWN","HKP","SKW","TU1","KSC","HPV","STY","WTS","KTG","SSP","TY1","KFB","TW","LAM","TUN","SF","NP","HUD","SHW","TMT","YTS","SC","SW","TO","CCB","TPK",
+				"R12","R21","R22","R23","R24","R25","CDA","R18","R27","R28","R29","R31","PPC","QU1","R11","SE1","YYC","WCN","R30","CSW","R32","TBT","QUB","SHP","TMW","TPKT","WAG","WB2","WB3","WB8","BR1","YLP","TMR","TME","TTC","CWB","TLS","YCT");
+		var windMapAws = new Array('HKO','HKA','BHD','CP1','CCH','GI','SE','KP','KLT',
+		'LAM','LFS','NLS','NGP','TYW','PEN','EPC','SKG','SLW','SHA','SEK','TKL','PLC',
+		'TMS','TAP','TC','JKB','WGL','WLP','HKS','WB2','WB8','CCB','NP','SC','SW','HUD',
+		'SHW','SF','TMT','TO','TPK','TUN','YTS','WCN','CSW','YYC','WB3','TME');
+		var genMap1Str = "";
+		var genSel1Str = '<option value="">(Please Select Station)</option>';
+		for(var i=0; i<windMapAws.length; i++){
+				if(jQuery.inArray(windMapAws[i],stnid) != -1){
+						var stnNum = jQuery.inArray(windMapAws[i],stnid);
+						genMap1Str += '  <area href="javascript:putData(' + stnNum + ')" shape="rect" coords="';
+						genMap1Str += xcoord1[stnNum] + ',' + xcoord2[stnNum] + ',' + (ycoord1[stnNum]) + ',' + (ycoord2[stnNum]);
+						genMap1Str += '" alt="' + stnName[stnNum] + '" onMouseOver=Map_showLayers(\'';
+						// genMap1Str += stnNum + '\') onMouseOut=Map_hideLayers()>';
+						genMap1Str += stnNum + '\') >';
+						genSel1Str += '<option value="'+stnNum+'">'+stnName[stnNum]+'</option>';
+				}
+		}
+		$("#HKMap1").html(genMap1Str);
+		$("#select2").html(genSel1Str);
+	}
+	function genMap2() {
+		var stnid = new Array("HKO","HKA","SHA","LFS","TKL","CPH","BHD","HKS","WGL","GI","JKB","CCH","KP","EPC","PLC","KAT","SLW","SKG","TAP","TYW","SEK","TMS","TC","NLS","KLT","SE","TP","NGP","VP1","PEN","SSH","WLP",
+			"CP1","TWN","HKP","SKW","TU1","KSC","HPV","STY","WTS","KTG","SSP","TY1","KFB","TW","LAM","TUN","SF","NP","HUD","SHW","TMT","YTS","SC","SW","TO","CCB","TPK",
+			"R12","R21","R22","R23","R24","R25","CDA","R18","R27","R28","R29","R31","PPC","QU1","R11","SE1","YYC","WCN","R30","CSW","R32","TBT","QUB","SHP","TMW","TPKT","WAG","WB2","WB3","WB8","BR1","YLP","TMR","TME","TTC","CWB","TLS","YCT");
+		var tempMapAws = new Array("HKO","HKA","BHD","CCH","CPH","HPV","HKP","SE1","KFB","KAT",
+			"KSC","KP","KLT","KTG","LFS","NLS","TY1","NGP","TYW","PEN","EPC","SKG","SLW","SHA",
+			"SSP","SKW","SEK","SSH","STY","TKL","PLC","TMS","TP","TAP","TC","VP1","JKB","TWN",
+			"TW","TU1","WGL","WLP","HKS","WTS","BR1","WB2","WB8","WB3","YLP","CWB","TLS","YCT");
+		var genMap2Str = "";
+		var genSel2Str = '<option value="">(Please Select Station)</option>';
+		for(var i=0; i<tempMapAws.length; i++){
+			if(jQuery.inArray(tempMapAws[i],stnid) != -1){
+						var stnNum = jQuery.inArray(tempMapAws[i],stnid);
+						genMap2Str += '  <area href="javascript:putData(' + stnNum + ')" shape="rect" coords="';
+						genMap2Str += xcoord1[stnNum] + ',' + xcoord2[stnNum] + ',' + (ycoord1[stnNum]) + ',' + (ycoord2[stnNum]);
+						genMap2Str += '" alt="' + stnName[stnNum] + '" onMouseOver=Map_showLayers(\'';
+						// genMap2Str += stnNum + '\') onMouseOut=Map_hideLayers()>';
+						genMap2Str += stnNum + '\') >';
+						genSel2Str += '<option value="'+stnNum+'">'+stnName[stnNum]+'</option>';
+				}
+		}
+		$("#HKMap2").html(genMap2Str);
+		$("#select2").html(genSel2Str);
+	}
+	function genMap3() {
+		var stnid = new Array("HKO","HKA","SHA","LFS","TKL","CPH","BHD","HKS","WGL","GI","JKB","CCH","KP","EPC","PLC","KAT","SLW","SKG","TAP","TYW","SEK","TMS","TC","NLS","KLT","SE","TP","NGP","VP1","PEN","SSH","WLP",
+			"CP1","TWN","HKP","SKW","TU1","KSC","HPV","STY","WTS","KTG","SSP","TY1","KFB","TW","LAM","TUN","SF","NP","HUD","SHW","TMT","YTS","SC","SW","TO","CCB","TPK",
+			"R12","R21","R22","R23","R24","R25","CDA","R18","R27","R28","R29","R31","PPC","QU1","R11","SE1","YYC","WCN","R30","CSW","R32","TBT","QUB","SHP","TMW","TPKT","WAG","WB2","WB3","WB8","BR1","YLP","TMR","TME","TTC","CWB","TLS","YCT");
+		var rfMapAws = new Array("HKO","HKA","CCH","CPH","GI","HPV","SE","KFB","KAT","KSC",
+		"KP","LAM","LFS","TYW","PEN","EPC","SLW","SHA","SSP","SKW","SEK","SSH","TKL",
+		"PLC","TMS","TAP","TC","VP1","JKB","TWN","TU1","WGL","WLP","BR1","R28","CDA",
+		"R12","R13","PPC","R29","R11","R25","QU1","R18","R24","R31","R23","R21","R22","R27",
+		"R30","R32","TMR","TTC","CWB","TLS");
+		var genMap3Str = "";
+		var genSel3Str = '<option value="">(Please Select Station)</option>';
+		for(var i=0; i<rfMapAws.length; i++){
+			if(jQuery.inArray(rfMapAws[i],stnid) != -1){
+						var stnNum = jQuery.inArray(rfMapAws[i],stnid);
+						genMap3Str += '  <area href="javascript:putData(' + stnNum + ')" shape="rect" coords="';
+						genMap3Str += xcoord1[stnNum] + ',' + xcoord2[stnNum] + ',' + (ycoord1[stnNum]) + ',' + (ycoord2[stnNum]);
+						genMap3Str += '" alt="' + stnName[stnNum] + '" onMouseOver=Map_showLayers(\'';
+						// genMap3Str += stnNum + '\') onMouseOut=Map_hideLayers()>';
+						genMap3Str += stnNum + '\') >';
+						genSel3Str += '<option value="'+stnNum+'">'+stnName[stnNum]+'</option>';
+				}
+		}
+		$("#HKMap3").html(genMap3Str);
+		$("#select2").html(genSel3Str);
+	}
+	function selStation(val) {
+		if (val != '') {
+			Map_showLayers(val);
+		}
+	}
+
+
+
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Weather Station</h1>
+                <div class="border_blank">
+                    <!--Content Start-->
+<div id="e0map" class="self_align_center"><img src="../../en/cis/images/stn_map_eng.png" style="border: 0px;" alt="Weather stations with displaying all elements" usemap="#HKMap0" /> <!--id="mapname"--> <map name="HKMap0" id="HKMap0"></map></div>
+<div id="e1map" style="display: none;" class="self_align_center"><img src="../../en/cis/images/wind_stn_map_eng.png" style="border: 0px;" alt="Weather stations with displaying wind" usemap="#HKMap1" /> <!--id="mapname"--> <map name="HKMap1" id="HKMap1"></map></div>
+<div id="e2map" style="display: none;" class="self_align_center"><img src="../../en/cis/images/temp_stn_map_eng.png" style="border: 0px;" alt="Weather stations with displaying air temperature" usemap="#HKMap2" /> <!--id="mapname"--> <map name="HKMap2" id="HKMap2"></map></div>
+<div id="e3map" style="display: none;" class="self_align_center"><img src="../../en/cis/images/rf_stn_map_eng.png" style="border: 0px;" alt="Weather stations with displaying rainfall" usemap="#HKMap3" /> <!--id="mapname"--> <map name="HKMap3" id="HKMap3"></map></div>
+<br />
+<div id="newdiv" class="self_align_center">
+<table id="list">
+<tbody>
+<tr style="height: 20px;">
+<td class="self_align_center"><span style="font-size: 113%; color: #000000;">Display Meteorological Element:<select onclick="go2page(this);" id="select" title="Please select Meteorological Element">
+<option value="0">All</option>
+<option value="1">Wind</option>
+<option value="2">Air Temperature</option>
+<option value="3">Rainfall</option>
+</select></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<br />
+<div id="newdiv2" class="self_align_center">
+<table id="list2">
+<tbody>
+<tr style="height: 20px;">
+<td class="self_align_center"><span style="font-size: 113%; color: #000000;">Station Name:<select onchange="selStation(this.value);" id="select2" title="Please Select Station" style="width: 100%;">
+<option value="">Please Select Station</option>
+</select></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<br />
+<table style="background-color: #57fbf9;" class="table_align_center table_border_0 table_cellpadding_2 table_cellspacing_0">
+<tbody>
+<tr>
+<td>
+<table style="background-color: #ffffff;" class="table_align_center table_border_0 table_cellpadding_2 table_cellspacing_0">
+<tbody>
+<tr>
+<td>
+<table style="background-color: #57fbf9;" class="table_align_center table_border_0 table_cellpadding_2 table_cellspacing_0">
+<tbody>
+<tr>
+<td>
+<table style="background-color: #ffffff;" class="table_align_center table_border_0 table_cellpadding_2 table_cellspacing_0">
+<tbody>
+<tr>
+<td class="remark td_valign_top" style="width: 340px; text-align: right;">Station Name :</td>
+<td class="remark" style="width: 340px; text-align: center;">
+<div id="awo"></div>
+</td>
+</tr>
+<tr>
+<td class="remark td_valign_top" style="width: 340px; text-align: right;">Station Type :</td>
+<td class="remark" style="width: 340px; text-align: center;">
+<div id="type"></div>
+</td>
+</tr>
+<tr>
+<td class="remark td_valign_top" style="width: 340px; text-align: right;">Latitude (N):</td>
+<td class="remark" style="width: 340px; text-align: center;">
+<div id="latitude"></div>
+</td>
+</tr>
+<tr>
+<td class="remark td_valign_top" style="width: 340px; text-align: right;">Longitude (E):</td>
+<td class="remark" style="width: 340px; text-align: center;">
+<div id="longitude"></div>
+</td>
+</tr>
+<tr>
+<td class="remark td_valign_top" style="width: 340px; text-align: right;">Elevation above mean sea-level (m):</td>
+<td class="remark" style="width: 340px; text-align: center;">
+<div id="height"></div>
+</td>
+</tr>
+<tr>
+<td class="remark td_valign_top" style="width: 340px; text-align: right;">Date of first operation :</td>
+<td class="remark" style="width: 340px; text-align: center;">
+<div id="firstDate"></div>
+</td>
+</tr>
+<tr id="stopDate" style="display: none;">
+<td class="remark td_valign_top" style="width: 240px; text-align: right;">Date of stop operation :</td>
+<td class="remark" style="width: 440px; text-align: center;">
+<div id="lastDate"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--Content End-->
+<script>var last_revision_date = '18 October 2024';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

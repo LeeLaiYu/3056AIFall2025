@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hong Kong Regional Temperature｜Hong Kong Observatory(HKO)｜Regional Weather</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="is it cold in Hong Kong, is it freezing in Hong Kong, is it hot in Hong Kong, is it warm in Hong Kong, is it cool in Hong Kong">
+    <meta name="description" content="Hong Kong regional temperature, district weather in hong kong ,temperature in hong kong ,Chek Lap Kok temperature, Tung Chung temperature, Cheung Chau temperature ,Clear Water Bay temperature ,Happy Valley temperature ,Hong Kong Observatory temperature, Tsim Sha Tsui Temperature ,Hong Kong Park temperature ,Kai Tak Runway Park temperature ,Kau Sai Chau temperature ,King&#039;s Park temperature ,Kowloon City temperature ,Kwun Tong temperature, Lau Fau Shan temperature, Ngong Ping temperature, Pak Tam Chung temperature, Peng Chau temperature, Sai Kung temperature, Sha Tin temperature, Sham Shui Po temperature, Shau Kei Wan temperature, Shek Kong temperatur e">
+    <meta name="recordId" content="2018123100000035901">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="HK regional temperature" />
+	<meta property="og:description" content="HK regional temperature" />
+	<meta property="og:image" content="https://www.hko.gov.hk" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/ts/index.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+		#content_footer {
+			margin: 0 auto;
+			max-width: 700px;
+			width: 100%;
+		}
+		#content_footer > div{
+			padding-top: 0.5em;
+		}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '0';
+var section_id = '2018010100000010837';
+
+        
+
+ $(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+	$('.breadcrumb ul>li:nth-last-child(2)').after('<li><a href="../../../en/wxinfo/ts/index.htm">Regional Weather</a><span>></span></li>');
+});
+function newWin(URL, w, h) {
+ parameter = "top=1,left=1,width="+w+",height="+h+",scrollbars=yes,menubar=no,toolbar=no,resizable=yes";
+ msgWindow=window.open(URL, 'index', parameter);
+ msgWindow.focus();}
+
+ $(document).ready(function(e) {
+ $.getJSON('../../../wxinfo/ts/index_temp_e.json', function(data) {
+     console.log(data.maparea);
+     $(data.maparea).each(function( k,v ) {
+	var content = $("<area/>")
+	.attr("href",v.link)
+	.attr("shape","rect")
+	.attr("coords",v.coords)
+	.attr("alt",v.text)
+	.attr("title",v.text);
+	console.log(content);
+	$("map").append(content);
+	});
+  $('img[usemap]').rwdImageMaps();
+  });
+});
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1 class="no_h1">Hong Kong Regional Temperature</h1>
+                <div class="border_blank">
+                    <div style="background-color: #ffffff;" class="self_align_center">
+<h2 class="h2_2">Air Temperature</h2>
+<img src="../../../wxinfo/ts/temp/tempehk.png" usemap="#FPMap0" alt="Air Temperature" /><br /><br />
+<table style="width: 100%; max-width: 700px; background-color: #ffffe0; border-color: cyan;" title="This table is used for guarding the displaying format of the materials on the viewing area" class="table_align_center table_border_2">
+<tbody>
+<tr>
+<td><span style="font-size: 83%;">&nbsp;M &nbsp;&nbsp;: &nbsp; Under Maintenance / Data Temporarily Not Available<br />&nbsp;<img src="../../../en/wxinfo/ts/images/hill_icon.png" alt="Station higher than 500 metres above mean sea level" /> &nbsp;: &nbsp; Station higher than 500 metres above mean sea level<br /></span></td>
+</tr>
+<tr>
+<td>
+<table class="table_border_0">
+<tbody>
+<tr>
+<td colspan="2"><span style="font-size: 83%;"> Points to note:</span></td>
+</tr>
+<tr>
+<td class="td_valign_top"><span style="font-size: 83%;">(i)</span></td>
+<td><span style="font-size: 83%;">To see a time series plot of the meteorological readings in the past 24 hours, please click the mouse on the station of your choice.</span></td>
+</tr>
+<tr>
+<td class="td_valign_top"><span style="font-size: 83%;">(ii)</span></td>
+<td><span style="font-size: 83%;">The data displayed is provisional. Only limited data validation has been carried out.</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="content_footer">
+<div><a href="https://maps.weather.gov.hk/index_e.html" rel="external" title="Geographic Information System Platform">Geographic Information System Platform</a></div>
+<div>See weather information from voluntary schools and organizations at <a href="#" onclick="newWin(&quot;https://cowin.hku.hk/english/map.html&quot;, 790, 600);" title="Community Weather Information Network">Community Weather Information Network</a></div>
+<div>See popular tourist spots at <a href="#" onclick="newWin(&quot;http://www.discoverhongkong.com/eng/&quot;, 790, 600);" title="Hong Kong Tourism Board">Hong Kong Tourism Board</a> &nbsp; | &nbsp; <a href="#" onclick="newWin(&quot;explain.htm#temperature&quot;, 790, 340);" title="Explanatory note">Explanatory note</a></div>
+</div>
+</div>
+<map name="FPMap0"> <!--area href="display_graph.htm?hka&menu=otherwxi&rwx&addbar" shape="rect" coords="131,416,151,436" alt="time series of meteorological data at Chek Lap Kok" title="time series of meteorological data at Chek Lap Kok">
+ <area href="display_graph.htm?cch&menu=otherwxi&rwx&addbar" shape="rect" coords="291,593,311,613" alt="time series of meteorological data at Cheung Chau" title="time series of meteorological data at Cheung Chau">
+ <area href="display_graph.htm?cwb&menu=otherwxi&rwx&addbar" shape="rect" coords="706,491,726,511" alt="time series of meteorological data at Clear Water Bay" title="time series of meteorological data at Clear Water Bay">
+ <area href="display_graph.htm?hpv&menu=otherwxi&rwx&addbar" shape="rect" coords="530,479,550,499" alt="time series of meteorological data at Happy Valley" title="time series of meteorological data at Happy Valley">
+ <area href="display_graph.htm?hko&menu=otherwxi&rwx&addbar" shape="rect" coords="515,428,535,448" alt="time series of meteorological data at Hong Kong Observatory" title="time series of meteorological data at Hong Kong Observatory">
+ <area href="display_graph.htm?hkp&menu=otherwxi&rwx&addbar" shape="rect" coords="497,467,517,487" alt="time series of meteorological data at Hong Kong Park" title="time series of meteorological data at Hong Kong Park">
+<area href="display_graph.htm?se1&menu=otherwxi&rwx&addbar" shape="rect" coords="580,423,600,443" alt="time series of meteorological data at Kai Tak Runway Park" title="time series of meteorological data at Kai Tak Runway Park">
+ <area href="display_graph.htm?ksc&menu=otherwxi&rwx&addbar" shape="rect" coords="724,316,744,336" alt="time series of meteorological data at Kau Sai Chau" title="time series of meteorological data at Kau Sai Chau">
+ <area href="display_graph.htm?klt&menu=otherwxi&rwx&addbar" shape="rect" coords="531,374,551,394" alt="time series of meteorological data at Kowloon City" title="time series of meteorological data at Kowloon City">
+ <area href="display_graph.htm?ktg&menu=otherwxi&rwx&addbar" shape="rect" coords="593,401,613,421" alt="time series of meteorological data at Kwun Tong" title="time series of meteorological data at Kwun Tong">
+ <area href="display_graph.htm?lfs&menu=otherwxi&rwx&addbar" shape="rect" coords="225,155,245,175" alt="time series of meteorological data at Lau Fau Shan" title="time series of meteorological data at Lau Fau Shan">
+ <area href="display_graph.htm?ngp&menu=otherwxi&rwx&addbar" shape="rect" coords="117,499,137,519" alt="time series of meteorological data at Ngong Ping" title="time series of meteorological data at Ngong Ping">
+ <area href="display_graph.htm?tyw&menu=otherwxi&rwx&addbar" shape="rect" coords="741,263,761,283" alt="time series of meteorological data at Pak Tam Chung" title="time series of meteorological data at Pak Tam Chung">
+ <area href="display_graph.htm?pen&menu=otherwxi&rwx&addbar" shape="rect" coords="315,446,335,466" alt="time series of meteorological data at Peng Chau" title="time series of meteorological data at Peng Chau">
+ <area href="display_graph.htm?skg&menu=otherwxi&rwx&addbar" shape="rect" coords="667,307,687,327" alt="time series of meteorological data at Sai Kung" title="time series of meteorological data at Sai Kung">
+ <area href="display_graph.htm?sha&menu=otherwxi&rwx&addbar" shape="rect" coords="569,263,589,283" alt="time series of meteorological data at Sha Tin" title="time series of meteorological data at Sha Tin">
+ <area href="display_graph.htm?ssp&menu=otherwxi&rwx&addbar" shape="rect" coords="458,372,478,392" alt="time series of meteorological data at Sham Shui Po" title="time series of meteorological data at Sham Shui Po">
+ <area href="display_graph.htm?skw&menu=otherwxi&rwx&addbar" shape="rect" coords="609,461,629,481" alt="time series of meteorological data at Shau Kei Wan" title="time series of meteorological data at Shau Kei Wan">
+ <area href="display_graph.htm?sek&menu=otherwxi&rwx&addbar" shape="rect" coords="379,208,399,228" alt="time series of meteorological data at Shek Kong" title="time series of meteorological data at Shek Kong">
+ <area href="display_graph.htm?ylp&menu=otherwxi&rwx&addbar" shape="rect" coords="277,201,297,221" alt="time series of meteorological data at Yuen Long Park" title="time series of meteorological data at Yuen Long Park">
+ <area href="display_graph.htm?ssh&menu=otherwxi&rwx&addbar" shape="rect" coords="419,101,439,121" alt="time series of meteorological data at Sheung Shui" title="time series of meteorological data at Sheung Shui">
+ <area href="display_graph.htm?tls&menu=otherwxi&rwx&addbar" shape="rect" coords="430,129,450,149" alt="time series of meteorological data at Tai Lung" title="time series of meteorological data at Tai Lung">
+  <area href="display_graph.htm?sty&menu=otherwxi&rwx&addbar" shape="rect" coords="583,572,603,592" alt="time series of meteorological data at Stanley" title="time series of meteorological data at Stanley">
+ <area href="display_graph.htm?tkl&menu=otherwxi&rwx&addbar" shape="rect" coords="489,57,509,77" alt="time series of meteorological data at Ta Kwu Ling" title="time series of meteorological data at Ta Kwu Ling">
+ <area href="display_graph.htm?plc&menu=otherwxi&rwx&addbar" shape="rect" coords="612,145,632,165" alt="time series of meteorological data at Tai Mei Tuk" title="time series of meteorological data at Tai Mei Tuk">
+ <area href="display_graph.htm?tms&menu=otherwxi&rwx&addbar" shape="rect" coords="438,250,458,270" alt="time series of meteorological data at Tai Mo Shan" title="time series of meteorological data at Tai Mo Shan">
+ <area href="display_graph.htm?yct&menu=otherwxi&rwx&addbar" shape="rect" coords="519,189,539,209" alt="time series of meteorological data at Tai Po" title="time series of meteorological data at Tai Po">
+ <area href="display_graph.htm?vp1&menu=otherwxi&rwx&addbar" shape="rect" coords="486,490,506,510" alt="time series of meteorological data at The Peak" title="time series of meteorological data at The Peak">
+ <area href="display_graph.htm?jkb&menu=otherwxi&rwx&addbar" shape="rect" coords="639,405,659,425" alt="time series of meteorological data at Tseung Kwan O" title="time series of meteorological data at Tseung Kwan O">
+ <area href="display_graph.htm?ty1&menu=otherwxi&rwx&addbar" shape="rect" coords="417,359,437,379" alt="time series of meteorological data at Tsing Yi" title="time series of meteorological data at Tsing Yi">
+ <area href="display_graph.htm?twn&menu=otherwxi&rwx&addbar" shape="rect" coords="414,295,434,315" alt="time series of meteorological data at Tsuen Wan Ho Koon" title="time series of meteorological data at Tsuen Wan Ho Koon">
+ <area href="display_graph.htm?tw&menu=otherwxi&rwx&addbar" shape="rect" coords="443,307,463,327" alt="time series of meteorological data at Tsuen Wan Shing Mun Valley" title="time series of meteorological data at Tsuen Wan Shing Mun Valley">
+ <area href="display_graph.htm?tun&menu=otherwxi&rwx&addbar" shape="rect" coords="195,291,215,311" alt="time series of meteorological data at Tuen Mun" title="time series of meteorological data at Tuen Mun">
+ <area href="display_graph.htm?wgl&menu=otherwxi&rwx&addbar" shape="rect" coords="711,624,731,644" alt="time series of meteorological data at Waglan Island" title="time series of meteorological data at Waglan Island">
+ <area href="display_graph.htm?wlp&menu=otherwxi&rwx&addbar" shape="rect" coords="263,158,283,178" alt="time series of meteorological data at Wetland Park" title="time series of meteorological data at Wetland Park">
+ <area href="display_graph.htm?hks&menu=otherwxi&rwx&addbar" shape="rect" coords="515,516,535,536" alt="time series of meteorological data at Wong Chuk Hang" title="time series of meteorological data at Wong Chuk Hang">
+ <area href="display_graph.htm?wts&menu=otherwxi&rwx&addbar" shape="rect" coords="562,367,582,387" alt="time series of meteorological data at Wong Tai Sin" title="time series of meteorological data at Wong Tai Sin"--> </map>
+<script>var last_revision_date = '20 April 2023';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

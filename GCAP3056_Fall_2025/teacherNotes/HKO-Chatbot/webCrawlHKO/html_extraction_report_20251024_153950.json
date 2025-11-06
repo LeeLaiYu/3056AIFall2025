@@ -1,0 +1,532 @@
+{
+  "metadata": {
+    "title": "Datasets | DATA.GOV.HK",
+    "description": "DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.",
+    "url": "",
+    "language": "en",
+    "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+    "charset": "utf-8"
+  },
+  "navigation": {
+    "main_menu": [
+      {
+        "text": "Datasets",
+        "href": "/en-datasets",
+        "full_url": "https://data.gov.hk/en-datasets"
+      },
+      {
+        "text": "City Management and Utilities",
+        "href": "/en-datasets/category/city-management",
+        "full_url": "https://data.gov.hk/en-datasets/category/city-management"
+      },
+      {
+        "text": "Climate and Weather",
+        "href": "/en-datasets/category/climate-and-weather",
+        "full_url": "https://data.gov.hk/en-datasets/category/climate-and-weather"
+      },
+      {
+        "text": "Commerce and Industry",
+        "href": "/en-datasets/category/commerce-and-industry",
+        "full_url": "https://data.gov.hk/en-datasets/category/commerce-and-industry"
+      },
+      {
+        "text": "Community and Social Welfare",
+        "href": "/en-datasets/category/social-welfare",
+        "full_url": "https://data.gov.hk/en-datasets/category/social-welfare"
+      },
+      {
+        "text": "Development, Geography and Land Information",
+        "href": "/en-datasets/category/development",
+        "full_url": "https://data.gov.hk/en-datasets/category/development"
+      },
+      {
+        "text": "Education",
+        "href": "/en-datasets/category/education",
+        "full_url": "https://data.gov.hk/en-datasets/category/education"
+      },
+      {
+        "text": "Election and Legislature",
+        "href": "/en-datasets/category/legislature",
+        "full_url": "https://data.gov.hk/en-datasets/category/legislature"
+      },
+      {
+        "text": "Employment and Labour",
+        "href": "/en-datasets/category/employment-and-labour",
+        "full_url": "https://data.gov.hk/en-datasets/category/employment-and-labour"
+      },
+      {
+        "text": "Environment",
+        "href": "/en-datasets/category/environment",
+        "full_url": "https://data.gov.hk/en-datasets/category/environment"
+      },
+      {
+        "text": "Finance",
+        "href": "/en-datasets/category/finance",
+        "full_url": "https://data.gov.hk/en-datasets/category/finance"
+      },
+      {
+        "text": "Food",
+        "href": "/en-datasets/category/food",
+        "full_url": "https://data.gov.hk/en-datasets/category/food"
+      },
+      {
+        "text": "Health",
+        "href": "/en-datasets/category/health",
+        "full_url": "https://data.gov.hk/en-datasets/category/health"
+      },
+      {
+        "text": "Housing",
+        "href": "/en-datasets/category/housing",
+        "full_url": "https://data.gov.hk/en-datasets/category/housing"
+      },
+      {
+        "text": "Law and Security",
+        "href": "/en-datasets/category/law-and-security",
+        "full_url": "https://data.gov.hk/en-datasets/category/law-and-security"
+      },
+      {
+        "text": "Population",
+        "href": "/en-datasets/category/population",
+        "full_url": "https://data.gov.hk/en-datasets/category/population"
+      },
+      {
+        "text": "Recreation, Sports and Culture",
+        "href": "/en-datasets/category/recreation-and-culture",
+        "full_url": "https://data.gov.hk/en-datasets/category/recreation-and-culture"
+      },
+      {
+        "text": "Technology and Broadcasting",
+        "href": "/en-datasets/category/information-technology-and-broadcasting",
+        "full_url": "https://data.gov.hk/en-datasets/category/information-technology-and-broadcasting"
+      },
+      {
+        "text": "Tourism",
+        "href": "/en-datasets/category/tourism",
+        "full_url": "https://data.gov.hk/en-datasets/category/tourism"
+      },
+      {
+        "text": "Transportation",
+        "href": "/en-datasets/category/transport",
+        "full_url": "https://data.gov.hk/en-datasets/category/transport"
+      },
+      {
+        "text": "Miscellaneous",
+        "href": "/en-datasets/category/miscellaneous",
+        "full_url": "https://data.gov.hk/en-datasets/category/miscellaneous"
+      },
+      {
+        "text": "Providers",
+        "href": "/en/providers",
+        "full_url": "https://data.gov.hk/en/providers"
+      },
+      {
+        "text": "Help",
+        "href": "/en/help",
+        "full_url": "https://data.gov.hk/en/help"
+      },
+      {
+        "text": "User Guide",
+        "href": "/en/user-guide",
+        "full_url": "https://data.gov.hk/en/user-guide"
+      },
+      {
+        "text": "FAQs",
+        "href": "/en/faq",
+        "full_url": "https://data.gov.hk/en/faq"
+      },
+      {
+        "text": "Developer Center",
+        "href": "/en/dev-center",
+        "full_url": "https://data.gov.hk/en/dev-center"
+      },
+      {
+        "text": "API Specification",
+        "href": "/en/help/api-spec",
+        "full_url": "https://data.gov.hk/en/help/api-spec"
+      },
+      {
+        "text": "CKAN API Development Guide",
+        "href": "/en/help/ckan-api-development-guide",
+        "full_url": "https://data.gov.hk/en/help/ckan-api-development-guide"
+      },
+      {
+        "text": "Community",
+        "href": "/en/community",
+        "full_url": "https://data.gov.hk/en/community"
+      },
+      {
+        "text": "About Open Data",
+        "href": "/en/about-open-data",
+        "full_url": "https://data.gov.hk/en/about-open-data"
+      },
+      {
+        "text": "City Dashboard",
+        "href": "/en/city-dashboard",
+        "full_url": "https://data.gov.hk/en/city-dashboard"
+      },
+      {
+        "text": "Consolidated Annual Open Data Plans (Spatial Data Plans included)",
+        "href": "/en/annual-open-data-plans",
+        "full_url": "https://data.gov.hk/en/annual-open-data-plans"
+      },
+      {
+        "text": "Feedback Form",
+        "href": "/en/feedback",
+        "full_url": "https://data.gov.hk/en/feedback"
+      },
+      {
+        "text": "Applications",
+        "href": "/en/application",
+        "full_url": "https://data.gov.hk/en/application"
+      }
+    ],
+    "category_links": [
+      {
+        "text": "City Management and Utilities",
+        "href": "/en-datasets/category/city-management",
+        "full_url": "https://data.gov.hk/en-datasets/category/city-management"
+      },
+      {
+        "text": "Climate and Weather",
+        "href": "/en-datasets/category/climate-and-weather",
+        "full_url": "https://data.gov.hk/en-datasets/category/climate-and-weather"
+      },
+      {
+        "text": "Commerce and Industry",
+        "href": "/en-datasets/category/commerce-and-industry",
+        "full_url": "https://data.gov.hk/en-datasets/category/commerce-and-industry"
+      },
+      {
+        "text": "Community and Social Welfare",
+        "href": "/en-datasets/category/social-welfare",
+        "full_url": "https://data.gov.hk/en-datasets/category/social-welfare"
+      },
+      {
+        "text": "Development, Geography and Land Information",
+        "href": "/en-datasets/category/development",
+        "full_url": "https://data.gov.hk/en-datasets/category/development"
+      },
+      {
+        "text": "Education",
+        "href": "/en-datasets/category/education",
+        "full_url": "https://data.gov.hk/en-datasets/category/education"
+      },
+      {
+        "text": "Election and Legislature",
+        "href": "/en-datasets/category/legislature",
+        "full_url": "https://data.gov.hk/en-datasets/category/legislature"
+      },
+      {
+        "text": "Employment and Labour",
+        "href": "/en-datasets/category/employment-and-labour",
+        "full_url": "https://data.gov.hk/en-datasets/category/employment-and-labour"
+      },
+      {
+        "text": "Environment",
+        "href": "/en-datasets/category/environment",
+        "full_url": "https://data.gov.hk/en-datasets/category/environment"
+      },
+      {
+        "text": "Finance",
+        "href": "/en-datasets/category/finance",
+        "full_url": "https://data.gov.hk/en-datasets/category/finance"
+      },
+      {
+        "text": "Food",
+        "href": "/en-datasets/category/food",
+        "full_url": "https://data.gov.hk/en-datasets/category/food"
+      },
+      {
+        "text": "Health",
+        "href": "/en-datasets/category/health",
+        "full_url": "https://data.gov.hk/en-datasets/category/health"
+      },
+      {
+        "text": "Housing",
+        "href": "/en-datasets/category/housing",
+        "full_url": "https://data.gov.hk/en-datasets/category/housing"
+      },
+      {
+        "text": "Law and Security",
+        "href": "/en-datasets/category/law-and-security",
+        "full_url": "https://data.gov.hk/en-datasets/category/law-and-security"
+      },
+      {
+        "text": "Population",
+        "href": "/en-datasets/category/population",
+        "full_url": "https://data.gov.hk/en-datasets/category/population"
+      },
+      {
+        "text": "Recreation, Sports and Culture",
+        "href": "/en-datasets/category/recreation-and-culture",
+        "full_url": "https://data.gov.hk/en-datasets/category/recreation-and-culture"
+      },
+      {
+        "text": "Technology and Broadcasting",
+        "href": "/en-datasets/category/information-technology-and-broadcasting",
+        "full_url": "https://data.gov.hk/en-datasets/category/information-technology-and-broadcasting"
+      },
+      {
+        "text": "Tourism",
+        "href": "/en-datasets/category/tourism",
+        "full_url": "https://data.gov.hk/en-datasets/category/tourism"
+      },
+      {
+        "text": "Transportation",
+        "href": "/en-datasets/category/transport",
+        "full_url": "https://data.gov.hk/en-datasets/category/transport"
+      },
+      {
+        "text": "Miscellaneous",
+        "href": "/en-datasets/category/miscellaneous",
+        "full_url": "https://data.gov.hk/en-datasets/category/miscellaneous"
+      },
+      {
+        "text": "City Management and Utilities",
+        "href": "/en-datasets/category/city-management",
+        "full_url": "https://data.gov.hk/en-datasets/category/city-management"
+      },
+      {
+        "text": "Climate and Weather",
+        "href": "/en-datasets/category/climate-and-weather",
+        "full_url": "https://data.gov.hk/en-datasets/category/climate-and-weather"
+      },
+      {
+        "text": "Commerce and Industry",
+        "href": "/en-datasets/category/commerce-and-industry",
+        "full_url": "https://data.gov.hk/en-datasets/category/commerce-and-industry"
+      },
+      {
+        "text": "Community and Social Welfare",
+        "href": "/en-datasets/category/social-welfare",
+        "full_url": "https://data.gov.hk/en-datasets/category/social-welfare"
+      },
+      {
+        "text": "Development, Geography and Land Information",
+        "href": "/en-datasets/category/development",
+        "full_url": "https://data.gov.hk/en-datasets/category/development"
+      },
+      {
+        "text": "Education",
+        "href": "/en-datasets/category/education",
+        "full_url": "https://data.gov.hk/en-datasets/category/education"
+      },
+      {
+        "text": "Election and Legislature",
+        "href": "/en-datasets/category/legislature",
+        "full_url": "https://data.gov.hk/en-datasets/category/legislature"
+      },
+      {
+        "text": "Employment and Labour",
+        "href": "/en-datasets/category/employment-and-labour",
+        "full_url": "https://data.gov.hk/en-datasets/category/employment-and-labour"
+      },
+      {
+        "text": "Environment",
+        "href": "/en-datasets/category/environment",
+        "full_url": "https://data.gov.hk/en-datasets/category/environment"
+      },
+      {
+        "text": "Finance",
+        "href": "/en-datasets/category/finance",
+        "full_url": "https://data.gov.hk/en-datasets/category/finance"
+      },
+      {
+        "text": "Food",
+        "href": "/en-datasets/category/food",
+        "full_url": "https://data.gov.hk/en-datasets/category/food"
+      },
+      {
+        "text": "Health",
+        "href": "/en-datasets/category/health",
+        "full_url": "https://data.gov.hk/en-datasets/category/health"
+      },
+      {
+        "text": "Housing",
+        "href": "/en-datasets/category/housing",
+        "full_url": "https://data.gov.hk/en-datasets/category/housing"
+      },
+      {
+        "text": "Law and Security",
+        "href": "/en-datasets/category/law-and-security",
+        "full_url": "https://data.gov.hk/en-datasets/category/law-and-security"
+      },
+      {
+        "text": "Population",
+        "href": "/en-datasets/category/population",
+        "full_url": "https://data.gov.hk/en-datasets/category/population"
+      },
+      {
+        "text": "Recreation, Sports and Culture",
+        "href": "/en-datasets/category/recreation-and-culture",
+        "full_url": "https://data.gov.hk/en-datasets/category/recreation-and-culture"
+      },
+      {
+        "text": "Technology and Broadcasting",
+        "href": "/en-datasets/category/information-technology-and-broadcasting",
+        "full_url": "https://data.gov.hk/en-datasets/category/information-technology-and-broadcasting"
+      },
+      {
+        "text": "Tourism",
+        "href": "/en-datasets/category/tourism",
+        "full_url": "https://data.gov.hk/en-datasets/category/tourism"
+      },
+      {
+        "text": "Transportation",
+        "href": "/en-datasets/category/transport",
+        "full_url": "https://data.gov.hk/en-datasets/category/transport"
+      },
+      {
+        "text": "Miscellaneous",
+        "href": "/en-datasets/category/miscellaneous",
+        "full_url": "https://data.gov.hk/en-datasets/category/miscellaneous"
+      }
+    ],
+    "provider_links": [
+      {
+        "text": "Providers",
+        "href": "/en/providers",
+        "full_url": "https://data.gov.hk/en/providers"
+      },
+      {
+        "text": "Providers",
+        "href": "/en/providers",
+        "full_url": "https://data.gov.hk/en/providers"
+      }
+    ],
+    "help_links": [],
+    "community_links": []
+  },
+  "search_functionality": {
+    "search_form": {
+      "id": "form-dataset-search",
+      "action": "",
+      "method": ""
+    },
+    "filters": {
+      "multiselect-categories": {
+        "name": "categories[]",
+        "data_url": "/filestore/json/categories_en.json",
+        "options": []
+      },
+      "multiselect-providers": {
+        "name": "providers[]",
+        "data_url": "/filestore/json/providers_en.json",
+        "options": []
+      },
+      "multiselect-formats": {
+        "name": "formats[]",
+        "data_url": "/filestore/json/formats.json",
+        "options": []
+      }
+    },
+    "sorting_options": [
+      {
+        "value": "relevance",
+        "text": "Relevance",
+        "selected": false
+      },
+      {
+        "value": "popularity",
+        "text": "Popularity",
+        "selected": true
+      },
+      {
+        "value": "name.asc",
+        "text": "Name (A-Z)",
+        "selected": false
+      },
+      {
+        "value": "name.desc",
+        "text": "Name (Z-A)",
+        "selected": false
+      }
+    ],
+    "api_endpoints": []
+  },
+  "dataset_listing": {
+    "total_results": 0,
+    "current_page": 1,
+    "api_endpoint": "https://data.gov.hk/api/v1/datasets",
+    "templates": [
+      {
+        "id": "template-filter-chip",
+        "content": ""
+      },
+      {
+        "id": "template-filter-chip-toggle",
+        "content": "Show More ()   hide"
+      },
+      {
+        "id": "template-no-result",
+        "content": "Sorry, No Results Found Please try to refine the search criteria."
+      },
+      {
+        "id": "template-error",
+        "content": "Something went wrong Please refresh the page and try again."
+      },
+      {
+        "id": "template-loading",
+        "content": "Loading..."
+      },
+      {
+        "id": "template-page-item",
+        "content": ""
+      },
+      {
+        "id": "template-page-skip",
+        "content": "..."
+      },
+      {
+        "id": "template-dataset-item",
+        "content": ""
+      }
+    ],
+    "pagination": {
+      "current_range": "0",
+      "total": "0"
+    }
+  },
+  "rss_feed": {
+    "rss_url": "https://data.gov.hk/filestore/feeds/data_rss_en.xml",
+    "description": "This daily updated RSS feed, provides information on data files at DATA.GOV.HK that are either newly made available or with destination path updated in the past 14 days.",
+    "about": "Really Simple Syndication (“RSS”) is a file in eXtensible Markup Language (“XML”) format to deliver regular updates to users who are interested in specific content by subscribing the feed. Subscribers can view the subscribed feeds with any RSS reader or browser with built-in RSS reader."
+  },
+  "contact_info": {
+    "email": "enquiry@1835500.gov.hk",
+    "phone": "183 5500",
+    "organization": "Developed and Supported by Digital Policy Office",
+    "links": [
+      {
+        "text": "Sitemap",
+        "href": "/en/site-map",
+        "full_url": "https://data.gov.hk/en/site-map"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "/en/privacy-policy",
+        "full_url": "https://data.gov.hk/en/privacy-policy"
+      },
+      {
+        "text": "Terms and Conditions",
+        "href": "/en/terms-and-conditions",
+        "full_url": "https://data.gov.hk/en/terms-and-conditions"
+      },
+      {
+        "text": "Web Accessibility Statement",
+        "href": "/en/web-accessibility",
+        "full_url": "https://data.gov.hk/en/web-accessibility"
+      },
+      {
+        "text": "",
+        "href": "https://www.w3.org/WAI/WCAG2AA-Conformance",
+        "full_url": "https://www.w3.org/WAI/WCAG2AA-Conformance"
+      },
+      {
+        "text": "",
+        "href": "https://www.brandhk.gov.hk/en",
+        "full_url": "https://www.brandhk.gov.hk/en"
+      }
+    ]
+  }
+}

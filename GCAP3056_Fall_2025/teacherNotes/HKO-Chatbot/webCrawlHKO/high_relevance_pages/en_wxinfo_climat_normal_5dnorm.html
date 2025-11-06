@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Climatological information｜Hong Kong Observatory(HKO)｜Climate Information Service</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Date / Month Maximum Air Temperature(deg. C) Air Temperature(deg. C) Minimum Air Temperature(deg. C) Relative Humidity(%) Rainfall(mm) Cloud Amount(%) Sunshine Duration(hours) Prevailing Wind Direction (degrees) Wind Speed(km/h) Atmospheric Pressure(hPa)">
+    <meta name="description" content="Date / Month Maximum Air Temperature(deg. C) Air Temperature(deg. C) Minimum Air Temperature(deg. C) Relative Humidity(%) Rainfall(mm) Cloud Amount(%) Sunshine Duration(hours) Prevailing Wind Direction (degrees) Wind Speed(km/h) Atmospheric Pressure(hPa)">
+    <meta name="recordId" content="2018123100000036785">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Date / Month Maximum Air Temperature(deg. C) Air Temperature(deg. C) Minimum Air Temperature(deg. C) Relative Humidity(%) Rainfall(mm) Cloud Amount(%) Sunshine Duration(hours) Prevailing Wind Direction (degrees) Wind Speed(km/h) Atmospheric Pressure(hPa)" />
+	<meta property="og:description" content="Date / Month Maximum Air Temperature(deg. C) Air Temperature(deg. C) Minimum Air Temperature(deg. C) Relative Humidity(%) Rainfall(mm) Cloud Amount(%) Sunshine Duration(hours) Prevailing Wind Direction (degrees) Wind Speed(km/h) Atmospheric Pressure(hPa)" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/climat/normal/5dnorm.html" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+		#climatTable td {width:10%;}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000010783';
+
+   function dropzero(arg){
+    if (arg.substr(0,1)== '0'){
+        return arg.substr(1,1);
+    } else {
+        return arg;
+    }
+}
+
+$(document ).ready(function() {
+        //Date ,Max.,Air,Min,RH,Rainfall,Cloud amount,Sunshine,Prevailing Wind,Wind Speed,Atmospheric Pressure
+        var page = getURLParameter('page');
+        var date = [], max = [], temp = [],min=[], rh =[], rf=[], cld=[], sun=[], dir=[], spd=[], mslp=[];
+        var monthw = {"01":"January","02":"February","03":"March","04":"April", "05":"May", "06":"June", "07":"July", "08":"August",
+                      "09":"September", "10":"October", "11":"November", "12":"December"}
+        //page=5dnorm02010209_c.htm
+        var found = location.href.search("page=");
+        var page = location.href.substr(found+5);
+        var pattern = /(\d{8})/;
+        var match = pattern.exec(page);
+        var period = match[1];
+        console.log("period is "+period);
+        var startday = period.substr(0,4);
+        var endday = period.substr(4,4);
+        console.log("search date "+startday)
+        var start=0;
+        var work = 0;    
+        $.ajax({
+		   url:"/wxinfo/climat/normal/climat.csv",
+		   dataType:'text',
+		   success: function(data){
+                var textTitle = dropzero(startday.substr(2,2))+ " "+ monthw[startday.substr(0,2)]+" - "+dropzero(endday.substr(2,2))+ " "+ monthw[endday.substr(0,2)]+" (1991-2020)"
+				
+                $("#table_caption").html(textTitle);
+                var raw = data.split("\n");
+                for (var i=0; i < raw.length; i++){
+                    if (i==0) continue;
+                    //console.log(raw[i])
+                    var data = raw[i].split(',');                   
+                    console.log("date is "+data[0]);
+                    if (startday == data[0]) {
+                        work =1;
+                    }
+                    if (work ==1 && start < 9){    
+                        var datetext = dropzero(data[0].substr(2,2)) + "/"+ dropzero(data[0].substr(0,2))
+                        date.push(datetext);
+                        max.push(parseFloat(data[1]).toFixed(1));
+                        temp.push(parseFloat(data[2]).toFixed(1));
+                        min.push(parseFloat(data[3]).toFixed(1));
+                        rh.push(data[4]);
+                        rf.push(parseFloat(data[5]).toFixed(1))
+                        cld.push(data[6])
+                        sun.push(parseFloat(data[7]).toFixed(1))
+                        if (data[8].length ==2){
+                            dir.push("0"+data[8]);
+                        } else {
+                            dir.push(data[8]);
+                        }    
+                        spd.push(data[9])
+                        mslp.push(parseFloat(data[10]).toFixed(1))
+                        start++; 
+                    }     
+                }
+                var html = "<table>";
+                for (var i=0; i < 9; i++) {
+                    $("#climatTable tr").eq(0).find("td").eq(i+1).html("<h2>"+date[i]+"</h2>");
+                    $("#climatTable tr").eq(1).find("td").eq(i+1).html(max[i]);
+                    $("#climatTable tr").eq(2).find("td").eq(i+1).html(temp[i]);
+                    $("#climatTable tr").eq(3).find("td").eq(i+1).html(min[i]);
+                    $("#climatTable tr").eq(4).find("td").eq(i+1).html(rh[i]);
+                    $("#climatTable tr").eq(5).find("td").eq(i+1).html(rf[i]);
+                    $("#climatTable tr").eq(6).find("td").eq(i+1).html(cld[i]);
+                    $("#climatTable tr").eq(7).find("td").eq(i+1).html(sun[i]);
+                    $("#climatTable tr").eq(8).find("td").eq(i+1).html(dir[i]);
+                    $("#climatTable tr").eq(9).find("td").eq(i+1).html(spd[i]);
+                    $("#climatTable tr").eq(10).find("td").eq(i+1).html(mslp[i]);
+                }
+                //$("#div_content").html("test");
+		   },
+		   error: function(data){
+				$('#div_content').append('Page Not Found.');
+		   }
+		});
+});
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Climatological information</h1>
+                <div class="border_blank">
+                    <!--Content Start-->
+<div id="div_content">
+<h1 id="table_caption"></h1>
+<table cellspacing="0" cellpadding="2" bgcolor="white" border="1" summary="Climatological information (1991-2020)" class="data_table" id="climatTable">
+<tbody>
+<tr align="middle" bgcolor="#dddddd">
+<td id="date" align="left" style="height: 35px; width: 148px;">
+<h2>Date / Month</h2>
+</td>
+<td headers="date"></td>
+<td headers="date"></td>
+<td headers="date"></td>
+<td headers="date"></td>
+<td headers="date"></td>
+<td headers="date"></td>
+<td headers="date"></td>
+<td headers="date"></td>
+<td headers="date"></td>
+</tr>
+<tr align="middle">
+<td id="maxt" align="left" axis="maximum air temperature" style="height: 35px;">Maximum Air Temperature<br />(deg. C)</td>
+<td headers="maxt"></td>
+<td headers="maxt"></td>
+<td headers="maxt"></td>
+<td headers="maxt"></td>
+<td headers="maxt"></td>
+<td headers="maxt"></td>
+<td headers="maxt"></td>
+<td headers="maxt"></td>
+<td headers="maxt"></td>
+</tr>
+<tr align="middle">
+<td id="temp" align="left" axis="air temperature" style="height: 35px;">Air Temperature<br />(deg. C)</td>
+<td headers="temp"></td>
+<td headers="temp"></td>
+<td headers="temp"></td>
+<td headers="temp"></td>
+<td headers="temp"></td>
+<td headers="temp"></td>
+<td headers="temp"></td>
+<td headers="temp"></td>
+<td headers="temp"></td>
+</tr>
+<tr align="middle">
+<td id="mint" align="left" axis="minimum air temperature" style="height: 35px;">Minimum Air Temperature<br />(deg. C)</td>
+<td headers="mint"></td>
+<td headers="mint"></td>
+<td headers="mint"></td>
+<td headers="mint"></td>
+<td headers="mint"></td>
+<td headers="mint"></td>
+<td headers="mint"></td>
+<td headers="mint"></td>
+<td headers="mint"></td>
+</tr>
+<tr align="middle">
+<td id="rh" align="left" axis="relative humidity" style="height: 35px;">Relative Humidity<br />(%)</td>
+<td headers="rh"></td>
+<td headers="rh"></td>
+<td headers="rh"></td>
+<td headers="rh"></td>
+<td headers="rh"></td>
+<td headers="rh"></td>
+<td headers="rh"></td>
+<td headers="rh"></td>
+<td headers="rh"></td>
+</tr>
+<tr align="middle">
+<td id="rf" align="left" axis="rainfall" style="height: 35px;">Rainfall<br />(mm)</td>
+<td headers="rf"></td>
+<td headers="rf"></td>
+<td headers="rf"></td>
+<td headers="rf"></td>
+<td headers="rf"></td>
+<td headers="rf"></td>
+<td headers="rf"></td>
+<td headers="rf"></td>
+<td headers="rf"></td>
+</tr>
+<tr align="middle">
+<td id="cld" align="left" axis="cloud amount" style="height: 35px;">Cloud Amount<br />(%)</td>
+<td headers="cld"></td>
+<td headers="cld"></td>
+<td headers="cld"></td>
+<td headers="cld"></td>
+<td headers="cld"></td>
+<td headers="cld"></td>
+<td headers="cld"></td>
+<td headers="cld"></td>
+<td headers="cld"></td>
+</tr>
+<tr align="middle">
+<td id="sun" align="left" axis="sunshine duration" style="height: 35px;">Sunshine Duration<br />(hours)</td>
+<td headers="sun"></td>
+<td headers="sun"></td>
+<td headers="sun"></td>
+<td headers="sun"></td>
+<td headers="sun"></td>
+<td headers="sun"></td>
+<td headers="sun"></td>
+<td headers="sun"></td>
+<td headers="sun"></td>
+</tr>
+<tr align="middle">
+<td id="prev" align="left" axis="prevailing wind direction" style="height: 35px;">Prevailing Wind Direction <br />(degrees)</td>
+<td headers="prev"></td>
+<td headers="prev"></td>
+<td headers="prev"></td>
+<td headers="prev"></td>
+<td headers="prev"></td>
+<td headers="prev"></td>
+<td headers="prev"></td>
+<td headers="prev"></td>
+<td headers="prev"></td>
+</tr>
+<tr align="middle">
+<td id="ff" align="left" axis="wind speed" style="height: 35px;">Wind Speed<br />(km/h)</td>
+<td headers="ff"></td>
+<td headers="ff"></td>
+<td headers="ff"></td>
+<td headers="ff"></td>
+<td headers="ff"></td>
+<td headers="ff"></td>
+<td headers="ff"></td>
+<td headers="ff"></td>
+<td headers="ff"></td>
+</tr>
+<tr align="middle">
+<td id="pres" align="left" axis="atmospheric pressure" style="height: 35px;">Atmospheric Pressure<br />(hPa)</td>
+<td headers="pres"></td>
+<td headers="pres"></td>
+<td headers="pres"></td>
+<td headers="pres"></td>
+<td headers="pres"></td>
+<td headers="pres"></td>
+<td headers="pres"></td>
+<td headers="pres"></td>
+<td headers="pres"></td>
+</tr>
+</tbody>
+</table>
+<br />
+<p class="small">The above figures represent daily mean values of the weather elements calculated from data in the 30 years from 1991 to 2020 for the 5-day period centred on the day specified. <br /><br />Prevailing wind direction is the wind direction most frequently observed during the period.<br /><br />All data were recorded at the Hong Kong Observatory except sunshine duration which was recorded at King's Park and winds at Waglan Island.</p>
+</div>
+<!--Content End-->
+<script>var last_revision_date = '28 October 2021';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

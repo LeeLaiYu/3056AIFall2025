@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Information for the Marine Community｜Hong Kong Observatory(HKO)｜Weather for Marine</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Weather Information for the Marine Community">
+    <meta name="description" content="Weather Information for the Marine Community">
+    <meta name="recordId" content="2018123100000035891">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Weather Information for the Marine Community" />
+	<meta property="og:description" content="Track and Positionsof Tropical Cyclone Tropical Cyclone Warning Tropical Cyclone Warning for Shipping Tropical Cyclone Track Information e-Bulletin for the Marine Community Port Meteorological Services Useful Links Quick Links Marine" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wservice/tsheet/pms/mariners.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+			@media screen and (max-width: 600px) {
+		.updateTime {
+			display: block !important;
+			text-align:left !important;
+			float: unset !important;
+			margin-left: 0px !important;
+		}
+		.self_align_center, .warn{
+			text-align: left !important;
+		}
+	}
+	.select_header>ul>li.open>div>ul {
+		display: block;
+	}
+	.warn {
+	color: #D70000;
+	text-align:center;
+	}
+	body .ul_tab>ul>li>a{
+		color: #4b4b4b !important;
+	}
+	@media screen and (max-width: 500px){
+		.mariner_iframe{
+			height: 350px !important;
+		}
+	}
+		@media screen and (max-width: 767px) {
+	.mobileContent{
+				display:inherit !important;
+				visibility:visible !important;
+			}
+				.desktopContent{
+				display:none !important;
+				visibility:hidden !important;
+			}
+	}
+		.mobileContent{
+				display:none;
+				visibility:hidden;
+			}
+			.information_slider .slides{
+		margin:auto !important;
+		margin-top:50px !important;
+	}
+#flexslider_info .slides>li{
+    transform: translateY(-50%);
+    float: left;
+    max-width: 150px;
+    width: auto;
+	min-width: 35px;
+}
+	body h2 span.updateTime{
+		padding-top: 10px;
+	}
+	#m_sub_2>ul>li>a{
+		background-color: rgb(197, 231, 230);
+		color: #4b4b4b;
+		font-size: .7em;
+	}
+	#m_sub_2>ul>li>a:hover{
+		background: #ffffff;
+	}
+	#tc_legend_btn:hover{
+		cursor: pointer;
+	}
+	.mainContent .ul_tab a{
+		text-decoration: none;
+	}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000010746';
+
+                         
+		
+		wcag_setTimer(600000, 'eng');
+		
+		function showAbbr()
+		{
+			var msg = "Abbreviations:\n";
+			msg += "KT, VRB, SLW, FRQ - knot, variable, slow, frequent\n";
+			//msg += "STNR, QSTNR, C - stationary, quasi-stationary, degrees celsius \n";
+			msg += "STNR, QSTNR - stationary, quasi-stationary \n";
+			msg += "WKN, INTSF, INTST, NC - weaken, intensify, intensity, no change \n";
+			msg += "LGT, ISOL, SCT, OCNL - light, isolated, scattered, occasional \n";
+			msg += "CLD, DZ, TS - cloudy, drizzle, thunderstorm\n";
+			alert(msg);
+		}
+		function showTCLegend()
+		{
+			if (tc_legend_info.style.display=="none") tc_legend_info.style.display="block";
+			else tc_legend_info.style.display="none";
+		}
+		$(function(){
+                        $('#content_iframe').attr('src', 'https://maps.weather.gov.hk/mariner/iframe_e.htm');
+			$('.select_header>ul>li>a').unbind('click');
+			$('.select_header>ul>li').hover(
+				function(){
+					if($(window).width() > mob_width){
+						$(this).addClass('open');
+					}
+				}, function() {
+					if($(window).width() > mob_width){
+						$(this).removeClass('open');
+					}
+				}
+			);
+			$('.select_header>ul>li>a').on('click', function(){
+				if($(this).parent().find('ul').length>0) {
+					if($(this).parent().hasClass('open')){
+						$(this).parent().removeClass('open');
+					}else{
+						$('.select_header>ul>li').removeClass('open');
+						$(this).parent().addClass('open');
+					}
+					return false;
+				}
+			});
+		});
+
+function init_mariners_content(){
+	//marine_forecase_update_time
+	var iDate=json_data.DYN_DAT_MINDS_FMAR.BulletinDate[json_data_lang_tag[lang]];
+	var iTime=json_data.DYN_DAT_MINDS_FMAR.BulletinTime[json_data_lang_tag[lang]];
+	var iYYYY=iDate.substring(0,4);
+	var iMM=iDate.substring(4,6);
+	var iDD=iDate.substring(6,8);
+	var ihh=iTime.substring(0,2);
+	var imm=iTime.substring(2,4);
+	if(lang==1){
+		$('*[data-id=marine_forecase_update_time]').empty().append(""+iYYYY+" 年 "+iMM+" 月 "+iDD+" 日 "+ihh+" 時 "+imm+" 分更新\n");
+	}else if(lang==2){
+		$('*[data-id=marine_forecase_update_time]').empty().append(""+iYYYY+" 年 "+iMM+" 月 "+iDD+" 日 "+ihh+" 时 "+imm+" 分更新\n");
+	}else{
+		$('*[data-id=marine_forecase_update_time]').empty().append("Updated at "+ihh+":"+imm+" HKT "+iDD+"/"+iMM+"/"+iYYYY+"\n");
+	}
+	
+	//warning
+	var warning = json_data.DYN_DAT_MINDS_FMAR.FMAR_WxWarningSummaryContent[json_data_lang_tag[lang]]+'<BR>'+json_data.DYN_DAT_MINDS_FMAR.FMAR_WxWarningSummaryContent1[json_data_lang_tag[lang]]+'<BR>'+json_data.DYN_DAT_MINDS_FMAR.FMAR_WxWarningSummaryContent2[json_data_lang_tag[lang]];
+	warning = warning.replace(/\n+/g,' ').toUpperCase();
+
+	var op = '';
+	if ( warning != "") {
+		if(lang==1){
+			op+="<TR><TD><div class='warn'>警 告 :</div></TD></TR>\n";
+		}else if(lang==2){
+			op+="<TR><TD><div class='warn'>警 告 :</div></TD></TR>\n";
+		}else{
+			op+="<TR><TD><div class='warn'>WARNING :</div></TD></TR>\n";
+		}
+		op+="<TR><TD><div class='warn'>"+warning+"</div></TD></TR>\n";
+	}
+	$('*[data-id=warning]').empty().append(op);
+		   
+	//weather_situation
+	var DD = json_data.DYN_DAT_MINDS_FMAR.FMAR_WxWarningDate[json_data_lang_tag[lang]];
+	DD = DD.replace(/\n+/g,' ').substring(6,8);
+	var HHMM = json_data.DYN_DAT_MINDS_FMAR.FMAR_WxWarningTime[json_data_lang_tag[lang]];
+	
+	HHMM = HHMM.replace(/\n+/g,' ');
+
+var HH = HHMM.substring(0,2);
+	var gs = json_data.DYN_DAT_MINDS_FMAR.FMAR_WxWarningGeneralSituation[json_data_lang_tag[lang]];
+	gs = gs.replace(/\n+/g,' ').toUpperCase();
+
+	var TC_info = '';
+	//TC_info=json_data.DYN_DAT_MINDS_FMAR.FMAR_WxWarningStormWarningArea.Val_Eng.1]</SPAN>";
+	TC_info = TC_info.replace(/\n+/g,' ');
+	
+	var op = '';
+	if (gs !="") {
+		if(lang==1){
+			op+="<TR><TD>協 調 世 界 時 "+DD+" 日 "+HH+" 時 天 氣 概 況 ：<BR></TD></TR>\n";
+		}else if(lang==2){
+			op+="<TR><TD>协 调 世 界 时 "+DD+" 日 "+HH+" 时 天 气 概 况 ：<BR></TD></TR>\n";
+		}else{
+			op+="<TR><TD>GENERAL SITUATION AT "+DD+HHMM+" UTC:<BR></TD></TR>\n";
+		}
+		
+		op+="<TR><TD>"+gs+"<BR></TD></TR>\n";
+		if (TC_info !="") {
+			op+="<p>"+TC_info+"</p>\n";
+		}
+	}
+	if (TC_info !="" && gs=="") {
+	   op+=op+="<p>Weather Situation :</p>\n";    
+	   op+="<p>"+TC_info+"</p>\n";
+	}
+	$('*[data-id=weather_situation]').empty().append(op);
+}
+
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Weather Information for the Marine Community</h1>
+                <div class="border_blank">
+                    <div class="m_head select_header select_header s_header2 ul_tab">
+<ul class="m_bar">
+<li class="m_bar"><a href="#" id="m_main_2" class="m_main_2_s">Track and Positions<br />of Tropical Cyclone</a>
+<div id="m_sub_2">
+<ul>
+<li><a href="../../../../en/wxinfo/currwx/tc.htm" id="icon_47" class="a_2">Tropical Cyclone Warning</a></li>
+<!--
+                                        -->
+<li><a href="../../../../en/wxinfo/currwx/tcswarn.htm" id="icon_6" class="a_2">Tropical Cyclone Warning for Shipping</a></li>
+<!--
+                                        -->
+<li><a href="../../../../en/wxinfo/currwx/tc_gis.htm" id="icon_19" class="a_2">Tropical Cyclone Track Information</a></li>
+</ul>
+</div>
+</li>
+<!--
+                            -->
+<li class="m_bar"><a href="../../../../en/wservice/tsheet/pms/ebulletin_index.html" id="m_main_3" class="m_main_3">e-Bulletin for the Marine Community</a></li>
+<!--
+                            -->
+<li class="m_bar"><a href="../../../../en/wservice/tsheet/pms/index.htm" id="m_main_4" class="m_main_4_s">Port Meteorological Services</a></li>
+<!--
+                            -->
+<li class="m_bar"><a href="../../../../en/wservice/tsheet/pms/useful_links.htm" id="m_main_5" class="m_main_5">Useful Links</a></li>
+</ul>
+</div>
+<h2 class="h2_2">Quick Links</h2>
+<div style="text-align: center; width: 100%;">
+<div style="width: 100%; max-width: 800px;" class="ib_list self_align_center flexslider mobileContent information_slider" id="flexslider_info">
+<ul class="slides">
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="https://severeweather.wmo.int/" target="_blank" rel="noopener"><img src="../../../../en/tide/marine/images/swic30.png" alt="Severe Weather Information Centre" title="Severe Weather Information Centre" border="0" width="62" height="62" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="https://wwmiws.wmo.int/index.php/metareas/display/11" target="_blank" rel="noopener"><img src="../../../../common/images/images/gmdss35.jpg" alt="GMDSS Marine Weather Forecast" title="GMDSS Marine Weather Forecast" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/wxinfo/currwx/wxcht.htm"><img src="../../../../common/images/images/charts35.jpg" alt="Weather Charts" title="Weather Charts" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/fishermen/main.htm"><img src="../../../../common/images/images/south_china.png" alt="Weather Information for Fishermen" title="Weather Information for Fishermen" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/wxinfo/currwx/flw.htm"><img src="../../../../common/images/images/local_wx.png" alt="Local Weather Forecast" title="Local Weather Forecast" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/wxinfo/currwx/fnd.htm"><img src="../../../../common/images/images/9dayicon.png" alt="Nine Days Weather Forecast" title="Nine Days Weather Forecast" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/wxinfo/llis/gm_index.htm"><img src="../../../../common/images/images/lightning.png" alt="Lightning Location Information" title="Lightning Location Information" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/wxinfo/radars/radar.htm"><img src="../../../../common/images/images/radar.png" alt="Radar Images" title="Radar Images" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/wxinfo/intersat/satellite/sate.htm"><img border="0" src="../../../../common/images/images/satellite.png" alt="Satellite Images" title="Satellite Images" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/tide/etide_main.htm"><img src="../../../../common/images/images/tidal_info.png" alt="Tidal Information (Forecast and real-time)" title="Tidal Information (Forecast and real-time)" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/vis/vis_index.shtml"><img src="../../../../common/images/images/visibility.png" alt="Visibility Report" title="Visibility Report" border="0" /></a></li>
+</ul>
+</div>
+<div style="display: inline-block; width: 100%; max-width: none;" class="ib_list self_align_center desktopContent">
+<ul>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="https://severeweather.wmo.int/" target="_blank" rel="noopener"><img src="../../../../en/tide/marine/images/swic30.png" alt="Severe Weather Information Centre" title="Severe Weather Information Centre" border="0" width="62" height="62" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="https://wwmiws.wmo.int/index.php/metareas/display/11" target="_blank" rel="noopener"><img src="../../../../common/images/images/gmdss35.jpg" alt="GMDSS Marine Weather Forecast" title="GMDSS Marine Weather Forecast" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/wxinfo/currwx/wxcht.htm"><img src="../../../../common/images/images/charts35.jpg" alt="Weather Charts" title="Weather Charts" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/fishermen/main.htm"><img src="../../../../common/images/images/south_china.png" alt="Weather Information for Fishermen" title="Weather Information for Fishermen" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/wxinfo/currwx/flw.htm"><img src="../../../../common/images/images/local_wx.png" alt="Local Weather Forecast" title="Local Weather Forecast" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/wxinfo/currwx/fnd.htm"><img src="../../../../common/images/images/9dayicon.png" alt="Nine Days Weather Forecast" title="Nine Days Weather Forecast" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/wxinfo/llis/gm_index.htm"><img src="../../../../common/images/images/lightning.png" alt="Lightning Location Information" title="Lightning Location Information" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/wxinfo/radars/radar.htm"><img src="../../../../common/images/images/radar.png" alt="Radar Images" title="Radar Images" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/wxinfo/intersat/satellite/sate.htm"><img border="0" src="../../../../common/images/images/satellite.png" alt="Satellite Images" title="Satellite Images" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/tide/etide_main.htm"><img src="../../../../common/images/images/tidal_info.png" alt="Tidal Information (Forecast and real-time)" title="Tidal Information (Forecast and real-time)" border="0" /></a></li>
+<li><a class="wcag_image_link" onfocus="this.className='wcag_image_link_onfocus';" onblur="this.className='wcag_image_link';" href="../../../../en/vis/vis_index.shtml"><img src="../../../../common/images/images/visibility.png" alt="Visibility Report" title="Visibility Report" border="0" /></a></li>
+</ul>
+</div>
+</div>
+<h2 class="h2_2"><a href="../../../../en/wxinfo/currwx/fmar.htm">Marine Forecast</a><span class="updateTime" data-id="marine_forecase_update_time"></span></h2>
+<div class="self_align_center">
+<table data-id="warning"></table>
+</div>
+<div class="self_align_center">
+<table data-id="weather_situation"></table>
+</div>
+<div class="self_align_center">
+<p><input type="button" value="Abbreviations" onclick="showAbbr()" /></p>
+</div>
+<div class="self_align_center">Please select area from the map or move the mouse onto the forecast area to get weather information.</div>
+<div style="text-align: center; width: 100%;">
+<div style="display: inline-block; width: 100%; max-width: 800px;" class="self_align_center"><iframe style="width: 700px; height: 700px;" id="content_iframe"></iframe><!--img src="../../../../images/wservice/mariners.jpg" alt=""-->
+<p><a id="tc_legend_detail" href="../../../../en/wxinfo/currwx/tc_gis.htm">Tropical Cyclone Details</a> | <a id="tc_legend_btn" onclick="showTCLegend()"></a>Tropical Cyclone Legend</p>
+<table id="tc_legend_info" style="display: none;" class="table_cellspacing_4px">
+<tbody>
+<tr>
+<td style="width: 3%;">&nbsp;</td>
+<td style="width: 30%; vertical-align: top;">
+<table>
+<tbody>
+<tr>
+<td colspan="2" class="legend_title">Legend</td>
+</tr>
+<tr>
+<td class="self_align_center"><img src="../../../../en/wxinfo/currwx/images/past_position.png" alt="Analysed Position of Tropical Cyclone" /></td>
+<td>Analysed Position</td>
+</tr>
+<tr>
+<td class="self_align_center"><img src="../../../../en/wxinfo/currwx/images/forecast_position.png" alt="Forecast Position of Tropical Cyclone" /></td>
+<td>Forecast Position</td>
+</tr>
+<tr>
+<td class="self_align_center"><img src="../../../../en/wxinfo/currwx/images/past_track.png" alt="Past Track of Tropical Cyclone" /></td>
+<td>Past Track</td>
+</tr>
+<tr>
+<td class="self_align_center"><img src="../../../../en/wxinfo/currwx/images/forecast_track.png" alt="Forecast Track of Tropical Cyclone" /></td>
+<td>Forecast Track</td>
+</tr>
+<tr>
+<td colspan="2"><em>(The colors of the symbols above will change with the classifications of the tropical cyclone)</em></td>
+</tr>
+<tr>
+<td class="self_align_center"><img src="../../../../en/wxinfo/currwx/images/LOW.png" alt="Past Low Pressure Area or Extratropical Low" /></td>
+<td>Low Pressure Area or Extratropical Low</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 2%;">&nbsp;</td>
+<td style="width: 30%; vertical-align: top;">
+<table>
+<tbody>
+<tr>
+<td colspan="2" class="legend_title">Color</td>
+</tr>
+<tr>
+<td><img src="../../../../en/wxinfo/currwx/images/trackpos_td.png" alt="Tropical Depression" /></td>
+<td>Tropical Depression</td>
+</tr>
+<tr>
+<td><img src="../../../../en/wxinfo/currwx/images/trackpos_ts.png" alt="Tropical Storm" /></td>
+<td>Tropical Storm</td>
+</tr>
+<tr>
+<td><img src="../../../../en/wxinfo/currwx/images/trackpos_sts.png" alt="Severe Tropical Storm" /></td>
+<td>Severe Tropical Storm</td>
+</tr>
+<tr>
+<td><img src="../../../../en/wxinfo/currwx/images/trackpos_t.png" alt="Typhoon" /></td>
+<td>Typhoon</td>
+</tr>
+<tr>
+<td><img src="../../../../en/wxinfo/currwx/images/trackpos_st.png" alt="Severe Typhoon" /></td>
+<td>Severe Typhoon</td>
+</tr>
+<tr>
+<td><img src="../../../../en/wxinfo/currwx/images/trackpos_supert.png" alt="Super Typhoon" /></td>
+<td>Super Typhoon</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 2%;">&nbsp;</td>
+<td style="width: 30%; vertical-align: top;">
+<table>
+<tbody>
+<tr>
+<td colspan="2" class="legend_title">Potential Track Area (70% probability)</td>
+</tr>
+<tr>
+<td class="self_align_center"><img src="../../../../en/wxinfo/currwx/images/cone.png" alt="Potential Track Area for the first 72 hours" /></td>
+<td>First 72 hours</td>
+</tr>
+<tr>
+<td class="self_align_center"><img src="../../../../en/wxinfo/currwx/images/cone2.png" alt="Potential Track Area for 72-120 hours" /></td>
+<td>72-120 hours</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Other sea areas forecasts:</p>
+<ol>
+<li><a href="http://www.nmc.cn/publish/marine/forecast.htm" target="_blank" rel="noopener">China National Meteorological Center of CMA - Marine Forecast (Chinese only)</a></li>
+<li><a href="http://www.nmefc.cn/nr/jhhyhjyb.aspx?idx=1" target="_blank" rel="noopener">China National Marine Environmental Forecasting Center - Marine Forecast (Chinese only)</a></li>
+<li><a href="https://www.cwa.gov.tw/V8/E/M/FSea.html" target="_blank" rel="noopener">Taiwan Central Weather Administration - Fishery Forecast</a></li>
+<li><a href="http://www.jma.go.jp/en/seafcst/" target="_blank" rel="noopener">Japan Meteorological Agency - Marine Forecast</a></li>
+</ol>
+<hr />
+<p>For enquiries on weather information, please call Dial-a-Weather hotline <span class="hlight">1878 200</span></p>
+<p>For enquiries on Port Meteorological services, please contact Senior Experimental Officer (Marine Meteorological Services) at <span class="hlight">2926 3113</span></p>
+<p><span class="hlight">Office Hour:</span><br />Monday to Friday 8:30 am to 5:45 pm<br />Closed on Saturday, Sunday and public holidays</p>
+<script>
+                    get_dynamic_json('DYN_DAT_MINDS_FMAR', function(){
+                    
+                        init_mariners_content();
+                    
+                        init_flexslider_info();
+                    
+                    })
+                    function init_flexslider_info(){
+                    
+                        
+                        if (!$('#flexslider_info').hasClass("no_startup")) {
+                            var total_width = 0;
+                            $('#flexslider_info .slides>li').each(function() {
+                                total_width+=$(this).width();
+                            });
+                            var avg_width = total_width / $('#flexslider_info .slides > li').length;            
+                            console.log(total_width,$('#flexslider_info .slides > li').length);
+                            $('#flexslider_info').flexslider({
+                                slideshowSpeed: 5000,
+                                animation: "slide",
+                                animationLoop: true,
+                                slideshow: true,
+                                controlNav: true,
+                                pauseOnHover: false,
+                                directionNav: true,
+                                itemWidth: 35,
+                                itemMargin: 10
+                            });
+                        }   
+                    
+                    }
+                </script>
+<!-- Main Content -->
+<script>var last_revision_date = '21 February 2025';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

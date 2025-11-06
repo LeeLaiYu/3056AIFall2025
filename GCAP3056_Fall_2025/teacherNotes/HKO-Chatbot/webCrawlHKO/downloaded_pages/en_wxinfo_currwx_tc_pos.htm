@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tropical Cyclone Track Information</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Tropical Cyclone Track Information">
+    <meta name="description" content="Tropical Cyclone Track Information">
+    <meta name="recordId" content="2018123100000036681">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Tropical Cyclone Track Information" />
+	<meta property="og:description" content="Track ProbabilityForecast   Geographic InformationSystem (GIS) version {{name}}{{datetime}}" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/currwx/tc_pos.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+			#table_header_icon>tbody>tr>td:nth-child(1){
+		width:99% !important;
+	}
+	#table_header_icon>tbody>tr>td:nth-child(2){
+		width:1% !important;
+	}
+	#table_header_icon table{
+		float: right;
+	}
+	#tc_desc>table:nth-child(1){
+		max-width:535px;
+	}
+	@media screen and (max-width: 767px) {
+		#table_header_icon table{
+			float: unset !important;
+			margin: 0 auto !important;
+		}
+	}
+		.table_width_400{
+			max-width: 500px !important;
+			width: 100% !important;
+			min-width: unset !important;
+		}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000010786';
+
+  
+
+var tcid=getURLParameter('tcid');
+$(document).ready( function() {
+	if(tcid!=null){
+		 var vue = new Vue({
+			el: '#mainContent',
+			router: router,
+			data: function () {
+				return {
+					name:'',
+					datetime:'',
+					fcstpos_htm:'',
+					nwp:'',
+					desc:''
+				}
+			},
+			mounted: function (){
+				moment.locale('zh-hk');
+				//var tcid = this.$route.query.id;
+				var self = this;		
+				$.getJSON('../../../wxinfo/currwx/tc_pos_'+tcid+'.json', function(data){
+					var data = data.tc_fixarea_e_htm;
+					self.name = data.name_e;
+					self.datetime = data.datetime;
+					self.fcstpos_htm = data.fcstpos_htm;
+					data.nwp.src = "../../../wxinfo/currwx/"+data.nwp.src;
+					self.nwp = data.nwp;
+					self.desc = data.desc;
+				});
+			},
+			updated: function (){
+					$('#fcstpos_htm table:first').addClass("data_table table_border_1"); 
+					$('#fcstpos_htm table:first th').addClass("self_align_center"); 
+					$('#fcstpos_htm>h1').replaceWith('<h2>' + $('#fcstpos_htm>h1').text() + '</h2>'); 
+					$('#fcstpos_htm>ul>li:first>table').addClass("data_table table_border_1"); 
+					$("#fcstpos_htm>ul>li:first>table>tbody>tr:nth-child(1) td").each(function() {
+						colspan = $(this).attr("colspan");
+						rowspan = $(this).attr("rowspan");
+						//$(this).replaceWith('<th>' + $(this).text() + '</th>'); 
+						if(rowspan){
+							console.log('rowspan:'+rowspan);
+							$(this).replaceWith('<th rowspan="'+rowspan+'">' + $(this).text() + '</th>'); 
+						}
+						if(colspan){
+							$(this).replaceWith('<th colspan="'+colspan+'">' + $(this).text() + '</th>'); 
+							console.log('colspan:'+colspan);
+						}
+					});
+					$("#fcstpos_htm>ul>li:first>table>tbody>tr:nth-child(2) td").each(function() {
+						colspan = $(this).attr("colspan");
+						rowspan = $(this).attr("rowspan");
+						$(this).replaceWith('<th>' + $(this).text() + '</th>'); 
+						if(rowspan){ 
+							$(this).attr("rowspan", rowspan);
+						}
+						if(colspan){ 
+							$(this).attr("colspan", colspan);
+						}
+					 });
+					$('#fcstpos_htm a').each(function() {
+						var ahref = $(this).attr('href');
+						if($(this).attr('href')){
+							if($(this).attr('href').indexOf('tc_pastpos_')>=0){
+								tcid = $(this).attr('href').replace('tc_pastpos_','').replace('.htm','');
+								$(this).attr('href', 'tc_pastpos.htm?tcid='+tcid );
+							}else if($(this).attr('href').indexOf('tc_gis_e.htm')>=0){
+								$(this).attr('href', 'tc_gis.htm' ); 
+							}else if($(this).attr('href').indexOf('tcswarn.htm')>=0){
+								$(this).attr('href', 'tcswarn.htm' ); 
+							}
+						}
+					});
+					$('#fcstpos_htm>ul>li:nth-child(2)>table').addClass("data_table table_border_1 table_width_400"); 
+			}
+		});
+		$(function() {
+			$(".access, .externalText").each(function(){
+				$(this).attr('style', 'color: black !important');
+			});
+		});
+	} else {
+		window.location.href = "./tc_gis.htm";
+	}
+});
+function Wxword(wxterm){
+        var tcpage="/informtc/sound/tcname2017e.htm"
+        if (wxterm!="tc"){
+                newWin=window.open("./flw_description/flw.htm#"+wxterm,"FLW","Width=760,height=50,Screenx=30,Screeny=180,resizable=yes,scrollbars=yes,status=yes,toolbar=1,location=0,directories=0")
+                newWin.focus()
+        }
+        else{
+                newWin=window.open(tcpage,"TC","Width=760,height=3000,Screenx=30,Screeny=180,resizable=yes,scrollbars=yes,status=yes,toolbar=1,location=0,directories=0")
+                newWin.focus()
+        }
+}
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Tropical Cyclone Track Information</h1>
+                <div class="border_blank">
+                    <!--Content Start-->
+					<table id="table_header_icon" style="width:100%;" class="self_row2_table"><tbody><tr>
+<td>
+						<table style="background-color:#87D156;min-width:180px;" class="table_border_0 table_cellpadding_2 table_cellspacing_2">
+							<tr>
+								<td style="background-color:#87D156;">
+									<a href="../../../en/probfcst/tc_spm.htm">
+										<img src="../../../en/wxinfo/currwx/images/spmICON_tctrack.png" alt="Track Probability Forecast" style="max-max-height:45px;  border:0px;">
+									</a>
+								</td>
+								<td style="background-color:#87D156;">
+									<a href="../../../en/probfcst/tc_spm.htm" style="text-decoration: none;">Track Probability<br/>Forecast</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td> </td>
+					<td>
+						<table style="background-color:#F0D25A;min-width:230px;" class="table_border_0 table_cellpadding_2 table_cellspacing_2">
+							<tr>
+								<td style="background-color:#F0D25A;">
+									<a href="../../../en/wxinfo/currwx/tc_gis.htm">
+										<img src="../../../en/wxinfo/currwx/images/gisICON_tctrack.png" alt="Icon of System (GIS) version" style="max-max-height:45px;  border:0px;">
+									</a>
+								</td>
+								<td style="background-color:#F0D25A;">
+									<a href="../../../en/wxinfo/currwx/tc_gis.htm" style="text-decoration: none;">Geographic Information<br/>System (GIS) version</a>
+								</td>
+							</tr>
+						</table>
+						</td>
+					</tr></tbody>
+					</table>
+					<br/>
+					
+						<h2 class="self_align_center" v-cloak>{{name}}<br>{{datetime}}</h2>
+						<div style='margin:0; position:relative;' class="self_align_center">
+						<div v-html="desc" class="self_align_center" id="tc_desc"></div>
+						<img :src="nwp.src" :alt="nwp.alt" alt="nwp"/>
+						<div v-html="fcstpos_htm" id="fcstpos_htm"></div>
+						</div>
+						<!--Content End-->
+<script>var last_revision_date = '15 January 2020';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

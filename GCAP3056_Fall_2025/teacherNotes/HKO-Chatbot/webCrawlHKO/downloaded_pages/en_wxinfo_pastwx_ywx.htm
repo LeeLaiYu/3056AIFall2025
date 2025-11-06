@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>The Year's Weather｜Hong Kong Observatory(HKO)｜Climate Information Service</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="The Year&#039;s Weather">
+    <meta name="description" content="The Year&#039;s Weather">
+    <meta name="recordId" content="2018123100000026437">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="The Year&#039;s Weather" />
+	<meta property="og:description" content="Please select year : 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/pastwx/ywx.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+			.stat3{
+		width:130px;
+	}
+	.page_select {
+		padding-bottom: 10px;
+		border-bottom: 0px solid #ddd !important;
+		padding-top:5px ;
+	}
+	label {
+     margin-bottom: 0px !important;
+	 }
+	 @media screen and (max-width: 992px){
+		 #select_div{
+			margin:unset !important;
+		 }
+	 }
+	 .col{
+		width: 100% !important;
+	 }
+	 .page_select input[type=button] {
+		border: 0;
+		background-color: #535353;
+		color: #fff;
+		padding: 0 15px;
+		height: 32px;
+		border-radius: 3px;
+	 }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '42';
+var section_id = '2018010100000010814';
+
+         
+
+<!-- hide from other browsers
+function makeArray(){
+     var args = makeArray.arguments;
+     for (var i=0; i<args.length; i++){
+         this[i]=args[i];
+         }
+         this.length=args.length;
+    }
+function showgraph() {
+	var yyyy=document.getElementById('yyyy').value;
+	//add folder name if it is >= 2016
+	if (yyyy >= 2015) {
+		parent.location=yyyy+"/ywx"+yyyy+".htm";
+	}else if(yyyy != 0) {
+		parent.location="ywx"+yyyy+".htm";
+	}
+}
+/*function fillmonth(form) {
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2016)   
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2015)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2014)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2013)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2012)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2011) 
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2010) 
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2009) 
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2008) 
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2007)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2006)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2005)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2004)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2003)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2002)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2001)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 2000)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 1999)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 1998)
+    (form.yyyy.options[form.yyyy.selectedIndex].value == 1997)
+}*/ 
+// stop hiding -->
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>The Year's Weather</h1>
+                <div class="border_blank">
+                    <!--Content Start--><form action="#" method="post">
+<div style="box-sizing: border-box; margin: auto 35%;" id="select_div">
+<div class="row self_align_center">
+<div class="col self_align_center">
+<div class="self_align_center" style="font-weight: 600;"><label for="yyyy">Please select year :</label></div>
+<div class="page_select self_align_center"><select id="yyyy" title="Please select year" class="stat3 date">
+<option selected="selected" value="2024">2024</option>
+<option value="2023">2023</option>
+<option value="2022">2022</option>
+<option value="2021">2021</option>
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+<option value="2016">2016</option>
+<option value="2015">2015</option>
+<option value="2014">2014</option>
+<option value="2013">2013</option>
+<option value="2012">2012</option>
+<option value="2011">2011</option>
+<option value="2010">2010</option>
+<option value="2009">2009</option>
+<option value="2008">2008</option>
+<option value="2007">2007</option>
+<option value="2006">2006</option>
+<option value="2005">2005</option>
+<option value="2004">2004</option>
+<option value="2003">2003</option>
+<option value="2002">2002</option>
+<option value="2001">2001</option>
+<option value="2000">2000</option>
+<option value="1999">1999</option>
+<option value="1998">1998</option>
+<option value="1997">1997</option>
+</select></div>
+</div>
+</div>
+</div>
+<!-- <table class="stat2  table_align_center table_border_0"> --> <!-- <tbody> --> <!-- <tr> --> <!-- <td class="self_align_center"><label for="yyyy">Please select year :</label></td> --> <!-- </tr> --> <!-- <tr> --> <!-- <td style="background-color:#cc6699;" class="self_align_center"><select id=yyyy title="Please select year" class="stat3"> --> <!-- <option selected value=2017>2017</option> --> <!-- <option value=2016>2016</option> --> <!-- <option value=2015>2015</option> --> <!-- <option value=2014>2014</option> --> <!-- <option value=2013>2013</option> --> <!-- <option value=2012>2012</option> --> <!-- <option value=2011>2011</option> --> <!-- <option value=2010>2010</option> --> <!-- <option value=2009>2009</option> --> <!-- <option value=2008>2008</option> --> <!-- <option value=2007>2007</option> --> <!-- <option value=2006>2006</option> --> <!-- <option value=2005>2005</option> --> <!-- <option value=2004>2004</option> --> <!-- <option value=2003>2003</option> --> <!-- <option value=2002>2002</option> --> <!-- <option value=2001>2001</option> --> <!-- <option value=2000>2000</option> --> <!-- <option value=1999>1999</option> --> <!-- <option value=1998>1998</option> --> <!-- <option value=1997>1997</option> --> <!-- </select></td> --> <!-- </tr> --> <!-- </tbody> --> <!-- </table> --> <br />
+<div class="page_select left dateSelector div_center"><input onclick="showgraph()" class="stat4" type="button" value="Submit Query" /></div>
+</form><!--Content End-->
+<script>var last_revision_date = '8 January 2025';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

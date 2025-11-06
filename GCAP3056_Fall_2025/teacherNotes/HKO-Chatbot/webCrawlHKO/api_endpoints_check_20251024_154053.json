@@ -1,0 +1,1318 @@
+{
+  "datasets_api": {
+    "status": "error",
+    "status_code": 401,
+    "error": "UNAUTHORIZED"
+  },
+  "providers_json": {
+    "status": "success",
+    "status_code": 200,
+    "content_type": "application/json",
+    "data": {
+      "providers": [
+        {
+          "datasetCount": 12,
+          "id": "hk-aw",
+          "name": {
+            "en": "Administration Wing, Chief Secretary for Administration's Office",
+            "sc": "政务司司长办公室辖下行政署",
+            "tc": "政務司司長辦公室轄下行政署"
+          }
+        },
+        {
+          "datasetCount": 52,
+          "id": "hk-afcd",
+          "name": {
+            "en": "Agriculture, Fisheries and Conservation Department",
+            "sc": "渔农自然护理署",
+            "tc": "漁農自然護理署"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "aahk",
+          "name": {
+            "en": "Airport Authority Hong Kong",
+            "sc": "香港机场管理局",
+            "tc": "香港機場管理局"
+          }
+        },
+        {
+          "datasetCount": 25,
+          "id": "hk-archsd",
+          "name": {
+            "en": "Architectural Services Department",
+            "sc": "建筑署",
+            "tc": "建築署"
+          }
+        },
+        {
+          "datasetCount": 5,
+          "id": "hk-aud",
+          "name": {
+            "en": "Audit Commission",
+            "sc": "审计署",
+            "tc": "審計署"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "hk-ams",
+          "name": {
+            "en": "Auxiliary Medical Service",
+            "sc": "医疗辅助队",
+            "tc": "醫療輔助隊"
+          }
+        },
+        {
+          "datasetCount": 37,
+          "id": "hk-bd",
+          "name": {
+            "en": "Buildings Department",
+            "sc": "屋宇署",
+            "tc": "屋宇署"
+          }
+        },
+        {
+          "datasetCount": 900,
+          "id": "hk-censtatd",
+          "name": {
+            "en": "Census and Statistics Department",
+            "sc": "政府统计处",
+            "tc": "政府統計處"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "centaline",
+          "name": {
+            "en": "Centaline Property Agency Limited",
+            "sc": "中原地产代理有限公司",
+            "tc": "中原地產代理有限公司"
+          }
+        },
+        {
+          "datasetCount": 5,
+          "id": "cfs",
+          "name": {
+            "en": "Centre for Food Safety",
+            "sc": "食物安全中心",
+            "tc": "食物安全中心"
+          }
+        },
+        {
+          "datasetCount": 24,
+          "id": "hk-ceo",
+          "name": {
+            "en": "Chief Executive's Office",
+            "sc": "行政长官办公室",
+            "tc": "行政長官辦公室"
+          }
+        },
+        {
+          "datasetCount": 57,
+          "id": "hk-cepu",
+          "name": {
+            "en": "Chief Executive's Policy Unit",
+            "sc": "特首政策组",
+            "tc": "特首政策組"
+          }
+        },
+        {
+          "datasetCount": 4,
+          "id": "hk-cso",
+          "name": {
+            "en": "Chief Secretary for Administration's Office",
+            "sc": "政务司司长办公室",
+            "tc": "政務司司長辦公室"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "ckf",
+          "name": {
+            "en": "Chuen Kee Ferry Limited",
+            "sc": "全记渡有限公司",
+            "tc": "全記渡有限公司"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "ctb",
+          "name": {
+            "en": "Citybus Limited",
+            "sc": "城巴有限公司",
+            "tc": "城巴有限公司"
+          }
+        },
+        {
+          "datasetCount": 4,
+          "id": "hk-cas",
+          "name": {
+            "en": "Civil Aid Service",
+            "sc": "民众安全服务队",
+            "tc": "民眾安全服務隊"
+          }
+        },
+        {
+          "datasetCount": 10,
+          "id": "hk-cad",
+          "name": {
+            "en": "Civil Aviation Department",
+            "sc": "民航处",
+            "tc": "民航處"
+          }
+        },
+        {
+          "datasetCount": 29,
+          "id": "hk-cedd",
+          "name": {
+            "en": "Civil Engineering and Development Department",
+            "sc": "土木工程拓展署",
+            "tc": "土木工程拓展署"
+          }
+        },
+        {
+          "datasetCount": 24,
+          "id": "hk-csb",
+          "name": {
+            "en": "Civil Service Bureau",
+            "sc": "公务员事务局",
+            "tc": "公務員事務局"
+          }
+        },
+        {
+          "datasetCount": 16,
+          "id": "hk-cedb",
+          "name": {
+            "en": "Commerce and Economic Development Bureau",
+            "sc": "商务及经济发展局",
+            "tc": "商務及經濟發展局"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "chsc",
+          "name": {
+            "en": "Committee on Home-School Co-operation",
+            "sc": "家庭与学校合作事宜委员会",
+            "tc": "家庭與學校合作事宜委員會"
+          }
+        },
+        {
+          "datasetCount": 21,
+          "id": "hk-cr",
+          "name": {
+            "en": "Companies Registry",
+            "sc": "公司注册处",
+            "tc": "公司註冊處"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "compcomm",
+          "name": {
+            "en": "Competition Commission",
+            "sc": "竞争事务委员会",
+            "tc": "競爭事務委員會"
+          }
+        },
+        {
+          "datasetCount": 3,
+          "id": "hk-cmab",
+          "name": {
+            "en": "Constitutional and Mainland Affairs Bureau",
+            "sc": "政制及内地事务局",
+            "tc": "政制及內地事務局"
+          }
+        },
+        {
+          "datasetCount": 3,
+          "id": "cc",
+          "name": {
+            "en": "Consumer Council",
+            "sc": "消费者委员会",
+            "tc": "消費者委員會"
+          }
+        },
+        {
+          "datasetCount": 33,
+          "id": "hk-csd",
+          "name": {
+            "en": "Correctional Services Department",
+            "sc": "香港惩教署",
+            "tc": "香港懲教署"
+          }
+        },
+        {
+          "datasetCount": 41,
+          "id": "hk-cstb",
+          "name": {
+            "en": "Culture, Sports and Tourism Bureau",
+            "sc": "文化体育及旅游局",
+            "tc": "文化體育及旅遊局"
+          }
+        },
+        {
+          "datasetCount": 13,
+          "id": "hk-customs",
+          "name": {
+            "en": "Customs and Excise Department",
+            "sc": "香港海关",
+            "tc": "香港海關"
+          }
+        },
+        {
+          "datasetCount": 78,
+          "id": "hk-dh",
+          "name": {
+            "en": "Department of Health",
+            "sc": "卫生署",
+            "tc": "衞生署"
+          }
+        },
+        {
+          "datasetCount": 7,
+          "id": "hk-doj",
+          "name": {
+            "en": "Department of Justice",
+            "sc": "律政司",
+            "tc": "律政司"
+          }
+        },
+        {
+          "datasetCount": 19,
+          "id": "hk-devb",
+          "name": {
+            "en": "Development Bureau",
+            "sc": "发展局",
+            "tc": "發展局"
+          }
+        },
+        {
+          "datasetCount": 68,
+          "id": "hk-dpo",
+          "name": {
+            "en": "Digital Policy Office",
+            "sc": "数字政策办公室",
+            "tc": "數字政策辦公室"
+          }
+        },
+        {
+          "datasetCount": 4,
+          "id": "dc",
+          "name": {
+            "en": "District Councils",
+            "sc": "区议会",
+            "tc": "區議會"
+          }
+        },
+        {
+          "datasetCount": 17,
+          "id": "hk-dsd",
+          "name": {
+            "en": "Drainage Services Department",
+            "sc": "渠务署",
+            "tc": "渠務署"
+          }
+        },
+        {
+          "datasetCount": 72,
+          "id": "hk-edb",
+          "name": {
+            "en": "Education Bureau",
+            "sc": "教育局",
+            "tc": "教育局"
+          }
+        },
+        {
+          "datasetCount": 11,
+          "id": "eac",
+          "name": {
+            "en": "Electoral Affairs Commission",
+            "sc": "选举管理委员会",
+            "tc": "選舉管理委員會"
+          }
+        },
+        {
+          "datasetCount": 93,
+          "id": "hk-emsd",
+          "name": {
+            "en": "Electrical and Mechanical Services Department",
+            "sc": "机电工程署",
+            "tc": "機電工程署"
+          }
+        },
+        {
+          "datasetCount": 54,
+          "id": "hk-epd",
+          "name": {
+            "en": "Environmental Protection Department",
+            "sc": "环境保护署",
+            "tc": "環境保護署"
+          }
+        },
+        {
+          "datasetCount": 3,
+          "id": "hk-fso",
+          "name": {
+            "en": "Financial Secretary's Office",
+            "sc": "财政司司长办公室",
+            "tc": "財政司司長辦公室"
+          }
+        },
+        {
+          "datasetCount": 4,
+          "id": "hk-fstb",
+          "name": {
+            "en": "Financial Services and the Treasury Bureau",
+            "sc": "财经事务及库务局",
+            "tc": "財經事務及庫務局"
+          }
+        },
+        {
+          "datasetCount": 29,
+          "id": "hk-fsd",
+          "name": {
+            "en": "Fire Services Department",
+            "sc": "香港消防处",
+            "tc": "香港消防處"
+          }
+        },
+        {
+          "datasetCount": 22,
+          "id": "hk-fehd",
+          "name": {
+            "en": "Food and Environmental Hygiene Department",
+            "sc": "食物环境卫生署",
+            "tc": "食物環境衞生署"
+          }
+        },
+        {
+          "datasetCount": 4,
+          "id": "ff",
+          "name": {
+            "en": "Fortune Ferry Company Limited",
+            "sc": "富裕小轮有限公司",
+            "tc": "富裕小輪有限公司"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "hk-gfs",
+          "name": {
+            "en": "Government Flying Service",
+            "sc": "政府飞行服务队",
+            "tc": "政府飛行服務隊"
+          }
+        },
+        {
+          "datasetCount": 4,
+          "id": "hk-govtlab",
+          "name": {
+            "en": "Government Laboratory",
+            "sc": "政府化验所",
+            "tc": "政府化驗所"
+          }
+        },
+        {
+          "datasetCount": 24,
+          "id": "hk-gld",
+          "name": {
+            "en": "Government Logistics Department",
+            "sc": "政府物流服务署",
+            "tc": "政府物流服務署"
+          }
+        },
+        {
+          "datasetCount": 19,
+          "id": "hk-gpa",
+          "name": {
+            "en": "Government Property Agency",
+            "sc": "政府产业署",
+            "tc": "政府產業署"
+          }
+        },
+        {
+          "datasetCount": 11,
+          "id": "hk-hhb",
+          "name": {
+            "en": "Health Bureau",
+            "sc": "医务卫生局",
+            "tc": "醫務衞生局"
+          }
+        },
+        {
+          "datasetCount": 28,
+          "id": "hk-hyd",
+          "name": {
+            "en": "Highways Department",
+            "sc": "路政署",
+            "tc": "路政署"
+          }
+        },
+        {
+          "datasetCount": 33,
+          "id": "hk-had",
+          "name": {
+            "en": "Home Affairs Department",
+            "sc": "民政事务总署",
+            "tc": "民政事務總署"
+          }
+        },
+        {
+          "datasetCount": 21,
+          "id": "hk-hyab",
+          "name": {
+            "en": "Home and Youth Affairs Bureau",
+            "sc": "民政及青年事务局",
+            "tc": "民政及青年事務局"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "hkkf",
+          "name": {
+            "en": "Hong Kong & Kowloon Ferry Limited",
+            "sc": "港九小轮有限公司",
+            "tc": "港九小輪有限公司"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "hkcert",
+          "name": {
+            "en": "Hong Kong Computer Emergency Response Team Coordination Centre",
+            "sc": "香港网络安全事故协调中心",
+            "tc": "香港網絡安全事故協調中心"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "hkcaavq",
+          "name": {
+            "en": "Hong Kong Council for Accreditation of Academic and Vocational Qualifications",
+            "sc": "香港学术及职业资历评审局",
+            "tc": "香港學術及職業資歷評審局"
+          }
+        },
+        {
+          "datasetCount": 13,
+          "id": "cyberport",
+          "name": {
+            "en": "Hong Kong Cyberport Management Company Limited",
+            "sc": "香港数码港管理有限公司",
+            "tc": "香港數碼港管理有限公司"
+          }
+        },
+        {
+          "datasetCount": 16,
+          "id": "hkeaa",
+          "name": {
+            "en": "Hong Kong Examinations and Assessment Authority",
+            "sc": "香港考试及评核局",
+            "tc": "香港考試及評核局"
+          }
+        },
+        {
+          "datasetCount": 19,
+          "id": "hk-housing",
+          "name": {
+            "en": "Hong Kong Housing Authority",
+            "sc": "香港房屋委员会",
+            "tc": "香港房屋委員會"
+          }
+        },
+        {
+          "datasetCount": 4,
+          "id": "hkhs",
+          "name": {
+            "en": "Hong Kong Housing Society",
+            "sc": "香港房屋协会",
+            "tc": "香港房屋協會"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "hkirc",
+          "name": {
+            "en": "Hong Kong Internet Registration Corporation Limited",
+            "sc": "香港互联网注册管理有限公司",
+            "tc": "香港互聯網註冊管理有限公司"
+          }
+        },
+        {
+          "datasetCount": 177,
+          "id": "hk-hkma",
+          "name": {
+            "en": "Hong Kong Monetary Authority",
+            "sc": "香港金融管理局",
+            "tc": "香港金融管理局"
+          }
+        },
+        {
+          "datasetCount": 52,
+          "id": "hk-hko",
+          "name": {
+            "en": "Hong Kong Observatory",
+            "sc": "香港天文台",
+            "tc": "香港天文台"
+          }
+        },
+        {
+          "datasetCount": 33,
+          "id": "hk-hkpf",
+          "name": {
+            "en": "Hong Kong Police Force",
+            "sc": "香港警务处",
+            "tc": "香港警務處"
+          }
+        },
+        {
+          "datasetCount": 6,
+          "id": "hkpc",
+          "name": {
+            "en": "Hong Kong Productivity Council",
+            "sc": "香港生产力促进局",
+            "tc": "香港生產力促進局"
+          }
+        },
+        {
+          "datasetCount": 14,
+          "id": "hkstp",
+          "name": {
+            "en": "Hong Kong Science and Technology Parks Corporation",
+            "sc": "香港科技园公司",
+            "tc": "香港科技園公司"
+          }
+        },
+        {
+          "datasetCount": 3,
+          "id": "hktdc",
+          "name": {
+            "en": "Hong Kong Trade Development Council",
+            "sc": "香港贸易发展局",
+            "tc": "香港貿易發展局"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "hktramways",
+          "name": {
+            "en": "Hong Kong Tramways, Limited",
+            "sc": "香港电车有限公司",
+            "tc": "香港電車有限公司"
+          }
+        },
+        {
+          "datasetCount": 12,
+          "id": "hk-hkpo",
+          "name": {
+            "en": "Hongkong Post",
+            "sc": "香港邮政",
+            "tc": "香港郵政"
+          }
+        },
+        {
+          "datasetCount": 14,
+          "id": "hospital",
+          "name": {
+            "en": "Hospital Authority",
+            "sc": "医院管理局",
+            "tc": "醫院管理局"
+          }
+        },
+        {
+          "datasetCount": 88,
+          "id": "hk-immd",
+          "name": {
+            "en": "Immigration Department",
+            "sc": "入境事务处",
+            "tc": "入境事務處"
+          }
+        },
+        {
+          "datasetCount": 31,
+          "id": "hk-icac",
+          "name": {
+            "en": "Independent Commission Against Corruption",
+            "sc": "廉政公署",
+            "tc": "廉政公署"
+          }
+        },
+        {
+          "datasetCount": 5,
+          "id": "hk-isd",
+          "name": {
+            "en": "Information Services Department",
+            "sc": "政府新闻处",
+            "tc": "政府新聞處"
+          }
+        },
+        {
+          "datasetCount": 40,
+          "id": "hk-ird",
+          "name": {
+            "en": "Inland Revenue Department",
+            "sc": "税务局",
+            "tc": "稅務局"
+          }
+        },
+        {
+          "datasetCount": 41,
+          "id": "hk-itc",
+          "name": {
+            "en": "Innovation and Technology Commission",
+            "sc": "创新科技署",
+            "tc": "創新科技署"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "hk-itib",
+          "name": {
+            "en": "Innovation, Technology and Industry Bureau",
+            "sc": "创新科技及工业局",
+            "tc": "創新科技及工業局"
+          }
+        },
+        {
+          "datasetCount": 244,
+          "id": "ia",
+          "name": {
+            "en": "Insurance Authority",
+            "sc": "保险业监管局",
+            "tc": "保險業監管局"
+          }
+        },
+        {
+          "datasetCount": 33,
+          "id": "hk-ipd",
+          "name": {
+            "en": "Intellectual Property Department",
+            "sc": "知识产权署",
+            "tc": "知識產權署"
+          }
+        },
+        {
+          "datasetCount": 6,
+          "id": "hk-investhk",
+          "name": {
+            "en": "Invest Hong Kong",
+            "sc": "投资推广署",
+            "tc": "投資推廣署"
+          }
+        },
+        {
+          "datasetCount": 8,
+          "id": "hk-jsscs",
+          "name": {
+            "en": "Joint Secretariat for the Advisory Bodies on Civil Service and Judicial Salaries and Conditions of Service",
+            "sc": "公务及司法人员薪俸及服务条件谘询委员会联合秘书处",
+            "tc": "公務及司法人員薪俸及服務條件諮詢委員會聯合秘書處"
+          }
+        },
+        {
+          "datasetCount": 35,
+          "id": "hk-ld",
+          "name": {
+            "en": "Labour Department",
+            "sc": "劳工处",
+            "tc": "勞工處"
+          }
+        },
+        {
+          "datasetCount": 4,
+          "id": "hk-lwb",
+          "name": {
+            "en": "Labour and Welfare Bureau",
+            "sc": "劳工及福利局",
+            "tc": "勞工及福利局"
+          }
+        },
+        {
+          "datasetCount": 11,
+          "id": "hk-lr",
+          "name": {
+            "en": "Land Registry",
+            "sc": "土地注册处",
+            "tc": "土地註冊處"
+          }
+        },
+        {
+          "datasetCount": 111,
+          "id": "hk-landsd",
+          "name": {
+            "en": "Lands Department",
+            "sc": "地政总署",
+            "tc": "地政總署"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "hk-lad",
+          "name": {
+            "en": "Legal Aid Department",
+            "sc": "法律援助署",
+            "tc": "法律援助署"
+          }
+        },
+        {
+          "datasetCount": 6,
+          "id": "legco",
+          "name": {
+            "en": "Legislative Council",
+            "sc": "立法会",
+            "tc": "立法會"
+          }
+        },
+        {
+          "datasetCount": 118,
+          "id": "hk-lcsd",
+          "name": {
+            "en": "Leisure and Cultural Services Department",
+            "sc": "康乐及文化事务署",
+            "tc": "康樂及文化事務署"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "llb",
+          "name": {
+            "en": "Liquor Licensing Board",
+            "sc": "酒牌局",
+            "tc": "酒牌局"
+          }
+        },
+        {
+          "datasetCount": 4,
+          "id": "mtr",
+          "name": {
+            "en": "MTR Corporation Limited",
+            "sc": "香港铁路有限公司",
+            "tc": "香港鐵路有限公司"
+          }
+        },
+        {
+          "datasetCount": 7,
+          "id": "mpfa",
+          "name": {
+            "en": "Mandatory Provident Fund Schemes Authority",
+            "sc": "强制性公积金计划管理局",
+            "tc": "強制性公積金計劃管理局"
+          }
+        },
+        {
+          "datasetCount": 26,
+          "id": "hk-md",
+          "name": {
+            "en": "Marine Department",
+            "sc": "海事处",
+            "tc": "海事處"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "nlb",
+          "name": {
+            "en": "New Lantao Bus Company (1973) Limited",
+            "sc": "新大屿山巴士 (1973) 有限公司",
+            "tc": "新大嶼山巴士 (1973) 有限公司"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "hk-ofnaa",
+          "name": {
+            "en": "Office for Film, Newspaper and Article Administration",
+            "sc": "电影、报刊及物品管理办事处",
+            "tc": "電影、報刊及物品管理辦事處"
+          }
+        },
+        {
+          "datasetCount": 39,
+          "id": "hk-ofca",
+          "name": {
+            "en": "Office of the Communications Authority",
+            "sc": "通讯事务管理局办公室",
+            "tc": "通訊事務管理局辦公室"
+          }
+        },
+        {
+          "datasetCount": 9,
+          "id": "hk-oro",
+          "name": {
+            "en": "Official Receiver's Office",
+            "sc": "破产管理署",
+            "tc": "破產管理署"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "pckt",
+          "name": {
+            "en": "Peng Chau Kai To Limited",
+            "sc": "坪洲街渡有限公司",
+            "tc": "坪洲街渡有限公司"
+          }
+        },
+        {
+          "datasetCount": 17,
+          "id": "hk-pland",
+          "name": {
+            "en": "Planning Department",
+            "sc": "规划署",
+            "tc": "規劃署"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "hk-psc",
+          "name": {
+            "en": "Public Service Commission",
+            "sc": "公务员敍用委员会",
+            "tc": "公務員敍用委員會"
+          }
+        },
+        {
+          "datasetCount": 3,
+          "id": "hk-rthk",
+          "name": {
+            "en": "Radio Television Hong Kong",
+            "sc": "香港电台",
+            "tc": "香港電台"
+          }
+        },
+        {
+          "datasetCount": 4,
+          "id": "hk-rvd",
+          "name": {
+            "en": "Rating and Valuation Department",
+            "sc": "差饷物业估价署",
+            "tc": "差餉物業估價署"
+          }
+        },
+        {
+          "datasetCount": 31,
+          "id": "hk-reo",
+          "name": {
+            "en": "Registration and Electoral Office",
+            "sc": "选举事务处",
+            "tc": "選舉事務處"
+          }
+        },
+        {
+          "datasetCount": 7,
+          "id": "hk-sciocs",
+          "name": {
+            "en": "Secretariat, Commissioner on Interception of Communications and Surveillance",
+            "sc": "截取通讯及监察事务专员秘书处",
+            "tc": "截取通訊及監察事務專員秘書處"
+          }
+        },
+        {
+          "datasetCount": 12,
+          "id": "hk-sb",
+          "name": {
+            "en": "Security Bureau",
+            "sc": "保安局",
+            "tc": "保安局"
+          }
+        },
+        {
+          "datasetCount": 166,
+          "id": "hk-swd",
+          "name": {
+            "en": "Social Welfare Department",
+            "sc": "社会福利署",
+            "tc": "社會福利署"
+          }
+        },
+        {
+          "datasetCount": 3,
+          "id": "sunferry",
+          "name": {
+            "en": "Sun Ferry Services Company Limited",
+            "sc": "新渡輪服務有限公司",
+            "tc": "新渡轮服务有限公司"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "starferry",
+          "name": {
+            "en": "The \"Star\" Ferry Company, Limited",
+            "sc": "天星小轮有限公司",
+            "tc": "天星小輪有限公司"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "rehabsociety",
+          "name": {
+            "en": "The Hong Kong Society for Rehabilitation",
+            "sc": "香港复康会",
+            "tc": "香港復康會"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "towngas",
+          "name": {
+            "en": "The Hong Kong and China Gas Company Limited",
+            "sc": "香港中华煤气有限公司",
+            "tc": "香港中華煤氣有限公司"
+          }
+        },
+        {
+          "datasetCount": 12,
+          "id": "hkelectric",
+          "name": {
+            "en": "The Hongkong Electric Company, Limited",
+            "sc": "香港电灯有限公司",
+            "tc": "香港電燈有限公司"
+          }
+        },
+        {
+          "datasetCount": 6,
+          "id": "tpd",
+          "name": {
+            "en": "Town Planning Board",
+            "sc": "城市规划委员会",
+            "tc": "城市規劃委員會"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "hk-tid",
+          "name": {
+            "en": "Trade and Industry Department",
+            "sc": "工业贸易署",
+            "tc": "工業貿易署"
+          }
+        },
+        {
+          "datasetCount": 58,
+          "id": "hk-td",
+          "name": {
+            "en": "Transport Department",
+            "sc": "运输署",
+            "tc": "運輸署"
+          }
+        },
+        {
+          "datasetCount": 3,
+          "id": "hk-tlb",
+          "name": {
+            "en": "Transport and Logistics Bureau",
+            "sc": "运输及物流局",
+            "tc": "運輸及物流局"
+          }
+        },
+        {
+          "datasetCount": 14,
+          "id": "hk-try",
+          "name": {
+            "en": "Treasury",
+            "sc": "库务署",
+            "tc": "庫務署"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "traway",
+          "name": {
+            "en": "Tsui Wah Ferry Service (H.K.) Limited",
+            "sc": "翠华船务(香港)有限公司",
+            "tc": "翠華船務(香港)有限公司"
+          }
+        },
+        {
+          "datasetCount": 27,
+          "id": "hk-ugc",
+          "name": {
+            "en": "University Grants Committee Secretariat",
+            "sc": "大学教育资助委员会秘书处",
+            "tc": "大學教育資助委員會秘書處"
+          }
+        },
+        {
+          "datasetCount": 2,
+          "id": "ura",
+          "name": {
+            "en": "Urban Renewal Authority",
+            "sc": "市区重建局",
+            "tc": "市區重建局"
+          }
+        },
+        {
+          "datasetCount": 71,
+          "id": "hk-wsd",
+          "name": {
+            "en": "Water Supplies Department",
+            "sc": "水务署",
+            "tc": "水務署"
+          }
+        },
+        {
+          "datasetCount": 1,
+          "id": "wkcda",
+          "name": {
+            "en": "West Kowloon Cultural District Authority",
+            "sc": "西九文化区管理局",
+            "tc": "西九文化區管理局"
+          }
+        },
+        {
+          "datasetCount": 20,
+          "id": "hk-wfsfaa",
+          "name": {
+            "en": "Working Family and Student Financial Assistance Agency",
+            "sc": "在职家庭及学生资助事务处",
+            "tc": "在職家庭及學生資助事務處"
+          }
+        }
+      ]
+    },
+    "size": 31174
+  },
+  "categories_json": {
+    "status": "success",
+    "status_code": 200,
+    "content_type": "application/json",
+    "data": {
+      "categories": [
+        {
+          "id": "city-management",
+          "name": {
+            "en": "City Management and Utilities",
+            "tc": "城市管理及公共設施",
+            "sc": "城市管理及公共设施"
+          }
+        },
+        {
+          "id": "climate-and-weather",
+          "name": {
+            "en": "Climate and Weather",
+            "tc": "氣象",
+            "sc": "气象"
+          }
+        },
+        {
+          "id": "commerce-and-industry",
+          "name": {
+            "en": "Commerce and Industry",
+            "tc": "工商業",
+            "sc": "工商业"
+          }
+        },
+        {
+          "id": "social-welfare",
+          "name": {
+            "en": "Community and Social Welfare",
+            "tc": "社區及社會福利",
+            "sc": "社区及社会福利"
+          }
+        },
+        {
+          "id": "development",
+          "name": {
+            "en": "Development, Geography and Land Information",
+            "tc": "發展、地理及土地資訊",
+            "sc": "发展、地理及土地资讯"
+          }
+        },
+        {
+          "id": "education",
+          "name": {
+            "en": "Education",
+            "tc": "教育",
+            "sc": "教育"
+          }
+        },
+        {
+          "id": "legislature",
+          "name": {
+            "en": "Election and Legislature",
+            "tc": "選舉及立法機關",
+            "sc": "选举及立法机关"
+          }
+        },
+        {
+          "id": "employment-and-labour",
+          "name": {
+            "en": "Employment and Labour",
+            "tc": "就業及勞工",
+            "sc": "就业及劳工"
+          }
+        },
+        {
+          "id": "environment",
+          "name": {
+            "en": "Environment",
+            "tc": "環境",
+            "sc": "环境"
+          }
+        },
+        {
+          "id": "finance",
+          "name": {
+            "en": "Finance",
+            "tc": "財經",
+            "sc": "财经"
+          }
+        },
+        {
+          "id": "food",
+          "name": {
+            "en": "Food",
+            "tc": "食物",
+            "sc": "食物"
+          }
+        },
+        {
+          "id": "health",
+          "name": {
+            "en": "Health",
+            "tc": "衞生",
+            "sc": "卫生"
+          }
+        },
+        {
+          "id": "housing",
+          "name": {
+            "en": "Housing",
+            "tc": "房屋",
+            "sc": "房屋"
+          }
+        },
+        {
+          "id": "law-and-security",
+          "name": {
+            "en": "Law and Security",
+            "tc": "法律及保安",
+            "sc": "法律及保安"
+          }
+        },
+        {
+          "id": "population",
+          "name": {
+            "en": "Population",
+            "tc": "人口",
+            "sc": "人口"
+          }
+        },
+        {
+          "id": "recreation-and-culture",
+          "name": {
+            "en": "Recreation, Sports and Culture",
+            "tc": "康樂、體育及文化",
+            "sc": "康乐、体育及文化"
+          }
+        },
+        {
+          "id": "information-technology-and-broadcasting",
+          "name": {
+            "en": "Technology and Broadcasting",
+            "tc": "科技及廣播",
+            "sc": "科技及广播"
+          }
+        },
+        {
+          "id": "tourism",
+          "name": {
+            "en": "Tourism",
+            "tc": "旅遊",
+            "sc": "旅游"
+          }
+        },
+        {
+          "id": "transport",
+          "name": {
+            "en": "Transportation",
+            "tc": "運輸",
+            "sc": "运输"
+          }
+        },
+        {
+          "id": "miscellaneous",
+          "name": {
+            "en": "Miscellaneous",
+            "tc": "其他",
+            "sc": "其他"
+          }
+        }
+      ]
+    },
+    "size": 4253
+  },
+  "formats_json": {
+    "status": "success",
+    "status_code": 200,
+    "content_type": "application/json",
+    "data": {
+      "formats": [
+        "3DS",
+        "API",
+        "ASC",
+        "ASCII",
+        "CESIUM3DTILES",
+        "CSV",
+        "DAE",
+        "DGN",
+        "DWG",
+        "FBX",
+        "FGDB",
+        "GEOPACKAGE",
+        "GEOTIFF",
+        "GFS",
+        "GLTF",
+        "GML",
+        "GTFS",
+        "GeoJSON",
+        "ICS",
+        "JPEG",
+        "JSON",
+        "KML",
+        "KMZ",
+        "MAX",
+        "MDB",
+        "OBJ",
+        "OSGB",
+        "PNG",
+        "RINEX",
+        "RSS",
+        "RTCM",
+        "SHP",
+        "VRML",
+        "XLS",
+        "XLSM",
+        "XLSX",
+        "XML",
+        "ZIP"
+      ]
+    },
+    "size": 634
+  },
+  "rss_feed": {
+    "status": "success",
+    "status_code": 200,
+    "content_type": "text/xml; charset=utf-8",
+    "data": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rss version=\"2.0\"><channel><title>Information on Data Files</title><link>https://data.gov.hk</link><description>Information on data files at DATA.GOV.HK that are either newly made available or with destination path updated in the past 14 days</description><lastBuildDate>Fri, 24 Oct 2025 05:00:24 -0000</lastBuildDate><generator>DATA.GOV.HK</generator><docs>https://validator.w3.org/feed/docs/rss2.html</docs><item><title>The Informtation of Qualifications on the Qualifications Register by Area of Study and Training and QF Level (Simplified Chinese version)</title><link>https://data.gov.hk/en-data/dataset/hkcaavq-feqr-datasetc2-qr/resource/2e41f190-24fc-4308-9a58-54fe7f169d73</link><description>This dataset provides the information of Qualifications on the Qualifications Register by Area of Study and Training and QF Level .</description><pubDate>Thu, 23 Oct 2025 18:58:40 -0000</pubDate></item><item><title>The Informtation of Qualifications on the Qua...",
+    "size": 101390
+  },
+  "climate_weather_category": {
+    "status": "success",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "data": "<!DOCTYPE html> <!--[if lte IE 9]><html class=\"no-js lte-ie9 lang-en\" lang=\"en\"><![endif]--> <!--[if gt IE 9]><!--> <html class=\"no-js lang-en\" lang=\"en\"> <!--<![endif]--> <head> <script src=\"/assets/constant.js?v=1\"></script> <meta charset=\"utf-8\"> <meta content=\"IE=edge\" http-equiv=X-UA-Compatible> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"> <meta name=\"description\" content=\"DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.\" /> <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/assets/shared/img/favicon/apple-touch-icon.png\"> <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/assets/shared/img/favicon/android-chrome-192x192.png\"> <link rel=\"...",
+    "size": 41752
+  },
+  "hko_provider": {
+    "status": "success",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "data": "<!DOCTYPE html> <!--[if lte IE 9]><html class=\"no-js lte-ie9 lang-en\" lang=\"en\"><![endif]--> <!--[if gt IE 9]><!--> <html class=\"no-js lang-en\" lang=\"en\"> <!--<![endif]--> <head> <script src=\"/assets/constant.js?v=1\"></script> <meta charset=\"utf-8\"> <meta content=\"IE=edge\" http-equiv=X-UA-Compatible> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"> <meta name=\"description\" content=\"DATA.GOV.HK is coordinated by the Digital Policy Office with the participation of different government departments and public / private organisations to disseminate various types of open data for free re-use for both commercial and non-commercial purposes subject to the Terms and Conditions of Use as published on DATA.GOV.HK and related websites.\" /> <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/assets/shared/img/favicon/apple-touch-icon.png\"> <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/assets/shared/img/favicon/android-chrome-192x192.png\"> <link rel=\"...",
+    "size": 41752
+  }
+}

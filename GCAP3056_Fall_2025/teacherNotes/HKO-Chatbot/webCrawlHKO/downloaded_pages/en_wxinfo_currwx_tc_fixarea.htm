@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tropical Cyclone Track and Position｜Hong Kong Observatory(HKO)｜Tropical Cyclone</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Tropical Cyclone Track and Position">
+    <meta name="description" content="Tropical Cyclone Track and Position">
+    <meta name="recordId" content="2018123100000036667">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Tropical Cyclone Track and Position" />
+	<meta property="og:description" content="Tropical Cyclone: Tropical Cyclone Track ProbabilityForecast Geographic InformationSystem (GIS) version When a tropical cyclone forms within or enters the area bounded by 7-36N and 100-140E, the Observatory will issue the" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/currwx/tc_fixarea.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+		#desc>table {
+			width: 530px !important;
+			max-width: 100% !important;
+		}
+		.table_width_400{
+			max-width: 300px !important;
+			width: 100% !important;
+			min-width: unset !important;
+		}
+		@media screen and (max-width: 570px) {
+				.mobile_hidden{
+					display:none;
+				}
+		}
+		#fcstpos_htm>div>ul>li:nth-child(1)>div>table{
+			min-width: 600px  !important;
+		}
+		.div_select_tc{
+			display: inline-block;
+			width: calc(100% - 430px);
+			min-width: 450px;
+			max-width: 100%;
+		}
+		.header_button{
+			text-align: center;
+		}
+	.data_table th,
+	.data_table td {
+		font-size: 1em !important;
+	}
+	#table_header_icon{
+		display: inline-block;
+		width: 420px;
+	}
+	#table_header_icon>tbody>tr>td:nth-child(1){
+		width:99% !important;
+	}
+	#table_header_icon>tbody>tr>td:nth-child(2){
+		width:1% !important;
+	}
+	#table_header_icon table{
+		float: right;
+	}
+	#tc_desc>table{
+		max-width:720px;
+		width: 100%;
+	}
+	@media screen and (max-width: 767px) {
+		#table_header_icon table{
+			float: unset !important;
+			margin: 0 auto !important;
+		}
+		body #table_header_icon{
+			width: auto;
+		}
+		body .div_select_tc{
+			width: auto;
+			min-width: auto;
+			text-align: center;
+			display: block;
+		}
+		.mainContent #fcstpos_htm .div_responsive_table_1 .data_table{
+			width:100% !important;
+		}
+		#icon_table_1{
+			min-width: 230px !important;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		body .mainContent .div_select_tc{
+			width: 100%;
+		}
+		body #div_select_tc .tropical{
+			display: block;
+			margin-right: 0;
+		}
+	}
+		.table_width_400{
+			max-width: 500px !important;
+			width: 100% !important;
+			min-width: unset !important;
+		}
+		.mainContent #fcstpos_htm .div_responsive_table_1 .data_table{
+			width:80% !important;
+			margin:0 auto;
+		}
+		.mainContent #fcstpos_htm .div_responsive_table_1 .table_width_400{
+			width:400px !important;
+			margin: unset;
+		}
+		[align=center]{
+			text-align:center;
+		}
+		.tropical_txt{
+			background-color:#F0D25A;
+			color:#666666 !important;
+		}
+		.tropical_btn{
+			background-color:#1a58ab;
+			color:#fff !important;
+		}
+		#div_select_tc{
+			margin-top:10px;
+		}
+		#div_select_tc .tropical{
+			margin-right:10px;
+			padding:10px;
+			text-decoration:none;
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+		#fcstpos_htm, #fcstpos_htm h2{
+		text-align:center !important;
+		}
+		#fcstpos_htm>ul{
+		text-align:left !important;
+		}
+		#fcstpos_htm span{
+			font-size:16px !important;
+		}
+			.data{
+			display:none;
+		}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '32';
+var section_id = '2018010100000010786';
+
+   var tcid=getURLParameter('tcid');
+$(document).ready( function() {
+	tcid=getURLParameter('tcid');
+	if (typeof tc !== 'undefined') {
+
+		if(!tcid){
+			var arrtc = tc[0].split(",");
+			tcid = arrtc[0];
+		} else {
+			if (!validTCId(tcid)) {
+				window.location.href = "./tc_fixarea.htm";
+			}
+		}
+
+		var vue = new Vue({
+			el: '#mainContent',
+			router: router,
+			data: function () {
+				return {
+					name:'',
+					datetime:'',
+					fcstpos_htm:'',
+					nwp:'',
+					tc:'',
+					zoom:'',
+					desc:''
+				}
+			},
+			mounted: function (){
+				moment.locale('zh-hk');
+				//var tcid = this.$route.query.id;
+				var self = this;
+				$.getJSON('../../../wxinfo/currwx/tc_pos_'+tcid+'.json', function(data){
+					var data = data.tc_fixarea_e_htm;
+					self.name = data.name_e;
+					self.datetime = data.datetime;
+					self.fcstpos_htm = data.fcstpos_htm;
+					data.nwp.src = "../../../wxinfo/currwx/"+data.nwp.src;
+					self.nwp = data.nwp;
+					self.desc = data.desc;
+					if (typeof data.tc !== 'undefined') {
+						data.tc.src = "../../../wxinfo/currwx/"+data.tc.src;
+						self.tc = data.tc;
+						$(".tc-img").css("display","");
+					}
+					if (typeof data.zoom !== 'undefined') {
+						data.zoom.src = "../../../wxinfo/currwx/"+data.zoom.src;
+						self.zoom = data.zoom;
+						$(".zoom-img").css("display","");
+					}
+					$(".data").css("display","block");
+				});
+			},
+			updated: function (){
+					$('#fcstpos_htm table:first').addClass("data_table table_border_1"); 
+					$('#fcstpos_htm table:first th').addClass("self_align_center"); 
+					$('#fcstpos_htm>h1').replaceWith('<h2>' + $('#fcstpos_htm>h1').html() + '</h2>'); 
+					$('#fcstpos_htm>ul>li:first>table').addClass("data_table table_border_1");  
+					$('#fcstpos_htm table').eq(0).find('tr:nth-child(3)>td:nth-child(3)').css('text-align', 'center');
+					$('#fcstpos_htm table').eq(0).find('tr:nth-child(3)>td:nth-child(4)').css('text-align', 'center');
+					$("#fcstpos_htm>ul>li:first>table>tbody>tr:nth-child(1) td").each(function() {
+						colspan = $(this).attr("colspan");
+						rowspan = $(this).attr("rowspan");
+						//$(this).replaceWith('<th>' + $(this).text() + '</th>'); 
+						if(rowspan){
+							console.log('rowspan:'+rowspan);
+							$(this).replaceWith('<th rowspan="'+rowspan+'">' + $(this).html() + '</th>'); 
+						}
+						if(colspan){
+							$(this).replaceWith('<th colspan="'+colspan+'">' + $(this).html() + '</th>'); 
+							console.log('colspan:'+colspan);
+						}
+					});
+					$("#fcstpos_htm>ul>li:first>table>tbody>tr:nth-child(2) td").each(function() {
+						colspan = $(this).attr("colspan");
+						rowspan = $(this).attr("rowspan");
+						$(this).replaceWith('<th>' + $(this).html() + '</th>'); 
+						if(rowspan){ 
+							$(this).attr("rowspan", rowspan);
+						}
+						if(colspan){ 
+							$(this).attr("colspan", colspan);
+						}
+					 });
+					$('#fcstpos_htm a').each(function() {
+						var ahref = $(this).attr('href');
+						if($(this).attr('href')){
+							if($(this).attr('href').indexOf('tc_pastpos_')>=0 || $(this).attr('href').indexOf('tc_pastposc_')>=0){
+								tcid = $(this).attr('href').replace('tc_pastpos_','').replace('tc_pastposc_','').replace('.htm','');
+								$(this).attr('href', 'tc_pastpos.htm?tcid='+tcid );
+							}else if($(this).attr('href').indexOf('tc_gis_e.htm')>=0 || $(this).attr('href').indexOf('tc_gis_c.htm')>=0){
+								$(this).attr('href', 'tc_gis.htm' ); 
+							}else if($(this).attr('href').indexOf('tcswarn.htm')>=0 || $(this).attr('href').indexOf('tcswarnc.htm')>=0){
+								$(this).attr('href', 'tcswarn.htm' ); 
+							}else if($(this).attr('href').indexOf('tc_spm.htm')>=0 || $(this).attr('href').indexOf('tc_spm_uc.htm')>=0){
+								$(this).attr('href', '../../probfcst/tc_spm.htm' ); 
+							}else if($(this).attr('href').indexOf('informtc/tcReport')>=0){
+								$(this).attr('href', '../../informtc/tcReport.htm' ); 
+							}
+						}
+					});
+					$('#fcstpos_htm table:first').wrap('<div class="div_responsive_table_1"></div>');
+					$('#fcstpos_htm>ul>li:nth-child(1)>table').wrap('<div class="div_responsive_table_1"></div>');
+					$('#fcstpos_htm>ul>li:nth-child(2)>table').addClass("data_table table_border_1 table_width_400"); 
+					$('#sel_tropical').val(tcid);
+			}
+		}); 
+		var list = $("#sel_tropical"); 
+		var content = "";
+		var btn_class="";
+		var tcid = getURLParameter("tcid");
+		for (i = 0; i < tc.length; i++) {
+			var arrtc = tc[i].split(",");console.log(arrtc);
+			//list.append(new Option(arrtc[1], arrtc[0]));
+			if(tcid == arrtc[0]){
+				btn_class = "tropical_txt tropical";
+				href = "#";
+			}else{
+				btn_class = "tropical_btn tropical";
+				href = "javascript:change_tc("+arrtc[0]+")";
+			}
+			content += "<a href='"+href+"' class='"+btn_class+"' >"+arrtc[1]+"</a>";
+		}
+		list.append(content);
+		$(".access, .externalText").each(function(){
+			$(this).attr('style', 'color: black !important');
+		});
+	}else{
+		//$("#div_tc tbody").html("<tr><td><span style=\"color:#d70000;\">	When a tropical cyclone forms within or enters the area bounded by 7-36N and 100-140E, the Observatory will issue the first tropical cyclone track within two hours.</span><br><br></td></tr>");
+		$("#no_tropical_cyclone").show();
+		$("#div_select_tc").hide();
+		$("#tropical_cyclone").hide();
+	}
+});
+
+function change_tc(value){
+if(value !=tcid )
+	window.location.href = updateURLParameter('tc_fixarea.htm', 'tcid', value);
+else
+	return ;
+}
+
+function validTCId(tcid) {
+	var valid = false;
+	
+	$.each(tc, function() {
+		var tc_info = this.split(",");
+		if (tcid == tc_info[0]) {
+			valid = true;
+		}
+	});
+	return valid;
+}
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Tropical Cyclone Track and Position</h1>
+                <div class="border_blank">
+                    <!--Content Start-->
+<script src="../../../wxinfo/currwx/tc_gis_list.js"></script>
+
+<div class="header_button">
+	<div class="div_select_tc" id="div_select_tc"><span>Tropical Cyclone: </span> 
+		<label class="hidden" for="sel_tropical">Tropical Cyclone</label> 
+		<span id="sel_tropical"></span>
+	</div>
+	<table id="table_header_icon" class="self_row2_table">
+		<tbody>
+			<tr>
+				<td>
+					<table style="background-color: #87d156; min-width: 180px;"
+						class="table_border_0 table_cellpadding_2 table_cellspacing_2" id="icon_table_1">
+						<tbody>
+							<tr>
+								<td style="background-color: #87d156;">
+									<a href="../../../en/probfcst/tc_spm.htm">
+										<img src="../../../en/wxinfo/currwx/images/spmICON_tctrack.png" alt="Track Probability Forecast" style="max-height: 45px; border: 0px;" />
+									</a>
+								</td>
+								<td style="background-color: #87d156;">
+									<a href="../../../en/probfcst/tc_spm.htm" style="text-decoration: none;">Track Probability<br>Forecast</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<td></td>
+				<td>
+					<table style="background-color: #f0d25a; min-width: 230px;"
+						class="table_border_0 table_cellpadding_2 table_cellspacing_2">
+						<tbody>
+							<tr>
+								<td style="background-color: #f0d25a;">
+									<a href="tc_gis.htm">
+										<img src="../../../en/wxinfo/currwx/images/gisICON_tctrack.png" alt="Icon of System (GIS) version" style="max-height: 45px; border: 0px;" />
+									</a>
+								</td>
+								<td style="background-color: #f0d25a;">
+									<a href="tc_gis.htm" style="text-decoration: none;">Geographic Information<br>System (GIS) version</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!-- SPM LINK END -->
+
+<br>
+<div id="no_tropical_cyclone" style="display: none;">
+	<!--NO_TROPICAL_CYCLONE-->
+	When a tropical cyclone forms within or
+	enters the area bounded by 7-36N and 100-140E, the Observatory will issue the first tropical cyclone track within
+	two hours.
+	<br>
+	<br>
+	<div class="self_align_center">
+		<img src="../../../en/wxinfo/currwx/images/nwp_noTC.png" alt="image" />
+	</div>
+	<br>
+	<br>
+	<br>
+	<span style="font-size: 113%; font-weight: bold; text-decoration: underline;">Notes</span>
+	<br>
+	<span style="font-size: 100%;"> (1) <em> When a tropical cyclone is located within the above area but outside the area
+			bounded by 10-30N and 105-125E, the Observatory will update the tropical cyclone track at 04:00, 10:00,
+			16:00 and 22:00 Hong Kong time (corresponding to the observation time at 02:00, 08:00, 14:00 and 20:00
+			respectively). </em> <br>(2) <em> Tropical cyclone warnings for shipping will be issued by the Observatory
+			for tropical cyclones located within the area bounded by 10-30N and 105-125E. The forecast tracks for these
+			tropical cyclones will be updated at 3-hourly intervals. </em>
+	</span>
+</div>
+<div id="tropical_cyclone" style="margin: 0; position: relative;" class="self_align_center">
+	<h2 class="self_align_center">{{name}}<br>{{datetime}}</h2>
+	<div style="margin: 0; position: relative;" class="self_align_center">
+		<div v-html="desc" class="self_align_center" id="tc_desc"></div>
+		<img class="nwp-img" :src="nwp.src" :alt="nwp.alt" alt="nwp" />
+		<img class="tc-img" :src="tc.src" :alt="tc.alt" alt="tc" style="display: none;" />
+		<img class="zoom-img" :src="zoom.src" :alt="zoom.alt" alt="zoom" style="display: none;" />
+		<div v-html="fcstpos_htm" id="fcstpos_htm"></div>
+	</div>
+</div>
+<!--Content End-->
+<script>var last_revision_date = '9 January 2023';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

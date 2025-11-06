@@ -1,0 +1,77 @@
+Type,Text,URL,Full URL
+Main Menu,Datasets,/en-datasets,https://data.gov.hk/en-datasets
+Main Menu,City Management and Utilities,/en-datasets/category/city-management,https://data.gov.hk/en-datasets/category/city-management
+Main Menu,Climate and Weather,/en-datasets/category/climate-and-weather,https://data.gov.hk/en-datasets/category/climate-and-weather
+Main Menu,Commerce and Industry,/en-datasets/category/commerce-and-industry,https://data.gov.hk/en-datasets/category/commerce-and-industry
+Main Menu,Community and Social Welfare,/en-datasets/category/social-welfare,https://data.gov.hk/en-datasets/category/social-welfare
+Main Menu,"Development, Geography and Land Information",/en-datasets/category/development,https://data.gov.hk/en-datasets/category/development
+Main Menu,Education,/en-datasets/category/education,https://data.gov.hk/en-datasets/category/education
+Main Menu,Election and Legislature,/en-datasets/category/legislature,https://data.gov.hk/en-datasets/category/legislature
+Main Menu,Employment and Labour,/en-datasets/category/employment-and-labour,https://data.gov.hk/en-datasets/category/employment-and-labour
+Main Menu,Environment,/en-datasets/category/environment,https://data.gov.hk/en-datasets/category/environment
+Main Menu,Finance,/en-datasets/category/finance,https://data.gov.hk/en-datasets/category/finance
+Main Menu,Food,/en-datasets/category/food,https://data.gov.hk/en-datasets/category/food
+Main Menu,Health,/en-datasets/category/health,https://data.gov.hk/en-datasets/category/health
+Main Menu,Housing,/en-datasets/category/housing,https://data.gov.hk/en-datasets/category/housing
+Main Menu,Law and Security,/en-datasets/category/law-and-security,https://data.gov.hk/en-datasets/category/law-and-security
+Main Menu,Population,/en-datasets/category/population,https://data.gov.hk/en-datasets/category/population
+Main Menu,"Recreation, Sports and Culture",/en-datasets/category/recreation-and-culture,https://data.gov.hk/en-datasets/category/recreation-and-culture
+Main Menu,Technology and Broadcasting,/en-datasets/category/information-technology-and-broadcasting,https://data.gov.hk/en-datasets/category/information-technology-and-broadcasting
+Main Menu,Tourism,/en-datasets/category/tourism,https://data.gov.hk/en-datasets/category/tourism
+Main Menu,Transportation,/en-datasets/category/transport,https://data.gov.hk/en-datasets/category/transport
+Main Menu,Miscellaneous,/en-datasets/category/miscellaneous,https://data.gov.hk/en-datasets/category/miscellaneous
+Main Menu,Providers,/en/providers,https://data.gov.hk/en/providers
+Main Menu,Help,/en/help,https://data.gov.hk/en/help
+Main Menu,User Guide,/en/user-guide,https://data.gov.hk/en/user-guide
+Main Menu,FAQs,/en/faq,https://data.gov.hk/en/faq
+Main Menu,Developer Center,/en/dev-center,https://data.gov.hk/en/dev-center
+Main Menu,API Specification,/en/help/api-spec,https://data.gov.hk/en/help/api-spec
+Main Menu,CKAN API Development Guide,/en/help/ckan-api-development-guide,https://data.gov.hk/en/help/ckan-api-development-guide
+Main Menu,Community,/en/community,https://data.gov.hk/en/community
+Main Menu,About Open Data,/en/about-open-data,https://data.gov.hk/en/about-open-data
+Main Menu,City Dashboard,/en/city-dashboard,https://data.gov.hk/en/city-dashboard
+Main Menu,Consolidated Annual Open Data Plans (Spatial Data Plans included),/en/annual-open-data-plans,https://data.gov.hk/en/annual-open-data-plans
+Main Menu,Feedback Form,/en/feedback,https://data.gov.hk/en/feedback
+Main Menu,Applications,/en/application,https://data.gov.hk/en/application
+Category,City Management and Utilities,/en-datasets/category/city-management,https://data.gov.hk/en-datasets/category/city-management
+Category,Climate and Weather,/en-datasets/category/climate-and-weather,https://data.gov.hk/en-datasets/category/climate-and-weather
+Category,Commerce and Industry,/en-datasets/category/commerce-and-industry,https://data.gov.hk/en-datasets/category/commerce-and-industry
+Category,Community and Social Welfare,/en-datasets/category/social-welfare,https://data.gov.hk/en-datasets/category/social-welfare
+Category,"Development, Geography and Land Information",/en-datasets/category/development,https://data.gov.hk/en-datasets/category/development
+Category,Education,/en-datasets/category/education,https://data.gov.hk/en-datasets/category/education
+Category,Election and Legislature,/en-datasets/category/legislature,https://data.gov.hk/en-datasets/category/legislature
+Category,Employment and Labour,/en-datasets/category/employment-and-labour,https://data.gov.hk/en-datasets/category/employment-and-labour
+Category,Environment,/en-datasets/category/environment,https://data.gov.hk/en-datasets/category/environment
+Category,Finance,/en-datasets/category/finance,https://data.gov.hk/en-datasets/category/finance
+Category,Food,/en-datasets/category/food,https://data.gov.hk/en-datasets/category/food
+Category,Health,/en-datasets/category/health,https://data.gov.hk/en-datasets/category/health
+Category,Housing,/en-datasets/category/housing,https://data.gov.hk/en-datasets/category/housing
+Category,Law and Security,/en-datasets/category/law-and-security,https://data.gov.hk/en-datasets/category/law-and-security
+Category,Population,/en-datasets/category/population,https://data.gov.hk/en-datasets/category/population
+Category,"Recreation, Sports and Culture",/en-datasets/category/recreation-and-culture,https://data.gov.hk/en-datasets/category/recreation-and-culture
+Category,Technology and Broadcasting,/en-datasets/category/information-technology-and-broadcasting,https://data.gov.hk/en-datasets/category/information-technology-and-broadcasting
+Category,Tourism,/en-datasets/category/tourism,https://data.gov.hk/en-datasets/category/tourism
+Category,Transportation,/en-datasets/category/transport,https://data.gov.hk/en-datasets/category/transport
+Category,Miscellaneous,/en-datasets/category/miscellaneous,https://data.gov.hk/en-datasets/category/miscellaneous
+Category,City Management and Utilities,/en-datasets/category/city-management,https://data.gov.hk/en-datasets/category/city-management
+Category,Climate and Weather,/en-datasets/category/climate-and-weather,https://data.gov.hk/en-datasets/category/climate-and-weather
+Category,Commerce and Industry,/en-datasets/category/commerce-and-industry,https://data.gov.hk/en-datasets/category/commerce-and-industry
+Category,Community and Social Welfare,/en-datasets/category/social-welfare,https://data.gov.hk/en-datasets/category/social-welfare
+Category,"Development, Geography and Land Information",/en-datasets/category/development,https://data.gov.hk/en-datasets/category/development
+Category,Education,/en-datasets/category/education,https://data.gov.hk/en-datasets/category/education
+Category,Election and Legislature,/en-datasets/category/legislature,https://data.gov.hk/en-datasets/category/legislature
+Category,Employment and Labour,/en-datasets/category/employment-and-labour,https://data.gov.hk/en-datasets/category/employment-and-labour
+Category,Environment,/en-datasets/category/environment,https://data.gov.hk/en-datasets/category/environment
+Category,Finance,/en-datasets/category/finance,https://data.gov.hk/en-datasets/category/finance
+Category,Food,/en-datasets/category/food,https://data.gov.hk/en-datasets/category/food
+Category,Health,/en-datasets/category/health,https://data.gov.hk/en-datasets/category/health
+Category,Housing,/en-datasets/category/housing,https://data.gov.hk/en-datasets/category/housing
+Category,Law and Security,/en-datasets/category/law-and-security,https://data.gov.hk/en-datasets/category/law-and-security
+Category,Population,/en-datasets/category/population,https://data.gov.hk/en-datasets/category/population
+Category,"Recreation, Sports and Culture",/en-datasets/category/recreation-and-culture,https://data.gov.hk/en-datasets/category/recreation-and-culture
+Category,Technology and Broadcasting,/en-datasets/category/information-technology-and-broadcasting,https://data.gov.hk/en-datasets/category/information-technology-and-broadcasting
+Category,Tourism,/en-datasets/category/tourism,https://data.gov.hk/en-datasets/category/tourism
+Category,Transportation,/en-datasets/category/transport,https://data.gov.hk/en-datasets/category/transport
+Category,Miscellaneous,/en-datasets/category/miscellaneous,https://data.gov.hk/en-datasets/category/miscellaneous
+Provider,Providers,/en/providers,https://data.gov.hk/en/providers
+Provider,Providers,/en/providers,https://data.gov.hk/en/providers

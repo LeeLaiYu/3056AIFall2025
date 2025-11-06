@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-hk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Application for Talks on Climate Change for Schools｜Hong Kong Observatory(HKO)｜Climate Change</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" Application for Talks on Climate Change for Schools">
+    <meta name="description" content="Application for Talks on Climate Change for Schools">
+    <meta name="recordId" content="2018123100000036625">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Application for Talks on Climate Change for Schools" />
+	<meta property="og:description" content="Details of School and Contact Person Name of School : &amp;nbsp; Address of School : &amp;nbsp; Name of contact person : &amp;nbsp; Telephone No. : &amp;nbsp; E-mail : &amp;nbsp; &amp;nbsp;" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/climate_change/cc_school_form.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+		.tfDef {  width: 240px;BORDER-BOTTOM: #000066 1px solid; BORDER-LEFT: #000066 1px solid; BORDER-RIGHT: #000066 1px solid; BORDER-TOP: #000066 1px solid; COLOR: #000066;}
+.selDate {  width: 70px}
+.selGrade {  width: 90px}
+.tfEmail{
+	display: none;
+}
+.btnDef {  font-family: "Times New Roman", "Times", "serif"; width: 60px}
+.td_blank {display:block !important;}
+@media screen and (max-width: 500px) {
+	.table_result {
+		width:100% !important;
+		max-width:500px !important;
+	}
+  .td_blank {display:none !important;}
+ .row2_table td, .row2_table th, .row2_table td>div{
+	text-align:left !important;
+ }
+ input, textarea {
+	width:100% !important;
+ }
+}
+    .table_result tr td:first-child {
+   font-weight:bold !important;
+}
+		.data_table th{
+			text-align : center !important;
+		}
+		#result_content{
+			display:none;
+		}
+	table tbody tr>td:first-child {
+		width: 1%;
+	}
+	table tbody tr>td:first-child>div {
+		white-space: nowrap;
+	}
+	table .tfDef {
+		width: 100%;
+	}
+	@media screen and (max-width: 767px) {
+		table tr td {
+			display: block;
+			width: 100% !important;
+		}
+		table tbody tr>td:first-child>div {
+			white-space: normal;
+			text-align: left !important;
+		}
+		table .mobile_hide {
+			display: none !important;
+		}
+		#form_content>div:first-child {
+			margin-bottom: 20px !important;
+		}		
+	}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+	
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000010157';
+
+         
+// Redirect to eforms.weather.gov.hk
+window.location.replace("https://eforms.weather.gov.hk/eforms_v2/cc_school_form_e.fm");
+
+var nYearDisplay = 2
+var i
+var currentTime = new Date()
+var month = currentTime.getMonth() + 1
+var day = currentTime.getDate()
+var year = currentTime.getFullYear()
+//document.write("<SELECT class="selDate" name=selYYYY title=\"Please select year\">")
+//document.write("<option value='nil' selected>Year</option>")
+function CheckLen( obj, maxL, msg ){
+	if (obj.value.length > maxL){
+		if ( msg != "" ){
+			alert(msg)
+		}
+		obj.value=obj.value.substring(0, maxL)
+	}
+}	//
+function CheckForm(aForm){
+	var newline	= "\n\r"
+	var msg = ""
+                     var result = ""
+	if (aForm.schoolname.value == ""){ msg = msg + "- Please input 'School'" + newline }
+	if (aForm.schoolname.value.length > aForm.maxLenDef.value){ msg = msg + "- 'School' exceeds length limit" + newline }
+	if (aForm.txtAddr.value == ""){ msg = msg + "- Please input 'Address of School'" + newline }
+	if (aForm.schoolname.value.length > aForm.maxAddr.value){ msg = msg + "- 'Address of School' exceeds length limit" + newline }
+	if (aForm.contactname.value == ""){ msg = msg + "- Please input 'Contact person'" + newline }
+	if (aForm.contactname.value.length > aForm.maxLenDef.value){ msg = msg + "- 'Contact person' exceeds length limit" + newline }
+	if (aForm.telno.value == ""){ msg = msg + "- Please input 'Telephone'" + newline }
+	if (aForm.telno.value.length > aForm.maxLenDef.value){ msg = msg + "- 'Telephone' exceeds length limit" + newline }
+	if (aForm.contactemail.value == ""){ msg = msg + "- Please input 'E-mail'" + newline }
+	if (aForm.contactemail.value.length > aForm.maxLenDef.value){ msg = msg + "- 'E-mail' exceeds length limit" + newline }
+	if (aForm.selYYYY.options[aForm.selYYYY.selectedIndex].value == "nil" ||
+		aForm.selMM.options[aForm.selMM.selectedIndex].value == "nil" ||
+		aForm.sel10DD.options[aForm.sel10DD.selectedIndex].value == "nil"){
+		msg = msg + "- Please input the proposed date" + newline
+	}
+	if (aForm.selGrade.options[aForm.selGrade.selectedIndex].value == "nil"){ msg = msg + "- Please select 'Class'" + newline }
+	if (aForm.txtNumPeople.value == ""){
+		msg = msg + "- Please input 'Approx. no. of students'" + newline
+	}
+	else if (aForm.txtNumPeople.value.search(/\D/)>=0 || aForm.txtNumPeople.value < aForm.minPeople.value*1 || aForm.txtNumPeople.value > aForm.maxPeople.value*1){
+		msg = msg + "- 'Approx. no. of student' between " + aForm.minPeople.value + " and " + aForm.maxPeople.value + " is preferable" + newline
+	}
+	if (msg != ""){
+		msg = "Wrong information:" + newline + newline + msg + newline + "Please correct your information."
+		alert(msg)
+		return false
+	}
+	else{
+		return true
+	}
+}	// CheckForm
+function SubmitForm(aForm){ 
+	if (CheckForm(aForm)){
+		try{ 
+			var form = $("#formid");
+			//var url = '/cgi-bin/hko/cc_school_form_handler.pl';
+			var url = '../../cgi-bin/hko/cc_school_form_handler.pl';
+			$.ajax({
+			   type: "POST",
+			   data: form.serialize(), // serializes the form's elements.
+				   url: url, 
+				   success: function(data)
+				   { 
+						$("#result_content").show();
+						$("#form_content").hide();
+						var result = $($.parseHTML(data)).text();
+						if (result.indexOf('Problem processing Application of Talks on Cliamte Change for Schools') >= 0) {
+							$("#result_content").html('<P><h2>Problem processing Application of Talks on Cliamte Change for Schools</h2></P><P>Climate Change for SchoolsOnline Application Your application is not processed, <BR/>please input a valid .</P><P><INPUT TYPE="button" VALUE=" Back " onClick="window.location=\'cc_school_form.htm\'"></P>');
+						}else{
+							$("#result_content").html($($.parseHTML(data)).find('h2').parent().html());
+						}
+						//$("#result_content").html($($.parseHTML(data)).find('h2').parent().html());
+						$('#result_content table').addClass('table_result table_border_1 table_cellpadding_5 table_cellspacing_0 row2_table');
+						try{ 
+							$('#result_content img').each(function() {
+								var imgsrc = $(this).attr('src').replace('/climate_change/home_climate_change.jpg','../../en/climate_change/images/home_climate_change.jpg');
+								$(this).attr('src',imgsrc);
+							});
+							$('#result_content a').attr('href','climate_change.htm');
+						}catch(e){}
+				   }
+			});
+		}catch(e){
+			//alert(e);
+		}
+	}
+}	// SubmitForm
+$(document).ready( function() {
+	for (i=0; i<nYearDisplay; i++){ 
+		$('#selYYYY').append("<option value='" + (year*1+i).toString() + "'>" + (year*1+i).toString() + "</option>");
+	}
+});
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">跳至主要內容</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Application for Talks on Climate Change for Schools</h1>
+                <div class="border_blank">
+                    <!--Content Start-->
+<div id="form_content">
+<div style="margin: 0; position: relative;" class="self_align_center">
+<div style="width: 100%; margin: 0 auto;"><!--<form method=post action="http://203.129.68.38/cgi-bin/hko/cc_school_form_handler.pl">--><form id="formid" method="post" action=""><input type="hidden" value="e" name="lang" /> <input type="hidden" value="300" name="maxAddr" /> <input type="hidden" value="64" name="maxLenDef" /> <input type="hidden" value="30" name="minPeople" /> <input type="hidden" value="3000" name="maxPeople" />
+<table style="width: 100%;" class="table_border_0 table_cellpadding_5 table_cellspacing_0 row2_table">
+<tbody>
+<tr class="td_valign_top">
+<td colspan="3" style="background-color: #4071bb;"><span style="color: #ffffff;"><strong>Details of School and Contact Person</strong></span></td>
+</tr>
+<tr class="td_valign_top">
+<td class="td_valign_middle">
+<div class="self_align_right">Name of School :</div>
+</td>
+<td style="width: 1%;" class="td_valign_middle td_blank mobile_hide">&nbsp;</td>
+<td><input onfocus="this.style.backgroundColor='#fdf2cc'" onblur="this.style.backgroundColor='#ffffff'" title="Name of School" class="tfDef" maxlength="64" name="schoolname" type="text" /></td>
+</tr>
+<tr class="td_valign_top">
+<td class="td_valign_middle">
+<div class="self_align_right">Address of School :</div>
+</td>
+<td class="td_valign_middle td_blank mobile_hide">&nbsp;</td>
+<td><textarea onkeyup="CheckLen(this, this.form.maxAddr.value, 'test')" onfocus="this.style.backgroundColor='#fdf2cc'" onblur="this.style.backgroundColor='#ffffff'" title="Address of School" class="tfDef" rows="4" name="txtAddr"></textarea></td>
+</tr>
+<tr class="td_valign_top">
+<td class="td_valign_middle">
+<div class="self_align_right">Name of contact person :</div>
+</td>
+<td class="td_valign_middle td_blank mobile_hide">&nbsp;</td>
+<td><input onfocus="this.style.backgroundColor='#fdf2cc'" onblur="this.style.backgroundColor='#ffffff'" title="Name of contact person" class="tfDef" maxlength="64" name="contactname" type="text" /></td>
+</tr>
+<!-- <tr class="td_valign_top">
+<td class="td_valign_middle">
+<div class="self_align_right">Position :</div>
+</td>
+<td class="td_valign_middle td_blank mobile_hide">&nbsp;</td>
+<td><input onfocus="this.style.backgroundColor='#fdf2cc'" onblur="this.style.backgroundColor='#ffffff'" title="Position" class="tfDef" maxlength="64" name="contactpost" type="text" /></td>
+</tr> -->
+<tr class="td_valign_top">
+<td class="td_valign_middle">
+<div class="self_align_right">Telephone No. :</div>
+</td>
+<td class="td_valign_middle td_blank mobile_hide">&nbsp;</td>
+<td><input onfocus="this.style.backgroundColor='#fdf2cc'" onblur="this.style.backgroundColor='#ffffff'" title="Telephone No." class="tfDef" maxlength="20" name="telno" type="text" /></td>
+</tr>
+<tr class="td_valign_top">
+<td class="td_valign_middle">
+<div class="self_align_right">E-mail :</div>
+</td>
+<td class="td_valign_middle td_blank mobile_hide">&nbsp;</td>
+<td><input onfocus="this.style.backgroundColor='#fdf2cc'" onblur="this.style.backgroundColor='#ffffff'" title="E-mail" class="tfDef" maxlength="64" name="contactemail" type="text" /></td>
+</tr>
+<tr class="td_valign_top">
+<td class="td_valign_middle td_blank mobile_hide">&nbsp;</td>
+<td class="td_valign_middle">
+<div class="self_align_right"></div>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="td_valign_top">
+<td colspan="3" style="background-color: #4071bb;"><span style="color: #ffffff;"><strong>Proposed Date and Other Details</strong></span></td>
+</tr>
+<tr class="td_valign_top">
+<td class="td_valign_middle">
+<div class="self_align_right">Proposed date of Talk (Monday to Friday) :</div>
+</td>
+<td class="td_valign_middle td_blank">
+<div class="self_align_right"></div>
+</td>
+<td><select title="Please select month" class="selDate" name="selMM">
+<option value="nil">Month</option>
+<option value="01">Jan</option>
+<option value="02">Feb</option>
+<option value="03">Mar</option>
+<option value="04">Apr</option>
+<option value="05">May</option>
+<option value="06">Jun</option>
+<option value="07">Jul</option>
+<option value="08">Aug</option>
+<option value="09">Sep</option>
+<option value="10">Oct</option>
+<option value="11">Nov</option>
+<option value="12">Dec</option>
+</select><select title="Please select period" class="selDate" name="sel10DD">
+<option value="nil">Day</option>
+<option value="0">1-10</option>
+<option value="1">11-20</option>
+<option value="2">21-30</option>
+</select><select class="selDate" name="selYYYY" id="selYYYY" title="Please select year">
+<option value="nil" selected="selected">Year</option>
+</select></td>
+</tr>
+<tr class="td_valign_top">
+<td class="td_valign_middle">
+<div class="self_align_right">Class :</div>
+</td>
+<td class="td_valign_middle td_blank mobile_hide">
+<div class="self_align_right"></div>
+</td>
+<td><select title="Please select class" style="width: 90px;" name="selGrade">
+<option value="nil">Select</option>
+<option value="primary">Primary</option>
+<option value="secondary">Secondary</option>
+</select></td>
+</tr>
+<tr class="td_valign_top">
+<td class="td_valign_middle">
+<div class="self_align_right">Approximate number of students :</div>
+</td>
+<td class="td_valign_middle td_blank mobile_hide">&nbsp;</td>
+<td><input onfocus="this.style.backgroundColor='#fdf2cc'" onblur="this.style.backgroundColor='#ffffff'" title="Approximate number of students" class="tfDef" style="width: 70px;" maxlength="4" name="txtNumPeople" type="text" /></td>
+</tr>
+<tr class="td_valign_top">
+<td class="td_valign_middle td_blank mobile_hide">&nbsp;</td>
+<td class="td_valign_middle">
+<div class="self_align_right"></div>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<div>
+<div class="self_align_center"><input title="info" class="tfEmail" name="info" type="text" /> <input onclick="SubmitForm(this.form)" title="Send" class="btnDef" type="button" value="Send" name="send" />&nbsp;&nbsp;&nbsp; <input title="Cancel" class="btnDef" type="reset" value="Cancel" name="cancel" /></div>
+</div>
+</form></div>
+</div>
+<strong>Remarks:</strong>
+<ol>
+<li>The climate change talk is free of charge. Each talk will last about one hour and should be attended by at least 30 students.</li>
+<li>Joint talks are subject to the availability of speakers from co-organizers.</li>
+<li>Application should be made at least a month before the proposed date of the talk. The Observatory will confirm the proposed date and relevant arrangements.</li>
+<li>The applicant should provide venue, computer and projector for the talk.</li>
+</ol>
+<br /><strong>Enquiry:</strong><br />
+<table style="width: 400px;" class="table_border_0 table_cellpadding_3 table_cellspacing_0">
+<tbody>
+<tr>
+<td>
+<div class="self_align_left">Telephone: 2926 3106</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="self_align_left">E-mail: <a href="mailto:climchge@hko.gov.hk">climchge@hko.gov.hk</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<span style="font-size: 83%;"><br /><br /><br /><span style="text-decoration: underline;">Personal Data (Privacy) Ordinance Notification</span><br />The personal data provided will be used for making arrangements related to the talk on climate change. You have the right to request access to and to correct personal data in accordance with section 18, 22 and Principle 6 of Schedule 1 to the Personal Data (Privacy) Ordinance.<br /></span></div>
+<div style="margin: 0; position: relative;" class="self_align_center">
+<div style="max-width: 600px; width: 100%; margin: 0 auto;">
+<div id="result_content"></div>
+</div>
+</div>
+<br /><br /><!--Content End-->
+<script>var last_revision_date = '11 April 2022';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

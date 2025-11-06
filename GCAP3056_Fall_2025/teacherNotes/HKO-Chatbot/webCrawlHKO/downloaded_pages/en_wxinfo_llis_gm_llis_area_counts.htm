@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Recent cloud-to-ground lightning count distribution over Hong Kong｜Hong Kong Observatory(HKO)｜Lightning Location Information</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Recent cloud-to-ground lightning count distribution over Hong Kong">
+    <meta name="description" content="Recent cloud-to-ground lightning count distribution over Hong Kong">
+    <meta name="recordId" content="2018123100000036590">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Recent cloud-to-ground lightning count distribution over Hong Kong" />
+	<meta property="og:description" content="Start Date Start Time End Date End Time &amp;nbsp; &amp;nbsp;Note : 1. If you wish to find out the number of lightning strokes (cloud-to-ground) recorded within a specified period in" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/llis/gm/llis_area_counts.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+		#llis_map {
+    position      : absolute;
+    font-size     : 75%;
+    top       : 100px;
+    left        : 0px;
+    border        : 0;
+    margin        : 0;
+    padding       : 0;
+    z-index                 : 50;
+    visibility      : hidden;
+    }
+	@media screen and (max-width: 767px) {
+	#map1_data>table>tbody>tr>td>span ,
+	#map2_data>table>tbody>tr>td>span ,
+	#map3_data>table>tbody>tr>td>span ,
+	#map4_data>table>tbody>tr>td>span {
+		font-size:200% !important;
+	}
+	#map1_legend>table>tbody>tr>td>span ,
+	#map2_legend>table>tbody>tr>td>span ,
+	#map3_legend>table>tbody>tr>td>span ,
+	#map4_legend>table>tbody>tr>td>span {
+		font-size:70% !important;
+	}	
+	#map1_data>table>tbody>tr>td ,
+	#map1_data>table>tbody>tr>td ,
+	#map1_data>table>tbody>tr>td ,
+	#map1_data>table>tbody>tr>td {
+		width:50px !important;
+	}
+	#map1_data>table>tbody>tr ,
+	#map2_data>table>tbody>tr ,
+	#map3_data>table>tbody>tr ,
+	#map4_data>table>tbody>tr {
+		height:50px !important;
+	}
+	#map1_legend>table ,
+	#map2_legend>table ,
+	#map3_legend>table ,
+	#map4_legend>table {
+		width:unset !important;
+	}
+	#select_id_1 ,
+	#select_id_2 ,
+	#select_id_3 ,
+	#select_id_4 ,
+	#select_id_5 	{
+		text-align:center !important;
+	}
+	#select_id_1>select ,
+	#select_id_2>select ,
+	#select_id_3>select ,
+	#select_id_4>select ,
+	#select_id_5 >select	{
+		width:200px !important;
+	}
+	#counts_frame>table {
+		width:100% !important;
+	}
+	}
+	@media screen and (max-width: 767px) {
+		.self_row2_table>tbody>tr>td span, .self_row2_table>tbody>tr>td select {
+			margin: 5px auto;
+		}
+		.self_row2_table>tbody>tr>td#select_id_5 {
+			padding-top: 5px;
+		}
+	}	
+	@media screen and (max-width: 400px) {
+		#map1_legend>table>tbody>tr>td>span, #map2_legend>table>tbody>tr>td>span, #map3_legend>table>tbody>tr>td>span, #map4_legend>table>tbody>tr>td>span {
+			display: none;
+		}
+	}
+	.note_table td {
+		padding: 5px;
+	}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000010801';
+
+ 
+		
+		wcag_setTimer(1800000, 'eng');
+		//<![CDATA[
+		//Defining Variables - start //
+		var dataFile = '../../../../wxinfo/llis/gm/hourly_count';
+		var map = null;
+		var mapControl = null;
+		var refreshtime = 300000;
+		//Defining Variables - end //
+		/* 20180713: remove Google Map
+		function load_map(){
+		  if (GBrowserIsCompatible()) {
+			// create the map
+			G_NORMAL_MAP.getTileLayers()[0].getOpacity = function () {return 0.6;};
+			G_PHYSICAL_MAP.getTileLayers()[0].getOpacity = function () {return 1.0;};
+			map = new google.maps.Map(document.getElementById("llis_map"));
+			map.addMapType(G_PHYSICAL_MAP);
+			map.setCenter(new GLatLng( 22.30, 114.12), 10, G_PHYSICAL_MAP); //change zoom level 
+			//customize and add map type control
+			//map.addControl(new GLargeMapControl());   
+			//map.addControl(new GmapTypeControl);
+			mapControl = new GHierarchicalMapTypeControl();
+			//Set up map type menu relationships
+			mapControl.clearRelationships();
+			mapControl.addRelationship(G_SATELLITE_MAP, G_HYBRID_MAP, "Labels", false);
+			map.addControl(mapControl);
+			map.getContainer().style.backgroundColor="#d8fbf8";
+			map.enableScrollWheelZoom();        
+			//GDownloadUrl(dataFile, getHourly);
+			window.setTimeout("refresh()", refreshtime);    
+		  } else {
+			alert("Sorry, the Google Maps API is not compatible with this browser");
+		  } // end of if (GBrowserIsCompatible()) 
+		}
+		*/
+		///////////////////////////////////////////////////////////////////////////////////////
+		//// Function to extract hourly llis data from input_files/hourly_counts ////
+		///////////////////////////////////////////////////////////////////////////////////////
+		getHourly = function (doc) {
+			var date_time = [];
+			var kount = 0;
+			// read input files and store in lines              
+			var data_lines = doc.split("\n");
+			var NumOfLines = parseInt(data_lines.length, 10);
+			// alert("Num = " + NumOfLines + "data=" + data_lines[NumOfLines-2]);
+			var tmp_str = "";
+			var total_cg = [];
+			var total_cc = [];
+			var total_cg_cc = [];
+			var syyyy;
+			var smm;
+			var sdd;
+			var shh;
+			var eyyyy;
+			var emm;
+			var edd;
+			var ehh;
+			// for formatting display
+			syyyy = parseInt(start_time / 1000000);
+			smm = parseInt((start_time % 1000000) / 10000);
+			sdd = parseInt((start_time % 10000) / 100);
+			shh = parseInt(start_time % 100);
+			if (smm < 10) {
+				smm = '0' + smm;
+			}
+			if (sdd < 10) {
+				sdd = '0' + sdd;
+			}
+			if (shh < 10) {
+				shh = '0' + shh;
+			}
+			eyyyy = parseInt(end_time / 1000000);
+			emm = parseInt((end_time % 1000000) / 10000);
+			edd = parseInt((end_time % 10000) / 100);
+			ehh = parseInt(end_time % 100);
+			if (emm < 10) {
+				emm = '0' + emm;
+			}
+			if (edd < 10) {
+				edd = '0' + edd;
+			}
+			if (ehh < 10) {
+				ehh = '0' + ehh;
+			}
+			for (var i = 0; i < 5; i++) {
+				total_cg[i] = 0;
+				total_cc[i] = 0;
+				total_cg_cc[i] = 0;
+			}
+			// read in file line by line
+			for (var j = 0; j <= NumOfLines - 2; j++) {
+				var DataArray = data_lines[j].split(' ');
+				if (DataArray[0] >= start_time && DataArray[0] <= end_time) {
+					date_time[kount] = DataArray[0];
+					kount++;
+					yyyymmdd = DataArray[0] / 100;
+					yyyy = parseInt(yyyymmdd / 10000);
+					mm = parseInt((yyyymmdd % 10000) / 100);
+					dd = parseInt(yyyymmdd % 100);
+					hh = parseInt(DataArray[0] % 100);
+					total_cg[0] = total_cg[0] + parseInt(DataArray[1]);    // total of Cloud-to-ground
+					total_cc[0] = total_cc[0] + parseInt(DataArray[6]);    // total of Cloud-to-cloud
+					total_cg_cc[0] = total_cg[0] + total_cc[0] // total of both
+					for (var i = 1; i <= 4; i++) {
+						total_cg[i] = total_cg[i] + parseInt(DataArray[i + 1]);   // sum of each area of Cloud-to-ground
+						total_cc[i] = total_cc[i] + parseInt(DataArray[i + 6]);   // sum of each area of Cloud-to-cloud  
+						total_cg_cc[i] = total_cg[i] + total_cc[i];             // sum of each area of both type
+						//alert("i="+ i +" DataArray=" + DataArray[i+2] + " total_cg=" + total_cg[i]);
+					}
+				} // end (DataArray[0] >= start_time && DataArray[0] <= end_time) 
+			} // end for
+			// document.getElementById('counts_frame').innerHTML =  '<table border=1 valign=top>' + tmp_str + '<tr><td>Cloud-to-ground</td><td>' + total_cg[0]+ '</td><td>' + total_cg[1]+ '</td><td>'+ total_cg[2]+ '</td><td>' + total_cg[3]+ '</td><td>' + total_cg[4] + '</td><td>Cloud-to-cloud</td><td>'+ total_cc[0]+ '</td><td>' + total_cc[1]+ '</td><td>'+ total_cc[2]+ '</td><td>' + total_cc[3] + '</td><td>' + total_cc[4] + '</td></tr></table>';
+			// no record found!
+			if (kount == 0) {
+				document.getElementById('counts_frame').innerHTML = '<table border=1 class="data_table"><tr style="width:250px;height:40px;" bgcolor=#a6a6a6 align=left><th><span style="font-size:113%;">' + syyyy + '-' + smm + '-' + sdd + ' ' + shh + ':00 to ' + eyyyy + '-' + emm + '-' + edd + ' ' + ehh + ':59 (Hong Kong Time)</span></th></tr><tr><td style="width:250px;" bgcolor=#FCE903>No records found!</td></tr></table>';
+				return;
+			}
+			else {
+				// for formatting display
+				syyyy = parseInt(date_time[0] / 1000000);
+				smm = parseInt((date_time[0] % 1000000) / 10000);
+				sdd = parseInt((date_time[0] % 10000) / 100);
+				shh = parseInt(date_time[0] % 100);
+				if (smm < 10) {
+					smm = '0' + smm;
+				}
+				if (sdd < 10) {
+					sdd = '0' + sdd;
+				}
+				if (shh < 10) {
+					shh = '0' + shh;
+				}
+				eyyyy = parseInt(date_time[kount - 1] / 1000000);
+				emm = parseInt((date_time[kount - 1] % 1000000) / 10000);
+				edd = parseInt((date_time[kount - 1] % 10000) / 100);
+				ehh = parseInt(date_time[kount - 1] % 100);
+				if (emm < 10) {
+					emm = '0' + emm;
+				}
+				if (edd < 10) {
+					edd = '0' + edd;
+				}
+				if (ehh < 10) {
+					ehh = '0' + ehh;
+				}
+				document.getElementById('map1_data').innerHTML = '<table border=0><tr style="height:100px;"><td style="width:110px;" align=center><span style="font-size:300%;color:blue;">' + total_cg[1] + '</span></td></tr></table>';
+				document.getElementById('map1_legend').innerHTML = '<table border=0><tr bgcolor=#a6a6a6><td align=center><span style="color:#0000BB;"><strong>' + legend[0] + '</strong></span></td></tr></table>';
+				document.getElementById('map2_data').innerHTML = '<table border=0><tr><td align=center><span style="font-size:300%;color:blue;">' + total_cg[2] + '</span></td></tr></table>';
+				document.getElementById('map2_legend').innerHTML = '<table border=0 style="width:165px;"><tr bgcolor=#a6a6a6><td align=center><span style="color:#0000BB;"><strong>' + legend[1] + '</strong></span></td></tr></table>';
+				document.getElementById('map3_data').innerHTML = '<table border=0><tr style="height:100px;"><td style="width:110px;" align=center><span style="font-size:300%;color:blue;">' + total_cg[3] + '</span></td></tr></table>';
+				document.getElementById('map3_legend').innerHTML = '<table border=0 style="width:250px;"><tr bgcolor=#a6a6a6><td align=center><span style="color:#0000BB;"><strong>' + legend[2] + '</strong></span></td></tr></table>';
+				document.getElementById('map4_data').innerHTML = '<table border=0><tr style="height:100px;"><td style="width:110px;" align=center><span style="font-size:300%;color:blue;">' + total_cg[4] + '</span></td></tr></table>';
+				document.getElementById('map4_legend').innerHTML = '<table border=0><tr bgcolor=#a6a6a6><td align=center><span style="color:#0000BB;"><strong>' + legend[3] + '</strong></span></td></tr></table>';
+				document.getElementById('counts_frame').innerHTML = '<table border=1  class="data_table"><tr bgcolor=#a6a6a6 align=left><th colspan=2><span style="font-size:113%;">' + syyyy + '-' + smm + '-' + sdd + ' ' + shh + ':00 to ' + eyyyy + '-' + emm + '-' + edd + ' ' + ehh + ':59 (Hong Kong Time)</span></th></tr><tr bgcolor=#FCE903><td style="width:205px;"><span style="">' + legend[0] + '</span></td><td style="width:55px;" align=right><span style="font-size:113%;">' + total_cg[1] + '</span></td></tr><tr bgcolor=#9ED827><td><span style="">' + legend[1] + '</span></td><td align=right><span style="font-size:113%;">' + total_cg[2] + '</span></td></tr><tr bgcolor=#FCE903><td><span style="">' + legend[2] + '</span></td><td align=right><span style="font-size:113%;">' + total_cg[3] + '</span></td></tr><tr bgcolor=#9ED827><td><span style="">' + legend[3] + '</span></td><td align=right><span style="font-size:113%;">' + total_cg[4] + '</span></td></tr><tr bgcolor=#a6a6a6><td align=left>Total strokes in Hong Kong:</td><td align=right><span style="font-size:113%;">' + total_cg[0] + '</span></td></tr></table>';
+			}
+		}  // end of function getHourly        
+		function refresh() {
+			// 20180713: remove Google Map
+			//map.clearOverlays();
+			//GDownloadUrl(dataFile, getHourly);
+			//setData;
+			$.get(dataFile, getHourly);
+			window.setTimeout("refresh()", refreshtime);
+		}   //end of function refresh
+		function detectBrowser() {
+			var useragent = navigator.userAgent;
+			var mapdiv = document.getElementById("llis_map");
+			if (useragent.indexOf('iPhone') != -1 || useragent.indexOf('Android') != -1) {
+				mapdiv.style.width = '100%';
+				mapdiv.style.height = '100%';
+			} else {
+				mapdiv.style.width = '560px';
+				mapdiv.style.height = '850px';
+			}   //end of if
+		}   // end of function detectBrowser
+		function sum_counts() {
+			// 20180713: remove Google Map
+			//GDownloadUrl(dataFile, getHourly);        
+			$.get(dataFile, getHourly);
+		}
+		function check_input(iflag) {
+			var st_yymmdd;
+			var st_hh;
+			var et_yymmdd;
+			var et_hh;
+			var n;
+			var now = new Date();
+			var cur_hh = now.getHours();
+			n = document.getElementById("start_yymmdd").selectedIndex;
+			st_yymmdd = syyyymmdd[n];
+			st_hh = document.getElementById("start_hh").selectedIndex;
+			// alert("st_yymmdd = " + st_yymmdd + "st_hh=" + st_hh);
+			n = document.getElementById("end_yymmdd").selectedIndex;
+			et_yymmdd = syyyymmdd[n];
+			et_hh = document.getElementById("end_hh").selectedIndex;
+			// alert("et_yymmdd = " + et_yymmdd + "et_hh=" + et_hh);
+			start_time = parseInt(st_yymmdd * 100) + parseInt(st_hh);   //start yyyymmddhh
+			end_time = parseInt(et_yymmdd * 100) + parseInt(et_hh);     //end yyyymmddhh
+			if (n == 3) {
+				if (cur_min < 10) {
+					if (et_hh - 1 > cur_hour) {
+						//alert("n = " + n + " et_hh=" + et_hh + " cur_hour=" + cur_hour );
+						alert("Future End Time is entered.  Please select again!");
+						return;
+					}
+					else if (et_hh - 1 == cur_hour) {
+						alert("Lightning count distribution including the past hour will be updated after the 10th minutes past the hour; please wait or select again!");
+						return;
+					}
+				}
+				else {
+					if (et_hh > cur_hour) {
+						//alert("n = " + n + " et_hh=" + et_hh + " cur_hour=" + cur_hour );
+						alert("Future End Time is entered.  Please select again!");
+						return;
+					}
+				}
+			}
+			if (end_time < start_time) {
+				//alert("start_time = " + start_time + " end_time = " + end_time);
+				alert("Invalid searching period, please select again!!");
+				return;
+			}
+			if (iflag == 1) {
+				// clear div contents
+				document.getElementById('counts_frame').innerHTML = "";
+				document.getElementById('map1_data').innerHTML = "";
+				document.getElementById('map2_data').innerHTML = "";
+				document.getElementById('map3_data').innerHTML = "";
+				document.getElementById('map4_data').innerHTML = "";
+				document.getElementById('map1_legend').innerHTML = "";
+				document.getElementById('map2_legend').innerHTML = "";
+				document.getElementById('map3_legend').innerHTML = "";
+				document.getElementById('map4_legend').innerHTML = "";
+			}
+			sum_counts();
+		}
+		// auto generate dates of the past 3 days and current day for selection of lightning strokes enquiry
+		function gen_Menu_Date() {
+			var yy = [];
+			var mm = [];
+			var dd = [];
+			var no_of_days = 3;
+			var now = new Date();
+			var Day_n = new Date();
+			cur_hour = now.getHours();
+			cur_min = now.getMinutes();
+			if (cur_min >= 10) {
+				cur_hour = cur_hour - 1;
+			}
+			else {
+				cur_hour = cur_hour - 2;
+			}
+			if (cur_hour >= 0) {
+				yy[3] = now.getFullYear();   // get current year
+				dd[3] = now.getDate();       // get current dd
+				mm[3] = now.getMonth();      // get current month no
+				mm[3]++;                     // add 1 to current month no 
+				// date back for 3 days
+				Day_n.setTime(now.getTime() - 24 * 60 * 60 * 1000);
+				yy[2] = Day_n.getFullYear();   // get year of past day 1
+				dd[2] = Day_n.getDate();       // get dd of past day 1
+				mm[2] = Day_n.getMonth();      // get month no of past day 1
+				mm[2]++;
+				Day_n.setTime(now.getTime() - 48 * 60 * 60 * 1000);
+				yy[1] = Day_n.getFullYear();   // get year of past day 2
+				dd[1] = Day_n.getDate();       // get dd of past day 2
+				mm[1] = Day_n.getMonth();      // get month no of past day 2
+				mm[1]++;
+				Day_n.setTime(now.getTime() - 72 * 60 * 60 * 1000);
+				yy[0] = Day_n.getFullYear();   // get year of past day 3
+				dd[0] = Day_n.getDate();       // get dd of past day 3
+				mm[0] = Day_n.getMonth();      // get month no of past day 3
+				mm[0]++;
+			}
+			else {
+				if (cur_hour == -1) {
+					cur_hour = 23;
+				}
+				else {
+					cur_hour = 22;
+				}
+				Day_n.setTime(now.getTime() - 24 * 60 * 60 * 1000);
+				yy[3] = Day_n.getFullYear();   // get year of past day 1
+				dd[3] = Day_n.getDate();       // get dd of past day 1
+				mm[3] = Day_n.getMonth();      // get month no of past day 1
+				mm[3]++;                       // add 1 to current month no 
+				// date back for 3 days
+				Day_n = new Date();
+				Day_n.setTime(now.getTime() - 48 * 60 * 60 * 1000);
+				yy[2] = Day_n.getFullYear();   // get year of past day 1
+				dd[2] = Day_n.getDate();       // get dd of past day 1
+				mm[2] = Day_n.getMonth();      // get month no of past day 1
+				mm[2]++;
+				Day_n.setTime(now.getTime() - 72 * 60 * 60 * 1000);
+				yy[1] = Day_n.getFullYear();   // get year of past day 2
+				dd[1] = Day_n.getDate();       // get dd of past day 2
+				mm[1] = Day_n.getMonth();      // get month no of past day 2
+				mm[1]++;
+				Day_n.setTime(now.getTime() - 96 * 60 * 60 * 1000);
+				yy[0] = Day_n.getFullYear();   // get year of past day 3
+				dd[0] = Day_n.getDate();       // get dd of past day 3
+				mm[0] = Day_n.getMonth();      // get month no of past day 3
+				mm[0]++;
+			}
+			//alert(yy[0] + "" + mm[0] + "" +dd[0] + "" + yy[1] + "" + mm[1] + "" +dd[1]+"" + yy[2] + "" + mm[2] + "" +dd[2] + "" + yy[3] + "" + mm[3] + "" +dd[3]);     
+			// store auto gen dates to syymmdd[]  
+			for (var j = 0; j <= no_of_days; j++) {
+				syyyymmdd[j] = parseInt(yy[j]) * 10000 + parseInt(mm[j]) * 100 + parseInt(dd[j]);
+			}
+		} //end gen_Menu_Date
+		function pasthr() {
+			window.open("llis_past_hr.htm", "statWindow");
+		}
+		//]]>
+		var syyyymmdd = [];
+		var legend = [];
+		legend[0] = 'New Territories West';
+		legend[1] = 'New Territories East';
+		legend[2] = 'Hong Kong Island and Kowloon';
+		legend[3] = 'Lantau';
+		var cur_hour;
+		var cur_min;
+		var start_time
+		var end_time;
+		gen_Menu_Date();
+		//alert("syyyymmdd=" + syyyymmdd[0] + "" + syyyymmdd[1] + ""  + syyyymmdd[2] + "" + syyyymmdd[3]);
+		$(function(){
+					setTimeout(function(){ refresh(); }, refreshtime);
+		});
+		$(document).ready(function () {
+	//window.setTimeout(refresh(), refreshtime);
+			$("#start_yymmdd").append(new Option(syyyymmdd[0], syyyymmdd[0]));
+			$("#start_yymmdd").append(new Option(syyyymmdd[1], syyyymmdd[1]));
+			$("#start_yymmdd").append(new Option(syyyymmdd[2], syyyymmdd[2]));
+			$("#start_yymmdd").append("<option selected value=\"" + syyyymmdd[3] + "\">" + syyyymmdd[3] + "</option>");
+			/*
+			document.write('<select  id="start_yymmdd" title="Please select start date">');
+			document.write('<option>' + syyyymmdd[0] + '</option>');
+			document.write('<option>' + syyyymmdd[1] + '</option>');
+			document.write('<option>' + syyyymmdd[2] + '</option>');
+			document.write('<option selected="selected">' + syyyymmdd[3] + '</option>');
+			document.write('</select>');
+			*/
+			//document.write('<select  id="start_hh" title="Please select start time">');
+			for (var j = 0; j <= 23; j++) {
+				if (j == 0) {
+					$("#start_hh").append('<option selected="selected" value=' + j + '>0' + j + ':00</option>');
+					//document.write('<option selected="selected" value='+ j + '>0' + j + ':00</option>');
+				} else {
+					if (j < 10) {
+						$("#start_hh").append('<option value=' + j + '>0' + j + ':00</option>');
+						// document.write('<option value='+ j + '>0' + j + ':00</option>');
+					} else {
+						$("#start_hh").append('<option value=' + j + '>' + j + ':00</option>');
+						//document.write('<option value='+ j + '>' + j + ':00</option>');
+					}
+				}
+			}
+			//document.write('</select>');           
+			/*
+			document.write('<select  id="end_yymmdd" title="Please select end date">');
+			document.write('<option>' + syyyymmdd[0] + '</option>');
+			document.write('<option>' + syyyymmdd[1] + '</option>');
+			document.write('<option>' + syyyymmdd[2] + '</option>');
+			document.write('<option selected="selected">' + syyyymmdd[3] + '</option>');
+			document.write('</select>');
+			*/
+			$("#end_yymmdd").append(new Option(syyyymmdd[0], syyyymmdd[0]));
+			$("#end_yymmdd").append(new Option(syyyymmdd[1], syyyymmdd[1]));
+			$("#end_yymmdd").append(new Option(syyyymmdd[2], syyyymmdd[2]));
+			$("#end_yymmdd").append("<option selected value=\"" + syyyymmdd[3] + "\">" + syyyymmdd[3] + "</option>");
+			//document.write('<select  id="end_hh" title="Please select end time">');
+			for (var j = 0; j <= 23; j++) {
+				if (j == cur_hour) {               // get current hour -1 for selected hour 
+					if (j < 10) {
+						$("#end_hh").append('<option selected="selected" value=' + j + '>0' + j + ':59</option>');
+						//document.write('<option selected="selected" value='+ j + '>0' + j + ':59</option>');
+					} else {
+						$("#end_hh").append('<option selected="selected" value=' + j + '>' + j + ':59</option>');
+						//document.write('<option selected="selected" value='+ j + '>' + j + ':59</option>');
+					}
+				}
+				else {
+					if (j < 10) {
+						$("#end_hh").append('<option value=' + j + '>0' + j + ':59</option>');
+						// document.write('<option value='+ j + '>0' + j + ':59</option>');
+					}
+					else {
+						$("#end_hh").append('<option value=' + j + '>' + j + ':59</option>');
+						// document.write('<option value='+ j + '>' + j + ':59</option>');
+					}
+				}
+			}
+			//document.write('</select>');           
+			check_input(0);
+			setTimeout(function(){
+				updatellis_loc_today();
+				}, 500);
+		});
+		$(window).resize(function () {
+			updatellis_loc_today();
+		});
+		function updatellis_loc_today() {
+			var curr_width = $("#llis_loc_today").width();
+			var curr_height = $("#llis_loc_today").height();
+			//img full width : 518
+				console.log(curr_width,curr_height);
+			$('#map1_data').css('top', (60 / 388) * curr_height);
+			$('#map1_data').css('left', (120 / 518) * curr_width);
+			$('#map1_legend').css('top', (130 / 388) * curr_height);
+			$('#map1_legend').css('left', (105 / 518) * curr_width);
+			$('#map2_data').css('top', (65 / 388) * curr_height);
+			$('#map2_data').css('left', (325 / 518) * curr_width);
+			$('#map2_legend').css('top', (115 / 388) * curr_height);
+			$('#map2_legend').css('left', (280 / 518) * curr_width);
+			$('#map3_data').css('top', (185 / 388) * curr_height);
+			$('#map3_data').css('left', (225 / 518) * curr_width);
+			$('#map3_legend').css('top', (253 / 388) * curr_height);
+			$('#map3_legend').css('left', (235 / 518) * curr_width);
+			$('#map4_data').css('top', (180 / 388) * curr_height);
+			$('#map4_data').css('left', (72 / 518) * curr_width);
+			$('#map4_legend').css('top', (250 / 388) * curr_height);
+			$('#map4_legend').css('left', (105 / 518) * curr_width);
+		}
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Recent cloud-to-ground lightning count distribution over Hong Kong</h1>
+                <div class="border_blank">
+                    <!--Content Start-->
+<!-- 20180713: remove Google Map
+<script src="http://maps.google.com/maps?file=api&v=3&hl=en&oe=tuf8" type="text/javascript"></script>
+-->
+<div style='margin:0; position:relative;' class="self_align_center">
+<table id=main_table style="MAX-WIDTH: 1080px;" class="self_row2_table">
+    <tbody>
+        <tr>
+            <td colspan=6 class="self_align_center">
+            </td>
+        </tr>
+        
+        <tr>
+            <td id="select_id_1" style="WIDTH: 150px;  " class="self_align_center"><span style="FONT-SIZE: 113%;">Start Date </span><br><select  id="start_yymmdd" title="Please select start date"></select></td>
+            <td id="select_id_2" style="WIDTH: 100px; " class="self_align_center"><span style="FONT-SIZE: 113%;">Start Time</span><br><select  id="start_hh" title="Please select start time"></select></td>
+            <td id="select_id_3" style="WIDTH: 150px; " class="self_align_center"><span style="FONT-SIZE: 113%;">End Date</span><br><select  id="end_yymmdd" title="Please select end date"></select></td>
+            <td id="select_id_4" style="WIDTH: 100px; " class="self_align_center"><span style="FONT-SIZE: 113%;">End Time</span><br><select  id="end_hh" title="Please select end time"></select></td>
+            <td id="select_id_5" style="WIDTH: 250px; " class="self_align_center  td_valign_bottom"><span style="FONT-SIZE: 113%;"><input onclick=check_input(1) title=Confirm type=button value=Confirm> </span></td>
+        </tr>
+        <tr>
+            <td colspan=6 class="self_align_center">
+			&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4 style="position: relative; width:550px" class="self_align_left">
+				<div id=map1_data style="POSITION: absolute; LEFT: 120px; Z-INDEX: 50; TOP: 60px;"></div>
+				<div id=map1_legend style="POSITION: absolute; LEFT: 105px; Z-INDEX: 50; TOP: 130px;"></div>
+				<div id=map2_data style="POSITION: absolute; LEFT: 325px; Z-INDEX: 50; TOP: 65px;"></div>
+				<div id=map2_legend style="POSITION: absolute; LEFT: 280px; Z-INDEX: 50; TOP: 115px;"></div>
+				<div id=map3_data style="POSITION: absolute; LEFT: 225px; Z-INDEX: 50; TOP: 185px;"></div>
+				<div id=map3_legend style="POSITION: absolute; LEFT: 235px; Z-INDEX: 50; TOP: 253px;"></div>
+				<div id=map4_data style="POSITION: absolute; LEFT: 72px; Z-INDEX: 50; TOP: 180px;"></div>
+				<div id=map4_legend style="POSITION: absolute; LEFT: 105px; Z-INDEX: 50; TOP: 250px;"></div>
+				<img id="llis_loc_today" title="Hong Kong Map" alt="Hong Kong Map" src="../../../../en/wxinfo/llis/gm/images/llis_loc_today.png">
+				<br>
+            </td>
+            <td id=counts_frame class="self_align_center td_valign_top" style="width:300px;">
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div>
+	<table class="table_align_left table_border_0 note_table">
+		<tbody>
+			<tr>
+				<td colspan=2>&nbsp;Note :</td>
+			</tr>
+			<br>
+			<tr>
+				<td>1.</td>
+				<td>If you wish to find out the number of lightning strokes (cloud-to-ground) recorded within a specified period in the past three days, please select the "Start Date", "Start Time" and "End Date", "End Time" and then click "Confirm". The distribution map will then show the result correspondingly.</td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td>The lightning information displayed above is provisional. Only limited data validation has been carried out.</td>
+			</tr>          
+			<tr>
+				<td>3.</td>
+				<td>For information on cloud-to-ground lightning count distribution over the Hong Kong territory in the past hour, please visit: <a href="javascript:pasthr()">http://www.weather.gov.hk/en/wxinfo/llis/gm/llis_past_hr.htm</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!--Content End-->
+<script>var last_revision_date = '13 July 2020';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

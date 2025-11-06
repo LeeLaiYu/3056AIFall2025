@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Information for Schools</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Weather Information for Schools">
+    <meta name="description" content="Weather Information for Schools">
+    <meta name="recordId" content="2019092018085156924">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Weather Information for Schools" />
+	<meta property="og:description" content="Weather Information for Schools" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/school/school.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+				#mainContent a {
+			text-decoration: underline !important;
+		}
+		body .area_warning{
+			position: relative;
+			max-width: 100%;
+			top: 0;
+		}
+		body .area_warning .awn_icon ul{
+			overflow-x: auto;
+			position: relative;
+		}
+		body .area_warning .related_link{
+			position: absolute;
+			min-width: 170px;
+			max-width: 100%;
+		}
+		.warning-header,
+		#swt_title {
+			background-color: #FF2323;
+			color: #fff;
+			font-weight: bold;
+			padding: 4px;
+			border:1px solid #ff2865;
+		}
+		.awn_icon,
+		#swt_content {
+			border:1px solid #ff2865;
+			border-top:0px;
+		}
+		.area_warning .detail{
+			padding: 0 0 5px 0;
+		}
+		.area_warning .awn_more {
+			padding-top:30px;
+		}
+		@media screen and (max-width: 979px) {
+			.area_warning .awn_more {
+				padding-top:0;
+			}
+			body .mainContent .area_warning .awn_icon ul>li{
+				max-width: 100%;
+			}
+		}
+		
+		.school_hb>div a {
+			line-height: 1em;
+		}
+
+		body .school_hb>div:nth-child(1)>a{
+			/*font-size: 1.7em;
+			color: #ff9600;
+			font-weight: bold;*/
+			font-size: 1.4em;
+			/*color: #fff;*/
+			font-weight: normal;
+			position: relative;
+			transform: none;
+			left: 0;
+			top: 0;
+		}
+
+		body .mainContent a{
+			text-decoration: none;
+		}
+		
+		#swt{
+			margin-bottom: 10px;
+			position: relative;
+		}
+		
+		#swt_title>a{
+			display: none !important;
+		}
+		
+		#swt .slides{
+			padding-top: 5px;
+			padding-left: 10px;
+		}
+		
+		#swt .flex_control_area {
+			position: absolute;
+			right: 5px;
+			top: 6px;
+		}
+
+		#swt .flex_control_area .prevBtn,
+		#swt .flex_control_area .nextBtn {
+			margin: 0 6px;
+			display: inline-block;
+			zoom: 1;
+			*display: inline;
+		}
+
+		#swt .flex_control_area .count {
+			margin: 0 6px;
+			display: inline-block;
+			color: #fff;
+		}
+
+		#swt .flex_control_area .prevBtn>a:before {
+			font-family: "flexslider-icon";
+			font-size: 15px;
+			display: inline-block;
+			content: '\f001';
+			color: #fff;
+			text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+		}
+
+		#swt .flex_control_area .nextBtn>a:before {
+			font-family: "flexslider-icon";
+			font-size: 15px;
+			display: inline-block;
+			content: '\f002';
+			color: #fff;
+			text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+		}
+
+		#swt .flex_control_area div.prevBtn>a,
+		#swt .flex_control_area div.nextBtn>a {
+			background: transparent;
+			text-indent: 0;
+			font-size: 0;
+			padding: 0 1px;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			-o-box-shadow: none;
+			box-shadow: none;
+			-webkit-border-radius: 0;
+			box-shadow: none;
+		}
+		#swt .flex-pauseplay{
+			display: none;
+		}
+		
+		h2.h2_2{
+			text-align: left !important;
+		}
+		ul.lt_blank>li {
+			padding-left: 1em !important;
+		}
+		
+		div#div_notes {
+			padding-left: 1em !important;
+		}
+		div#div_notes>ol {
+			padding-left: 2em !important;
+		}
+		p#p_footer_msg {
+			padding-left: 1em !important;
+		}
+		#sideBanner a:hover,.lt_blank a:hover{
+			color:#17314A
+		}
+		
+		
+.school_hb {
+	position: relative;
+	margin-bottom: 20px;
+	background-color: #fff5c2;
+    border: solid 5px #ff9600;
+}
+
+.school_hb>div {
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 50%;
+	padding: 30px 50px;
+	height: 220px;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.school_hb>div:nth-child(1) {
+	/*background-image: url(../../images/bg_board_1.jpg);*/
+	height: auto;
+    background-color: #ff9600;
+    width: auto;
+    padding: 10px 45px 10px 20px;
+}
+.school_hb>div:nth-child(1):after {
+	content: '';
+    background: url(../../images/hand.png);
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -4px;
+    right: 10px;
+}
+
+.school_hb>div:nth-child(2) {
+	/*background-image: url(../../images/bg_board_2.jpg);*/
+	width: 100%;
+    padding: 10px 20px;
+    height: auto;
+}
+
+.school_hb>div a {
+	display: block;
+}
+
+.school_hb>div:nth-child(1)>a {
+	font-size: 2em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+}
+
+.school_hb>div:nth-child(2)>p {
+	margin-bottom: 0;
+}
+
+.school_hb>div:nth-child(2)>ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.school_tb table {
+	width: 100%;
+}
+.school_tb th, .school_tb td {
+	padding: 10px;
+        width: 50%;
+}
+.school_tb th {
+	background-color: #1a58ab;
+	color: #fff;
+}
+.school_tb tr:nth-child(odd) {
+	background-color: #f0f0f0;
+}
+.school_tb tr:nth-child(even) {
+	background-color: #fff;
+}
+
+.school_tb {
+	margin-bottom: 20px;
+	max-width: 750px;
+	width: 65%;
+	display: inline-block;
+	border: 1px solid #000;
+}
+
+.school_tb #recordTime {
+	padding: 10px;
+}
+
+.table_style>div>div {
+	padding: 10px;
+}
+
+.toggle_color>div:nth-child(odd) {
+	background-color: #f0f0f0;
+}
+
+.toggle_color>div:nth-child(even) {
+	background-color: #fff;
+}
+
+.toggle_color>div.header {
+	background-color: #1a58ab;
+	color: #fff;
+}
+
+.sb_school {
+	text-align: right;
+	margin-bottom: 20px;
+	max-width: 400px;
+	width: 35%;
+	display: inline-block;
+}
+
+.sb_school>div {
+	display: inline-block;
+	margin: 10px;
+}
+
+.sb_school>div:first-child {
+	margin-top: 0;
+}
+
+.sb_school>div:last-child {
+	margin-bottom: 0;
+}
+
+.sb_school>div a {
+	display: block;
+	background-color: #008485;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.sb_school>div img {
+	display: block;
+	margin: 12px auto;
+}
+
+@media screen and (max-width: 979px) {
+	body .school_tb{
+		max-width: 100%;
+		width: 100%;
+	}
+	body .sb_school{
+		max-width: 100%;
+		width: 100%;
+	}
+	body .sb_school>div{
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	body .sb_school>div a{
+		width: 100%;
+	}
+}
+
+ .container_title{
+text-align: center;
+    margin-bottom: 0;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 12px;
+}
+
+@media screen and (max-width: 500px){
+	body .school_hb>div {
+		padding: 20px;
+		background-size: auto 100%;
+		background-position: center;
+	}
+	/*body .school_hb>div:nth-child(1){
+		min-height: 180px;
+	}*/
+	body .mainContent .school_hb>div:nth-child(1)>a{
+		font-size: 1em;
+		font-weight: bold;
+	}
+}
+.header_title{
+        padding-bottom: 12px;
+}
+
+.mobile_h2{
+        font-size: 1.4em;
+}
+
+h1.mobile_h2 {
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+	body h1.mobile_h2 {
+		display: block;
+	}
+}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '3';
+var section_id = '2018010100000011097';
+
+                                        
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+              
+                <div class="border_blank">
+                    <script type="text/javascript">wcag_setTimer(300000, 'eng');</script>
+<script src="../../en/school/files/newsTicker.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var data_url = "../../wxinfo/json/one_json.xml";
+        $.ajax({
+            dataType: "json",
+            url: data_url,
+            cache: false,
+            async: false,
+            success: function (data) {
+                ddo = (data === "string") ? JSON.parse(data) : data;
+                try {
+                    showSwt();
+                }
+                catch (e) {
+                    console.log(e);
+                }
+            }
+        });
+
+        $.ajax({
+            url: "../../wxinfo/json/region_rainfall_json.xml",
+            dataType: "json",
+            cache: false,
+            success: function (data) {
+                var recordStartTime = data.recordStartTime;
+                min = recordStartTime.substr(10, 2);
+                hour = parseInt(recordStartTime.substr(8, 2), 10);
+                if (hour >= 13 && hour != 23) {
+                    if (min !== "00") {
+                        timeStr = "Between " + (hour - 12).toString() + ":" + min + " and " + (hour + 1 - 12).toString() + ":" + min + " p.m , the rainfall recorded in various regions were:";
+                    } else {
+                        timeStr = "Between " + (hour - 12).toString() + " and " + (hour + 1 - 12).toString() + " p.m , the rainfall recorded in various regions were:";
+                    }
+                } else if (hour == 12) {
+                    if (min !== "00") {
+                        timeStr = "Between 12" + ":" + min + " and " + (hour + 1 - 12).toString() + ":" + min + " p.m , the rainfall recorded in various regions were:";
+                    } else {
+                        timeStr = "Between 12 and 1 p.m, the rainfall recorded in various regions were:";
+                    }
+                } else if (hour < 11) {
+                    if (min !== "00") {
+                        timeStr = "Between " + hour.toString() + ":" + min + " and " + (hour + 1).toString() + ":" + min + " a.m , the rainfall recorded in various regions were:";
+                    } else {
+                        timeStr = "Between " + hour.toString() + " and " + (hour + 1).toString() + " a.m , the rainfall recorded in various regions were:";
+                    }
+                } else if (hour == 11) {
+                    if (min !== "00") {
+                        timeStr = "Between 11:" + min + " a.m and " + "12:" + min + " p.m , the rainfall recorded in various regions were:";
+                    } else {
+                        timeStr = "Between 11 a.m and 12 p.m , the rainfall recorded in various regions were:";
+                    }
+                } else if (hour == 23) {
+                    if (min !== "00") {
+                        timeStr = "Between 11:" + min + " p.m and " + "0:" + min + " a.m , the rainfall recorded in various regions were:";
+                    } else {
+                        timeStr = "Between 11 p.m and 0 a.m , the rainfall recorded in various regions were:";
+                    }
+                }
+                console.log(timeStr);
+                var rfstn = {
+                    "yl": "Yuen Long", "tun": "Tuen Mun", "tpo": "Tai Po", "nd": "North District", "klt": "Kowloon City",
+                    "wts": "Wong Tai Sin", "ssp": "Sham Shui Po", "skg": "Sai Kung", "twn": 'Tsuen Wan', "kwt": "Kwai Tsing",
+                    "ktg": "Kwun Tong", "ytm": "Yau Tsim Mong", "id": "Islands District", "cwd": "Central & Western District",
+                    "sd": "Southern District", "wan": "Wan Chai", "sha": "Sha Tin", "ed": "Eastern District"
+                }
+
+                var rawdata = new Array();
+                $("#recordTime").html(timeStr);
+                for (var attr in data) {
+                    if (data.hasOwnProperty(attr)) {
+
+                        if (data[attr].hasOwnProperty('max')) {
+                            var maxtemp = data[attr]['max'];
+                        } else {
+                            var maxtemp = "";
+                        }
+                        if (data[attr].hasOwnProperty('min')) {
+                            var mintemp = data[attr]['min'];
+                        } else {
+                            var mintemp = "";
+                        }
+                        if (maxtemp !== "") {
+                            rawdata.push({ "stn": attr, "maxtemp": maxtemp, "mintemp": mintemp });
+                        }
+                    }
+                }
+
+
+                for (var i = 0; i < rawdata.length; i++) {
+                    if (rawdata[i].maxtemp == "m") {
+                        rawdata[i].maxtemp = -1;
+                    }
+                }
+
+                rawdata = rawdata.sort(function (a, b) {
+                    if (b.maxtemp < a.maxtemp || (b.maxtemp == a.maxtemp && b.mintemp < a.mintemp && b.mintemp !== "") || (a.maxtemp == b.maxtemp && a.mintemp === "" && b.mintemp !== "") || (a.maxtemp == b.maxtemp && a.mintemp === b.mintemp && rfstn[b.stn] > rfstn[a.stn])) {
+                        return -1;
+                    } else {
+                        return 1;
+                    }
+                });
+
+                for (var i = 0; i < rawdata.length; i++) {
+                    var maxtemp = rawdata[i]['maxtemp'];
+                    var mintemp = rawdata[i]['mintemp'];
+                    var stn = rawdata[i]['stn'];
+                    var temp = '';
+                    if (mintemp === "") {
+                        if (maxtemp === -1) {
+                            temp = 'M';
+                        } else {
+                            temp = maxtemp;
+                        }
+                    } else if (mintemp !== "") {
+                        temp = mintemp + ' - ' + maxtemp;
+                    }
+
+                    raw = '<tr><td>' + rfstn[stn] + '</td><td>' + temp + '</td></tr>';
+                    $(raw).appendTo($(".rainfallData"));
+                }
+            }
+        });
+
+
+
+        var job;
+        job = setInterval(function () {
+            var html = "";
+            if ($("#clf_header img").length > 0) {
+                $("#clf_header img").each(function (i) {
+                    var fname = $(this).attr("src");
+                    if (fname.search(/images_e/) > -1) {
+                        var alt = $(this).attr("title")
+                        //var alt = "";
+                        html += "<img src='" + fname + "' title='" + alt + "' alt='" + alt + "'>";
+                    }
+                });
+                if (html != "") {
+                    $("#detaillink").html(html);
+                    $("#weatherWarning").show();
+                } else {
+                    $("#weatherWarning").hide();
+                }
+
+                if ($("#warning_icon img[src*='rain']").length >= 1 || $("#warning_icon img[src*='ts.gif']").length >= 1) {
+                    var learn_more_link = "/education/edu01met/edu01_TSrainstorm_e.htm";
+                    var learn_more_link_display_text = "Thunderstorm and Rainstorm Basics";
+                    $('#warning_learn_more_list').append('<li><a href="' + learn_more_link + '">' + learn_more_link_display_text + '</a></li>');
+                }
+                if ($("#warning_icon img[src*='tc']").length >= 1) {
+                    var learn_more_link = "/education/edu01met/edu01tropical_cyclones_e.htm";
+                    var learn_more_link_display_text = "Tropical Cyclone Basics";
+                    var learn_more_link_2 = "/informtc/tcService.htm";
+                    var learn_more_link_display_text_2 = "Tropical Cyclone Warning System";
+                    $('#warning_learn_more_list').append('<li><a href="' + learn_more_link + '">' + learn_more_link_display_text + '</a></li>');
+                    $('#warning_learn_more_list').append('<li><a href="' + learn_more_link_2 + '">' + learn_more_link_display_text_2 + '</a></li>');
+                }
+                $("#warning_icon_content a img").hover(function () {
+                    var e = this;
+                    $(e).stop(true, true);
+                    $(e).animate({
+                        top: "0px"
+                    }, 250, function () {
+                        $(e).animate({
+                            top: "2px"
+                        }, 250);
+                    });
+                }, function () {
+                    var e = this;
+                    $(e).stop(true, true);
+                    $(e).animate({
+                        top: "8px"
+                    }, 250, function () {
+                        $(e).animate({
+                            top: "6px"
+                        }, 250);
+                    });
+                });
+                clearInterval(job);
+            }
+
+        }, 500);
+
+
+        function showSwt() {
+            for (var key in ddo.SWT) {
+                if (!ddo.SWT.hasOwnProperty(key)) {
+                    continue;
+                }
+                if (ddo.SWT[key] != "") {
+                    $("#swt").show();
+                    if (key == "hotAdvisory") {
+
+                        var str;
+                        if (lang != "0") {
+                            str = ddo.SWT[key].replace("按", "").replace("此", "按此").replace("blue;", "blue; text-decoration: underline!important;");
+                        } else {
+                            str = ddo.SWT[key].replace(" click ", " ").replace("here", "click here").replace("blue;", "blue; text-decoration: underline!important;");
+                        }
+                        str = str.replace("../../en/school/wservice/warning/hotwxadv.htm", "../../en/wservice/warning/hotwxadv.htm");
+
+                        $("<li>" + str + "</li>").appendTo($(".newsticker"));
+                    } else {
+                        $("<li>" + ddo.SWT[key] + "</li>").appendTo($(".newsticker"));
+                    }
+                }
+            }
+            if ($('.newsticker li').length > 1) {
+                $(".next").show();
+                //$(".playState").show();
+                $(".prev").show();
+                $("#swt, #swt_title, #swt_content").show();
+                //SWT
+                scroll_height = $('#swt_content li').height();
+
+                var nt = $('.newsticker').newsTicker({
+                    row_height: 14,
+                    scroll_height: scroll_height,
+                    max_rows: 3,
+                    speed: 800,
+                    direction: 'up',
+                    duration: 4000,
+                    autostart: 1,
+                    pauseOnHover: 0
+                });
+                nt.newsTicker('start');
+            } else if ($('.newsticker li').length == 1) {
+                $("#swt, #swt_title, #swt_content").show();
+                $("#swt, #swt_title, #swt_content").css("visibility", "visible");
+            } else {
+                $("#swt, #swt_title, #swt_content").hide();
+                $("#swt, #swt_title, #swt_content").css("visibility", "hidden");
+            }
+
+            $('#swt_content .newsticker').wrap('<div id="flexslider_sw"></div>');
+            $('#swt_content .newsticker').addClass('slides');
+            $('#flexslider_sw').flexslider({
+                slideshowSpeed: 5000,
+                animation: "fade",
+                animationLoop: true,
+                slideshow: true,
+                controlNav: false,
+                pauseOnHover: false,
+                directionNav: true,
+                pausePlay: true,
+                start: function (slider) {
+                    $('#swt_title').after('<div class="flex_control_area"><div class="prevBtn"><a href="#">previous</a></div><div class="count"><span class="current">1</span> / <span class="total">' + slider.count + '</span></div><div class="nextBtn"><a href="#">next</a></div></div>');
+                    $('#swt .prevBtn').on('click', function () {
+                        $('#swt .flex-prev').click();
+                        return false;
+                    });
+                    $('#swt .nextBtn').on('click', function () {
+                        $('#swt .flex-next').click();
+                        return false;
+                    });
+                },
+                after: function (slider) {
+                    $('#swt .flex_control_area .count .current').empty().append(slider.currentSlide + 1);
+                }
+            });
+
+            $("#swt").show();
+        }
+
+        get_dynamic_json('DYN_DAT_WARNSUM', function () {
+            initWarnsum();
+        });
+    });
+
+
+    function initWarnsum() {
+
+        if (checkWarningUp("WTCSGNL") || checkWarningUp("WRAIN") || checkWarningUp("WL") || checkWarningUp("WTS") || checkWarningUp("WFNTSA") || checkWarningUp("WMSGNL") || checkWarningUp("WFROST") || checkWarningUp("WFIRE") || checkWarningUp("WCOLD") || checkWarningUp("WHOT") || checkWarningUp("WTMW")) {
+            initWarningIcon();
+            initWarningLearnMore();
+
+            init_lazy_img();
+        }
+    }
+
+    $(document).ready(function () {
+        $("#flexslider_sw > .newsticker.slides > .flex-active-slide").css("float", "none");
+    });
+</script>
+<h1 class="mobile_h2">Weather Information for Schools</h1>
+<div class="border_blank">
+    <div class="setion_banner"><img src="../../images/setion_banner/school.jpg"
+            alt="Weather Information for Schools Banner" />
+        <div class="cont">
+            <h2>Weather Information for Schools</h2>
+        </div>
+    </div>
+    <div class="area_warning">
+        <div class="detail"></div>
+        <div class="special"></div>
+    </div>
+    <div id="swt">
+        <div id="swt_title"><a class="next">►</a> <a class="playState">Ⅱ</a> <a class="prev">◄</a> <span
+                class="swt_title_a">Special Weather Tips</span></div>
+        <div id="swt_content">
+            <ul class="newsticker"></ul>
+        </div>
+    </div>
+    <div id="banner" class="school_hb">
+        <div id="subBanner1"><a href="http://www.edb.gov.hk/en/index.html" rel="external">Latest News from Education
+                Bureau</a></div>
+        <div id="subBanner2">
+            <p>Information from EDB</p>
+            <ul class="schoolinks">
+                <li><a href="files/Leaflet_English.pdf">What do rainstorm warning signals mean to you?</a></li>
+                <li><a href="https://applications.edb.gov.hk/circular/upload/EDBC/EDBC22005E.pdf"
+                        rel="external">Tropical Cyclones and Heavy Persistent Rain Arrangements for Kindergartens and
+                        Day Schools</a></li>
+                <li><a href="https://applications.edb.gov.hk/circular/upload/EDBC/EDBC22006E.pdf"
+                        rel="external">Tropical Cyclones and Heavy Persistent Rain Arrangements for Evening Schools</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="school_tb">
+        <div id="recordTime">Between 5:15 and 6:15 p.m , the rainfall recorded in various regions were:</div>
+        <table class="rainfallData">
+            <tbody>
+                <tr class="header">
+                    <th>District</th>
+                    <th>Rainfall (mm)*</th>
+                </tr>
+            </tbody>
+        </table>
+    </div><div id="sideBanner" class="sb_school">
+        <div><a href="../../en/wxinfo/rainfall/isohyet_past1hr.shtml"><img
+                    src="../../en/school/images/icon_school_1.jpg" alt="Rainfall Distribution" />Rainfall
+                Distribution</a></div>
+        <div><a href="../../en/wxinfo/radars/radar64n.htm"><img src="../../en/school/images/icon_school_2.jpg"
+                    alt="&gt;Weather Radar Image" />Weather Radar Image</a></div>
+        <div><a href="../../en/rhr/main.html"><img src="../../en/school/images/icon_school_3n.jpg"
+                    alt="Regional Information on Heavy Rain and Thunderstorm" />Regional Information on Heavy Rain and
+                Thunderstorm</a></div>
+        <div><a href="https://maps.weather.gov.hk/ocf/index_e.html?data=ncrf"><img
+                    src="../../en/school/images/icon_school_3.jpg" alt="2-hour Rainfall Forecast" />2-hour Rainfall
+                Forecast</a></div>
+    </div>
+    <div class="div_half">
+        <div>
+            <h2 class="h2_2">Weather Information</h2>
+            <ul class="lt_blank">
+                <li><a href="https://maps.weather.gov.hk/llis/llaw_e.html" rel="external">Lightning Location
+                        Information</a></li>
+                <li><a href="../../en/wxinfo/ts/index_wind.htm">Regional Mean Wind</a></li>
+                <li><a href="../../en/wxinfo/ts/wind_gale.htm">Distribution of Strong Winds, Gale Force Winds or
+                        Above</a></li>
+                <li><a href="../../en/wxinfo/ts/index.htm">Regional Air Temperature</a></li>
+                <li><a href="../../en/wxinfo/uvinfo/uvinfo.html">UV Radiation Information</a></li>
+                <li><a href="http://www.aqhi.gov.hk/en.html" rel="external">Air Quality Health Index</a></li>
+                <li><a href="../../textonly/v2/explain/intro.htm">Warnings: Definitions and Meanings</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="h2_2">Current Weather and Forecast</h2>
+            <ul class="lt_blank">
+                <li><a href="../../en/wxinfo/currwx/current.htm">Current Weather</a></li>
+                <li><a href="../../en/wxinfo/currwx/flw.htm">Local Weather Forecast</a></li>
+                <li><a href="../../en/wxinfo/currwx/fnd.htm">9-day Weather Forecast</a></li>
+                <li><a href="../../en/wxinfo/uvinfo/uvinfo.html" rel="external">UV Index Forecast</a></li>
+                <li><a href="https://maps.weather.gov.hk/ocf/index_e.html" rel="external">Automatic Regional Weather
+                        Forecast in Hong Kong &amp; Pearl River Delta Region</a></li>
+                <li><a href="https://www.gbaweather.net/en/" rel="external">Weather Website for GBA Guangdong Hong Kong
+                        Macao</a></li>
+            </ul>
+        </div>
+    </div>
+    <br />
+    <div id="div_notes">*Remarks:
+        <ol id="notes">
+            <li>Rainfall amounts displayed is provisional. Only limited data validation has been carried out.</li>
+            <li>M: System under maintenance, data temporarily not available</li>
+        </ol>
+    </div>
+    <p id="p_footer_msg">For enquiries on weather information, please call Dial-a-Weather hotline <strong>1878
+            200</strong> <br />For arrangement of provision of weather service, please contact Scientific Officer
+        (Forecast Operations) at <strong>2926 8375</strong> <br /><strong>Office Hour:</strong> <br />Monday to Friday
+        8:30 am to 5:45 pm <br />Closed on Saturday, Sunday and public holidays</p>
+</div>
+<script>var last_revision_date = '12 July 2022';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

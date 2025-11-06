@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-hk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>過去二十四小時香港分區天氣資料</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" 過去二十四小時香港分區天氣資料">
+    <meta name="description" content="過去二十四小時香港分區天氣資料">
+    <meta name="recordId" content="2018123100000036641">
+    <meta name="lang" content="tc">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="過去二十四小時香港分區天氣資料" />
+	<meta property="og:description" content="過去二十四小時香港分區天氣資料 請選擇時間: | &amp;nbsp;上一頁 &amp;nbsp;| &amp;nbsp;版 權 及 聲 明 &amp;nbsp;| &amp;nbsp;註解 &amp;nbsp;| &amp;nbsp;英文版本" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/tc/wxinfo/ts/tsarchive/wxinfo_24hrs.shtml" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+		td {
+        font-size:100%;
+        }
+        pre, xmp, plaintext, listing {
+        display: block;
+        white-space: pre;
+        margin: 1em 0px;
+        }
+        /* WCAG Logo */
+        #wcag_logo_area{
+        display:inline;
+        text-align: center;
+        }
+        #wcag_logo_area a img{
+        border:	0px;
+        position:relative;
+        top:12px;
+        }
+		.border_white{
+			border-color:#fff;
+		}
+		#Selhour {
+			max-width: 200px;
+			width: 100%;
+		}
+pre {
+word-spacing: -1px;
+white-space: break-spaces;
+}
+		
+		.border_white{
+			border-color:#fff;
+		}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+	
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000011453';
+
+                     (function(){
+    function addzero(arg){
+        if (arg.length == 1){
+            return "0"+arg;
+        } else {
+            return arg;
+        }
+    }
+
+    function dropzero(arg){
+        if (arg.substr(0,1)=="0"){
+            return arg.substr(1);
+        } else {
+            return arg;
+        }
+    }
+
+    function process(arg){
+        if (arg == "current") {
+            var url = "/dps/wxinfo/ts/text_readings_c.htm"; 
+        } else {
+            var url = "/dps/wxinfo/ts/tsarchive/text_readings_"+arg+"0000c.txt";
+        }
+        fetch(url)
+        .then(function (response) {
+            if (response.status == 404){
+                $("pre").html("<p style='text-align:center;font-weight:bold;'>未能提供 "+arg.substr(0,4)+"年"+arg.substr(4,2)+"月"+arg.substr(6,2)+"日 "+ arg.substr(8,2)+"時香港分區天氣資料。</p>")
+            }
+            return response.arrayBuffer();
+        })
+        .then(function (buffer) {
+        
+           if (arg=="current") {
+               decoder = new TextDecoder('utf-8');
+           }else{
+              decoder = new TextDecoder('big5');
+           }
+            const text = decoder.decode(buffer);     
+       
+            raw = $.parseHTML(text)
+
+           console.log(text);
+            //raw = $.parseHTML(data)
+            $.each( raw, function( i, el ) {
+                if (el.nodeName == "PRE") {
+                    console.log(el.innerHTML)
+                    $("pre").html(el.innerHTML)
+                    
+                }
+
+            });
+        }).catch(function(error){
+            console.error('Error:', error);
+            
+        });      
+    }
+
+    $(document).ready(function() {
+         $.ajax({
+            url: "/dps/wxinfo/ts/text_readings_c.htm",
+            dataType: "text",
+            cache:false
+        }).done(function(data){
+            var now = new Date();
+            var optionhtm = "<option value='current'>最新</option>";
+            for (var i=0; i<24; i++){
+                var content = moment(now).subtract(i, 'hour').format('YYYYMMDDHH')
+                optionhtm += "<option value='"+content+"'>"+content.substr(0,4)+"年"+content.substr(4,2)+"月"+content.substr(6,2)+"日 "+content.substr(8,2)+"時</option>"
+            }
+            $("#Selhour").html(optionhtm)
+            raw = $.parseHTML(data)
+            $.each( raw, function( i, el ) {
+                if (el.nodeName == "PRE") {
+                    $("pre").html(el.innerHTML)
+                }
+
+            });
+            
+        })
+        $("input[type=submit]").click(function(e){
+            var obshour = $("#Selhour option:selected").val();
+            process(obshour);
+        });
+    });
+})()    
+
+
+
+
+
+	</script>
+</head>
+<body id="page_bg">
+                <div class="border_blank border_white">
+                    <p class="self_align_center"><img alt="Hong Kong Observatory Logo" src="../../../../tc/images/logo_dblue.gif" /></p>
+<h2 class="self_align_center">過去二十四小時香港分區天氣資料</h2>
+<div id="div_content">
+<p><span style="font-weight: bold; font-family: Arial; font-size: 83%;">請選擇時間:</span> <input type="hidden" name="form" value="wxinfo24" /><select name="Selhour" id="Selhour" title="Time series"></select><input type="submit" value="確定" title="顯示已選擇時間的天氣資料" /></p>
+<div style="border-top: 1px solid #9e9e9e;">
+<pre id="ming"></pre>
+</div>
+</div>
+<hr />| &nbsp;<a>上一頁</a> &nbsp;| &nbsp;<a href="../../../../textonly/v2/readmec.htm">版 權 及 聲 明</a> &nbsp;| &nbsp;<a title="氣溫及相對濕度的註解" href="../../../../tc/wxinfo/ts/explain.htm#temperature">註解</a> &nbsp;| &nbsp;<a href="../../../../en/wxinfo/ts/tsarchive/wxinfo_24hrs.shtml">英文版本</a> &nbsp;| <br />
+<div id="wcag_logo_area"></div>
+<script>var last_revision_date = '2025年5月6日';</script>
+                </div>
+</body>
+</html>

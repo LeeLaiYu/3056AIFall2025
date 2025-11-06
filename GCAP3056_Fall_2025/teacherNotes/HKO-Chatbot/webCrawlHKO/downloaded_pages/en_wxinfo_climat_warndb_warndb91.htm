@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>HKO Warnings and Signals Database Tropical Cyclone Warning Signals｜Hong Kong Observatory(HKO)｜Warnings & Signals Database</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HKO Warnings and Signals Database Tropical Cyclone Warning Signals">
+    <meta name="description" content="HKO Warnings and Signals Database Tropical Cyclone Warning Signals">
+    <meta name="recordId" content="2018123100000036362">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="HKO Warnings and Signals Database Tropical Cyclone Warning Signals" />
+	<meta property="og:description" content="HKO Warnings and Signals Database Tropical Cyclone Warning Signals HKO Warnings and Signals Database Please select name :Submit Query Signals No. 5, 6, 7 and 8 were used to signify" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/climat/warndb/warndb91.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.1.13.1.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+		#mainContent input[type="submit"] {
+    border: 0;
+    background-color: #535353;
+    color: #fff;
+    padding: 0 15px;
+    height: 32px;
+    border-radius: 3px;
+    margin-left: 10px;
+}    
+@media only screen and (max-width: 767px) {
+    #result_content {
+        overflow-x:auto;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #result_content {
+        overflow-x:hidden;
+    }
+}
+
+#result_content table {
+    min-width:700px;
+}    
+#result, #result td {border:1px solid black;}
+#result {width:100%; margin:2px auto;border-collapse:collapse;}
+#result td {padding:1em; text-align:center; font-weight:bold;}
+#result th {text-align:center; border:1px solid black; color:white; background-color:rgb(26, 88, 171); padding:1em;}
+#result tr:nth-child(2) td {background-color:rgb(26, 88, 171); color:white;}
+#startdate, #enddate {width:80px;}
+#result tr:nth-child(2n+2) td {
+    background-color:#f0f0f0;
+}
+#remarks1, #remarks2, #remarks3 {font-weight:bold; display:none;}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.1.13.1.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.2.29.4.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '0';
+var section_id = '2018010100000011396';
+
+    (function(){
+    function addzero(arg){
+        if (arg.length == 1){
+            return "0"+arg;
+        } else {
+            return arg;
+        }
+    }
+    var tcname;
+    function process(data){
+        var months = {"01":"Jan", "02":"Feb", "03":"Mar", "04":"Apr", "05":"May", "06":"Jun",
+                      "07":"Jul", "08":"Aug", "09":"Sep", "10":"Oct", "11":"Nov", "12":"Dec"};
+        var lines = data.split("\n")
+        var html = "";
+        var num_records = 0;
+        var intensity = {"UC":"--","TS":"Tropical Storm", "T":"Typhoon", "TST":"Typhoon (Severe Typhoon)", "STS":"Severe Tropical Storm","TD":"Tropical Depression", "TSupT":"Typhoon (Super Typhoon)", "SuperT":"Super Typhoon", "TD/TD":"Tropical Depression/Tropical Depression", "ST":"Severe Typhoon"};
+        var showRemark1 = false;
+        var showRemark2 = false;
+        var showRemark3 = false;
+        for (var i=0; i < lines.length; i++) {
+            var data = lines[i].split(/\t+/);
+            if (data.length > 1) {
+                if (data[1] != "MSN"){
+                    var obsdate = data[8]+"-"+addzero(data[7]);
+                    if (data[2] == tcname){
+                        num_records++;
+                        var signaltype = data[3];
+                        var dir = data[4];
+                        if (data[5].length == 4) {
+                            var starttime = data[5].substr(0,2)+":"+data[5].substr(2,2);
+                        } else if (data[5].length == 3){
+                            var starttime = "0"+data[5].substr(0,1)+":"+data[5].substr(1,2);
+                        } else if (data[5].length == 2){
+                            var starttime = "00"+":"+data[5];
+                        } else if (data[5].length == 1){
+                            var starttime = "00"+":0"+data[5];
+                        }
+                        if (data[10].length == 4) {
+                            var endtime = data[10].substr(0,2)+":"+data[10].substr(2,2);
+                        } else if (data[10].length == 3){
+                            var endtime = "0"+data[10].substr(0,1)+":"+data[10].substr(1,2);
+                        } else if (data[10].length == 2){
+                            var endtime = "00"+":"+data[10];
+                        } else if (data[10].length == 1){
+                            var endtime = "00"+":0"+data[10];
+                        }
+                        
+                        if (data[15].length == 5) {
+                            var duration = data[15].substr(0,3)+" "+data[15].substr(3,2);
+                        } else if (data[15].length == 4) {
+                            var duration = data[15].substr(0,2)+" "+data[15].substr(2,2);
+                        } else if (data[15].length == 3){
+                            var duration = "0"+data[15].substr(0,1)+" "+data[15].substr(1,2);
+                        }
+                        var launchdate = addzero(data[6])+"/"+months[addzero(data[7])]+"/"+data[8]
+                        var canceldate = addzero(data[11])+"/"+months[addzero(data[12])]+"/"+data[13]
+                        if (parseInt(data[8])> 1930 && parseInt(data[8]) < 1973) {
+                            showRemark1= true;
+                        }   
+                        if (data[3] != "8"){
+                            var signal = data[3];
+                        } else {
+                            console.log(parseInt(data[8]))
+                             
+                            if (data[4] == "SE") var signal = "8 SE";
+                            if (data[4] == "SW") var signal = "8 SW";
+                            if (data[4] == "NE") var signal = "8 NE";
+                            if (data[4] == "NW") var signal = "8 NW";
+                        }
+                        if (data[4] == "*"){
+                            signal = signal+"*";
+                            showRemark2 = true;
+                        }
+                        if (data[9] == "S") {
+                            starttime = starttime+" S";
+                            showRemark3 = true;
+                        }   
+                        if (data[14] == "S") {
+                            endtime = endtime+" S";
+                            showRemark3 = true;
+                        }
+                        if(tcname == "NIL"){
+                        	tcname = "no name";
+                        }
+                        html += "<tr><td headers='header1'>"+intensity[data[1]]+"</td><td headers='header2'>"+tcname+"</td><td headers='header3'>"+signal+"</td><td headers='header4 header7'>"+starttime+"</td><td>"+launchdate+"</td><td headers='header5 header9'>"+endtime+"</td><td>"+canceldate+"</td><td headers='header6'>"+duration+"</td></tr>"; 
+                        if (tcname == "no name"){
+                        	tcname = "NIL";
+                        }
+                    }
+                }
+            }    
+        }
+        if (html != "") {
+            var heading = "<tr><th rowspan='2' id='header1'>Intensity</th><th rowspan='2' id='header2'>Name</th><th rowspan='2' id='header3'>Signal</th><th colspan='2' id='header4'>Start Time</th><th colspan='2' id='header5'>End Time</th><th rowspan='2' id='header6'>Duration<br>hh mm</th></tr>";
+            heading += "<tr><th id='header7'>hh mm</th><th id='header8'>dd/mon/yyyy</th><th id='header9'>hh mm</th><th id='header10'>dd/mon/yyyy</th></tr>"
+            html = heading+html;
+            if (tcname == "NIL"){
+            	tcname = "no name";
+            }
+            var resulthead = "<hr><br>Name of the Tropical Cyclone : ["+tcname+"]<br>Total number of records : ["+num_records.toString()+"]</p>";
+            document.getElementById("result_heading").innerHTML = resulthead; 
+            document.getElementById("result_content").innerHTML = '<table id="result" summary="This table list records of Tropical Cyclone Warning Signals. It consists of 8 columns.  The first column is the intensity of Tropical Cyclone.  The second column is the name of Tropical Cyclone.  The third column is the signal number.  The fourth and fifth column are under the heading \'Start Time\'.  The fourth column is the Start Time time in hours and minutes.  The fifth column is the Start Time date.  The sixth and seventh column are under the heading \'End Time\'.  The sixth column is the End Time time in hours and minutes.  The seventh column is the End Time date.  The eighth column is the duration in hours and minutes">'+html+"</table>";
+            if (showRemark1 == true){
+                document.getElementById('remarks1').style.display = "block";
+            } else {
+                document.getElementById('remarks1').style.display = "none";
+            }
+            if (showRemark2 == true){
+                document.getElementById('remarks2').style.display = "block";
+            } else {
+                document.getElementById('remarks2').style.display = "none";
+            }
+            if (showRemark3 == true){
+                document.getElementById('remarks3').style.display = "block";
+            } else {
+                document.getElementById('remarks3').style.display = "none";
+            }
+        } else {
+            document.getElementById("result_content").innerHTML = "";
+            document.getElementById("result_heading").innerHTML = "<hr><br>No Tropical Cyclone Warning Signals issued during that period.";
+            document.getElementById('remarks1').style.display = "none";
+            document.getElementById('remarks2').style.display = "none";
+            document.getElementById('remarks3').style.display = "none";
+        }
+    }
+    function doAPIcall(type, url, callback) {
+        var rands = Math.floor(Math.random(100)*100000).toString();
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.overrideMimeType("text/plain");
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == XMLHttpRequest.DONE && xmlhttp.status == 200) {
+                var data = xmlhttp.responseText;
+                if (callback) callback(data);
+            }
+        };
+        xmlhttp.open(type, url+"?s="+rands, true);
+        xmlhttp.send();
+    }
+    function fillforms(data){
+        var optionhtm = "";
+        var lines = data.split("\n");
+        for (var i=0; i < lines.length; i++){
+            if (i==0 || lines[i] == "" || i==1) continue;
+            var raw = lines[i].split(/\t+/);
+            if (raw[0] == "NIL"){
+            	raw[0] = "no name";
+            }
+            optionhtm += "<option value='"+raw[0]+"'>"+raw[0]+"</option>"; 
+        }
+        document.getElementById("selwind").innerHTML = optionhtm;
+    }
+    document.addEventListener("DOMContentLoaded", function() { 
+        doAPIcall("GET", "/dps/wxinfo/climat/warndb/tcname.dat", fillforms);
+        document.getElementById('submit').addEventListener("click",function(e){
+            var sel = document.getElementById("selwind");
+            tcname = sel.options[sel.selectedIndex].value;
+            if (tcname == "no name"){
+            	tcname = "NIL";
+            }
+            //tcname = $("#selwind option:selected").val();
+            doAPIcall("GET", "/dps/wxinfo/climat/warndb/tc.dat", process);
+        });    
+    });
+})()     
+
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1 class="no_h1">HKO Warnings and Signals Database Tropical Cyclone Warning Signals</h1>
+                <div class="border_blank">
+                    <!--Begin Content-->
+<h1 class="no_h1">HKO Warnings and Signals Database Tropical Cyclone Warning Signals</h1>
+<div class="border_blank"><!--Content Start--> <!-- langtype=eng, chi:wxinfo/climat/warndb/warndb91_c.htm, sim:wxinfo/climat/warndb/warndb91_c.htm; -->
+<div class="self_align_center">
+<h2>HKO Warnings and Signals Database</h2>
+</div>
+<label for="selwind"> Please select name :</label><select id="selwind"></select><label class="sr-only" for="submit">Submit Query</label><input type="SUBMIT" name="submit" id="submit" value="Submit Query" />
+<div id="result_heading"></div>
+<div id="result_content"></div>
+<p id="remarks1">Signals No. 5, 6, 7 and 8 were used to signify gales from the NW, SW, NE and SE respectively between 1931 and 1972. To avoid misunderstanding by the public, the Signals No. 5 to 8 were replaced by the Signals No. 8 NW, 8 SW, 8 NE and 8 SE in 1 January 1973. The Signals No. 8 NW, 8 SW, 8 NE and 8 SE between 1946 and 1972 as shown in this database were originally the Signals No. 5 to 8 used at the time.</p>
+<p id="remarks2">The "3*" as displayed in this database refers to the "Local Strong Wind Signal" adopted in Hong Kong between 1 January 1950 and 14 April 1956 which covered warning of strong winds due to monsoon or less intense tropical cyclones. With effect from 15 April 1956, the Strong Monsoon Signal and the Tropical Cyclone Strong Wind Signal No. 3 were introduced to delineate the warnings for monsoon systems and tropical cyclones.</p>
+<p id="remarks3">S at Start Time or End Time column indicates Summer Time HKT + 1 hour.</p>
+<!--Content End--></div>
+<script>var last_revision_date = '14 January 2025';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

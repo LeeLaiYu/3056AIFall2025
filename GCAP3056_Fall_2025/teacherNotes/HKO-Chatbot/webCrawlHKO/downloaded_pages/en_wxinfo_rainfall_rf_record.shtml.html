@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Past Rainfall Recorded in Various Regions of Hong Kong</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Past Rainfall Recorded in Various Regions of Hong Kong">
+    <meta name="description" content="Past Rainfall Recorded in Various Regions of Hong Kong">
+    <meta name="recordId" content="2018123100000036645">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Past Rainfall Recorded in Various Regions of Hong Kong" />
+	<meta property="og:description" content="Past Rainfall Recorded in Various Regions of Hong Kong Please select date:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Please select hour: 00:00 01:00 02:00 03:00 04:00 05:00 06:00 07:00 08:00 09:00 10:00 11:00 12:00 13:00 14:00 15:00" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/rainfall/rf_record.shtml" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+		td {
+        font-size:100%;
+    }
+    /* WCAG Logo */
+    #wcag_logo_area{
+        display:inline;
+        text-align: center;
+    }
+    #wcag_logo_area a img{
+        border:	0px;
+        position:relative;
+        top:12px;
+    }
+
+    .border_white{
+        border-color:#fff;
+    }
+
+	.border_white{
+		border-color:#fff;
+	}
+	#div_content h2{
+		text-align:center !important;
+	}
+	
+    form[name=dailyIC] span{
+		font-size:16px !important
+	}
+		
+		.border_white{
+			border-color:#fff;
+		}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000010832';
+
+          var now = new Date();
+var cmonth = now.getMonth();
+var cday = now.getDate();
+var chour = now.getHours();
+var cyear = now.getFullYear();
+var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var monthvalue = {"Jan":"01", "Feb":"02", "Mar":"03", "Apr":"04", "May":"05", "Jun":"06", 
+                  "Jul":"07", "Aug":"08", "Sep":"09", "Oct":"10", "Nov":"11", "Dec":"12"};
+var monthtext = {"01":"Jan", "02":"Feb", "03":"Mar", "04":"Apr", "05":"May", "06":"Jun", "07":"Jul",                 "08":"Aug", "09":"Sep", "10":"Oct", "11":"Nov", "12":"Dec"}
+
+var range = [];
+range.push(month[cmonth]);
+var leapdays;
+
+if (leapyear(cyear) == true){
+    leapdays=29;
+} else {
+    leapdays=28;
+}
+var days = {"01":31, "02":leapdays, "03":31, "04":30, "05":31, "06":30, "07":31, "08":31, "09":30,
+            "10":31, "11":30, "12":31 }
+
+
+for (var i=0; i<3;i++){
+    cmonth = cmonth-1;  
+    if (cmonth > -1){
+        range.unshift(month[cmonth]);
+    } else if (cmonth == -1) {
+        range.unshift(month[11]);
+    } else if (cmonth == -2) {
+        range.unshift(month[10]);
+    } else if (cmonth == -3) {
+        range.unshift(month[9]);
+    }   
+}
+
+function addzero(arg){
+    if (arg.length == 1){
+        return "0"+arg;
+    } else {
+        return arg;
+    }
+}
+
+function dropzero(arg){
+    if (arg.substr(0,1)=="0"){
+        return arg.substr(1);
+    } else {
+        return arg;
+    }
+}
+
+function leapyear(year){
+    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+}
+
+function getRf(arg) {
+    var url = "/dps/wxinfo/rainfall/archive/rf_record_"+arg+"00e.htm";  
+    $.ajax({
+        url:url,
+        cache:false,
+        dataType:"text",
+        statusCode: {
+            404: function(responseObject, textStatus, jqXHR) {
+                   var headingdate = arg.substr(8,2)+":00 "+dropzero(arg.substr(6,2))+" "+monthtext[arg.substr(4,2)]+" "+arg.substr(0,4);
+                   $("#errormesg").remove();
+                   $("#seldate").remove();
+                   $("#tablecontent").html("");
+                   $("<p style='text-align:center;font-weight:bold;' id='errormesg'>Past rainfall recorded at "+headingdate+" is not available.</p>").appendTo($("#rainfalldata"))
+                 }
+        }         
+    }).done(function(data){
+        $("#errormesg").remove();
+        $("#seldate").remove();
+        $("#tablecontent").html("");
+        var content =$(data).find("table.center").html()
+        var seldate = dropzero(arg.substr(6,2))+" "+monthtext[arg.substr(4,2)]+" "+arg.substr(0,4)
+        replacement="No rainfall recorded for the selected date/time"
+        content = content.replace("There is currently no rainfall recorded in various regions of Hong Kong",replacement)
+        $("#tablecontent").html(content)
+        $("#tablecontent table td").css("border", "1px solid black");
+        $("<h2 style='font-size:117%;' id='seldate'> "+seldate+"</h2>").prependTo($("#rainfalldata"));
+    })
+}
+
+$(document).ready(function() {
+	$('#div_content>div>div>table>tbody>tr>td>table').addClass('table_cellpadding_5 table_cellspacing_1');
+	$('#div_content>div>strong').wrap('<div class="self_align_center"></div>');
+	$('#div_content>div>div>table>tbody>tr>td>table>tbody>tr>td:nth-child(2)').width('150px');
+   
+    var optionHtml="";
+    for (var i=0; i<4;i++){
+        optionHtml += "<option value='"+monthvalue[range[i]]+"'>"+range[i]+"</option>"
+    }
+    $("#Selmonth").html(optionHtml);
+    $("#Selmonth option:last-child").prop("selected",true);
+    $("#Selhour").find("option").eq(chour).prop("selected",true); 
+    $('#Selmonth').on('change', function() {
+        var month = $("#Selmonth option:selected").val();
+        var numdays = days[month];
+        var optionHtml="";
+        for (var i=0; i <numdays; i++){
+            optionHtml += "<option value='"+addzero((i+1).toString())+"'>"+(i+1).toString()+"</option>";
+        }
+        $("#Selday").html(optionHtml);
+    });
+    $("#Selmonth").trigger("change");
+    $("#Selday").find("option").eq(cday-1).prop("selected",true);
+    var selmonth = $("#Selmonth option:selected").val();
+    var selday = $("#Selday option:selected").val();
+    var selhour = $("#Selhour option:selected").val();
+    getRf(cyear+selmonth+selday+selhour);
+   
+    $("[type='submit']").click(function(e){
+        e.preventDefault();
+        var now = new Date();
+        var cyear = now.getFullYear().toString();
+        var preyear = (cyear-1).toString();
+        var selmonth = $("#Selmonth option:selected").val();
+        var selday = $("#Selday option:selected").val();
+        var selhour = $("#Selhour option:selected").val();
+        var firstoption = $("#Selmonth option:first-child").val();
+        var timestamp = cyear+selmonth+selday+selhour
+        
+        if (firstoption == "11" || firstoption == "12" || firstoption == "10" ) {
+            if (selmonth == "10" || selmonth == "11" || selmonth == "12") {
+                timestamp = preyear+selmonth+selday+selhour
+            }
+        } else {
+            timestamp = cyear+selmonth+selday+selhour
+        }
+        getRf(timestamp)
+    }) 
+});
+	</script>
+</head>
+<body id="page_bg">
+                <!--Begin Content-->
+                <div class="border_blank border_white">
+                    <p class="self_align_center"><img alt="Hong Kong Observatory Logo" src="../../../en/images/logo_dblue.gif" /></p>
+<h2 class="self_align_center">Past Rainfall Recorded in Various Regions of Hong Kong</h2>
+<br />
+<div class="self_align_center" id="div_content"><form name="dailyIC"><span style="font-size: 83%;"><strong>Please select date:</strong></span><select size="1" name="Selday" id="Selday" title="Please select day"></select>&nbsp;&nbsp;<select size="1" name="Selmonth" id="Selmonth" title="Please select month"></select>&nbsp;&nbsp;<span style="font-size: 83%;"><strong>Please select hour:</strong></span><select size="1" name="Selhour" id="Selhour" title="Please select hour">
+<option value="00">00:00</option>
+<option value="01">01:00</option>
+<option value="02">02:00</option>
+<option value="03">03:00</option>
+<option value="04">04:00</option>
+<option value="05">05:00</option>
+<option value="06">06:00</option>
+<option value="07">07:00</option>
+<option value="08">08:00</option>
+<option value="09">09:00</option>
+<option value="10">10:00</option>
+<option value="11">11:00</option>
+<option value="12">12:00</option>
+<option value="13">13:00</option>
+<option value="14">14:00</option>
+<option value="15">15:00</option>
+<option value="16">16:00</option>
+<option value="17">17:00</option>
+<option value="18">18:00</option>
+<option value="19">19:00</option>
+<option value="20">20:00</option>
+<option value="21">21:00</option>
+<option value="22">22:00</option>
+<option value="23">23:00</option>
+</select><input type="submit" value="View" title="Show the past rainfall recorded with selected date and time." /></form>
+<div style="border-top: 1px solid #9e9e9e; padding-top: 15px;" id="rainfalldata">
+<table id="tablecontent" style="margin: 0 auto;"></table>
+</div>
+</div>
+<hr />
+<div class="self_align_left">| &nbsp;<a>Back</a> &nbsp;| &nbsp;<a href="../../../textonly/v2/readme.htm">Copyright and Disclaimer</a> &nbsp;| &nbsp;<a href="../../../tc/wxinfo/rainfall/rf_record.shtml">Chinese Version</a> &nbsp;| <br />
+<div id="wcag_logo_area"></div>
+<br /><br /><span style="font-size: 63%;">Last updated on 24 Feb 2022</span></div>
+<script>var last_revision_date = '3 June 2024';</script>
+                </div>
+				<!--End Content-->
+</body>
+</html>

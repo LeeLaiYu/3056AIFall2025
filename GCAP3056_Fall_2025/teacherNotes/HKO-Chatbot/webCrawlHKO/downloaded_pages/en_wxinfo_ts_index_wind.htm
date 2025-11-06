@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mean Wind｜Hong Kong Observatory(HKO)｜Regional Weather</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Mean Wind">
+    <meta name="description" content="Mean Wind">
+    <meta name="recordId" content="2018123100000035945">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Mean Wind" />
+	<meta property="og:description" content="Mean Wind &amp;nbsp; M &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; : &amp;nbsp; Under Maintenance / Data Temporarily Not Available&amp;nbsp; VRB &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; : &amp;nbsp; variable&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; : &amp;nbsp; calm&amp;nbsp; &amp;nbsp;: &amp;nbsp; easterly wind" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/ts/index_wind.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+			.press_button { font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 11px;   font-weight: bold; color: blue }
+	#content_footer {
+		margin: 0 auto;
+		max-width: 700px;
+		width: 100%;
+	}
+	#content_footer > div{
+		padding-top: 0.5em;
+	}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000010837';
+
+                  
+
+function newWin01(URL, w, h) {
+ parameter = "top=1,left=1,width="+w+",height="+h+",scrollbars=yes,menubar=no,toolbar=no,resizable=yes";
+ msgWindow=window.open(URL, "index_wind_e", parameter);
+ msgWindow.focus();
+ }
+	$(document).ready(function(e) {
+ $.getJSON('../../../wxinfo/ts/index_wind_e.json', function(data) {
+		console.log(data.maparea);
+		$(data.maparea).each(function( k,v ) {
+			/*<area href="windbarb.htm?cp1&menu=otherwxi&rwx&addbar" shape="rect" coords ="329, 350, 359, 370" alt="Direction:East       Speed:24km/h  Gust:35km/h" title="Direction:East       Speed:24km/h  Gust:35km/h">*/
+
+			var content = $("<area/>")
+												.attr("href",v.link)
+												.attr("shape","rect")
+												.attr("coords",v.coords)
+												.attr("alt",v.text)
+												.attr("title",v.text);
+			console.log(content);
+			$("map").append(content);
+		});
+			$('img[usemap]').rwdImageMaps();
+ });
+});
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1 class="no_h1">Mean Wind</h1>
+                <div class="border_blank">
+                    <!--Content Start--> <!--This web page is real time generated by the CGI Program gen_wb_htm.o-->
+<div class="self_align_center">
+<h2 class="h2_2">Mean Wind</h2>
+<img src="../../../wxinfo/ts/windehk.png" usemap="#FPMap0" alt="10 minutes Mean wind" /><br />
+<table class="self_align_center row2_table">
+<tbody>
+<tr>
+<td><input type="button" name="slideshow" class="press_button" value="Start Animation for the past 24 hours" onclick="newWin01('../../../en/wxinfo/ts/wb_animation.htm', 700, 650);" title="Start the animation for the past 24 hours in the new window." style="width: 270px; height: 22px;" /><input type="button" name="gale_icon" class="press_button" value="Distribution of strong winds, gale force winds or above" onclick="newWin01('../../../en/wxinfo/ts/wind_gale.htm', 700, 650);" title="Show distribution of strong winds, gale force winds or above in the new window." style="width: 390px; height: 22px;" /></td>
+</tr>
+</tbody>
+</table>
+<table style="max-width: 658px; margin-top: 16px; background-color: #ffffe0; border-color: cyan;" title="This table is used for guarding the displaying format of materials on the viewing area" class="table_border_2 ts_table">
+<tbody>
+<tr>
+<td>
+<div class="self_align_justify"><span style="font-size: 83%; height: 14px;">&nbsp; M &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp; Under Maintenance / Data Temporarily Not Available<br />&nbsp; VRB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp; variable<br />&nbsp;<img src="../../../en/wxinfo/ts/images/circle.gif" alt="Calm" /> &nbsp; &nbsp; &nbsp; &nbsp; : &nbsp; calm<br />&nbsp;<img src="../../../en/wxinfo/ts/images/5m_sec.gif" alt="easterly wind of 18 km/h" /> &nbsp;: &nbsp; easterly wind of 18 km/h<br />&nbsp;<img src="../../../en/wxinfo/ts/images/25m_sec.gif" alt="easterly wind of 90 km/h" /> &nbsp;&nbsp; : &nbsp; easterly wind of 90 km/h<br />&nbsp;<img src="../../../en/wxinfo/ts/images/hill_icon.png" alt="Station higher than 500 metres above mean sea level" /> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; : &nbsp; Station higher than 500 metres above mean sea level<br /><br />&nbsp;<a href="explain.htm#wind" title="Explanatory note for wind barbs">Explanatory note</a><br /><br /></span></div>
+</td>
+</tr>
+<tr>
+<td>
+<table style="background-color: #ffffe0;" class="table_border_0">
+<tbody>
+<tr>
+<td colspan="2"><span style="font-size: 83%;"> Points to note:</span></td>
+</tr>
+<tr>
+<td class="td_valign_top"><span style="font-size: 83%;">(i)</span></td>
+<td><span style="font-size: 83%;">The Observatory has set up backup weather stations and anemometers in some areas. When the main weather stations or anemometers in those areas are under maintenance, the webpage will display data from the backup stations or anemometers.</span></td>
+</tr>
+<tr>
+<td class="td_valign_top"><span style="font-size: 83%;">(ii)</span></td>
+<td><span style="font-size: 83%;">Move the mouse cursor onto the place of your choice to see the values of wind direction and speed. Click the mouse once you will see a time series plot of the variation of wind direction and speed in the past 24 hours, as well as information of the station in operation.</span></td>
+</tr>
+<tr>
+<td class="td_valign_top"><span style="font-size: 83%;">(iii)</span></td>
+<td><span style="font-size: 83%;">&nbsp;The data displayed is provisional. Only limited data validation has been carried out.</span></td>
+</tr>
+<tr>
+<td class="td_valign_top"><span style="font-size: 83%;">(iv)</span></td>
+<td><span style="font-size: 83%;">&nbsp;The Chek Lap Kok wind station is located near the middle of the North Runway of the Hong Kong International Airport. When this station is under maintenance, wind data of Chek Lap Kok may be temporarily provided by another wind station within the Hong Kong International Airport.</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="content_footer">
+<div><a href="https://maps.weather.gov.hk/index_e.html" rel="external" title="Geographic Information System Platform">Geographic Information System Platform</a></div>
+<div>Read <a href="../../../en/aviat/soaring/index.htm" title="Weather Indices for Aviation Sports">Weather Indices for Aviation Sports</a></div>
+</div>
+<br />&nbsp;<br /><noscript><p>This page uses JavaScript, but your browser doesn't support them.</p></noscript><map name="FPMap0"> <!--area href="windbarb.htm?cp1&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="329, 350, 359, 370" alt="Direction:East       Speed:24km/h  Gust:35km/h" title="Direction:East       Speed:24km/h  Gust:35km/h">
+<area href="windbarb.htm?r2c&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="91, 319, 121, 339" alt="Direction:Southeast  Speed:20km/h  Gust:27km/h" title="Direction:Southeast  Speed:20km/h  Gust:27km/h">
+<area href="windbarb.htm?cch&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="199, 444, 229, 464" alt="Direction:East       Speed:28km/h  Gust:35km/h" title="Direction:East       Speed:28km/h  Gust:35km/h">
+<area href="windbarb.htm?ccb&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="203, 433, 233, 453" alt="Direction:East       Speed:30km/h  Gust:36km/h" title="Direction:East       Speed:30km/h  Gust:36km/h">
+<area href="windbarb.htm?gi&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="287, 356, 317, 376" alt="Direction:Northeast  Speed:34km/h  Gust:41km/h" title="Direction:Northeast  Speed:34km/h  Gust:41km/h">
+<area href="windbarb.htm?hss&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="391, 427, 421, 447" alt="Direction:Northeast  Speed:23km/h" title="Gust:37km/h">
+<area href="windbarb.htm?se&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="388, 332, 418, 352" alt="Direction:East       Speed:23km/h  Gust:33km/h" title="Direction:East       Speed:23km/h  Gust:33km/h">
+<area href="windbarb.htm?kp&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="348, 330, 378, 350" alt="Direction:East       Speed:17km/h  Gust:27km/h" title="Direction:East       Speed:17km/h  Gust:27km/h">
+<area href="windbarb.htm?lam&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="285, 416, 315, 436" alt="Direction:East       Speed:22km/h  Gust:32km/h" title="Direction:East       Speed:22km/h  Gust:32km/h">
+<area href="windbarb.htm?lfs&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="164, 151, 194, 171" alt="Direction:East       Speed:14km/h  Gust:23km/h" title="Direction:East       Speed:14km/h  Gust:23km/h">
+<area href="windbarb.htm?ngp&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="84, 379, 114, 399" alt="Direction and speed: N/A  Gust: N/A" title="Direction and speed: N/A  Gust: N/A">
+<area href="windbarb.htm?np&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="375, 344, 405, 364" alt="Direction:East       Speed:26km/h  Gust:35km/h" title="Direction:East       Speed:26km/h  Gust:35km/h">
+<area href="windbarb.htm?pen&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="215, 348, 245, 368" alt="Direction:East       Speed:28km/h  Gust:34km/h" title="Direction:East       Speed:28km/h  Gust:34km/h">
+<area href="windbarb.htm?skg&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="449, 256, 479, 276" alt="Direction:East       Speed:14km/h  Gust:19km/h" title="Direction:East       Speed:14km/h  Gust:19km/h">
+<area href="windbarb.htm?sc&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="62, 285, 92, 305" alt="Direction:Southeast  Speed:18km/h  Gust:22km/h" title="Direction:Southeast  Speed:18km/h  Gust:22km/h">
+<area href="windbarb.htm?sha&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="384, 218, 414, 238" alt="Direction:Southeast  Speed:10km/h  Gust:22km/h" title="Direction:Southeast  Speed:10km/h  Gust:22km/h">
+<area href="windbarb.htm?sek&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="264, 196, 294, 216" alt="Direction:East       Speed:13km/h  Gust:24km/h" title="Direction:East       Speed:13km/h  Gust:24km/h">
+<area href="windbarb.htm?bhd&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="391, 449, 421, 469" alt="Direction:East       Speed:17km/h  Gust:34km/h" title="Direction:East       Speed:17km/h  Gust:34km/h">
+<area href="windbarb.htm?sf&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="344, 346, 374, 366" alt="Direction:East       Speed:21km/h  Gust:33km/h" title="Direction:East       Speed:21km/h  Gust:33km/h">
+<area href="windbarb.htm?tkl&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="342, 87, 372, 107" alt="Direction:East       Speed:10km/h  Gust:16km/h" title="Direction:East       Speed:10km/h  Gust:16km/h">
+<area href="windbarb.htm?plc&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="406, 148, 436, 168" alt="Direction:East       Speed:15km/h  Gust:20km/h" title="Direction:East       Speed:15km/h  Gust:20km/h">
+<area href="windbarb.htm?tpk&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="367, 186, 397, 206" alt="Direction:East       Speed:14km/h  Gust:16km/h" title="Direction:East       Speed:14km/h  Gust:16km/h">
+<area href="windbarb.htm?tme&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="542, 156, 572, 176" alt="Direction:Southeast  Speed:27km/h  Gust:31km/h" title="Direction:Southeast  Speed:27km/h  Gust:31km/h">
+<area href="windbarb.htm?tc&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="392, 271, 422, 291" alt="Direction:East       Speed:24km/h  Gust:37km/h" title="Direction:East       Speed:24km/h  Gust:37km/h">
+<area href="windbarb.htm?jkb&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="425, 318, 455, 338" alt="Direction: Variable  Speed:7 km/h  Gust:16km/h" title="Direction: Variable  Speed:7 km/h  Gust:16km/h">
+<area href="windbarb.htm?shl&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="263, 286, 293, 306" alt="Direction:Southeast  Speed:13km/h  Gust:25km/h" title="Direction:Southeast  Speed:13km/h  Gust:25km/h">
+<area href="windbarb.htm?tun&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="147, 243, 177, 263" alt="Direction:East       Speed:10km/h  Gust:19km/h" title="Direction:East       Speed:10km/h  Gust:19km/h">
+<area href="windbarb.htm?wgl&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="481, 462, 511, 482" alt="Direction:East       Speed:32km/h  Gust:37km/h" title="Direction:East       Speed:32km/h  Gust:37km/h">
+<area href="windbarb.htm?wlp&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="188, 157, 218, 177" alt="Direction:Northeast  Speed:8km/h  Gust:14km/h" title="Direction:Northeast  Speed:8km/h  Gust:14km/h">
+<area href="windbarb.htm?hks&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords ="349, 395, 379, 415" alt="Direction:East       Speed:12km/h  Gust:23km/h" title="Direction:East       Speed:12km/h  Gust:23km/h"--> </map> <!--Content End--></div>
+<!--End Content-->
+<script>var last_revision_date = '13 March 2024';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

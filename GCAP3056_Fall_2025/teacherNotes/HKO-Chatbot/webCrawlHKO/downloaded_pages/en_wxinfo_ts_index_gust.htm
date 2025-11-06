@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Maximum gust｜Hong Kong Observatory(HKO)｜Regional Weather</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Maximum gust">
+    <meta name="description" content="Maximum gust">
+    <meta name="recordId" content="2018123100000035929">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Maximum gust" />
+	<meta property="og:description" content="Maximum Gust Gusts of below 70 km/h in black Gusts of 70 km/h to 87km/h in brown Gusts of 88 km/h or above in orange &amp;nbsp;M &amp;nbsp; :&amp;nbsp; Under Maintenance" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/ts/index_gust.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+		.press_button { font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 11px;   font-weight: bold; color: blue }
+		#content_footer {
+			margin: 0 auto;
+			max-width: 700px;
+			width: 100%;
+		}
+		#content_footer > div{
+			padding-top: 0.5em;
+		}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000010837';
+
+                  
+
+	$(document).ready(function(e) {
+		$('img[usemap]').rwdImageMaps();
+	});
+ function newWin(URL, w, h) {
+ parameter = "top=1,left=1,width="+w+",height="+h+",scrollbars=yes,menubar=no,toolbar=no,resizable=yes";
+ msgWindow=window.open(URL, 'index', parameter);
+ msgWindow.focus();}
+
+ $(document).ready(function(e) {
+ $.getJSON('../../../wxinfo/ts/index_wind_e.json', function(data) {
+     console.log(data.maparea);
+     $(data.maparea).each(function( k,v ) {
+	var content = $("<area/>")
+	.attr("href",v.link)
+	.attr("shape","rect")
+	.attr("coords",v.coords)
+	.attr("alt",v.text)
+	.attr("title",v.text);
+	console.log(content);
+	$("map").append(content);
+	});
+  $('img[usemap]').rwdImageMaps();
+  });
+});
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1 class="no_h1">Maximum gust</h1>
+                <div class="border_blank">
+                    <!--Content Start-->
+
+							
+
+
+
+
+
+
+
+
+
+<div style="" class="self_align_center">
+
+
+
+<h2 class="h2_2">Maximum Gust</h2>
+
+<img src="../../../wxinfo/ts/windgust/gustehk.png" usemap="#FPMap0" alt="Maximum Gust"><br>
+
+
+
+<table class="table_align_center table_border_0" style="width:100%;max-width:658px"><tbody><tr><td><input type="button" name="slideshow" class="press_button" value="Start Animation for the past 3 hours" onclick="newWin('../../../en/wxinfo/ts/gust_animation.htm', 700, 650);" style="Width:100%; Height:22px;" title="Start Animation for the past 3 hours in the new window."></td></tr></tbody></table>
+
+<br>
+
+
+
+<table style="max-width:700px;  background-color:#FFFFE0;  border-color:cyan;" title="This table is used for guarding the displaying format of the materials on the viewing area" class="table_align_center table_border_2">
+
+<tbody><tr><td>
+
+<span style="font-size:83%;">Gusts of below 70 km/h in black<br>
+
+  Gusts of 70 km/h to 87km/h in <span style="color: #93272c;">brown</span><br>
+  Gusts of 88 km/h or above in <span style="color: #FF8C00;">orange</span><br>
+
+&nbsp;M &nbsp; :&nbsp; Under Maintenance / Data Temporarily Not Available
+
+<br>
+
+&nbsp;<img src="../../../en/wxinfo/ts/images/hill_icon.png" alt="Station higher than 500 metres above mean sea level"> &nbsp;:&nbsp; Station higher than 500 metres above mean sea level</span>
+
+</td></tr>
+
+<tr><td>
+
+<table style="background-color:#FFFFE0;" class="table_border_0">
+
+<tbody><tr>
+
+<td colspan="2"><span style="font-size:83%;">Points to note:</span></td>
+
+</tr>
+
+<tr>
+
+<td class="td_valign_top"><span style="font-size:83%;">(i)</span></td>
+
+<td><span style="font-size:83%;">The Observatory has set up backup weather stations and anemometers in some areas.  When the main weather stations or anemometers in those areas are under maintenance, the webpage will display data from the backup stations or anemometers.</span></td>
+
+</tr>
+
+<tr>
+
+<td class="td_valign_top"><span style="font-size:83%;">(ii)</span></td>
+
+<td><span style="font-size:83%;">Move the mouse cursor onto the place of your choice and click the mouse once to see a time series plot of the variation of wind direction and speed in the past 24 hours, as well as information of the station in operation.</span></td>
+
+</tr>
+
+<tr>
+
+<td class="td_valign_top"><span style="font-size:83%;">(iii)</span></td>
+
+<td><span style="font-size:83%;">&nbsp;The data displayed is provisional. Only limited data validation has been carried out.</span></td>
+
+</tr>
+
+<tr>
+<td class="td_valign_top"><span style="font-size: 83%;">(iv)</span></td>
+  
+<td><span style="font-size: 83%;">&nbsp;The Chek Lap Kok wind station is located near the middle of the North Runway of the Hong Kong International Airport. When this station is under maintenance, wind data of Chek Lap Kok may be temporarily provided by another wind station within the Hong Kong International Airport.</span></td>
+
+</tr>
+  
+</tbody></table>
+
+</td></tr></tbody></table>
+
+
+</div>
+
+<div id="content_footer">
+	<div><a href="https://maps.weather.gov.hk/index_e.html" rel="external" title="Geographic Information System Platform">Geographic Information System Platform</a></div>
+	<div>Read <a href="../../../en/aviat/soaring/index.htm" title="Weather Indices for Aviation Sports">Weather Indices for Aviation Sports</a></div>
+</div>
+
+  <map name="FPMap0">
+ <!--area href="windbarb.htm?cp1&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="487,449,507,469" alt="time series of wind data at Central Pier" title="time series of wind data at Central Pier">
+ <area href="windbarb.htm?r2c&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="115,404,135,424" alt="time series of wind data at Chek Lap Kok" title="time series of wind data at Chek Lap Kok">
+ <area href="windbarb.htm?cch&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="291,593,311,613" alt="time series of wind data at Cheung Chau" title="time series of wind data at Cheung Chau">
+ <area href="windbarb.htm?ccb&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="294,577,314,597" alt="time series of wind data at Cheung Chau Beach" title="time series of wind data at Cheung Chau Beach">
+ <area href="windbarb.htm?gi&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="422,456,442,476" alt="time series of wind data at Green Island" title="time series of wind data at Green Island">
+ <area href="windbarb.htm?se&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="574,415,594,435" alt="time series of wind data at Kai Tak" title="time series of wind data at Kai Tak">
+ <area href="windbarb.htm?kp&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="513,411,533,431" alt="time series of wind data at King's Park" title="time series of wind data at King's Park">
+ <area href="windbarb.htm?lam&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="415,552,435,572" alt="time series of wind data at Lamma Island" title="time series of wind data at Lamma Island">
+ <area href="windbarb.htm?lfs&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="225,155,245,175" alt="time series of wind data at Lau Fau Shan" title="time series of wind data at Lau Fau Shan">
+ <area href="windbarb.htm?ngp&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="117,499,137,519" alt="time series of wind data at Ngong Ping" title="time series of wind data at Ngong Ping">
+<area href="windbarb.htm?np&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="554,440,574,460" alt="time series of wind data at North Point" title="time series of wind data at North Point">
+ <area href="windbarb.htm?pen&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="315,446,335,466" alt="time series of wind data at Peng Chau" title="time series of wind data at Peng Chau">
+ <area href="windbarb.htm?skg&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="667,307,687,327" alt="time series of wind data at Sai Kung" title="time series of wind data at Sai Kung">
+ <area href="windbarb.htm?sc&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="83,356,103,376" alt="time series of wind data at Sha Chau" title="time series of wind data at Sha Chau">
+ <area href="windbarb.htm?sha&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="569,263,589,283" alt="time series of wind data at Sha Tin" title="time series of wind data at Sha Tin">
+ <area href="windbarb.htm?sek&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="379,208,399,228" alt="time series of wind data at Shek Kong" title="time series of wind data at Shek Kong">
+ <area href="windbarb.htm?bhd&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="572,599,592,619" alt="time series of wind data at Stanley" title="time series of wind data at Stanley">
+ <area href="windbarb.htm?sf&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="507,442,527,462" alt="time series of wind data at Star Ferry" title="time series of wind data at Star Ferry">
+ <area href="windbarb.htm?tkl&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="489,57,509,77" alt="time series of wind data at Ta Kwu Ling" title="time series of wind data at Ta Kwu Ling">
+ <area href="windbarb.htm?plc&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="612,145,632,165" alt="time series of wind data at Tai Mei Tuk" title="time series of wind data at Tai Mei Tuk">
+ <area href="windbarb.htm?tpk&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="530,198,550,218" alt="time series of wind data at Tai Po Kau" title="time series of wind data at Tai Po Kau">
+ <area href="windbarb.htm?tme&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="802,156,822,176" alt="time series of wind data at Tap Mun" title="time series of wind data at Tap Mun">
+ <area href="windbarb.htm?tc&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="582,337,602,357" alt="time series of wind data at Tate's Cairn" title="time series of wind data at Tate's Cairn">
+ <area href="windbarb.htm?jkb&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="639,405,659,425" alt="time series of wind data at Tseung Kwan O" title="time series of wind data at Tseung Kwan O">
+ <area href="windbarb.htm?shl&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="380,355,400,375" alt="time series of wind data at Tsing Yi" title="time series of wind data at Tsing Yi">
+ <area href="windbarb.htm?tun&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="214,283,234,303" alt="time series of wind data at Tuen Mun" title="time series of wind data at Tuen Mun">
+ <area href="windbarb.htm?wgl&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="711,624,731,644"" alt="time series of wind data at Waglan Island" title="time series of wind data at Waglan Island">
+ <area href="windbarb.htm?wlp&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="263,158,283,178" alt="time series of wind data at Wetland Park" title="time series of wind data at Wetland Park">
+ <area href="windbarb.htm?hks&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="515,516,535,536" alt="time series of wind data at Wong Chuk Hang" title="time series of wind data at Wong Chuk Hang">
+<area href="windbarb.htm?hss&amp;menu=otherwxi&amp;rwx&amp;addbar" shape="rect" coords="575,565,595,585" alt="time series of wind data at Hong Kong Sea School" title="time series of wind data at Hong Kong Sea School"-->
+
+ </map>
+
+							<!--Content End-->
+<script>var last_revision_date = '18 March 2024';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

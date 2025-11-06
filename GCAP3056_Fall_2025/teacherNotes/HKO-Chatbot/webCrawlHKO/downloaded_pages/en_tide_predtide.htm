@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-hk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Predicted Tides｜Hong Kong Observatory(HKO)｜Tide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" Predicted Tides">
+    <meta name="description" content="Predicted tides at selected locations in Hong Kong">
+    <meta name="recordId" content="2018123100000035883">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Predicted Tides" />
+	<meta property="og:description" content="Predicted tides at selected locations in Hong KongTEXT format Please click the location on the map for the tidal information Notes" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/tide/predtide.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+			#MAP3 .olControlAttribution {
+		bottom:0;
+	}
+
+DIV#PAGE_FOOTER a {
+    color: #0000FF;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+DIV#PAGE_HEADER {
+    text-align: center;
+    padding-bottom: 5px;
+  display:block;
+}
+
+DIV#PAGE_HEADER > SPAN:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media print {
+   #plot2, #plot4 {
+        page-break-after: before;
+        page-break-inside: avoid;
+    }
+}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+	
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+    <script type="text/javascript">
+		
+var menu_id = '1280';
+var section_id = '2018010100000010711';
+
+                                                    
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">跳至主要內容</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Predicted Tides</h1>
+                <div class="border_blank">
+                    <div style="text-align: center; width: 100%;">
+<div style="text-align: center; width: 100%;">
+<div style="display: inline-block; width: 100%; max-width: 800px;">
+<div>
+<script src="../../en/tide/src/files/ArrayIndexOf.js"></script>
+<!------------ FOR GIS MAP -------------></div>
+</div>
+</div>
+</div>
+<link rel="stylesheet" type="text/css" href="../../en/tide/src/files/style.css" /><link rel="stylesheet" type="text/css" href="../../en/tide/src/files/google.css" />
+<div style="text-align: center; width: 100%;">
+<div style="text-align: center; width: 100%;">
+<div style="width: 100%; max-width: 800px; margin: auto;">
+<div><!--<script src="https://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>--> <!--<script src="https://maps.google.com/maps/api/js?v=3.0&sensor=false®ion=HK&language=en"></script>--> <!--<script src="https://maps.google.com/maps/api/js?key=AIzaSyCujpOQ6hK3M0T2uxOr2wAblEbgICM-pnk&v=3.0&sensor=false®ion=HK&language=en"></script>-->
+<script src="../../en/tide/src/files/OpenLayers.js"></script>
+<script src="../../en/tide/src/files/MetGisMap.js"></script>
+<!-- [if lt IE 9]>
+		<script src="../../en/tide//en/tide/src/files/google-excanvas.js"></script>
+		<script src="../../en/tide//en/tide/src/files/ExCanvas.js"></script>
+	<![endif]--> <!------------ FOR GIS MAP -------------> <!------------ FOR CHART ------------->
+<script src="../../en/tide/src/files/highcharts.js"></script>
+<script src="../../en/tide/src/files/exporting.js"></script>
+<script src="../../en/tide/src/files/offline-exporting.js"></script>
+<!------------ FOR CHART -------------> <!--<div id="PRINTTXT">[<a href='javascript:printversion()'>Print Version</a>]</div>-->
+<div style="text-align: left;"><a href="javascript:window.print();"><img src="../../tc/images/print_icon.jpg" alt="Print Version" border="0"></a></div>
+<div id="PAGE_HEADER"><span>Predicted tides at selected locations in Hong Kong</span><br /><br /><span style="float: left;"><a href="../../en/tide/ttext.htm">TEXT format</a></span> <span style="font-size: 12px;">Please click the location on the map for the tidal information</span> <span> </span></div>
+<div id="CONTENT">
+<div id="MAP3" class="MAP3"></div>
+<div id="CHART"></div>
+</div>
+<div id="PAGE_FOOTER"><br /><a href="../../en/tide/enotes.htm">Notes</a></div>
+</div>
+</div>
+</div>
+</div>
+<link rel="stylesheet" type="text/css" href="../../en/tide/files/predtide.css" />
+<div style="text-align: center; width: 100%;">
+<div style="display: inline-block; width: 100%; max-width: 800px;">
+<div id="MAIN_BODY">
+<script src="../../en/tide/files/predtide_uc.js"></script>
+<script>var menu_bar_title = "Predicted Tide";</script>
+</div>
+</div>
+</div>
+<script>var last_revision_date = '7 April 2021';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

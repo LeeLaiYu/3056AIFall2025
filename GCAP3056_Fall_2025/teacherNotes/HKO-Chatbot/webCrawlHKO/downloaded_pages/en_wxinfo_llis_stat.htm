@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hong Kong Observatory Lightning Location Information System｜Hong Kong Observatory(HKO)｜Lightning Location Information Services</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Hong Kong Observatory Lightning Location Information System">
+    <meta name="description" content="Hong Kong Observatory Lightning Location Information System">
+    <meta name="recordId" content="2018123100000035848">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Hong Kong Observatory Lightning Location Information System" />
+	<meta property="og:description" content="Updated at HKT {{data.issued_at|formatDateTime({&#039;outputformat&#039;:&#039;HH:mm D MMMM YYYY&#039;,&#039;inputformat&#039;:&#039;YYYYMMDD[T]HH:mm:ssZZ&#039;})}} Cloud-to-ground Cloud-to-cloud Period (HKT) {{val[&#039;date&#039;]|formatDate({&#039;outputformat&#039;:&#039;D MMM&#039;,&#039;inputformat&#039;:&#039;YYYYMMDD[T]HH:mm:ssZZ&#039;})}} {{val[&#039;date&#039;]|formatDate({&#039;outputformat&#039;:&#039;D MMM&#039;,&#039;inputformat&#039;:&#039;YYYYMMDD[T]HH:mm:ssZZ&#039;})}} {{key}} {{val[key]}} {{val[key]}} Daily total {{val[&#039;daily_total&#039;]}} {{val[&#039;daily_total&#039;]}} Please note: 1. The lightning information displayed above" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/llis/stat.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+				<!--A{text-decoration:none;}-->
+	.data_table_nobgchg {
+		margin-bottom: 20px;
+	}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000010800';
+
+  
+
+var trad ="";
+var gb = "";
+var chineseLink=trad+"/wxinfo/llis/statc.htm";var simLink=gb+"/wxinfo/llis/statgb.htm";var englishLink=trad+"/wxinfo/llis/stat.htm";var englishLink2=trad+"/wxinfo/llis/index_old.htm";function getChiLink() {location = chineseLink;}function getSimLink() {location=simLink;}function getEngLink() {location = englishLink;}function getEngLink2() {location = englishLink2;}function stillimg(){ msgWindow=window.open("stillimg.htm","displayWindow","toolbar=no,width=810,height=800, directories=no, status=no, scrollbars=yes, resizable=yes, menubar=no");}function basemap(){  msgWindow=window.open("location.htm","displayWindow","toolbar=no,width=810,height=635, directories=no, status=no, scrollbars=yes, resizable=yes, menubar=no");}function notice(){  msgWindow=window.open("notice.htm","displayWindow","toolbar=no,width=810,height=265, directories=no, status=no, scrollbars=yes, resizable=yes, menubar=no");}function basemap2(){  msgWindow=window.open("basemap.htm","displayWindow","toolbar=no,width=810,height=635, directories=no, status=no, scrollbars=yes, resizable=yes, menubar=no");}function basemap3(){  msgWindow=window.open("region.htm","displayWindow","toolbar=no,width=810,height=635, directories=no, status=no, scrollbars=yes, resizable=yes, menubar=no");}
+wcag_setTimer(120000, 'eng');
+$(function(){
+	var vue = new Vue({
+		el: '#mainContent',
+		router: router,
+		data: function () {
+			return {
+				data:{},
+				issued_at:null,
+				keys:['00:00-00:59',
+					'01:00-01:59',
+					'02:00-02:59',
+					'03:00-03:59',
+					'04:00-04:59',
+					'05:00-05:59',
+					'06:00-06:59',
+					'07:00-07:59',
+					'08:00-08:59',
+					'09:00-09:59',
+					'10:00-10:59',
+					'11:00-11:59',
+					'12:00-12:59',
+					'13:00-13:59',
+					'14:00-14:59',
+					'15:00-15:59',
+					'16:00-16:59',
+					'17:00-17:59',
+					'18:00-18:59',
+					'19:00-19:59',
+					'20:00-20:59',
+					'21:00-21:59',
+					'22:00-22:59',
+					'23:00-23:59'
+				]
+			}
+		},
+		methods: {
+		},
+		mounted: function (){
+		var self = this;
+			$.getJSON('../../../wxinfo/llis/today_and_past_3_days_llis_e.json', function(data){
+				self.$data.data = data;
+			});
+		}
+	});
+});
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Hong Kong Observatory Lightning Location Information System</h1>
+                <div class="border_blank">
+                    <!--Content Start-->
+
+							<a id="wcag_content" name="wcag_content"></a><style type="text/css"></style><div align="center"><p></p>
+							
+						
+							<table width="100%"><tbody><tr><td align="right">Updated at HKT  {{data.issued_at|formatDateTime({'outputformat':'HH:mm D MMMM YYYY','inputformat':'YYYYMMDD[T]HH:mm:ssZZ'})}}</td></tr></tbody></table>
+				
+				<div class="div_responsive_table_1">
+				<table width="85%" border="1" cellspacing="1" cellpadding="1" bgcolor="#000000" v-if="data.cloud_to_cloud" class="data_table_nobgchg">
+					<tr bgcolor="#c0c0c0">
+						<td></td>
+						<th colspan="4" style="text-align: center"><strong>Cloud-to-ground</strong></th>
+						<th colspan="4" style="text-align: center"><strong>Cloud-to-cloud</strong></th>
+					</tr>					
+					<tr bgcolor="#c0c0c0">
+						<th><strong>Period (HKT)</strong></th>
+						<th style="text-align: right" v-for="val in data.cloud_to_ground"><strong>{{val['date']|formatDate({'outputformat':'D MMM','inputformat':'YYYYMMDD[T]HH:mm:ssZZ'})}}</strong></th>	
+						<th style="text-align: right" v-for="val in data.cloud_to_cloud"><strong>{{val['date']|formatDate({'outputformat':'D MMM','inputformat':'YYYYMMDD[T]HH:mm:ssZZ'})}}</strong></th>							
+					</tr>
+					<tr :bgcolor="index % 2 === 0?'#FCE903':'#9ED827'"  v-for="(key, index) in keys">						
+						<td><strong>{{key}}</strong></td>	
+						<td align="right" v-for="val in data.cloud_to_ground"><strong>{{val[key]}}</strong></td>	
+						<td align="right" v-for="val in data.cloud_to_cloud"><strong>{{val[key]}}</strong></td>	
+					</tr>
+					<tr bgcolor="#c0c0c0">				
+						<td><strong>Daily total</strong></td>
+						<td align="right" v-for="val in data.cloud_to_ground"><strong>{{val['daily_total']}}</strong></td>
+						<td align="right" v-for="val in data.cloud_to_cloud"><strong>{{val['daily_total']}}</strong></td>
+					</tr>
+				</table>
+				</div>
+				<p><strong>Please note:</strong></p>
+				<p>1. The lightning information displayed above is provisional. Only limited data validation has been carried out. <br>2. Cloud-to-ground lightning strokes might affect people or facilities on the ground. As cloud-to-cloud lightning strokes did not reach the ground, they might not have such effect. However, it should be noted that cloud-to-cloud strokes may sometimes precede cloud-to-ground strokes.</p>
+
+<!--table width="90%"><tr><td align=right>Updated at HKT 13:00 5 June 2019</td></tr></table>
+
+<table width="80%" border=0 cellspacing=1 cellpadding=1 bgcolor="#000000">
+
+<tr bgcolor=#c0c0c0><td></td><td colspan=4 align="center"><strong>Cloud-to-ground</strong></td><td colspan=4 align="center"><strong>Cloud-to-cloud</strong></td></tr>
+
+<tr bgcolor=#c0c0c0><td><strong>Period (HKT)</strong></td><td align=right><strong>2 Jun</strong></td><td align=right><strong>3 Jun</strong></td><td align=right><strong>4 Jun</strong></td><td align=right><strong>5 Jun</strong></td><td align=right><strong>2 Jun</strong></td><td align=right><strong>3 Jun</strong></td><td align=right><strong>4 Jun</strong></td><td align=right><strong>5 Jun</strong></td></tr>
+
+<tr bgcolor=#FCE903><td><strong>00:00-00:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr>
+
+<tr bgcolor=#9ED827><td><strong>01:00-01:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr>
+
+<tr bgcolor=#FCE903><td><strong>02:00-02:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td></tr>
+
+<tr bgcolor=#9ED827><td><strong>03:00-03:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>1</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>22</td><td align=right>0</td></tr>
+
+<tr bgcolor=#FCE903><td><strong>04:00-04:59</strong></td><td align=right>0</td><td align=right>19</td><td align=right>120</td><td align=right>0</td><td align=right>0</td><td align=right>113</td><td align=right>833</td><td align=right>0</td></tr>
+
+<tr bgcolor=#9ED827><td><strong>05:00-05:59</strong></td><td align=right>0</td><td align=right>105</td><td align=right>196</td><td align=right>0</td><td align=right>0</td><td align=right>368</td><td align=right>952</td><td align=right>0</td></tr>
+
+<tr bgcolor=#FCE903><td><strong>06:00-06:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>89</td><td align=right>0</td><td align=right>0</td><td align=right>3</td><td align=right>221</td><td align=right>0</td></tr>
+
+<tr bgcolor=#9ED827><td><strong>07:00-07:59</strong></td><td align=right>0</td><td align=right>3</td><td align=right>116</td><td align=right>0</td><td align=right>0</td><td align=right>21</td><td align=right>280</td><td align=right>0</td></tr>
+
+<tr bgcolor=#FCE903><td><strong>08:00-08:59</strong></td><td align=right>0</td><td align=right>3</td><td align=right>554</td><td align=right>0</td><td align=right>0</td><td align=right>5</td><td align=right>1280</td><td align=right>0</td></tr>
+
+<tr bgcolor=#9ED827><td><strong>09:00-09:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>1041</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>2061</td><td align=right>0</td></tr>
+
+<tr bgcolor=#FCE903><td><strong>10:00-10:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>20</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>82</td><td align=right>0</td></tr>
+
+<tr bgcolor=#9ED827><td><strong>11:00-11:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>4</td><td align=right>0</td></tr>
+
+<tr bgcolor=#FCE903><td><strong>12:00-12:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>5</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>19</td><td align=right>0</td></tr>
+
+<tr bgcolor=#9ED827><td><strong>13:00-13:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>7</td><td align=right>-</td><td align=right>0</td><td align=right>0</td><td align=right>15</td><td align=right>-</td></tr>
+
+<tr bgcolor=#FCE903><td><strong>14:00-14:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>7</td><td align=right>-</td><td align=right>0</td><td align=right>0</td><td align=right>67</td><td align=right>-</td></tr>
+
+<tr bgcolor=#9ED827><td><strong>15:00-15:59</strong></td><td align=right>2</td><td align=right>0</td><td align=right>4</td><td align=right>-</td><td align=right>42</td><td align=right>0</td><td align=right>33</td><td align=right>-</td></tr>
+
+<tr bgcolor=#FCE903><td><strong>16:00-16:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>32</td><td align=right>-</td><td align=right>0</td><td align=right>0</td><td align=right>45</td><td align=right>-</td></tr>
+
+<tr bgcolor=#9ED827><td><strong>17:00-17:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>195</td><td align=right>-</td><td align=right>0</td><td align=right>0</td><td align=right>530</td><td align=right>-</td></tr>
+
+<tr bgcolor=#FCE903><td><strong>18:00-18:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>2</td><td align=right>-</td><td align=right>0</td><td align=right>0</td><td align=right>40</td><td align=right>-</td></tr>
+
+<tr bgcolor=#9ED827><td><strong>19:00-19:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>-</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>-</td></tr>
+
+<tr bgcolor=#FCE903><td><strong>20:00-20:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>-</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>-</td></tr>
+
+<tr bgcolor=#9ED827><td><strong>21:00-21:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>-</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>-</td></tr>
+
+<tr bgcolor=#FCE903><td><strong>22:00-22:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>-</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>-</td></tr>
+
+<tr bgcolor=#9ED827><td><strong>23:00-23:59</strong></td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>-</td><td align=right>0</td><td align=right>0</td><td align=right>0</td><td align=right>-</td></tr>
+
+<tr bgcolor=#c0c0c0><td><strong>Daily total</strong></td><td align=right><strong>2</strong></td><td align=right><strong>130</strong></td><td align=right><strong>2389</strong></td><td align=right><strong>0</strong></td><td align=right><strong>42</strong></td><td align=right><strong>510</strong></td><td align=right><strong>6484</strong></td><td align=right><strong>0</strong></td></tr>
+
+</table>
+
+</div><p><strong>Please note:</strong><p>Cloud-to-ground lightning strokes might affect people or facilities on the ground.  As cloud-to-cloud lightning strokes did not reach the ground, they might not have such effect.  However, it should be noted that cloud-to-cloud strokes may sometimes precede cloud-to-ground strokes.-->
+
+
+
+							<!--Content End-->
+
+                </div>
+				<!--End Content-->
+<script>var last_revision_date = '18 October 2023';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

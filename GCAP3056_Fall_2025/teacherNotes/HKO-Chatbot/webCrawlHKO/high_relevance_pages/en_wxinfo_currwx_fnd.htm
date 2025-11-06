@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>9-day Weather Forecast for Hong Kong｜Hong Kong Observatory(HKO)｜Weather Forecast</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="9-day Weather Forecast for Hong Kong">
+    <meta name="description" content="9-day Hong Kong weather forecast provided by the Hong Kong Observatory">
+    <meta name="recordId" content="2018123100000035863">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="9-day Hong Kong weather forecast provided by the Hong Kong Observatory" />
+	<meta property="og:description" content="9-day Hong Kong weather forecast provided by the Hong Kong Observatory" />
+	<meta property="og:image" content="https://www.hko.gov.hk" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/currwx/fnd.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+			/* 20200207 */
+.old_fnd_min_temp, .old_fnd_max_temp{
+	font-size:1.3em;
+	color:#494949;
+	/*text-shadow: 0px 0px 1.1px #090204;*/
+}
+
+.old_fnd_hum{
+	font-size:1.3em;
+	text-align: center;
+	/*text-shadow: 0px 0px 1.1px #090204;*/
+}
+
+.old_fnd_upper{
+	font-size:1.3em;
+	margin-bottom:5px;
+}
+
+.old_fnd_min_temp span, .old_fnd_max_temp span, .old_fnd_hum span{
+	vertical-align: middle;
+}
+
+.old_fnd_min_temp_val,.old_fnd_max_temp_val{
+/*	padding-left:15% !important;*/
+}
+
+.old_fnd_hum_img{
+	margin-right:10px !important;
+}
+
+.old_fnd_min_temp{
+	/*padding:5px !important;*/
+	text-align:center !important;
+}
+
+/* end 20200207 */
+
+#fnd_mode{
+position:absolute;
+top:-59px;
+right:0px;
+				 
+}
+
+
+
+.div_old_fnd_table > table{
+min-width: 1151px;
+}
+
+.old_fnd_item:last-child {
+margin-right:0px !important;
+width:130px;
+}
+
+.old_fnd_desc{
+padding-top:3px;
+}
+
+
+.old_fnd_separate{
+height:20px;
+}
+
+.border_blank{
+position:relative;
+}
+	
+
+	.div_responsive_table_old_fnd>table{
+    min-width: 1000px;
+    width: 100%;
+overflow:scroll;
+}
+								
+	.oddCol
+		{
+			background-image: url('/wxinfo/currwx/img/light_blue_bg.png');
+		}
+		.evenCol
+		{
+			background-image: url('/wxinfo/currwx/img/deep_blue_bg.png');
+		}
+		.data td
+		{
+			border: 1px solid black;
+			min-width:110px !important;
+			max-width:110px !important;
+		}
+		.data
+		{
+		border-collapse:collapse;
+		}
+		.remark1
+		{
+			border-top: solid #FCFFC6  1px !important;
+		}
+		.chart1
+		{
+			border-bottom: solid #FCFFC6  1px !important;
+		}
+		.remark2
+		{
+			border-top: solid #D5FFEC  1px !important;
+		}
+		.chart2
+		{
+			border-bottom: solid #D5FFEC  1px !important;
+		}	
+		#forecast_desc div
+		{/*
+			width: 80px;*/
+			padding: 5px;
+		}
+		.highcharts-container
+		{
+			margin-top: -10px;
+		}
+		#fnd_switch_chart:hover
+		{
+			border: 1px solid #54BAFF;
+		}
+		.fnd_more_show
+		{
+			display: none;
+		}
+		.show_version
+		{
+			text-decoration: none;
+			color: blue;
+		}
+		.show_version:hover
+		{
+			text-decoration: underline;
+		}
+		.dimmer
+		{
+			color: #797979;
+		}
+		#fnd{/*
+			overflow-x: auto;*/
+							   
+		}
+								   
+	
+	.btn {
+		background: #3498db;
+		background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+		background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+		background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+		background-image: -o-linear-gradient(top, #3498db, #2980b9);
+		background-image: linear-gradient(to bottom, #3498db, #2980b9);
+		-webkit-border-radius: 8;
+		-moz-border-radius: 8;
+		border-radius: 8px;
+		font-family: Arial;
+		color: #ffffff;
+		font-size: 14px;
+		padding: 10px 20px 10px 20px;
+		text-decoration: none;
+	}
+	.btn a {
+		text-decoration:none;
+		color: #ffffff;
+	}
+		.data>tbody>tr:nth-child(1) td:nth-child(odd),
+		.data>tbody>tr:nth-child(2) td:nth-child(odd),
+		.data>tbody>tr:nth-child(7) td:nth-child(odd),
+		.data>tbody>tr:nth-child(8) td:nth-child(odd){
+			background-image: url(../../../en/wxinfo/currwx/images/deep_blue_bg.png);
+		}
+		.data>tbody>tr:nth-child(1) td:nth-child(even),
+		.data>tbody>tr:nth-child(2) td:nth-child(even),
+		.data>tbody>tr:nth-child(7) td:nth-child(even),
+		.data>tbody>tr:nth-child(8) td:nth-child(even){
+			background-image: url(../../../en/wxinfo/currwx/images/light_blue_bg.png);
+		}
+		.data>tr:nth-child(1)>td,
+		.data>tbody>tr:nth-child(1)>td,
+		.data>tr:nth-child(7)>td:nth-child(1)
+		.data>tbody>tr:nth-child(7)>td:nth-child(1){
+			width: 10% !important;
+		}
+		.highcharts-root {
+			width:100% !important;
+			max-width:1156px !important;
+		}
+		#container_7day_chart_rh, #container_7day_chart_temp {
+			width:100%  !important;
+			max-width:1156px !important;
+		}
+		.checkboxtable td:nth-child(1){
+			min-width:30px !important;
+			max-width:30px;
+			vertical-align: middle;
+		}
+	#general_sit>h2{
+		//color: #faa330;
+color: #E66300;
+
+	}
+
+	.old_fnd_item{
+           width:10.7%;
+           min-height:380px;
+            font-size:1em;
+			padding-top:5px;
+	}
+
+.old_fnd_humidity{
+margin-right:10px;
+}
+
+.old_fnd_wind{
+min-height:155px ;
+}
+
+
+  
+	#new_fnd{
+		margin-top: 10px;
+		font-size: 1.2em;
+
+	}
+
+	#new_fnd>div{
+		display: block;
+		width: 100%;
+		background-color: #ffffff ;
+		border-bottom: solid 2px #ffffff;
+		position: relative;
+	}
+	#new_fnd>div a{
+		color: #ffffff;
+	}
+	#new_fnd>div a:hover{
+		color: #e3e3e3;
+	}
+	#new_fnd>div>div{
+		display: inline-block;
+		padding: 8px;
+		position: relative;
+	}
+	#new_fnd>div>div:first-child{
+		width: 170px;
+		padding: 0;
+	}
+	#new_fnd>div>div:last-child{
+		width: calc(100% - 170px);
+		background-color: #fff;
+		border-color: #1f97ff ;
+		border-width: 2px 2px 2px 0px;
+		border-style: solid ;
+	}
+	#new_fnd>div>div:last-child span,
+	#new_fnd>div>div:last-child a,
+	#new_fnd>div>div:last-child div{
+		color: #444;
+	}
+	#new_fnd>div>div:first-child>div{
+		display: inline-block;
+		padding: 5px;
+	}
+	#new_fnd>div>div:first-child>div:first-child{
+		width: 100px;
+		vertical-align: text-top;
+		border-color: #1f97ff;
+		border-width: 2px 0 2px 2px;
+		border-style: solid;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+	}
+	#new_fnd>div>div:first-child>div:first-child>span{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	#new_fnd>div>div:first-child>div:last-child{
+		width: 70px;
+		margin-left: 100px;
+		padding: 35px 10px;
+		background-color: #1d496e;
+	}
+	#new_fnd>div>div:first-child>div:last-child>img{
+		margin: 0 !important;
+	}
+	#new_fnd>div>div:last-child>div{
+		display: inline-block;
+		padding: 5px;
+	}
+	#new_fnd>div>div:last-child>div:nth-child(1){
+		width: 450px;
+	}
+	#new_fnd>div>div:last-child>div:nth-child(2){
+		width: calc(100% - 350px);
+		/*	min-width: 400px;*/	
+		min-width: 650px;
+	}
+	#new_fnd>div>div:last-child>div:nth-child(3){
+		width: 100%;
+	}
+	#new_fnd>div>div:last-child>div:first-child>div{
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	#new_fnd>div>div:last-child>div:first-child>div:nth-child(1){
+		width: 100px;
+	}
+	#new_fnd>div>div:last-child>div:first-child>div:nth-child(2){
+		width: 100px;
+	}
+	#new_fnd>div>div:last-child>div:first-child>div:nth-child(3){
+		width: 180px;
+	}
+	#new_fnd>div>div:last-child img{
+		height: 25px;
+		margin-right: 10px;
+	}
+	body table.table_border_1, 
+	body table.table_border_1>tbody>tr>td, 
+	body table.table_border_1>tbody>tr>th, 
+	body table.table_border_1>tr>td, table.table_border_1>tr>th{
+		border: none !important;
+	}
+	body #fnd2>table>tbody>tr,
+	body #fnd3>table>tbody>tr{
+		background-color: transparent !important
+	}
+	#fnd2 .highcharts-background,
+	#fnd3 .highcharts-background{
+		display: none;
+	}
+	#fnd2,
+	#fnd3{
+		background-color: #f7f7f7;
+		margin: 10px 0;
+		box-shadow: 5px 5px 10px -5px;
+	}
+	#sea_temp,
+	#soil_temp{
+		display: inline-block;
+		padding: 10px;
+		background-color: #f7f7f7;
+		margin-right: 20px;
+		margin-bottom: 10px;
+	}
+	#sea_temp>div{
+		color: #0000ff;
+		font-weight: bold;
+	}
+	#soil_temp>div{
+		color: #8c695a;
+		display: inline-block;
+		width: 50%;
+		font-weight: bold;
+	}
+	.mobile_element{
+		display: none;
+	}
+	@media screen and (max-width: 992px) {
+		body #new_fnd>div>div:last-child>div:nth-child(1){
+			width: 100%;
+		}
+		body #new_fnd>div>div:last-child>div:nth-child(2){
+			width: 100%;
+			min-width: 0;
+		}
+								
+							  
+   
+								
+							  
+   
+	}
+	@media screen and (max-width: 700px) {	
+		body #new_fnd>div>div:first-child{
+			width: 100px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			border-color: #1f97ff;
+			border-width: 2px;
+			border-style: solid;
+		}
+		body #new_fnd>div>div:first-child>div:first-child{
+			border: none;
+			position: relative;
+		}
+		body #new_fnd>div>div:last-child{
+			width: calc(100% - 100px);
+			min-height: 144px;
+			overflow-y: auto;
+			margin-left: 100px;
+		}
+		body #new_fnd>div>div:first-child>div:first-child>span{
+			position: relative;
+			top: 0;
+			transform: none;
+		}
+		body #new_fnd>div>div:first-child>div:last-child {
+			width: 100%;
+			text-align: center;
+			padding: 17px 10px 18px 10px;
+			margin-left: 0;
+			position: absolute;
+			top: 60px;
+			bottom: 0;
+			left: 0;
+		}
+		body #new_fnd>div>div:first-child>div:last-child>img{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		#div_sea_soil{
+			text-align: center;
+		}
+		body #sea_temp, 
+		body #soil_temp{
+			margin-right: 0;
+		}
+		body #fnd2,
+		body #fnd3{
+			display: none;
+		}
+		body .mobile_element{
+			display: block;
+		}
+	}
+	@media screen and (max-width: 550px) {
+		body #new_fnd{
+			font-size: 1.1em;
+		}	
+		body #new_fnd>div>div:last-child>div:first-child>div:nth-child(1){
+		/*	width: 70px;*/
+		}
+		body #new_fnd>div>div:last-child>div:first-child>div:nth-child(2){
+		/*	width: 70px;*/
+		}
+		body #new_fnd>div>div:last-child>div:first-child>div:nth-child(3){
+			/*width: 100px;*/
+		}
+	}
+	@media print {
+		.sr-only{
+			display: none;
+		}
+body{
+    -webkit-print-color-adjust: exact !important; 
+    color-adjust: exact !important; 
+  }
+
+
+#fnd2, #fnd3{
+margin-top:2px !important;
+}
+
+#old_fnd{
+margin-bottom:20px !important;
+}
+
+#sea_temp, #soil_temp{
+margin-bottom: 3px !important;
+}
+
+#qr_main{
+display:none !important;
+}
+
+.mainContent p{
+margin: 0 0 0.2em 0 !important;
+}
+
+.mainContent ul, .mainContent ol{
+margin-bottom: 0em !important;
+}
+	
+
+
+.print_extended{
+display:none !important;
+}
+
+.data_table th, .data_table td{
+padding-top:1px !important;
+padding-bottom:1px !important;
+border: solid 0px #000 !important;
+}		 
+
+.headerArea.fixed .myLogo{
+margin-top: -35px;
+}
+
+.headerArea .headerTool .headerNav{
+     padding: 0 10px !important; 
+}
+
+.headerArea.fixed .myLogo .logo_0>a>img{
+max-width:80%;
+}
+
+body .mainContent h1{
+margin-bottom:4px;
+}
+
+.mainContent{
+line-height:1.1em !important;
+}
+
+.new_fnd_class{
+clear: both;
+        page-break-after: always;
+}
+
+.headerArea{
+height:45px;
+}
+
+.old_fnd_upper{
+ font-size:1em !important;
+ margin-bottom:1px !important;
+}
+
+
+
+
+#mainContent > h1{
+font-size:1.3em !important;
+}
+
+	
+		body #new_fnd>div{
+			position: relative !important;
+		}
+		body #new_fnd>div>div:first-child {
+			display: inline-block !important;
+			width: 20% !important;
+			top: 0 !important;
+			position: absolute !important;
+		}
+		body #new_fnd>div>div:last-child {
+			display: inline-block !important;
+			width: 75% !important;
+			margin-left: 200px;
+		}
+		#fnd2 #container_7day_chart_temp,
+		#fnd3 #container_7day_chart_rh{
+			display: none !important;
+		}
+		#fnd2 #container_7day_chart_temp2,
+		#fnd3 #container_7day_chart_rh2{
+			display: block;
+		}
+		#footer{
+			display: none !important;
+		}
+		
+		#new_fnd>div>div:last-child>div:nth-child(1){
+			width: auto;
+			vertical-align: top;
+		}
+		body #new_fnd>div>div:last-child>div:first-child>div:nth-child(1),
+		body #new_fnd>div>div:last-child>div:first-child>div:nth-child(2),
+		body #new_fnd>div>div:last-child>div:first-child>div:nth-child(3){
+			width: auto;
+			margin-right: 5px;
+		}
+  
+		.old_fnd_item{
+			padding-top:3px;
+			width:8.8%;
+                        min-height:505px;
+                        max-height:505px;
+                        font-size:0.8em;
+                        border: 1px solid rgb(31, 151, 255) !important;
+                        margin: 3px 0px 0px !important;
+		}
+
+
+
+.old_fnd_desc{
+padding-bottom:2px !important;
+padding-top:2px !important;
+padding-left:1px !important;
+padding-right:0px !important;
+}
+	
+.old_fnd_item:last-child{
+			width:8.3%;		  
+}
+
+#general_sit{
+min-height:100px;
+}			 
+				 
+ 
+
+#general_sit .data{
+font-size:95% !important;
+}
+
+#general_sit > h2{
+padding-bottom:0px !important;
+}
+
+
+
+.div_old_fnd_table{
+           overflow: hidden; 
+}
+			  
+		   
+ .old_fnd_item{
+margin:1px;
+}
+
+#fnd_mode{
+display:none !important;
+}
+
+.old_fnd_wind{
+min-height:105px !important;
+padding-bottom:2px !important;
+padding-top:0px !important;
+padding-left:0px !important;
+padding-right:0px !important;
+}
+
+
+
+.border_blank{
+padding: 5px 5px !important;
+padding-top:2px !important;
+}
+
+.old_fnd_wind_main{
+padding-left:1px !important;
+}
+
+
+
+             .old_fnd_humidity{
+                 margin-right:5px;
+              }		
+		body #new_fnd>div>div:first-child>div:last-child{
+		    margin-left: 110px;
+		}
+			
+
+body .bodyArea .breadcrumb {
+display:none !important;
+}  
+
+.contentVersion .bodyArea .contentArea>.mainContent{
+margin-top: 0 !important;
+padding-top: 0 !important
+}
+
+#new_fnd>div>div:first-child>div:last-child{
+    min-height: 80px !important;
+}
+
+#new_fnd>div>div:last-child{
+	min-height: 99px !important;
+}
+
+
+:-ms-lang(x), .old_fnd_item{
+                        min-height:495px;
+                        max-height:495px;
+}	
+
+:-ms-lang(x), .mainContent{
+line-height:1.0em !important;
+}						   
+							 
+ 
+/* 20200207 */
+
+.old_fnd_min_temp img, .old_fnd_max_temp img, .old_fnd_hum_img img{
+height:15px;
+}
+
+.old_fnd_hum_img img{
+	margin-right:0px !important;
+}
+
+
+.old_fnd_min_temp, .old_fnd_max_temp, .old_fnd_hum{
+	font-size:1em;
+	/*text-shadow: 0px 0px 0px #090204;*/
+}
+/* 20200207 */
+						
+										 
+										 
+ 
+
+	}
+	.data{
+		display:none;
+	}
+	.v_data{
+		display:none;
+	}
+	#container_7day_chart_temp2,
+	#container_7day_chart_rh2{
+		display: none;
+	}
+
+
+tspan.highcharts-text-outline{
+		display:none;
+		visibility:hidden;
+	}
+	
+	text tspan{
+		text-shadow: -1px -1px #fff;
+	}
+
+
+.psrcontainer{
+    text-align:center;
+    padding:15px 0 ;
+}
+
+.psrcontainer img{
+display:inline-block;
+width:40px!important; 
+height:auto;
+}
+
+
+.psr_value{
+display:inline-block;
+padding-top: 10px;
+padding-left:3px;
+width:30%;
+}
+
+.psr_value2{
+	padding-top: 0 !important;
+	width:50%;
+	text-align: center;
+}
+
+.psr_value3{
+	width:47%;
+}
+
+.psrcontainer {
+/*	width:40%;*/
+}
+.psrvalue {
+/*	width:60%; */
+	font-size:1em;
+	line-height:17px;
+	text-align: center;
+}
+
+
+.psrtable {display:table; margin: 10px 0;}
+
+
+/*.psr10 {margin-bottom:5px; display:table-row}*/
+
+
+table#psrnote, table#psrnote td {
+    border:solid 1px #000000;
+}
+table#psrnote {
+    border-collapse:collapse;
+}
+table#psrnote td {
+    padding:3px;
+}
+table#psrnote {
+    margin: 0 auto;
+    margin-top: 11px;
+}
+table#psrnote tr td:nth-child(2) {
+    min-width: 70px;
+}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '0';
+var section_id = '2018010100000010786';
+
+ 
+                     function chglang(l){
+	// var currentURL=document.location.href;
+       var currentURL = location.protocol + '//' + location.host + location.pathname
+      
+	var langArr = [
+					['en','index.html'],
+					['tc','index.html'],
+					['sc','index.html']
+					];
+	var nextURL = '';
+	if(currentURL.indexOf("/"+langArr[lang][0]+"/")>=0){
+		//nextURL=currentURL.ReplaceAll("/"+langArr[lang][0]+"/","/"+langArr[l][0]+"/");
+		nextURL=currentURL.replace("/"+langArr[lang][0]+"/","/"+langArr[l][0]+"/");
+	}else if(currentURL.indexOf(langArr[lang][1])>=0){
+		//nextURL=currentURL.ReplaceAll("/"+langArr[lang][1],"/"+langArr[l][1]);
+		nextURL=currentURL.replace("/"+langArr[lang][1],"/"+langArr[l][1]);
+	}else{
+		nextURL=currentURL+langArr[l][1];
+	}
+	//document.location.href=nextURL.replace(/#.*/,'');
+	document.location.href=nextURL;
+        console.log("local chglang");
+
+}                       
+
+
+        
+function jump_to_notes(){
+				$(document).scrollTop( $("#tablenote").offset().top - 220 );  
+			}
+
+
+           $(window).on('load', function() {
+                        if (window.location.href.indexOf("tablenote") > -1) {
+                           $(document).scrollTop( $("#tablenote").offset().top -130);  
+                        }  
+               });
+
+                                                                                                                                                                                
+var rh_chart;
+		function fnd_chart_RH(maxrh, minrh, date) {
+			max = 0;
+			min = -1;
+			
+			$.each(maxrh, function() {
+				if (this>max)
+					max = this;
+			});
+			$.each(minrh, function() {
+				if (this<min || min == -1)
+					min = this;
+			});
+
+			max = max%2>0?max+4:max+3;
+			min -= 7;
+			
+			if (max > 100) {
+				max = 100;
+			}
+			
+			if (min < 0) {
+				min = 0;
+			}
+			
+			rh_chart = new Highcharts.Chart({
+				chart: {
+					renderTo: 'container_7day_chart_rh',
+					backgroundColor: {
+						linearGradient: {
+							x1: 0,
+							y1: 0,
+							x2: 0,
+							y2: 0.5
+						},
+						stops: [
+							[0, 'rgba(255, 255, 255, 1)'],
+							[1, '#D5FFEC']
+						]
+					},
+					//width: 100%,
+					height: 350
+				},
+				colors: ['#BE4B48', '#4A7EBB'],
+				legend: {
+					enabled: false
+				},
+				title: {
+					text: 'Humidity (%)',
+					y: 20,
+					style: {
+						color: '#0092D6',
+						fontSize: '20px',
+						fontWeight: 'bold'
+					}
+				},
+				credits: {
+					enabled: false
+				},
+				xAxis: {
+					crosshair: {
+						width: 1,
+						color: "#d3d3d3"
+					},
+					labels: {
+						enabled: true,
+						style: {
+							fontSize: '16px'
+						}
+					},
+					categories: date
+				},
+				yAxis: {
+					maxPadding: 0.5,
+					minPadding: 0.5,
+					tickInterval: 10,
+					max: max,
+					min: min,
+					labels: {
+						enabled: false
+					},
+					title: null,
+					gridLineColor: '#d3d3d3'
+				},
+				tooltip: {
+					enabled: false
+				},
+				plotOptions: {
+					series: {
+                        states: {
+                            hover: {
+                                enabled: true
+                            },
+                            normal: {
+                                enabled: true
+                            },
+                            inactive: {
+                                enabled: false
+                            },
+                            select: {
+                                enabled: false
+                            }
+                        }
+                    },
+                    
+                    line: {
+						dataLabels: {
+							enabled: true,
+							borderRadius: 5,
+							borderWidth: 1,
+							style: {
+								fontWeight: 'bold',
+								fontSize: '12pt'
+							}
+						},
+						shadow: true
+					},
+					arearange: {
+						marker: {
+							enabled: false,
+							states: {
+								hover: {
+									enabled: false
+								}
+							}
+						},
+						states: {
+							hover: false
+						},
+						lineWidth: 0,
+						fillOpacity: 0.2,
+						animation: false
+					}
+				},
+				series: [{
+						name: 'Highest',
+						marker: {
+							symbol: 'square'
+						},
+						dataLabels: {
+							backgroundColor: '#FFDB69',
+							y: -5
+						},
+						data: maxrh
+					},
+					{
+						name: 'Lowest',
+						marker: {
+							symbol: 'circle'
+						},
+						dataLabels: {
+							backgroundColor: '#C6D9F1',
+							y: +40
+						},
+						data: minrh
+					},
+					{
+						name: 'Max Temp Rang:',
+						data: [
+							[climatData.climat.day1.maxRH_25per, climatData.climat.day1.maxRH_75per],
+							[climatData.climat.day2.maxRH_25per, climatData.climat.day2.maxRH_75per],
+							[climatData.climat.day3.maxRH_25per, climatData.climat.day3.maxRH_75per],
+							[climatData.climat.day4.maxRH_25per, climatData.climat.day4.maxRH_75per],
+							[climatData.climat.day5.maxRH_25per, climatData.climat.day5.maxRH_75per],
+							[climatData.climat.day6.maxRH_25per, climatData.climat.day6.maxRH_75per],
+							[climatData.climat.day7.maxRH_25per, climatData.climat.day7.maxRH_75per],
+							[climatData.climat.day8.maxRH_25per, climatData.climat.day8.maxRH_75per],
+							[climatData.climat.day9.maxRH_25per, climatData.climat.day9.maxRH_75per]
+						],
+						type: 'arearange'
+					},
+					{
+						name: 'Min Temp Rang:',
+						data: [
+							[climatData.climat.day1.minRH_25per, climatData.climat.day1.minRH_75per],
+							[climatData.climat.day2.minRH_25per, climatData.climat.day2.minRH_75per],
+							[climatData.climat.day3.minRH_25per, climatData.climat.day3.minRH_75per],
+							[climatData.climat.day4.minRH_25per, climatData.climat.day4.minRH_75per],
+							[climatData.climat.day5.minRH_25per, climatData.climat.day5.minRH_75per],
+							[climatData.climat.day6.minRH_25per, climatData.climat.day6.minRH_75per],
+							[climatData.climat.day7.minRH_25per, climatData.climat.day7.minRH_75per],
+							[climatData.climat.day8.minRH_25per, climatData.climat.day8.minRH_75per],
+							[climatData.climat.day9.minRH_25per, climatData.climat.day9.minRH_75per]
+						],
+						type: 'arearange'
+					}
+				]
+			});
+			rh_chart2 = new Highcharts.Chart({
+				chart: {
+					renderTo: 'container_7day_chart_rh2',
+					backgroundColor: {
+						linearGradient: {
+							x1: 0,
+							y1: 0,
+							x2: 0,
+							y2: 0.5
+						},
+						stops: [
+							[0, 'rgba(255, 255, 255, 1)'],
+							[1, '#D5FFEC']
+						]
+					},
+					//width: 100%,
+					height: 265
+				},
+				colors: ['#BE4B48', '#4A7EBB'],
+				legend: {
+					enabled: false
+				},
+				title: {
+					text: 'Humidity (%)',
+					y: 20,
+					style: {
+						color: '#0092D6',
+						fontSize: '20px',
+						fontWeight: 'bold'
+					}
+				},
+				credits: {
+					enabled: false
+				},
+				xAxis: {
+					crosshair: {
+						width: 1,
+						color: "#d3d3d3"
+					},
+					labels: {
+						enabled: true,
+						style: {
+							fontSize: '16px'
+						}
+					},
+					categories: date
+				},
+				yAxis: {
+					maxPadding: 0.5,
+					minPadding: 0.5,
+					tickInterval: 10,
+					max: max,
+					min: min,	
+					labels: {
+						enabled: false
+					},
+					title: null,
+					gridLineColor: '#d3d3d3'
+				},
+				tooltip: {
+					enabled: false
+				},
+				plotOptions: {
+					series: {
+                        states: {
+                            hover: {
+                                enabled: true
+                            },
+                            normal: {
+                                enabled: true
+                            },
+                            inactive: {
+                                enabled: false
+                            },
+                            select: {
+                                enabled: false
+                            }
+                        }
+                    },
+                    line: {
+						dataLabels: {
+							enabled: true,
+							borderRadius: 5,
+							borderWidth: 1,
+							style: {
+								fontWeight: 'bold',
+								fontSize: '12pt'
+							}
+						},
+						shadow: true
+					},
+					arearange: {
+						marker: {
+							enabled: false,
+							states: {
+								hover: {
+									enabled: false
+								}
+							}
+						},
+						states: {
+							hover: false
+						},
+						lineWidth: 0,
+						fillOpacity: 0.2,
+						animation: false
+					}
+				},
+				series: [{
+						name: 'Highest',
+						marker: {
+							symbol: 'square'
+						},
+						dataLabels: {
+							backgroundColor: '#FFDB69',
+							y: -5
+						},
+						data: maxrh
+					},
+					{
+						name: 'Lowest',
+						marker: {
+							symbol: 'circle'
+						},
+						dataLabels: {
+							backgroundColor: '#C6D9F1',
+							y: +40
+						},
+						data: minrh
+					},
+					{
+						name: 'Max Temp Rang:',
+						data: [
+							[climatData.climat.day1.maxRH_25per, climatData.climat.day1.maxRH_75per],
+							[climatData.climat.day2.maxRH_25per, climatData.climat.day2.maxRH_75per],
+							[climatData.climat.day3.maxRH_25per, climatData.climat.day3.maxRH_75per],
+							[climatData.climat.day4.maxRH_25per, climatData.climat.day4.maxRH_75per],
+							[climatData.climat.day5.maxRH_25per, climatData.climat.day5.maxRH_75per],
+							[climatData.climat.day6.maxRH_25per, climatData.climat.day6.maxRH_75per],
+							[climatData.climat.day7.maxRH_25per, climatData.climat.day7.maxRH_75per],
+							[climatData.climat.day8.maxRH_25per, climatData.climat.day8.maxRH_75per],
+							[climatData.climat.day9.maxRH_25per, climatData.climat.day9.maxRH_75per]
+						],
+						type: 'arearange'
+					},
+					{
+						name: 'Min Temp Rang:',
+						data: [
+							[climatData.climat.day1.minRH_25per, climatData.climat.day1.minRH_75per],
+							[climatData.climat.day2.minRH_25per, climatData.climat.day2.minRH_75per],
+							[climatData.climat.day3.minRH_25per, climatData.climat.day3.minRH_75per],
+							[climatData.climat.day4.minRH_25per, climatData.climat.day4.minRH_75per],
+							[climatData.climat.day5.minRH_25per, climatData.climat.day5.minRH_75per],
+							[climatData.climat.day6.minRH_25per, climatData.climat.day6.minRH_75per],
+							[climatData.climat.day7.minRH_25per, climatData.climat.day7.minRH_75per],
+							[climatData.climat.day8.minRH_25per, climatData.climat.day8.minRH_75per],
+							[climatData.climat.day9.minRH_25per, climatData.climat.day9.minRH_75per]
+						],
+						type: 'arearange'
+					}
+				]
+			});
+			$(".highcharts-data-labels rect").attr("transform", "translate(0,-2)");
+			$(".highcharts-data-labels rect").attr("height", "22");
+		}
+		var temp_chart;
+		function fnd_chart_temp(maxtemp, mintemp, date) {
+			//max = Math.max(...maxtemp);
+			//min = Math.min(...mintemp);
+			max = 0;
+			min = -273;
+			$.each(maxtemp, function() {
+				if (this>max)
+					max = this;
+			});
+			$.each(mintemp, function() {
+				if (this<min || min == -273)
+					min = this;
+			});
+
+			max = max%2>0?max+3:max+2;
+			min -= 4;
+			temp_chart = new Highcharts.Chart({
+				chart: {
+					renderTo: 'container_7day_chart_temp',
+					backgroundColor: {
+						linearGradient: {
+							x1: 0,
+							y1: 0,
+							x2: 0,
+							y2: 1
+						},
+						stops: [
+							[0, 'rgb(255, 255, 255)'],
+							[1, 'rgb(252, 255, 197)']
+						]
+					},
+					//width: 100,
+					height: 350
+				},
+				colors: ['#BE4B48', '#4A7EBB'],
+				legend: {
+					enabled: false
+				},
+				title: {
+					text: 'Temperature (°C)',
+					y: 20,
+					style: {
+						color: '#E66300',
+						fontSize: '20px',
+						fontWeight: 'bold'
+					}
+				},
+				credits: {
+					enabled: false
+				},
+				xAxis: {
+					crosshair: {
+						width: 1,
+						color: "#d3d3d3"
+					},
+					labels: {
+						enabled: true,
+						style: {
+							fontSize: '16px'
+						}
+					},
+					categories: date
+				},
+				yAxis: {
+					maxPadding: 0.5,
+					minPadding: 0.5,
+					tickInterval: 2,
+					gridLineColor: '#d3d3d3',
+					max: max,
+					min: min,
+					labels: {
+						enabled: false
+					},
+					title: null
+				},
+				tooltip: {
+					enabled: false
+				},
+				plotOptions: {
+					series: {
+                        states: {
+                            hover: {
+                                enabled: true
+                            },
+                            normal: {
+                                enabled: true
+                            },
+                            inactive: {
+                                enabled: false
+                            },
+                            select: {
+                                enabled: false
+                            }
+                        }
+                    },
+                    line: {
+						dataLabels: {
+							enabled: true,
+							borderRadius: 5,
+							borderWidth: 1,
+							y: -16,
+							borderColor: "#AAA",
+							borderRadius: 5,
+							style: {
+								fontWeight: 'bold',
+								fontSize: '12pt'
+							}
+						},
+						shadow: true,
+						marker: {
+							enabled: true
+						}
+					},
+					arearange: {
+						cursor: 'pointer',
+						events: {
+							click: function(event) {
+								if (this.color == "#BE4B48") {
+									window.location = lang_root+"probfcst/tempfcst.htm#max"
+								} else if (this.color == "#4A7EBB") {
+									window.location = lang_root+"probfcst/tempfcst.htm#min"
+								}
+							}
+						},
+						marker: {
+							enabled: false,
+							states: {
+								hover: {
+									enabled: false
+								}
+							}
+						},
+						states: {
+							hover: false
+						},
+						lineWidth: 0,
+						fillOpacity: 0.2,
+						zIndex: 0,
+						animation: false
+					}
+				},
+				series: [{
+						type: 'line',
+						name: 'Forecasted Highest',
+						marker: {
+							symbol: 'square'
+						},
+						color: "#BE4B48",
+						dataLabels: {
+							backgroundColor: '#FFDB69',
+							y: 0
+						},
+						data: maxtemp
+					},
+					{
+						type: 'line',
+						name: 'Forecasted Lowest',
+						marker: {
+							symbol: 'circle'
+						},
+						color: "#4A7EBB",
+						dataLabels: {
+							enabled: true,
+							backgroundColor: '#C6D9F1',
+							y: +40
+						},
+						data: mintemp
+					},
+					{
+						name: 'Max Temp Rang:',
+						data: [
+							[climatData.climat.day1.maxTemp_25per, climatData.climat.day1.maxTemp_75per],
+							[climatData.climat.day2.maxTemp_25per, climatData.climat.day2.maxTemp_75per],
+							[climatData.climat.day3.maxTemp_25per, climatData.climat.day3.maxTemp_75per],
+							[climatData.climat.day4.maxTemp_25per, climatData.climat.day4.maxTemp_75per],
+							[climatData.climat.day5.maxTemp_25per, climatData.climat.day5.maxTemp_75per],
+							[climatData.climat.day6.maxTemp_25per, climatData.climat.day6.maxTemp_75per],
+							[climatData.climat.day7.maxTemp_25per, climatData.climat.day7.maxTemp_75per],
+							[climatData.climat.day8.maxTemp_25per, climatData.climat.day8.maxTemp_75per],
+							[climatData.climat.day9.maxTemp_25per, climatData.climat.day9.maxTemp_75per]
+						],
+						type: 'arearange'
+					},
+					{
+						name: 'Min Temp Rang:',
+						data: [
+							[climatData.climat.day1.minTemp_25per, climatData.climat.day1.minTemp_75per],
+							[climatData.climat.day2.minTemp_25per, climatData.climat.day2.minTemp_75per],
+							[climatData.climat.day3.minTemp_25per, climatData.climat.day3.minTemp_75per],
+							[climatData.climat.day4.minTemp_25per, climatData.climat.day4.minTemp_75per],
+							[climatData.climat.day5.minTemp_25per, climatData.climat.day5.minTemp_75per],
+							[climatData.climat.day6.minTemp_25per, climatData.climat.day6.minTemp_75per],
+							[climatData.climat.day7.minTemp_25per, climatData.climat.day7.minTemp_75per],
+							[climatData.climat.day8.minTemp_25per, climatData.climat.day8.minTemp_75per],
+							[climatData.climat.day9.minTemp_25per, climatData.climat.day9.minTemp_75per]
+						],
+						type: 'arearange'
+					}
+				]
+			});
+			temp_chart2 = new Highcharts.Chart({
+				chart: {
+					renderTo: 'container_7day_chart_temp2',
+					backgroundColor: {
+						linearGradient: {
+							x1: 0,
+							y1: 0,
+							x2: 0,
+							y2: 1
+						},
+						stops: [
+							[0, 'rgb(255, 255, 255)'],
+							[1, 'rgb(252, 255, 197)']
+						]
+					},
+					//width: 100,
+					height: 260
+				},
+				colors: ['#BE4B48', '#4A7EBB'],
+				legend: {
+					enabled: false
+				},
+				title: {
+					text: 'Temperature (°C)',
+					y: 20,
+					style: {
+						color: '#E66300',
+						fontSize: '20px',
+						fontWeight: 'bold'
+					}
+				},
+				credits: {
+					enabled: false
+				},
+				xAxis: {
+					crosshair: {
+						width: 1,
+						color: "#d3d3d3"
+					},
+					labels: {
+						enabled: true,
+						style: {
+							fontSize: '16px'
+						}
+					},
+					categories: date
+				},
+				yAxis: {
+					maxPadding: 0.5,
+					minPadding: 0.5,
+					tickInterval: 2,
+					gridLineColor: '#d3d3d3',
+					max: max,
+					min: min,
+					labels: {
+						enabled: false
+					},
+					title: null
+				},
+				tooltip: {
+					enabled: false
+				},
+				plotOptions: {
+					line: {
+						dataLabels: {
+							enabled: true,
+							borderRadius: 5,
+							borderWidth: 1,
+							y: -16,
+							borderColor: "#AAA",
+							borderRadius: 5,
+							style: {
+								fontWeight: 'bold',
+								fontSize: '12pt'
+							}
+						},
+						shadow: true,
+						marker: {
+							enabled: true
+						}
+					},
+					arearange: {
+						cursor: 'pointer',
+						events: {
+							click: function(event) {
+								if (this.color == "#BE4B48") {
+									window.location = lang_root+"probfcst/tempfcst.htm#max"
+								} else if (this.color == "#4A7EBB") {
+									window.location = lang_root+"probfcst/tempfcst.htm#min"
+								}
+							}
+						},
+						marker: {
+							enabled: false,
+							states: {
+								hover: {
+									enabled: false
+								}
+							}
+						},
+						states: {
+							hover: false
+						},
+						lineWidth: 0,
+						fillOpacity: 0.2,
+						zIndex: 0,
+						animation: false
+					}
+				},
+				series: [{
+						type: 'line',
+						name: 'Forecasted Highest',
+						marker: {
+							symbol: 'square'
+						},
+						color: "#BE4B48",
+						dataLabels: {
+							backgroundColor: '#FFDB69',
+							y: 0
+						},
+						data: maxtemp
+					},
+					{
+						type: 'line',
+						name: 'Forecasted Lowest',
+						marker: {
+							symbol: 'circle'
+						},
+						color: "#4A7EBB",
+						dataLabels: {
+							enabled: true,
+							backgroundColor: '#C6D9F1',
+							y: +40
+						},
+						data: mintemp
+					},
+					{
+						name: 'Max Temp Rang:',
+						data: [
+							[climatData.climat.day1.maxTemp_25per, climatData.climat.day1.maxTemp_75per],
+							[climatData.climat.day2.maxTemp_25per, climatData.climat.day2.maxTemp_75per],
+							[climatData.climat.day3.maxTemp_25per, climatData.climat.day3.maxTemp_75per],
+							[climatData.climat.day4.maxTemp_25per, climatData.climat.day4.maxTemp_75per],
+							[climatData.climat.day5.maxTemp_25per, climatData.climat.day5.maxTemp_75per],
+							[climatData.climat.day6.maxTemp_25per, climatData.climat.day6.maxTemp_75per],
+							[climatData.climat.day7.maxTemp_25per, climatData.climat.day7.maxTemp_75per],
+							[climatData.climat.day8.maxTemp_25per, climatData.climat.day8.maxTemp_75per],
+							[climatData.climat.day9.maxTemp_25per, climatData.climat.day9.maxTemp_75per]
+						],
+						type: 'arearange'
+					},
+					{
+						name: 'Min Temp Rang:',
+						data: [
+							[climatData.climat.day1.minTemp_25per, climatData.climat.day1.minTemp_75per],
+							[climatData.climat.day2.minTemp_25per, climatData.climat.day2.minTemp_75per],
+							[climatData.climat.day3.minTemp_25per, climatData.climat.day3.minTemp_75per],
+							[climatData.climat.day4.minTemp_25per, climatData.climat.day4.minTemp_75per],
+							[climatData.climat.day5.minTemp_25per, climatData.climat.day5.minTemp_75per],
+							[climatData.climat.day6.minTemp_25per, climatData.climat.day6.minTemp_75per],
+							[climatData.climat.day7.minTemp_25per, climatData.climat.day7.minTemp_75per],
+							[climatData.climat.day8.minTemp_25per, climatData.climat.day8.minTemp_75per],
+							[climatData.climat.day9.minTemp_25per, climatData.climat.day9.minTemp_75per]
+						],
+						type: 'arearange'
+					}
+				]
+			});
+			$(".highcharts-data-labels rect").attr("transform", "translate(0,-2)");
+			$(".highcharts-data-labels rect").attr("height", "22");
+		}
+		var chart;
+		var fnd_chart_display_temp = true;
+		var fnd_chart_cookie_name = "fnd_chart_preference_e";
+		var fnd_chart_cookie = "";
+		$(document).ready(function() {
+
+			$("#fnd_mode_on").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#fnd_mode_on").click();
+    }
+});
+
+			$("#fnd_mode_off").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#fnd_mode_off").click();
+    }
+});
+			$('#pen_temp_max_checkbox').click(function() {
+				check = $(this).is(":checked");
+				if (check) {
+					$('.pen_temp_max_title').css('color', 'black');
+					$('.highcharts-series:eq(2)').css({
+						'opacity': '1'
+					});
+				} else {
+					$('.pen_temp_max_title').css('color', '#888');
+					$('.highcharts-series:eq(2)').css({
+						'opacity': '0'
+					});
+				}
+				temp_chart.redraw();
+				$(".highcharts-data-labels rect").attr("transform", "translate(0,-2)");
+				$(".highcharts-data-labels rect").attr("height", "22");
+			});
+			$('#pen_temp_min_checkbox').click(function() {
+				check = $(this).is(":checked");
+				if (check) {
+					$('.pen_temp_min_title').css('color', 'black');
+					$('.highcharts-series:eq(3)').css({
+						'opacity': '1'
+					});
+				} else {
+					$('.pen_temp_min_title').css('color', '#888');
+					$('.highcharts-series:eq(3)').css({
+						'opacity': '0'
+					});
+				}
+				$(".highcharts-data-labels rect").attr("transform", "translate(0,-2)");
+				$(".highcharts-data-labels rect").attr("height", "22");
+			});
+			$('#pen_rh_max_checkbox').click(function() {
+				check = $(this).is(":checked");
+				if (check) {
+					$('.pen_rh_max_title').css('color', 'black');
+					$('.highcharts-series:eq(10)').css({
+						'opacity': '1'
+					});
+				} else {
+					$('.pen_rh_max_title').css('color', '#888');
+					$('.highcharts-series:eq(10)').css({
+						'opacity': '0'
+					});
+				}
+				$(".highcharts-data-labels rect").attr("transform", "translate(0,-2)");
+				$(".highcharts-data-labels rect").attr("height", "22");
+			});
+			$('#pen_rh_min_checkbox').click(function() {
+				check = $(this).is(":checked");
+				if (check) {
+					$('.pen_rh_min_title').css('color', 'black');
+					$('.highcharts-series:eq(11)').css({
+						'opacity': '1'
+					});
+				} else {
+					$('.pen_rh_min_title').css('color', '#888');
+					$('.highcharts-series:eq(11)').css({
+						'opacity': '0'
+					});
+				}
+				$(".highcharts-data-labels rect").attr("transform", "translate(0,-2)");
+				$(".highcharts-data-labels rect").attr("height", "22");
+			});
+		});
+		$(document).ready(function() {
+			$('#pen_temp_max_checkbox').click(function() {
+				check = $(this).is(":checked");
+				if (check) {
+					$('.pen_temp_max_title').css('color', 'black');
+					$('.highcharts-series:eq(2)').css({
+						'opacity': '1'
+					});
+				} else {
+					$('.pen_temp_max_title').css('color', '#888');
+					$('.highcharts-series:eq(2)').css({
+						'opacity': '0'
+					});
+				}
+				temp_chart.redraw();
+				$(".highcharts-data-labels rect").attr("transform", "translate(0,-2)");
+				$(".highcharts-data-labels rect").attr("height", "22");
+			});
+			$('#pen_temp_min_checkbox').click(function() {
+				check = $(this).is(":checked");
+				if (check) {
+					$('.pen_temp_min_title').css('color', 'black');
+					$('.highcharts-series:eq(3)').css({
+						'opacity': '1'
+					});
+				} else {
+					$('.pen_temp_min_title').css('color', '#888');
+					$('.highcharts-series:eq(3)').css({
+						'opacity': '0'
+					});
+				}
+				$(".highcharts-data-labels rect").attr("transform", "translate(0,-2)");
+				$(".highcharts-data-labels rect").attr("height", "22");
+			});
+			$('#pen_rh_max_checkbox').click(function() {
+				check = $(this).is(":checked");
+				if (check) {
+					$('.pen_rh_max_title').css('color', 'black');
+					$('.highcharts-series:eq(6)').css({
+						'opacity': '1'
+					});
+				} else {
+					$('.pen_rh_max_title').css('color', '#888');
+					$('.highcharts-series:eq(6)').css({
+						'opacity': '0'
+					});
+				}
+				$(".highcharts-data-labels rect").attr("transform", "translate(0,-2)");
+				$(".highcharts-data-labels rect").attr("height", "22");
+			});
+			$('#pen_rh_min_checkbox').click(function() {
+				check = $(this).is(":checked");
+				if (check) {
+					$('.pen_rh_min_title').css('color', 'black');
+					$('.highcharts-series:eq(7)').css({
+						'opacity': '1'
+					});
+				} else {
+					$('.pen_rh_min_title').css('color', '#888');
+					$('.highcharts-series:eq(7)').css({
+						'opacity': '0'
+					});
+				}
+				$(".highcharts-data-labels rect").attr("transform", "translate(0,-2)");
+				$(".highcharts-data-labels rect").attr("height", "22");
+			});
+		});
+		$(function(){
+			init_fnd();
+			$('#full_version').click(function(){
+				$("*").stop(true,true);
+				$(this).removeClass('dimmer');
+				$('#sim_version').addClass('dimmer');
+				$('#forecast_desc div').slideDown();
+				$('#temp_legend').slideDown('slide');
+				$('#rh_legend').slideDown('slide');
+				$('#general_sit').slideDown('slide');
+			});
+			$('#sim_version').click(function(){
+				$("*").stop(true,true);
+				$(this).removeClass('dimmer');
+				$('#full_version').addClass('dimmer');
+				$('#forecast_desc div').slideUp();
+				$('#temp_legend').slideUp();
+				$('#rh_legend').slideUp();
+				$('#general_sit').slideUp();
+			});
+			setInterval(function(){
+				$(".highcharts-data-labels rect").attr("transform","translate(0,-2)");
+				$(".highcharts-data-labels rect").attr("height","22");
+			},3000);
+			/*setTimeout(function(){
+				$("img").each(function(){
+					if((typeof($(this).attr('alt')) == 'undefined' || $(this).attr('alt') == '') && (typeof($(this).attr('title')) == 'undefined' || $(this).attr('title') == '')){
+						$(this).attr('alt', 'image');
+					}
+					else if((typeof($(this).attr('alt')) == 'undefined' || $(this).attr('alt') == '') && typeof($(this).attr('title')) !== 'undefined' && $(this).attr('title') !== ''){
+						console.log($(this).attr('title'));
+					}
+				});
+			}, 3000);*/
+			//temp_chart.setSize(300,200);
+		});
+		
+		
+		
+		function init_left_side_height(){
+		
+			$('#new_fnd>div').each(function(){
+				var left_div = $(this).find('>div:first-child>div:last-child').outerHeight();
+				var right_div = $(this).find('>div:last-child').outerHeight();
+				
+				if(left_div <= right_div && window.innerWidth > 700){
+					$(this).find('>div:first-child>div:last-child').css('min-height', right_div);
+				}else{
+					$(this).find('>div:first-child>div:last-child').css('min-height', 0);
+				}
+			});
+		}
+		
+					//20200514 switch weather icon 
+		var cookie_icon_name_fnd_local = "HKO_DefaultWeatherIcon";
+		
+		function initWxIcon() { 
+			if ($.cookie(cookie_icon_name_fnd_local) == "nwxicon") {
+				changeHomepageWxIconSetting("nwxicon");
+			}else if ($.cookie(cookie_icon_name_fnd_local) == "owxicon") {
+				changeHomepageWxIconSetting("owxicon");				
+			}else{
+				changeHomepageWxIconSetting("nwxicon");
+			}
+		}
+		
+		function toggleWxIconSetting() { 
+			if ($.cookie(cookie_icon_name_fnd_local) == "nwxicon") {
+				changeHomepageWxIconSetting("owxicon");
+			}else if ($.cookie(cookie_icon_name_fnd_local) == "owxicon") {
+				changeHomepageWxIconSetting("nwxicon");				
+			}else{
+				changeHomepageWxIconSetting("owxicon");
+			}
+		}
+		
+		function changeHomepageWxIconSetting(theme) { 
+			/***save cookie value here ***/
+			$.cookie(cookie_icon_name_fnd_local, theme, {
+				expires: 365,
+				path: "/"
+			});
+			
+			if ($.cookie(cookie_icon_name_fnd_local) == "owxicon") {
+				console.log("owxicon");
+				$("#old_fnd .old_fnd_upper img").each(function() {
+					var src = $(this).attr('src').replace('../../../images/HKOWxIconOutline/','/content_elements_v2/images/weather-icon-70x70/');
+					$(this).attr('src', src);
+				});
+				$("#new_fnd .new_fnd_item div div img").each(function() {
+					var src = $(this).attr('src').replace('../../../images/HKOWxIconOutline/','/content_elements_v2/images/weather-icon-70x70/');
+					$(this).attr('src', src);
+				}); 
+				
+				
+				$("#btnSwitchIcon").attr("src", "/content_elements_v2/images/weather-icon-70x70/pic50.png");
+				$("#btnSwitchIcon").css("padding", "0px");
+			}else if($.cookie(cookie_icon_name_fnd_local) == "nwxicon"){
+				console.log("nwxicon");
+				$("#old_fnd .old_fnd_upper img").each(function() {
+					var src = $(this).attr('src').replace('/content_elements_v2/images/weather-icon-70x70/', '../../../images/HKOWxIconOutline/');
+					$(this).attr('src', src);
+				}); 
+				$("#new_fnd .new_fnd_item div div img").each(function() {
+					var src = $(this).attr('src').replace('/content_elements_v2/images/weather-icon-70x70/', '../../../images/HKOWxIconOutline/');
+					$(this).attr('src', src);
+				}); 
+				$("#btnSwitchIcon").attr("src", "/images/HKOWxIconOutline/pic50.png");
+				$("#btnSwitchIcon").css("padding", "2px");
+			}
+		}
+		//end 20200514 switch weather icon
+
+
+		$(window).resize(function(){
+			init_left_side_height();
+		});
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>9-day Weather Forecast for Hong Kong</h1>
+                <div class="border_blank">
+                    <script type="text/javascript" src="/js/highcharts.js"></script>
+<script type="text/javascript" src="/js/highcharts-more.min.js"></script>
+<script type="text/javascript" src="../../../en/wxinfo/currwx/files/fnd_revised_0305.js"></script>
+<script type="text/javascript">document.getElementsByTagName("body")[0].onload = function() {initWxIcon()};	</script>
+<link rel="alternate" type="application/rss+xml" title="9-day Weather Forecast" href="https://rss.weather.gov.hk/rss/SeveralDaysWeatherForecast.xml" /> <!--Begin Content-->
+<script type="text/javascript">wcag_setTimer(600000, 'eng');</script>
+<div id="fnd_mode" style="float: right;"><img class="fnd_mode_img fnd_mode_img_on" style="display: none;" id="fnd_mode_on" onclick="fnd_mod('on')" src="../../../en/images/mode_on.png" alt="vertical view" name="mode_on" /> <img class="fnd_mode_img fnd_mode_img_off fnd_mode_active" style="display: none;" id="fnd_mode_off" onclick="fnd_mod('off')" src="../../../en/images/mode_off.png" alt="horizontal view" name="mode_off" /></div>
+<div style="float: right;"><a href="https://rss.weather.gov.hk/rss/SeveralDaysWeatherForecast.xml"><img src="../../../en/images/rss_logo1.png" alt="9-day Weather Forecast RSS" border="0" /></a></div>
+<div style="float: right; padding-top: 0px; margin-right: 5px;"><a href="javascript:window.print();"
+><img src="../../../en/images/print_icon.jpg" alt="Print Version" border="0" /></a></div>
+<div style="display: none; float: right; padding-top: 0px; margin-right: 5px; width: 28px; height: 28px; background: #1a58ab; border-radius: 8px;"><a><img id="btnSwitchIcon" src="../../../en/wxinfo/currwx/../../../images/HKOWxIconOutline/pic50.png" alt="Switch Weather Icon" border="0" style="padding: 2px; border-radius: 8px;" /></a></div>
+<!--a href="javascript:" class="show_version" id="full_version" style="">Full Version</a> / <a href="javascript:" class="show_version dimmer" id="sim_version" style="">Simplified Version</a-->
+<div>
+<div id="general_sit">
+<h2>General Situation:</h2>
+<p style="word-spacing: 0; margin-top: 0; margin-bottom: 0;"><span style="font-size: 120%;" class="data">{0}</span></p>
+</div>
+</div>
+<div id="old_fnd_table" class="div_responsive_table_1 div_old_fnd_table">
+<table class="table_border_1 table_cellpadding_0 table_cellspacing_1" style="width: 100%;" role="presentation">
+<tbody>
+<tr>
+<td>
+<div id="old_fnd" class=""></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="new_fnd" class="div_responsive_table_1 new_fnd_class"></div>
+<!--div id="fnd" class="div_responsive_table_1">
+					<table class="data_table" style="width:100%;"> 
+						<tbody>
+						</tbody>
+					</table>
+				</div-->
+<div id="fnd2" class="div_responsive_table_1">
+<table class="data_table" style="width: 100%;" role="presentation">
+<tbody>
+<tr style="background-color: #ffffff;">
+<td colspan="9" class="chart1">
+<div id="container_7day_chart_temp" style="position: relative; overflow: hidden; text-align: left; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-size: 12px; margin-top: 10px;"></div>
+<div id="container_7day_chart_temp2" style="position: relative; overflow: hidden; text-align: left; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-size: 12px; margin-top: 10px; width: 850px;"></div>
+</td>
+</tr>
+<tr style="background-color: #fcffc6;">
+<td colspan="9" class="remark1 self_align_center" style="margin-top: 0px; margin-bottom: 0px; padding: 0px;">
+<div id="temp_legend">
+<div style="padding: 0px; margin-bottom: 0px; margin-top: -6px; text-align: center;"><span style="font-weight: bold;">Forecast:</span> maximum temperature <img id="max_temp_legend_1" src="../../../en/wxinfo/currwx/images/legend1.png" style="display: inline-block; vertical-align: middle; padding-left: 2px; padding-right: 5px; margin-top: -3px;" alt="minimum temperature" /> minimum temperature <img id="min_temp_legend_1" src="../../../en/wxinfo/currwx/images/legend2.png" style="display: inline-block; vertical-align: middle; margin-top: -3px;" alt="minimum temperature" /></div>
+<table class="data_table" style="width: 100%;">
+<tbody>
+<tr>
+<td style="border: none;"><label for="pen_temp_max_checkbox" class="sr-only">50% of the days have maximum temperatures falling within this range (based on 30-year climate data)</label> <input id="pen_temp_max_checkbox" type="checkbox" name="pen_temp_max_checkbox" checked="checked" /></td>
+<td style="border: none;" class="pen_temp_max_title  self_align_left">50% of the days have maximum temperatures falling within this range (based on 30-year climate data)<sup>[note 1]</sup></td>
+<td style="border: none;" class="self_align_left"><img id="max_temp_per_legend" src="../../../en/wxinfo/currwx/images/per_max_legend.png" style="margin-left: 5px; display: inline-block; width: 50px; vertical-align: middle; padding-left: 2px; padding-right: 5px; margin-right: 10px;" alt="The color of maximum temperature" /></td>
+</tr>
+<tr>
+<td style="border: none;"><label for="pen_temp_min_checkbox" class="sr-only">50% of the days have minimum temperatures falling within this range </label> <input id="pen_temp_min_checkbox" type="checkbox" name="pen_temp_min_checkbox" checked="checked" /></td>
+<td style="border: none;" class="pen_temp_min_title  self_align_left">50% of the days have minimum temperatures falling within this range (based on 30-year climate data)<sup style="font-size: 9pt;">[note 1]</sup></td>
+<td style="border: none;" class="self_align_left"><img class="min_temp_per_legend" src="../../../en/wxinfo/currwx/images/per_min_legend.png" style="margin-left: 5px; display: inline-block; width: 50px; vertical-align: middle; padding-left: 2px; padding-right: 5px;" alt="The  color of minimum temperature" /></td>
+<td colspan="3" style="border: none; height: 50px; text-align: center; padding-right: 1em; position: relative;">
+<div class="btn print_extended" style="display: inline-block; background: #faa330; margin: 10px 0;"><a href="../../../en/probfcst/tempfcst.htm" style="color: #2a2a2a !important; font-weight: bold;">Extended Outlook</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pagebreak"></div>
+<div id="fnd3" class="div_responsive_table_1">
+<table class="data_table" style="width: 100%;">
+<tbody>
+<tr style="background-color: #ffffff;">
+<td colspan="9" class="chart2">
+<div id="container_7day_chart_rh" style="position: relative; overflow: hidden; width: 1156px; max-width: 100%; text-align: left; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-size: 12px; margin-top: 10px;"></div>
+<div id="container_7day_chart_rh2" style="position: relative; overflow: hidden; width: 850px; max-width: 100%; text-align: left; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-size: 12px; margin-top: 10px;"></div>
+</td>
+</tr>
+<tr style="background-color: #d5ffec;">
+<td colspan="9" class="remark2  self_align_center" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; padding-bottom: 10px;">
+<div id="rh_legend">
+<div style="padding: 0px; margin-bottom: 0px; margin-top: -6px; text-align: center;"><span style="font-weight: bold;">Forecast:</span> maximum relative humidity <img id="max_temp_legend_2" src="../../../en/wxinfo/currwx/images/legend1.png" style="display: inline-block; vertical-align: middle; padding-left: 2px; padding-right: 5px; margin-top: -3px;" alt="minimum relative humidity" /> minimum relative humidity <img id="min_temp_legend_2" src="../../../en/wxinfo/currwx/images/legend2.png" style="display: inline-block; vertical-align: middle; margin-top: -3px;" alt="minimum relative humidity" /></div>
+<table class="data_table" style="width: 100%;">
+<tbody>
+<tr>
+<td style="border: none;"><label for="pen_rh_max_checkbox" class="sr-only">50% of the days have maximum relative humidity falling within this range (based on 30-year climate data)</label> <input type="checkbox" name="pen_rh_max_checkbox" id="pen_rh_max_checkbox" checked="checked" style="margin-right: 10px;" /></td>
+<td style="border: none;" class="pen_rh_max_title  self_align_left">50% of the days have maximum relative humidity falling within this range (based on 30-year climate data)<sup style="font-size: 9pt;">[note 1]</sup></td>
+<td style="border: none;" class="self_align_left"><img id="max_temp_per_legend2" src="../../../en/wxinfo/currwx/images/per_max_legend.png" style="display: inline-block; width: 50px; vertical-align: middle; padding-left: 2px; padding-right: 5px; margin-left: 5px;" alt="The  color  of the maximum temperature" /></td>
+</tr>
+<tr>
+<td style="border: none;"><label for="pen_rh_min_checkbox" class="sr-only">50% of the days have minimum relative humidity falling within this range (based on 30-year climate data)</label> <input type="checkbox" name="pen_rh_min_checkbox" id="pen_rh_min_checkbox" checked="checked" style="margin-right: 10px;" /></td>
+<td style="border: none;" class="pen_rh_min_title  self_align_left">50% of the days have minimum relative humidity falling within this range (based on 30-year climate data)<sup style="font-size: 9pt;">[note 1]</sup></td>
+<td style="border: none;" class="self_align_left"><img id="min_temp_per_legend" src="../../../en/wxinfo/currwx/images/per_min_legend.png" style="display: inline-block; width: 50px; vertical-align: middle; padding-left: 2px; padding-right: 5px; margin-left: 5px;" alt="The  color  of the maximum temperature " /></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<a href="../../../en/probfcst/tempfcst.htm" class="mobile_element">Extended Outlook</a> <!--div id="fnd4" class="div_responsive_table_1">
+					<table class="data_table" style="width:100%;"> 
+						<tbody>
+						</tbody>
+					</table>
+				</div-->
+<div id="updatetime" style="float: right; margin-right: 6px;" class="v_data"> 
+<p style="margin-bottom: 0px;"><span style="float: right;">Updated at： {0}</span></p>
+<br />
+<p style="margin-top: 7px;"><span style="float: right;">(Next update at： {1})</span></p>
+</div>
+<p id="climinfo" style="clear: both;"><br /><a href="https://maps.weather.gov.hk/ocf/index_e.html" target="_blank" rel="noopener">Automatic Regional Weather Forecast in Hong Kong &amp; Pearl River Delta Region</a> <br /><a href="../../../en/wxinfo/climat/normal/5dnorm.html?page=5dnorm{0}{1}_e.htm" class="v_data">Climatological information for {2}-{3}</a></p>
+<div id="div_sea_soil" class="v_data"> 
+<div id="sea_temp">Sea surface temperature <br />{1} on {0} at {2} :
+<div>{3} &deg;C</div>
+</div>
+<div id="soil_temp">Soil temperatures <br />{1} on {0} at {2} <br />
+<div>0.5m depth:{3}&deg;C</div>
+<div>1.0m depth:{4}&deg;C</div>
+</div>
+</div>
+<div style="clear: both;"></div>
+<br />
+<div id="tablenote">Note:</div>
+<br />
+<ol>
+<ol>
+<li>This middle 50% range (between 25th and 75th percentiles) is calculated based on the maximum/minimum temperature and relative humidity data within a 5-day period centred on that day in the 30 years from 1991 to 2020.</li>
+<li>"9-day Weather Forecast" provides general indications of the trends in weather for the coming 9 days. For detailed description of today's weather forecast, please refer to "<a href="../../../en/wxinfo/currwx/flw.htm">Local Weather Forecast</a>".</li>
+<li>The Probability of Significant Rain (PSR) forecast provides users with additional reference on rainfall amount and forecast trend for the coming 9 days. The PSR forecast on each day indicates the probability of the accumulated rainfall generally over Hong Kong reaching 10 mm (i.e. around the mean daily rainfall in rainy season) or more on that day. There are 5 categories of probability as follows:</li>
+</ol>
+</ol>
+<table id="psrnote">
+<tbody>
+<tr>
+<td>High&gt;=70%</td>
+<td><img src="/common/images/PSRHigh_50_light.png" alt="High probability of Signification Rainfall icon" /></td>
+<td>For every 100 forecasts with a "high" probability, there are about 70 times or more with an average accumulated rainfall of 10 mm or above in actual observation.</td>
+</tr>
+<tr>
+<td>Medium High 55-69%</td>
+<td><img src="/common/images/PSRMediumHigh_50_light.png" alt="Medium High probability of Signification Rainfall icon" /></td>
+<td>For every 100 forecasts with a "medium high" probability, there are about 55 to 69 times with an average accumulated rainfall of 10 mm or above in actual observation.</td>
+</tr>
+<tr>
+<td>Medium 45-54%</td>
+<td><img src="/common/images/PSRMedium_50_light.png" alt="Medium probability of Signification Rainfall icon" /></td>
+<td>For every 100 forecasts with a "medium" probability, there are about 45 to 54 times with an average accumulated rainfall of 10 mm or above in actual observation.</td>
+</tr>
+<tr>
+<td>Medium Low 30-44%</td>
+<td><img src="/common/images/PSRMediumLow_50_light.png" alt="Medium Low probability of Signification Rainfall icon" /></td>
+<td>For every 100 forecasts with a "medium low" probability, there are about 30 to 44 times with an average accumulated rainfall of 10 mm or above in actual observation.</td>
+</tr>
+<tr>
+<td>Low&lt;30%</td>
+<td><img src="/common/images/PSRLow_50_light.png" alt="Low probability of Signification Rainfall icon" /></td>
+<td>For every 100 forecasts with a "low" probability, there are about less than 30 times with an average accumulated rainfall of 10 mm or above in actual observation.</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>The accuracy of forecast generally decreases while the error generally increases with forecast period. For forecast elements in "9-day Weather Forecast" other than PSR, the average accuracy for the next one to three days, four to seven days, and eight to nine days are about 90%, 85% and 80% respectively. The errors of PSR forecast in the next one to six days are within around 10% and those in seven to nine days are within around 20%.</li>
+<li>The accuracy and error of forecast also vary for different weather systems in different seasons. Generally speaking, weather in spring and summer such as fog, tropical cyclone and severe convective weather is more changeable, resulting in higher uncertainty of forecast.</li>
+</ol>
+<script>var last_revision_date = '18 March 2024';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

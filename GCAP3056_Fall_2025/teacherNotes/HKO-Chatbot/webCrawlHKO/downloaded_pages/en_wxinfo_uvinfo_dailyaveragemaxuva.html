@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Average and range of daily maximum UVA radiation intensity in different months</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Average and range of daily maximum UVA radiation intensity in different months">
+    <meta name="description" content="Average and range of daily maximum UVA radiation intensity in different months">
+    <meta name="recordId" content="2018123100000029779">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Average and range of daily maximum UVA radiation intensity in different months" />
+	<meta property="og:description" content="Average and range of daily maximum UVA radiation intensity in different months Return to index page {{caption}} {{tableHeader}} {{tableContent}}" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/uvinfo/dailyaveragemaxuva.html" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="../../../css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="../../../css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="../../../css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="../../../css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="../../../css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="../../../css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+		
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../../../js/jquery.easing.js"></script>
+    <script type="text/javascript" src="../../../js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="../../../js/menu.js"></script>
+    <script type="text/javascript" src="../../../js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="../../../js/moment.js"></script>
+	<script type="text/javascript" src="../../../js/vue.min.js"></script>
+	<script type="text/javascript" src="../../../js/vue-router.js"></script>
+	<script type="text/javascript" src="../../../js/vue-extend.js"></script>
+	<script type="text/javascript" src="../../../js/tmp.js"></script>
+	<script type="text/javascript" src="../../../js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000011144';
+
+
+
+
+
+    // document ready
+    $(function() {
+        ELEMENT.document.on({
+            'dailyAverageMaxUvaGraphUpdated': function(e) {
+                if(ELEMENT.pastdataChartsWrapper) {
+                    ELEMENT.pastdataChartsWrapper.removeClass('hideCharts');
+                }
+            }
+        });
+        initDailyAverageMaxUva({
+            caption: CONTENT.tableDailyAverageMaxUva.caption,
+            chartId: 'pastdataCharts',
+            chartTitle: CONTENT.graphDailyAverageMaxUva.title,
+            chartSubtitle: CONTENT.graphDailyAverageMaxUva.subtitle
+        });
+    });
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Average and range of daily maximum UVA radiation intensity in different months</h1>
+                <div class="border_blank">
+                    <!-- content start -->
+
+<link rel="stylesheet" type="text/css" href="../../../en/wxinfo/uvinfo/css/files/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../../../en/wxinfo/uvinfo/css/files/jquery-ui.theme.css">
+<!--link rel="stylesheet" type="text/css" href="../../../en/wxinfo/uvinfo/css/files/bootstrap.min.css"-->
+<link rel="stylesheet" type="text/css" href="../../../en/wxinfo/uvinfo/css/files/uvindex.css">
+
+<div class="uv">
+	<!--
+    <h1 class="main-title">Average and range of daily maximum UVA radiation intensity in different months<span class="nowrap"></span></h1>
+	-->
+
+    <div id="pastdataResult">
+        <div class="loader"></div>
+        <div class="hideCharts" id="pastdataChartsWrapper">
+            <div class="charts" id="pastdataCharts"></div>
+        </div>
+        <div id="pastdataTable"></div>
+    </div>
+
+    <ul class="spacing-top">
+        <li><a href="uvinfo.html">Return to index page</a></li>
+    </ul>
+</div>
+
+<script type="text/template" id="templateGenericDataTable">
+    <div class='table-responsive'>
+        <table class='table table-bordered data-table'>
+            {{caption}}
+            {{tableHeader}}
+            {{tableContent}}
+        </table>
+    </div>
+</script>
+
+
+
+
+
+<script src="../../../en/wxinfo/uvinfo/js/files/jquery-ui-1.12.1.min.js"></script>
+<script src="../../../en/wxinfo/uvinfo/js/files/bootstrap.min.js"></script>
+<script src="../../../en/wxinfo/uvinfo/js/files/echarts.min.js"></script>
+
+<script src="../../../en/wxinfo/uvinfo/js/files/config.js"></script>
+<script src="../../../en/wxinfo/uvinfo/js/files/variables.js"></script>
+<script src="../../../en/wxinfo/uvinfo/js/files/methods.js"></script>
+<script src="../../../en/wxinfo/uvinfo/js/files/content_e.js"></script>
+
+<script src="../../../en/wxinfo/uvinfo/js/files/read-daily-average-max-uva.js"></script>
+<script>var last_revision_date = '1 August 2018';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

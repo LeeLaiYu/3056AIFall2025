@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projections of hot nights, very hot days and cold days for Hong Kong｜Hong Kong Observatory(HKO)｜Climate Change</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Climate Projections for Hong Kong - Annual number of very hot days">
+    <meta name="description" content="Climate Projections for Hong Kong - Annual number of very hot days">
+    <meta name="recordId" content="2021111611425292257">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Projections of hot nights, very hot days and cold days for Hong Kong" />
+	<meta property="og:description" content="Projections of hot nights, very hot days and cold days for Hong Kong Mean sea level Temperature Rainfall Annual mean temperature Annual maximum temperature Annual minimum temperature Hot nights,very hot" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/climate_change/proj_hk_annual_vhot_days.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+				.top_banner{
+		display:flex;
+	}
+	@media screen and (max-width: 1150px) {
+		.top_banner .left,.top_banner .right {
+			width: 100% !important;
+		}
+		.top_banner .left img,.top_banner .right img {
+			width: auto !important;
+		}
+		.top_banner {
+			display: inline-block !important;
+		}
+	}
+    /*.txtImgCaption {
+     font-size: 14px; color: blue; font-weight:bold;
+    text-align: center;
+    }
+    .tab a:active {  text-decoration: none}
+    .tab a:link {  text-decoration: none}
+    .tab a:visited {  text-decoration: none}
+    .tab a:hover {  text-decoration: underline}
+    .tableMain {
+     font-size: 12px; color: #000000;
+    border-bottom : 2px solid #000000;
+    border-left : 2px solid #000000;
+    border-right : 2px solid #000000;
+    border-top : none;
+    }  */
+    .TabInactive {
+    width:360px;
+    border-top : 1px solid #AAAAAA !important;
+    border-left : 1px solid #AAAAAA !important;
+    border-right : 1px solid #AAAAAA !important;
+    border-bottom : 2px solid #000000 !important;
+    text-align: center;
+    }
+    .TabInactive a {
+     font-size: 14px; color: #666666;
+    background: #FFFFFF;
+    }
+    .TabActive a {
+     font-size: 14px; color: #000000;
+    }
+    .TabActive a:hover {
+    color: #000000;
+    text-decoration: none;
+    }
+    .TabActive {
+    width:360px;
+    border-top : 2px solid #000000;
+    border-left : 2px solid #000000;
+    border-right : 2px solid #000000;
+    border-bottom : none;
+    text-align: center;
+    font-weight: bold;
+    background: #E8DFFF;
+    }
+    .TabPlaceHolder {
+    border-bottom : 2px solid #000000;
+    }
+#select_ele a{
+				display: inline-block;
+				margin: 0px 10px;
+				font-size:15px;
+				text-decoration:none;
+A:link { color: #0000A0;
+	 text-decoration: none;}
+A:visited { color: #0000A0;
+	 text-decoration: none;}
+A:hover { color: #D40088;
+	text-decoration: UNDERLINE;}
+
+			}
+			#select_ele a:hover {
+				color:#333;
+			}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '0';
+var section_id = '2018010100000010157';
+
+                                 var nTabs=4
+function showPic(i){
+	var eleimg=document.getElementById("img" + i)
+	var eletab=document.getElementById("tab" + i)
+	var curtab, curimg
+	var j
+	if (eletab.className == "TabInactive tab"){
+		for (j=1; j<=nTabs; j++){
+			if (j==i){
+				eletab.className = "TabActive tab"
+				eleimg.style.visibility = "visible"
+				eleimg.style.display = "block"
+			} else {
+				curimg=document.getElementById("img" + j)
+				curtab=document.getElementById("tab" + j)
+				curimg.style.visibility = "hidden"
+				curimg.style.display = "none"
+				curtab.className = "TabInactive tab"
+			}
+		}	// j
+	}
+}	// showPic
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1 class="no_h1">Projections of hot nights, very hot days and cold days for Hong Kong</h1>
+                <div class="border_blank">
+                    <div style="height: 70px; background-color: #59c658;" class="top_banner climate_change_banner"></div>
+<script type="text/javascript" src="../../tc/climate_change/js/files/ClimateChange.js"></script>
+<script>init_climate_change_banner_green();</script>
+<script></script>
+<!--Social Network --> <!-- End Social Network -->
+<script></script>
+<!-- style for tab -->
+<table style="width: 100%;" class="table_border_0 table_cellpadding_0 table_cellspacing_0 no_responsive_div">
+<tbody><!-- Caption -->
+<tr>
+<td style="height: 40px; background-color: #069049;">
+<div>
+<h2 style="font-size: 150%; font-weight: normal; color: #ffffff; margin: 0px; padding: 5px;">Projections of hot nights, very hot days and cold days for Hong Kong</h2>
+</div>
+</td>
+</tr>
+<tr style="background-color: #d3c1ff;">
+<td style="height: 28px; background-color: #ebedda;">
+<table id="select_ele" style="width: 100%;" class="table_border_0 table_cellpadding_0 table_cellspacing_0 no_responsive_div">
+<tbody>
+<tr>
+<td colspan="1" style="width: 10%; text-align: left; height: 29px; font-size: 15px;"><a href="../../en/climate_change/proj_hk_msl.htm">Mean sea level</a></td>
+<td colspan="2" style="width: 80%; text-align: center; height: 29px;">
+<h2 style="text-align: center; display: inline; font-size: 110%; font-weight: bold; margin: 0px; padding: 5px;">Temperature</h2>
+</td>
+<td colspan="1" style="width: 10%; text-align: right; height: 29px; font-size: 15px;"><a href="../../en/climate_change/proj_hk_rainfall.htm">Rainfall</a></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: center;">
+<h1 style="text-align: center; display: inline; font-size: 113%; font-weight: bold; margin: 0px;"></h1>
+</td>
+</tr>
+<tr>
+<td style="width: 25%; text-align: center;"><h3 style="text-align: center; display: inline; font-size: 100%; font-weight: normal; margin: 0px;"><a href="../../en/climate_change/proj_hk_temp_mean.htm">Annual mean </br>temperature</a></h3></td>
+<td style="width: 25%; text-align: center;"><h3 style="text-align: center; display: inline; font-size: 100%; font-weight: normal; margin: 0px;"><a href="../../en/climate_change/proj_hk_annual_max_temp.htm">Annual maximum </br>temperature</a></h3></td>
+<td style="width: 25%; text-align: center;"><h3 style="text-align: center; display: inline; font-size: 100%; font-weight: normal; margin: 0px;"><a href="../../en/climate_change/proj_hk_annual_min_temp.htm">Annual minimum </br>temperature</a></h3></td>
+<td style="width: 25%; text-align: center;"><h3 style="text-align: center; display: inline; display: inline-block; margin: 0px 10px; font-size:14px; text-decoration:none;; font-weight: bold; margin: 0px;">Hot nights,<br>very hot days,<br>cold days</h3></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+<!-- Content -->
+<div style="margin-right:8px; text-align:justify;">
+<p>With unabating greenhouse gas emissions, the annual numbers of hot nights (days with a minimum temperature of 28°C or above) and very hot days (days with a maximum temperature of 33°C or above) are expected to increase significantly in the 21st century, while the annual number of cold days (days with a minimum temperature of 12°C or below) is expected to drop.</p>
+<br>
+
+                   <!-- start of tabbed img -->
+                        <a name="bar_chart"></a>
+						<div class="div_responsive_table_1">
+                        <table style="width:720px;" class="table_align_center table_border_0 table_cellpadding_3 table_cellspacing_0">
+                            <tbody>
+                                <tr>
+                                    <td id=tab1 class="TabInactive tab"><a href="javascript:showPic(1)">SSP2-4.5<br>Intermediate greenhouse gas emissions scenario</a></td>
+                                    <td id=tab2 class="TabActive tab"><a href="javascript:showPic(2)">SSP5-8.5<br>Very high greenhouse gas emissions scenario</a></td>
+                                </tr>
+                                <tr style="background-color:#e8dfff;">
+                                    <td class="tableMain" colspan=4>
+                                    <table style="width:100%;" class="table_align_center table_border_0 table_cellpadding_10 table_cellspacing_0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                <table style="width:100%;" class="table_border_0 table_cellpadding_3 table_cellspacing_1">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                            <div id=img1 style="BACKGROUND: #e8dfff; DISPLAY: none; VISIBILITY: hidden;"><img alt="Projected annual number of hot nights, very hot days and cold days in Hong Kong under the intermediate emissions." src="../../tc/climate_change/images/hn_vhot_CD_45_AR6.png" style="width:700px;"><br>
+                                                            </div>
+                                                            <div id=img2 style="BACKGROUND: #e8dfff; DISPLAY: block; VISIBILITY: visible;"><img alt="Projected annual number of hot nights, very hot days and cold days in Hong Kong under the very high emissions." src="../../tc/climate_change/images/hn_vhot_CD_85_AR6.png" style="width:700px;"><br>
+                                                            </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+						</div>
+                        <!-- end of tabbed img -->
+						<p>&nbsp;</p>
+                        <p><span style="COLOR: #0000ff;">&raquo;</span> Projection data of <a href="../../en/climate_change/proj_hk_annual_hot_nights_info.htm">hot nights</a>, <a href="../../en/climate_change/proj_hk_annual_vhot_days_info.htm">very hot days</a> and <a href="../../en/climate_change/proj_hk_annual_cold_days_info.htm">cold days</a></p>
+                       <p style="text-align: justify;">
+  * References:<br>
+  <a href="../../tc/climate_change/files/HKMetSoc_2024_28_1.pdf">W.P., Tse et al., 2024. Projection of very hot days, hot nights, and cold days in Hong Kong based on CMIP6 Models</a></p>   
+  <p><span style="COLOR: #0000ff;">&raquo;</span> <a href="../../en/climate_change/obs_hk_extreme_weather.htm#daynight">Observed change in extreme weather events</a></p>  
+                        <!-- Content end -->
+                        </div>
+<script>var last_revision_date = '16 June 2025';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

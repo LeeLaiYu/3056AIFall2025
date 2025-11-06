@@ -1,0 +1,9 @@
+type,description,url,full_url,dataset_count,source
+hko_provider_page,Direct HKO provider page on data.gov.hk,/en-datasets/provider/hk-hko,https://data.gov.hk/en-datasets/provider/hk-hko,52,data.gov.hk
+climate_weather_category,Climate and Weather category containing HKO datasets,/en-datasets/category/climate-and-weather,https://data.gov.hk/en-datasets/category/climate-and-weather,Multiple,data.gov.hk
+hko_api_endpoint,Main dataset API endpoint (requires authentication),/api/v1/datasets,https://data.gov.hk/api/v1/datasets,All datasets,data.gov.hk
+providers_json,JSON data containing HKO provider information,/filestore/json/providers_en.json,https://data.gov.hk/filestore/json/providers_en.json,52 (confirmed),data.gov.hk
+categories_json,JSON data for climate and weather categories,/filestore/json/categories_en.json,https://data.gov.hk/filestore/json/categories_en.json,Category data,data.gov.hk
+rss_feed,RSS feed for dataset updates including HKO data,/filestore/feeds/data_rss_en.xml,https://data.gov.hk/filestore/feeds/data_rss_en.xml,Recent updates,data.gov.hk
+hko_website,Official Hong Kong Observatory website,/,https://www.hko.gov.hk/,Various data sources,hko.gov.hk
+contact_info,Contact information for data access inquiries,mailto:enquiry@1835500.gov.hk,mailto:enquiry@1835500.gov.hk,Support,data.gov.hk

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Climatology for Festivals & Special Days｜Hong Kong Observatory(HKO)｜Statistics of Special Weather Events</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HKO">
+    <meta name="description" content="Climatology for Festivals &amp; Special Days">
+    <meta name="recordId" content="2018123100000007321">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Climatology for Festivals &amp; Special Days" />
+	<meta property="og:description" content="National Day HKSAR Est. Day New Year Lunar New Year Easter Ching Ming Festival Labour Day Buddha&#039;s Birthday Tuen Ng Festival Mid-Autumn Festival Chung Yeung Christmas Lantern Festival Valentine&#039;s Day" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/cis/statistic/festival.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+			.my_spd>div{
+		display:inline-block;
+		margin:10px;
+	    border-radius: 25px;
+		border:1px solid #000;
+		padding:10px;
+		width: -moz-calc(100% - 20px);
+		width: -webkit-calc(100% - 20px);
+		width: -o-calc(100% - 20px);
+		width: calc(100% - 20px);
+	}
+	.my_spd>div:nth-child(1){
+		border-color:#61977f;
+	}
+	.my_spd>div:nth-child(2){
+		border-color:#9a385f;
+	}
+	.my_spd>div:nth-child(3){
+		border-color:#686aa3;
+	}
+	.my_spd>div>div{
+		display:inline-block;
+		background-color:#dbdbdb;
+		border-radius: 10em;
+	    padding: 6px 19px;
+		text-align:left;
+		width:215px;
+		border:6px solid #fff;
+		font-size:1.2em;
+	}
+	.my_spd>div>div a{
+		color:#4b4b4b;
+		text-decoration:none;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	    align-items: center;
+	}
+	.my_spd>div>div a>span:nth-child(1){
+	    width: 50px;
+	}
+	.my_spd>div>div a>span:nth-child(2){
+		width: 115px;
+		text-align: center;
+		padding: 0 5px;
+	}
+	.my_spd>div>div img{
+		margin-right:10px;
+	}
+	@media (max-width:767px){
+		.bg {
+			background-image: unset !important; 
+		}		
+		.bg>tbody>tr>td, .bg>tr>td {
+			border-radius: 25px;
+			color: white;
+			border: 5px solid white;
+		}
+		.bg1{
+			background-color: #CCFFCC;
+		}
+		.bg2{
+			background-color: #FFDEDE;
+		}
+		.bg3{
+			background-color: #CBB0E5;
+		}
+		.hidden {
+			display:none;
+		}
+	}
+	@media (max-width:400px){
+		body .my_spd>div{
+			text-align: center;
+		}
+	}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000010156';
+
+              
+
+function MY_preloadImages(){
+if (document.images)
+    {
+      preload_image_object = new Image();
+      image_url = new Array();
+      image_url[0] = "images/christmas_se.png";
+      image_url[1] = "images/chung_yeung_se.png";
+      image_url[2] = "images/mid_autumn_se.png";
+      image_url[3] = "images/new_year_se.png";
+	  image_url[4] = "images/new_year_se.png";
+      image_url[5] = "images/lantern_se.png";
+      image_url[6] = "images/ching_ming_se.png";
+      image_url[7] = "images/easter_se.png";
+	  image_url[8] = "images/fatherday_se.png";
+      image_url[9] = "images/motherday_se.png";
+      image_url[10] = "images/valentine_se.png";
+      image_url[11] = "images/buddha_se.png";
+      image_url[12] = "images/labour_se.png";
+       var i = 0;
+       for(i=0; i<=12; i++) 
+         preload_image_object.src = image_url[i];
+    }}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function decode(str,opt){
+	var i=0;
+	var matchcase=["NEWYEAR","LUNAR_NEW_YEAR_1ST","LANTERN","VALENTINE","BRIGHT_CLEAR","EASTER","BUDDHA","LABOUR","MOTHERDAY","FATHERDAY","TUEN_NG","HKSAR","MID_AUTUMN","NATIONAL","CHUNG_YEUNG","HALLOWEEN","CHRISTMASDAY"];
+	var imgname=["new_year","lunar_new_year","lantern","valentine","ching_ming","easter","buddha","labour","motherday","fatherday","tuen_ng","hksar","mid_autumn","national","chung_yeung","halloween","christmas"];
+	var name=["New Year","Lunar New Year","Lantern Festival","Valentine's Day","Ching Ming Festival","Easter","Buddha's Birthday","Labour Day","Mother's Day","Father's Day","Tuen Ng Festival","Hong Kong Special Administrative Region Establishment Day","Mid-Autumn Festival","National Day","Chung Yeung Festival","Halloween","Christmas"];
+	for (var x=0;x<imgname.length;x++){
+		if(str==matchcase[x]){
+			if(opt=="1"){
+				return imgname[x];
+				}else{
+					return name[x];
+					}
+			break;
+			}
+		}
+	}
+MY_preloadImages();
+var calendar=["20120101,NEWYEAR","20120123,LUNAR_NEW_YEAR_1ST","20120206,LANTERN","20120214,VALENTINE","20120404,BRIGHT_CLEAR","20120409,EASTER","20120428,BUDDHA","20120501,LABOUR","20120513,MOTHERDAY","20120617,FATHERDAY","20120623,TUEN_NG","20120701,HKSAR","20120930,MID_AUTUMN","20121001,NATIONAL","20121023,CHUNG_YEUNG","20121031,HALLOWEEN","20121225,CHRISTMASDAY","20130101,NEWYEAR","20130210,LUNAR_NEW_YEAR_1ST","20130214,VALENTINE","20130224,LANTERN","20130401,EASTER","20130404,BRIGHT_CLEAR","20130501,LABOUR","20130512,MOTHERDAY","20130517,BUDDHA","20130612,TUEN_NG","20130616,FATHERDAY","20130701,HKSAR","20130919,MID_AUTUMN","20131001,NATIONAL","20131013,CHUNG_YEUNG","20131031,HALLOWEEN","20131225,CHRISTMASDAY"];
+var currentDate=new Date();
+var today=currentDate.getFullYear()*10000+(currentDate.getMonth()+1)*100+currentDate.getDate();
+//document.writeln(today);
+for(var i=0;i<calendar.length;i++){
+	var SplitArray = calendar[i].split(",");
+	if(today<= SplitArray[0]){
+		document.write("<div class=\"P_center\"><table class=\"table_bg\" width=\"50%\"><tr><td width=\"50%\" class=\"head_font\">Next Festival <br>or Special Day</td><td width=\"50%\">");
+		for(var x=1;x<SplitArray.length;x++){
+document.write("<a href=\"ext_festival_"+SplitArray[x].toLowerCase()+"_e.htm\" OnFocus=\"MM_swapImage('nextD','','images/"+decode(SplitArray[x],"1")+"_se.png',1)\" onBlur=\"MM_swapImgRestore()\"><img src=\""+decode(SplitArray[x],"1")+"_fe.png\" alt=\""+decode(SplitArray[x],"2")+"("+SplitArray[0].substr(6,2)+"/"+SplitArray[0].substr(4,2)+"/"+SplitArray[0].substr(0,4)+")\" class=\"image\" id=\"nextD\" onMouseOver=\"MM_swapImage('nextD','','images/"+decode(SplitArray[x],"1")+"_se.png',1) \" onblur=\"MM_swapImage('nextD','','images/"+decode(SplitArray[x],"1")+"_se.png',1) \" onfocus=\"MM_swapImage('nextD','','images/"+decode(SplitArray[x],"1")+"_se.png',1) \" onMouseOut=\"MM_swapImgRestore()\"</img></a>");}
+document.write("</td></tr></table></div><br><br>");
+		break;
+	}
+}
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Climatology for Festivals & Special Days</h1>
+                <div class="border_blank">
+                    <!--Content Start-->
+                    <div class="my_spd">
+                    	<div>
+                          <div><a href="ext_festival.htm?code=national">National Day</a></div>
+                            <div><a href="ext_festival.htm?code=hksar">HKSAR Est. Day</a></div>
+                        </div>
+                        <div>
+                            <div><a href="ext_festival.htm?code=newyear"><span><img src="../../../images/cis/statistic/new_year_fe.png" alt="New Year (1st day of January)"></span><span>New Year </span></a></div>
+                            <div><a href="ext_festival.htm?code=lunar_new_year_1st"><span><img src="../../../images/cis/statistic/lunar_new_year_fe.png" alt="Lunar New Year (1st day of the first lunar month)"></span><span>Lunar New Year </span></a></div>  
+                            <div><a href="ext_festival.htm?code=easter"><span><img src="../../../images/cis/statistic/easter_fe.png" alt="Easter"></span><span>Easter</span></a></div>
+                            <div><a href="ext_festival.htm?code=bright_clear"><span><img src="../../../images/cis/statistic/ching_ming_fe.png" alt="Ching Ming Festival (4th ot 5th Day of April)"></span><span>Ching Ming Festival </span></a></div>    
+                            <div><a href="ext_festival.htm?code=labour"><span><img src="../../../images/cis/statistic/labour_fe.png" alt="Labour Day (1st day of May)"></span><span>Labour Day </span></a></div>
+                            <div><a href="ext_festival.htm?code=buddha"><span><img src="../../../images/cis/statistic/buddha_fe.png" alt="Buddha's Birthday (8th day of the 4th lunar month)"></span><span>Buddha's Birthday </span></a></div>
+                            <div><a href="ext_festival.htm?code=tuen_ng"><span><img src="../../../images/cis/statistic/tuen_ng_fe.png" alt="Tuen Ng Festival (5th day of the 5th lunar month)"></span><span>Tuen Ng Festival </span></a></div>  
+                            <div><a href="ext_festival.htm?code=mid_autumn"><span><img src="../../../images/cis/statistic/mid_autumn_fe.png" alt="Mid-Autumn Festival (15th day of the 8th lunar month)"></span><span>Mid-Autumn Festival </span></a></div>
+                            <div><a href="ext_festival.htm?code=chung_yeung"><span><img src="../../../images/cis/statistic/chung_yeung_fe.png" alt="Chung Yeung Festival (9th day of the 9th Luner Month)"></span><span>Chung Yeung </span></a></div>
+                            <div><a href="ext_festival.htm?code=christmasday"><span><img src="../../../images/cis/statistic/christmas_fe.png" alt="Christmas (25th day of December)"></span><span>Christmas </span></a></div>                            
+                        </div>
+                        <div>
+                        	<div><a href="ext_festival.htm?code=lantern"><span><img src="../../../images/cis/statistic/lantern_fe.png" alt="Lantern Festival (15th day of the first lunar month)"></span><span>Lantern Festival </span></a></div>
+                            <div><a href="ext_festival.htm?code=valentine"><span><img src="../../../images/cis/statistic/valentine_fe.png" alt="Valentine's Day (14th day of February)"></span><span>Valentine's Day </span></a></div>
+                            <div><a href="ext_festival.htm?code=motherday"><span><img src="../../../images/cis/statistic/motherday_fe.png" alt="Mother's Day (2nd Sunday of May)"></span><span>Mother's Day </span></a></div>
+                            <div><a href="ext_festival.htm?code=fatherday"><span><img src="../../../images/cis/statistic/fatherday_fe.png" alt="Father's Day (3rd Sunday of June)"></span><span>Father's Day </span></a></div>
+                            <div><a href="ext_festival.htm?code=halloween"><span><img src="../../../images/cis/statistic/halloween_fe.png" alt="Halloween (31st day of October)"></span><span>Halloween </span></a></div>
+                        </div>
+                    </div>
+                    <!--Social Network -->
+                    <!-- End Social Network -->
+					<p><strong>*HKSAR Est. Day - Hong Kong Special Administrative Region Establishment Day</strong></p>
+					<!--Content End-->
+<script>var last_revision_date = '30 October 2024';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather on a Special Day｜Hong Kong Observatory(HKO)｜Climate Information Service</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Weather on a Special Day">
+    <meta name="description" content="Weather on a Special Day">
+    <meta name="recordId" content="2018123100000036194">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Weather on a Special Day" />
+	<meta property="og:description" content="Weather on a Special Day Year : Month : Day : Date : Temperature : Rainfall : Sunshine : The highest rainstorm/typhoon signal :" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/climat/specialday/html/select.shtml" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.1.13.1.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+		#weatherContent tr td {font-size:18px;}
+#weatherContent {margin:2px auto; width:100%; top:18%; position:absolute}
+#weatherContent tr td:nth-child(2) {width:50%; text-align:left; padding-left:1em; color:white;}
+#weatherContent tr td:nth-child(1) {width:50%; text-align:right; color:white; font-weight:bold;}
+#weatherContent p {text-align:left; color:white; margin-bottom:0em;}
+#backdrop {width:80%; display:block; margin:1px auto;}
+.icon {width:50px; height:auto;}
+@media only screen and (max-width: 1023px) {
+    #weatherContent tr td {font-size:13px!important;}
+    #weatherContent tr td:nth-child(1) {width:41%;}
+    #weatherContent { top:15%;}
+    #backdrop {width:100%;}
+    .icon {width:30px; height:auto;}
+}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.1.13.1.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.2.29.4.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '42';
+var section_id = '2018010100000011398';
+
+   (function(){
+    var days = {"01":31, "02":28, "03":31, "04":30, "05":31, "06":30, "07":31, "08":31, "09":30,
+                "10":31, "11":30, "12":31};
+    var months = {"01":"Jan", "02":"Feb", "03":"Mar", "04":"Apr", "05":"May", "06":"Jun",
+                      "07":"Jul", "08":"Aug", "09":"Sep", "10":"Oct", "11":"Nov", "12":"Dec"};
+    function leapYear(year){
+        return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+    }
+    
+    function checkdata (timestamp) {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.overrideMimeType("plain/text");
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status != 200) {
+                document.querySelector("#year option[value='"+timestamp+"']").remove();
+            }     
+        };
+        xmlhttp.open("GET", "/dps/wxinfo/climat/specialday/data/"+timestamp, true);
+        xmlhttp.send();
+    }
+    function addzero(arg){
+        if (arg.length ==1) {
+            return "0"+arg;
+        } else {
+            return arg;
+        }
+    }
+    function dropzero(arg){
+        if (arg.substr(0,1)=="0"){
+            return arg.substr(1,1);
+        } else {
+            return arg;
+        }    
+    }
+    function doAPIcall(type, url, callback) {
+        var rands = Math.floor(Math.random(100)*100000).toString();
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.overrideMimeType("text/plain");
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == XMLHttpRequest.DONE && xmlhttp.status == 200) {
+                var data = xmlhttp.responseText;
+                if (callback) callback(data);
+            } else if(xmlhttp.readyState == XMLHttpRequest.DONE && xmlhttp.status != 200) {
+                alert("data not available, please select another day");
+            }
+        };
+        xmlhttp.open(type, url+"?s="+rands, true);
+        xmlhttp.send();
+    }
+    
+    function checkyear(year,i){
+        if (i !=0) {
+            var fname = "/dps/wxinfo/climat/specialday/data/"+year.toString()
+            console.log(fname);
+            console.log(i)
+            var selyearhtml = "";
+            i=i-1;
+            var rands = Math.floor(Math.random(100)*100000).toString();
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.overrideMimeType("text/plain");
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == XMLHttpRequest.DONE && xmlhttp.status == 200) {
+                    for (var i = year; i >1883; i--){
+                        selyearhtml += "<option value='"+ i.toString()+"'>"+i.toString()+"</option>"; 
+                    }
+                    document.getElementById("selyear").innerHTML =selyearhtml;
+                    document.getElementById("selyear").options[0].selected = true;
+                } else if (xmlhttp.readyState == XMLHttpRequest.DONE && xmlhttp.status != 200) {
+                    checkyear(year-1,i)
+                }
+            };
+            xmlhttp.open("GET", fname+"?s="+rands, true);
+            xmlhttp.send();
+        }  
+    }
+    
+    function process(data){
+        var year = document.getElementById("selyear").value;
+        var month = document.getElementById("selmonth").value;
+        var day = document.getElementById("selday").value; 
+        var pattern = new RegExp(year+"\."+month+"\."+day);
+        
+        var lines = data.split("\n");
+        for (var i=0; i < lines.length; i++){
+            if (pattern.test(lines[i]) == true) {
+                var line = lines[i].split(/\s+/)
+                var maxtemp = line[1];
+                var mintemp = line[2];
+                var rf = line[3];
+                var sunshine = line[4];
+                var rfpattern = /trace/i
+                var tc = line[5];
+                var rainstorm = line[6];
+                var tcicons = {"0":"", "1":"tc_signal1.png", "3":"tc_signal3.png",
+                               "8":"tc_signal8.png", "9":"tc_signal9.png",
+                               "10":"tc_signal10.png"};
+                var rainicons = {"0":"", "1":"signal_red.png", "3":"signal_black.png"};
+                var tcicon = tcicons[tc];
+                var rficon = rainicons[rainstorm];
+                if (rficon == "" && tcicon == ""){
+                    if (document.querySelectorAll("#weatherContent tr").length != 0){
+                        var length = document.querySelectorAll("#weatherContent tr").length;
+                        document.querySelectorAll("#weatherContent tr").item(length-1).style.display = 'none';
+                    }
+                }
+                if (rficon != "" || tcicon != ""){
+                    var imgcontent = "";
+                    if (tcicon !="") {
+                        imgcontent = '<img class="icon" src="/en/wxinfo/climat/specialday/html/images/'+tcicon +'" alt="warning icon">';
+                    }
+                    if (rficon !="") {
+                        imgcontent += '<img class="icon" src="/en/wxinfo/climat/specialday/html/images/'+rficon +'" alt="warning icon">';
+                    }
+                    var length = document.querySelectorAll("#weatherContent tr").length
+                    document.querySelectorAll("#weatherContent tr").item(length-1).style.display = "";
+                    document.getElementById("warnings").innerHTML = imgcontent;
+                }
+                document.getElementById("temp").innerHTML = mintemp+" to "+maxtemp+" degrees C";
+                if (rfpattern.test(rf) == true){
+                    document.getElementById("rf").innerHTML = "Trace";
+                } else {
+                    document.getElementById("rf").innerHTML = rf+ " mm";
+                }    
+                if (sunshine == "32767"){
+                    document.getElementById("sunshine").innerHTML = "Data unavailable";
+                } else {
+                    document.getElementById("sunshine").innerHTML = sunshine+" hrs";
+                }
+                var yyyy = line[0].substr(0,4);
+                var mm = line[0].substr(5,2);
+                var dd = dropzero(line[0].substr(8,2));
+                document.getElementById("obsdate").innerHTML = dd + " "+ months[mm] + " "+yyyy;
+                document.getElementById("result_content").style.display = '';
+                break
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded",function(){
+        var curyear = (new Date).getFullYear()
+        checkyear(curyear,3);
+        
+        var seldayhtml = "";
+        for (var i = 1; i <32; i++){
+            seldayhtml += "<option value='"+ addzero(i.toString())+"'>"+addzero(i.toString())+"</option>"; 
+        }
+        var selmonthhtml = "";
+        for (var i = 1; i <13; i++){
+            selmonthhtml += "<option value='"+ addzero(i.toString())+"'>"+months[addzero(i.toString())]+"</option>"; 
+        }
+        /*var selyearhtml = "";
+        for (var i = 2021; i >1883; i--){
+            selyearhtml += "<option value='"+ i.toString()+"'>"+i.toString()+"</option>"; 
+        }
+        document.getElementById("selyear").innerHTML = selyearhtml;*/
+        document.getElementById("selday").innerHTML = seldayhtml;
+        document.getElementById("selmonth").innerHTML = selmonthhtml;
+        
+        //document.getElementById("selyear").options[0].selected = true;
+        document.getElementById("selmonth").options[0].selected = true;
+        document.getElementById("selday").options[0].selected = true;
+        document.getElementById("selmonth").addEventListener("change",function(e){
+            var seldayhtml = "";
+            var year = document.getElementById("selyear").value;
+            var month = document.getElementById("selmonth").value;
+            var day = document.getElementById("selday").value;
+            if (leapYear(parseInt(year)) == true){
+                days["02"] = 29;
+            } else {
+                days["02"] = 28;
+            }
+            for (var i = 1; i <days[month]+1; i++){
+                seldayhtml += "<option value='"+ addzero(i.toString())+"'>"+addzero(i.toString())+"日</option>"; 
+            }
+            document.getElementById("selday").innerHTML = seldayhtml;
+        })
+        document.getElementById("selyear").addEventListener("change",function(e){
+            var seldayhtml = "";
+            var year = document.getElementById("selyear").value;
+            var month = document.getElementById("selmonth").value;
+            if (month == "02"){
+                if (leapYear(parseInt(year)) == true){
+                    days["02"] = 29;
+                } else {
+                    days["02"] = 28;
+                }
+                for (var i = 1; i <days[month]+1; i++){
+                    seldayhtml += "<option value='"+ addzero(i.toString())+"'>"+addzero(i.toString())+"日</option>"; 
+                }
+                document.getElementById("selday").innerHTML = seldayhtml;
+            }
+        })
+        
+        document.getElementById("selmonth").addEventListener("change",function(e){
+            var seldayhtml = "";
+            var year = document.getElementById("selyear").value;
+            var month = document.getElementById("selmonth").value;
+            var day = document.getElementById("selday").value;
+            if (leapYear(parseInt(year)) == true){
+                days["02"] = 29;
+            }
+            for (var i = 1; i <days[month]+1; i++){
+                seldayhtml += "<option value='"+ addzero(i.toString())+"'>"+addzero(i.toString())+"</option>"; 
+            }
+            document.getElementById("selday").innerHTML = seldayhtml;
+        })
+        document.getElementById("resetbut").addEventListener("click",function(e){
+            document.getElementById("selyear").options[0].selected = true;
+            document.getElementById("selmonth").options[0].selected = true;
+            document.getElementById("selday").options[0].selected = true;
+        })
+        document.getElementById("confirmbut").addEventListener("click", function(e){
+            var year = document.getElementById("selyear").value;
+            doAPIcall("GET", "/dps/wxinfo/climat/specialday/data/"+year, process);
+        });
+    })
+})()
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1 class="no_h1">Weather on a Special Day</h1>
+                <div class="border_blank">
+                    <!--Content Start-->
+<div id="form_content" style="margin:2px auto;text-align:center;">
+    <h2>Weather on a Special Day</h2>
+    <label for="selyear">Year :</label><select id="selyear">
+    </select>
+    <label for="selmonth">Month :</label><select id="selmonth">
+    </select>
+    <label for="selday">Day :</label><select id="selday">
+    </select>
+    <br><br>
+    <input type="button" value="Confirm" id="confirmbut"> <input type="button" value="Reset" id="resetbut"> 
+</div>
+<div id="result_content" style="display:none; position:relative;">
+    <img src='../../../../../en/wxinfo/climat/specialday/html/images/sunny_eng.png' id='backdrop' alt="background">
+    <table id="weatherContent">
+        <tr>
+            <td>Date :</td><td id="obsdate"></td>
+        </tr>
+        <tr>
+            <td>Temperature :</td><td id="temp"></td>
+        </tr>
+        <tr>
+            <td>Rainfall :</td><td id="rf"></td>
+        </tr>
+        <tr>
+            <td>Sunshine :</td><td id="sunshine"></td>
+        </tr>
+        <tr>
+            <td>The highest rainstorm/<br>typhoon signal :</td><td id="warnings"></td>
+        </tr>
+    </table>
+</div>
+<!--Content End-->
+<script>var last_revision_date = '3 November 2022';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

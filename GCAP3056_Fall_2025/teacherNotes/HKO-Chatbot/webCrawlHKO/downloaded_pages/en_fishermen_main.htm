@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title> Meteorological Information for Fishermen｜Hong Kong Observatory(HKO)｜Weather</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Meteorological Information for Fishermen">
+    <meta name="description" content="Meteorological Information for Fishermen">
+    <meta name="recordId" content="2018123100000035889">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Meteorological Information for Fishermen" />
+	<meta property="og:description" content="Meteorological Information for Fishermen Tropical cyclone track information Know more Lau Fau Shan Tai Lam Chung Tai Po Kau Sha Lo Wan Central (Victoria Harbour) Waglan Island (looking towards the" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/fishermen/main.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+<link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    </link>
+    <link rel="stylesheet"
+        href="/css/owl.theme.default.min.css">
+    </link>
+    <style type="text/css">
+.abc{
+display: none;
+}
+		@media only screen and (max-width: 979px) {
+  #sccw{
+
+max-height: 1000px
+}
+}
+@media only screen and (min-width: 979px) {
+  #sccw{
+
+min-height: 700px
+}
+}    
+
+.tc_box .row{
+padding: 15px;
+display: flex;
+align-items: center;
+}
+
+
+
+
+	/*newly added by SA(F)216 SEP2022*/    
+    .new_fishermen{
+        text-align: center;
+        background: url('images/banner_en.png') no-repeat;
+max-height: 151px;
+    }
+.new_fishermen h1{
+
+color: #ffffff !important; 
+padding: 60px 0; 
+margin: 0 auto !important; 
+width: 90%;
+    }
+
+    .tc_box{
+        background: url('files/title_tc_logo.svg') no-repeat;
+        background-size: 180px;
+    }
+
+    .links_header{
+        border-bottom-width: 20px
+    }
+
+    .category_text{
+        color:#0A3772
+    }
+    .link_text{
+        color: #1A58Ab
+    }
+
+    .know_more_button{
+        background-color: #FFFFFF;
+        border-radius: 30px ;
+        height: 60px;
+        max-width: 250px;
+        width: 90%;
+        font-size: 20pt;
+        border:none;
+        box-shadow:0 2px 5px 0 
+    }
+    #button_col a{
+        /* padding:0px 10px 0px 50px; */
+         display: block;
+         text-align: right;
+    }
+
+/* @media (max-width: 1040px) {
+        .know_more_button{
+            width: 90%;
+            font-size: 18pt;
+    }   
+}    
+
+@media (max-width: 570px) {
+        .know_more_button{
+            width: 185px;
+            font-size: 14pt;
+    }   
+
+    
+} */
+@media (max-width: 576px) {
+    .tc_box .row{
+        flex-direction: column;
+        }
+    #button_col {
+        margin-top: 10px
+    }
+    #button_col a{
+         text-align: center;
+    }
+    .new_fishermen h1{
+
+        padding: 30px 0; 
+        
+            }
+}
+
+@media (max-width: 420px) {
+        .responsive{
+            max-width: 80%;
+            height: auto;
+    }
+}
+@media (max-width: 350px){
+        .border_blank .wxPhotoBox{
+            margin-top: 30px;
+    }
+        /* .border_blan .know_more_button{
+            width: 40%;
+            font-size: 16pt;
+    }    */
+    .wxPhotoBox .row .col-sm-4{
+        padding-left: 0px
+    }
+}
+@media (max-width: 768px){
+    /* #button_col{
+        padding:25px 0px 20px 0px;
+    } */
+}
+
+    /*for carousel*/
+    .carousel-item {
+    height: 280px;
+    }
+
+    .carousel-indicators {
+        bottom: -10px;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    
+
+
+    .carousel .carousel-indicators button{
+        width: 12px; 
+        height: 12px;
+        border-radius: 100%;
+        background-color: #ffffff;
+        opacity: 1;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .carousel .carousel-indicators button .active{
+        width: 15px; 
+        height: 15px;
+        border-radius: 100%;
+        background-color: #ff0000;
+        opacity: 1;
+    }
+
+    /*for owl carousel section*/
+    .wxPhotoPlace{         
+         color: #1A58AB;
+         font-weight: bold;
+         margin-top:  15px;
+         bottom: -20px;
+         text-align: center;
+         font-size: 18px ;
+    }
+    .wxPhotoBox{
+        background-color: #D9F2FF;
+        border-radius: 20px;
+        padding: 35px 15px 15px 15px;
+        margin-top: 60px;
+        box-shadow:0 2px 5px 0 
+    }
+
+    .owl-carousel .item{
+        text-align: center;
+    }
+    .owl-carousel .owl-nav{
+        
+    }
+
+    .wxPhotoBox .owl-dot{
+        margin-top: 10px;
+    }
+
+    .wxPhotoBox .owl-dots .owl-dot.active span{
+        background-color: #016DBF !important;
+        
+    } 
+
+    .wxPhotoBox .owl-dots .owl-dot span{
+        background-color: #fff !important;
+        height: 17px;
+        width: 17px;
+    }
+
+  .wxPhotoBox .owl-prev {
+        width: 25px;
+        height: 200px;
+        position: absolute;
+        top: 0%;
+        margin-left: 0;
+        display: block !important;
+        border:0px solid black;
+    }
+    
+    .wxPhotoBox .owl-next {
+        width: 25px;
+        height: 200px;
+        position: absolute;
+        top: 0%;
+        right: 0px;
+        display: block !important;
+        border:0px solid black;
+    }
+
+
+    /*for useful link section*/
+    .ulink-nav{
+        overflow: hidden;
+        background-color: inherit;
+        position: relative;
+        border: #aaa solid 2px;
+        border-radius: 10px;      
+    }
+
+    .ulink-title{
+        display: inline-block;
+        color:#0A3772;
+        font-weight: bold;
+        padding: 16px 16px;
+        font-size: 20px;
+max-width: calc(100% - 50px);
+    }
+
+    /*useful link Nav menu */
+    .nav{
+        width: 100%;
+        height: 100%;        
+        background-color: var(--black);
+        overflow: hidden;
+
+    }
+    .menu a{
+        color: #1A58AB;
+        text-align: left;
+        text-decoration: none;    
+        font-weight: bold;
+        display: block;
+        padding: 10px 10px;
+        
+        
+    }
+    .menu a:hover{
+        background-color: var(--gray);
+    }
+    .nav{
+        max-height: 0;
+        
+    }
+
+    /* Menu Icon */
+    .ulink-nav a.icon {
+        background: none;
+        color:#0000ff;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+    .hamb{
+        cursor: pointer;
+        float: right;
+        padding: 16px 30px 16px 10px;
+        background: none;
+        color:#0A3772;
+        margin: 0;
+    }/* Style label tag */
+
+    .side-menu {
+        display: none;
+    } /* Hide checkbox */
+
+        /* Toggle menu icon */
+    .side-menu:checked ~ nav{
+        max-height: 100%;
+    }
+
+    /* Responsiveness */
+@media (min-width: 768px) {
+    .ulink-nav{
+        overflow: hidden;
+        position: relative;
+        border: inherit;
+        border: none;       
+    }
+
+    .ulink-title{        
+        padding: 16px 0px;        
+    }
+
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: left;
+        width: fit-content;
+    }
+
+    .menu a{
+        float: left;
+        color: #1A58AB;
+        text-align: center;
+        padding: 0px 30px 0px 20px;
+        text-decoration: none;    
+        border-right: #aaa solid 2px;
+        font-weight: bold;  
+        margin-top: 10px;      
+    }
+
+    .menu a.right {
+        border: none
+    }
+
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+    }
+
+    .hamb{
+        display: none;
+    }
+
+    .ulink-nav a.icon{
+        display: none;
+    }
+
+    .lbuffer{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .sbuffer{
+        display: none;
+    }
+}
+
+    
+/*newly added end*/
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '1';
+var section_id = '2018010100000010300';
+
+                                                                                                        
+    wcag_setTimer(600000, 'chi');
+
+    function newWin(URL, w, h) {
+        parameter = "scrollbars=yes,resizable=yes,menubar=no,toolbar=no,top=1,left=1,width=" + w + ",height=" + h;
+        msgWindow = window.open(URL, "index_c_webcam", parameter);
+        msgWindow.focus();
+    }
+
+    function dangerssea() {
+        msgWindow = window.open("https://www.hko.gov.hk/publica/gen_pub/sea_e.pdf", "displayWindow7", "width=800,height=700, toolbar=0, scrollbars=1, location=0, statusbar=0, menubar=0, resizable=1");
+    }
+
+    function show_t(arg, target) {
+        var doc = ["report", "outlook", "hkwater", "nano", "shanwei", "hks", "scd", "beibu", "hainan"];
+        display = document.getElementById(arg).style.display;
+        document.getElementById(arg).style.display = "block";
+        for (i = 0; i < 9; i++) {
+            if (doc[i] != arg) {
+                document.getElementById(doc[i]).style.display = "none";
+            }
+        }
+    }
+
+    function showLayer_t(name) {
+        
+        var fx = '';
+        if (name == "hks") {
+            vlocation = 'HongKong';
+        }
+        else if (name == "hkwater") {
+            vlocation = 'HKAdjWater';
+        }
+        else if (name == "beibu") {
+            vlocation = 'TokinBayNorth';
+        }
+        else if (name == "scd") {
+            vlocation = 'ShangChuanDao';
+        }
+
+        else if (name == "shanwei") {
+            vlocation = 'ShanWei';
+        }
+        else if (name == "nano") {
+            vlocation = 'Nanao';
+        }
+        else if (name == "hainan") {
+            vlocation = 'HoinanSECoastal';
+        }
+        try { 
+			if (data['DYN_DAT_MINDS_SCCW']['SCCW_WxForecast' + vlocation + 'LocationName']['Val_Eng'] != "") {
+				fx += "<p>" + addSpaceForTc(data['DYN_DAT_MINDS_SCCW']['SCCW_WxForecast' + vlocation + 'LocationName']['Val_Eng']) + "</p>"; 
+			}
+		} catch (e) { }
+        try { 
+			if (data['DYN_DAT_MINDS_SCCW']['SCCW_WxForecast' + vlocation + 'WindInfo']['Val_Eng'] != "") {
+				fx += "<p>" + addSpaceForTc(data['DYN_DAT_MINDS_SCCW']['SCCW_WxForecast' + vlocation + 'WindInfo']['Val_Eng']) + "</p>";
+			} 
+		} catch (e) { }
+        try { 
+			if (data['DYN_DAT_MINDS_SCCW']['SCCW_WxForecast' + vlocation + 'WxDesc']['Val_Eng'] != "") {
+				fx += "<p>" + addSpaceForTc(data['DYN_DAT_MINDS_SCCW']['SCCW_WxForecast' + vlocation + 'WxDesc']['Val_Eng']) + "</p>";
+			} 
+		} catch (e) { }
+        try { 
+			if (data['DYN_DAT_MINDS_SCCW']['SCCW_WxForecast' + vlocation + 'SeaSituation']['Val_Eng'] != "") {
+				fx += "<p>" + addSpaceForTc(data['DYN_DAT_MINDS_SCCW']['SCCW_WxForecast' + vlocation + 'SeaSituation']['Val_Eng']) + "</p>";
+			}
+		} catch (e) { }
+
+		if (fx == "") {
+			fx = "<p>Weather forecast is not available<br>for the selected region.</p>";
+		}
+
+        //fx = fx.replace(/(^\s*)|(\s*$)/g,' ');
+        //fx = fx.replace(/([^\x00-\xff]+)(?=[^\x00-\xff])/g, " $1 ");
+
+        document.getElementById('forecast').innerHTML = "<span onmouseout='hiddenLayer()'>" + fx + "</span>";
+        document.getElementById('forecast').style.visibility = 'visible';
+
+        var vleft = $("#sccw_map_img").position().left;
+        var vtop = $("#sccw_map_img").position().top;
+        $('#forecast').show();
+        //document.getElementById('forecast').style.top ="70%";
+        //document.getElementById('forecast').style.left = eval(mp.x+44.5)+ "px";
+        var obj_sccw_map_img = document.getElementById('sccw_map_img');
+        var coor = getOffset(obj_sccw_map_img);
+        document.getElementById('forecast').style.top = vtop + "px";
+        document.getElementById('forecast').style.left = vleft + "px";
+        document.getElementById('forecast').style.width = 40 * cnt(fx, 1) + "px";
+        if (name == "report") { document.getElementById('forecast').style.height = 30 * cnt(fx, 0) + "px"; }
+        else document.getElementById('forecast').style.height = 40 * cnt(fx, 0) + "px";
+
+    }
+
+    function call_showLayer_t() {
+        var obj_map_area = document.getElementById('map_area');
+        if (obj_map_area.value.length > 0)
+            showLayer_t(obj_map_area.value);
+    }
+
+    function getOffset(obj) {
+        var offset = {
+            left: document.body.scrollLeft + obj.offsetLeft - document.body.scrollLeft,
+            top: document.body.scrollTop + obj.offsetTop - document.body.scrollTop
+        };
+        var parentEl = obj;
+        while ((parentEl = parentEl.offsetParent) != null) {
+            offset.left += parentEl.offsetLeft;
+            offset.top += parentEl.offsetTop;
+        }
+        return offset;
+    }
+
+    function cnt(w, order) {
+        var y = w;
+        var word;
+        var columnvalue = 0;
+        var tmpwordnumber = 0;
+        var wordnumber = 0;
+        y = y.split('\<\/p\>');
+        for (z = 0; z < y.length; z++) {
+            if (y[z].length > 0 && y[z] != '\<p\>') {
+                columnvalue++;
+                word = y[z].split(' ');
+                for (za = 0; za < word.length; za++) { if (word[za].length > 0) tmpwordnumber++; }
+            }
+            if (tmpwordnumber > wordnumber) wordnumber = tmpwordnumber;
+            tmpwordnumber = 0;
+        }
+        if (order == 0) return columnvalue;
+        else return wordnumber;
+    }
+
+    function hiddenLayer() {
+        document.getElementById('forecast').style.visibility = 'hidden';
+        document.getElementById('forecast').style.height = '200px';
+    }
+
+    function displayb(arg) {
+        if (arg == "outlook") {
+            document.getElementById("outlook").className = "cssbutton_on";
+            document.getElementById("report").className = "cssbutton_off";
+			fx = "<p>Outlook for the next 48 hours :</p>";
+            fx += "<p>" + addSpaceForTc(data['DYN_DAT_MINDS_SCCW']['SCCW_OutlookOutlookTimeInfoWindInfo']['Val_Eng']) + "</p>";
+        }
+        else if (arg == "report") {
+            document.getElementById("report").className = "cssbutton_on";
+            document.getElementById("outlook").className = "cssbutton_off";
+            fx = "<p>Latest reports from south China coastal weather stations :</p>";
+
+            $.each(data['DYN_DAT_MINDS_SCCW'], function (i, v) {
+                vindex = i;
+
+                if (vindex.indexOf('SCCW_WxReport') > -1 && vindex.indexOf('LocationName') > -1) {
+                    vlocation = vindex.split('SCCW_WxReport').join('').split('LocationName').join('');
+
+                    try { LocationInfo = data['DYN_DAT_MINDS_SCCW']['SCCW_WxReport' + vlocation + 'LocationName']['Val_Eng']; } catch (e) { LocationInfo = ''; }
+                    try { VisibilityInfo = data['DYN_DAT_MINDS_SCCW']['SCCW_WxReport' + vlocation + 'VisibilityInfo']['Val_Eng']; } catch (e) { VisibilityInfo = ''; }
+                    try { WindInfo = data['DYN_DAT_MINDS_SCCW']['SCCW_WxReport' + vlocation + 'WindInfo']['Val_Eng']; } catch (e) { WindInfo = ''; }
+                    try { 
+
+
+                           fx += "<p>" ;
+
+                            if( WindInfo ){
+                            fx += LocationInfo + " ：" + WindInfo ;
+                            }
+
+                    
+                            if (WindInfo && VisibilityInfo){
+                            fx += "，" ;
+                            }else{
+                            fx += "." ;  
+                            }
+
+                            if( VisibilityInfo ){
+                            fx += "visibility " + parseInt(VisibilityInfo / 1000) + " kilometres." ;
+                            }
+
+
+                            fx += "</p>" ;
+
+
+
+                    } catch (e) { }
+
+                }
+            });
+           
+        }
+        document.getElementById("displayboard").innerHTML = '<BR>' + fx;
+        document.getElementById("displayboard").style.display = "block";
+        initTabSelectHeight();
+    }
+
+    function getMousePosition(e) {
+        return e.pageX ? { 'x': e.pageX, 'y': e.pageY } :
+            {
+                'x': e.clientX + (document.documentElement ? document.documentElement.scrollLeft : document.body.scrollLeft),
+                'y': e.clientY + (document.documentElement ? document.documentElement.scrollTop : document.body.scrollTop)
+            };
+    };
+
+    function showMousePos_t(e) {
+        if (!e) e = event; // make sure we have a reference to the event 
+        mp = getMousePosition(e);
+        //alert('x : ' + mp.x + ', y : ' + mp.y); 
+    };
+
+    function hideTCtable() {
+        checkTChide = "";
+        //checkTChide="1"; 
+
+        $("#spanTCgraph").hide();
+        if (checkTChide) {
+            hideTC = document.getElementById("TCgraph");
+            hideTC.getElementsByTagName("table")[8].setAttribute("id", "tableid");
+            hideTC.getElementsByTagName("table")[1].setAttribute("id", "tableid1");
+            //hideTC.getElementsByTagName("b")[0].setAttribute("id","pid");
+            $("#tableid").hide();
+            $("#tableid1").hide();
+            //document.getElementById("pid").style.display="none";
+            document.getElementById("SSclass0").setAttribute("className", "unpress");
+            document.getElementById("SSclass0").setAttribute("class", "unpress");
+            document.getElementById("SSclass1").setAttribute("className", "pressed");
+            document.getElementById("SSclass1").setAttribute("class", "pressed");
+            $("#spanSCCW").hide();
+            $("#spanTCgraph").show();
+            /*google.maps.event.trigger(map, 'resize');
+            map.setZoom( map.getZoom() );*/
+            document.getElementById("SSclass1").style.backgroundImage = "url('')";
+            document.getElementById("SSclass1").style.backgroundColor = "#FF0033";
+            document.getElementById("SSclass1").style.color = "white";
+            document.getElementById("SSclass1_a").style.color = "#FFFFFF";
+        }
+        else {
+            hideTC = document.getElementById("TCgraph");
+            //hideTC.getElementsByTagName("table")[8].setAttribute("id","tableid");
+            //hideTC.getElementsByTagName("table")[1].setAttribute("id","tableid1"); 
+            //hideTC.getElementsByTagName("b")[0].setAttribute("id","pid");
+            //document.getElementById("tableid").style.display="none";
+            //document.getElementById("tableid1").style.display="none";
+            //document.getElementById("pid").style.display="none";
+        }
+    }
+
+    function displaydiff(a) {
+        var Displaydiffarray = new Array("spanSCCW", "spanTCgraph", "spanweatherP", "spanusefullink");
+        for (i = 0; i < 4; i++) {
+            VLT = Displaydiffarray[i];
+            if (a == VLT) {
+                if (i == 1) {
+                    document.write("<meta http-equiv=\"refresh\" content=\"N; URL=/wxinfo/currwx/tc_gis.htm\">");
+                    window.location.href = '/wxinfo/currwx/tc_gis.htm';
+                    window.location.href("/wxinfo/currwx/tc_gis.htm");
+                    window.location.replace("/wxinfo/currwx/tc_gis.htm");
+                }
+                document.getElementById(VLT).style.display = "block";
+                switchclass(i, 'pressed');
+                /*if (a == "spanTCgraph")
+                   {
+                     google.maps.event.trigger(map, 'resize');
+                     map.setZoom( map.getZoom() );
+                     if (typeof tc == 'undefined')
+                     {
+                         map.setCenter(new google.maps.LatLng(22.1467,114.213));
+                     }
+                    }*/
+            }
+            else {
+                document.getElementById(VLT).style.display = "none";
+                switchclass(i, 'unpress');
+            }
+
+        }
+    }
+
+    function switchclass(a, b) {
+        changepart = "SSclass" + a;
+        document.getElementById(changepart).setAttribute("class", b);
+        document.getElementById(changepart).setAttribute("className", b);
+    }
+
+    function init() {
+        document.onmousemove = showMousePos_t;
+        $("#toFixedAreaBtnTbl").hide();
+        $("#pageTitle").hide();
+        $("#noteTbl").hide();
+        //document.getElementById("spanTCgraph").style.display="block";
+        $("#spanweatherP").hide();
+        //initialize();
+        //map.checkResize() ;
+        hideTCtable();
+    };
+
+    //window.onload = init;
+
+    
+    window.onresize = function () {
+        $('#forecast').hide();
+    }
+    var data;
+
+    $(document).ready(function () {
+        $('img[usemap]').rwdImageMaps();
+
+        var quicklinkhtml = $("#div_quicklink").html();
+        $("#div_quicklink_3").html(quicklinkhtml);
+        $("#div_quicklink_4").html(quicklinkhtml);
+
+        $.getJSON('../../json/DYN_DAT_MINDS_SCCW.json', function (jsondata) {
+            data = jsondata;
+            console.log(data['DYN_DAT_MINDS_SCCW']['BulletinDate']['Val_Eng']);
+            try {
+                if (data['DYN_DAT_MINDS_SCCW']['SCCW_Warning']['Val_Eng']) {
+                    $("#Warning_div").html("<p>Warning :</p><p class='warning_text'>" + addSpaceForTc(data['DYN_DAT_MINDS_SCCW']['SCCW_Warning']['Val_Eng']) + "</p>");
+                }
+            } catch (e) { 
+			}
+
+            try { 
+				$("#GeneralSituation_div").html("<p>Weather Situation :</p><p>" + addSpaceForTc(data['DYN_DAT_MINDS_SCCW']['SCCW_GeneralSituation']['Val_Eng']) + "</p><p>"+(data['DYN_DAT_MINDS_SCCW']['SCCW_TCInfo']['Val_Eng'])+"</p>");; } 
+			catch (e) { 
+			}
+			
+            $("#bullentindate").html(convertBulletinDateTime(data['DYN_DAT_MINDS_SCCW']['BulletinDate']['Val_Eng'], data['DYN_DAT_MINDS_SCCW']['BulletinTime']['Val_Eng']));
+        
+			initTabSelect();
+		
+		});
+   const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+    //deafult 
+    var zoom_level = "5"
+    var centre = "18,114"
+    if(vw <= 769){
+        //mobile
+        // let height = vh 
+        let height = 667
+
+         document.getElementById("sccw").style.height = height.toString()+"px"
+
+         if (vw<440){
+            zoom_level = "4.8"
+    centre = "15,114"
+
+        }else if (vw < 500){
+            zoom_level = "5.1"
+    centre = "15,114"
+            
+        }
+        else if (vw < 600){
+            zoom_level = "5.5"
+    centre = "16,114"
+
+        }
+        else {
+            zoom_level = "5.7"
+    centre = "16.8,114"
+
+        }
+
+    } 
+    else if (vw <=1050){
+           //tablet
+           let height = vh - 210
+        document.getElementById("sccw").style.height = height.toString()+"px"
+
+        //case 
+        if (height<800){
+            zoom_level = "5.5"
+            centre = "17,114"
+        } else {
+            zoom_level = "5.7"
+        }
+    }
+    
+    else{
+        //desktop
+        let height = vh - 210
+        document.getElementById("sccw").style.height = height.toString()+"px"
+
+        //case 
+        if (height<800){
+            zoom_level = "5.7"
+            centre = "17,114"
+        } else if (height<900){
+            zoom_level = "6"
+        }
+        else if(height < 1000){
+            zoom_level = "6.2"
+        }else if (height < 1200){
+            zoom_level = "6.5"
+        }
+     else{
+            zoom_level = "7"
+
+        }
+    }
+    document.getElementById("sccw").src=  "https://maps.weather.gov.hk/wxviewer/index.html?overlay=wh&zoom=" + zoom_level + "&center=" + centre + "&CF=0&lang=en&fishermen=1"
+
+        //jquery for owl-carousel
+        $(".owl-carousel").owlCarousel({
+            loop: true, 
+            item: 3,
+            autoplay: 5000,
+            margin: 10, 
+            //nav: true, 
+            //navText:['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            responsive: {
+            0: {
+                items: 1 
+            },
+            768: {
+                items: 2 
+            },
+            1000: {
+                items: 3 
+            }
+            }
+        });
+    });
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1> Meteorological Information for Fishermen</h1>
+                <div class="border_blank">
+                    <div class="new_fishermen">
+<h1>Meteorological Information for Fishermen</h1>
+</div>
+<br />
+<div><iframe id="sccw" style="width: 100%;" title="SCCW"></iframe></div>
+<br />
+<div class="tc_box row" style="margin: auto; background-color: #d9f2ff; border-radius: 20px; box-shadow: 0 2px 5px 0;">
+<div class="row" style="color: #1a58ab;">
+<div class="col-sm-8 col-xs-12">
+<h1 style="color: #006cbd; margin: 0 0 0 0;">Tropical cyclone track information</h1>
+</div>
+<div class="col-sm-4 col-xs-12" id="button_col"><a href="../../en/wxinfo/currwx/tc_gis.htm" style="margin-left: auto; color: inherit;"> <button class="know_more_button"><span style="color: #1a58ab;">Know more</span></button></a></div>
+</div>
+</div>
+<br /><img alt="latest weather photo" src="files/title_en.svg" class="responsive" width="352" style="position: absolute; z-index: 100; margin-left: 15px;" />
+<div class="wxPhotoBox">
+<div class="owl-carousel owl-theme">
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/LFS_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/lfs/latest_LFS.jpg" alt="Lau Fau Shan" title="Lau Fau Shan" /></a><br /><span class="wxPhotoPlace">Lau Fau Shan</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/TLC_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/tlc/latest_TLC.jpg" alt="Tai Lam Chung" title="Tai Lam Chung" /></a> <br /><span class="wxPhotoPlace">Tai Lam Chung</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/TPK_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/tpk/latest_TPK.jpg" alt="Tai Po Kau" title="Tai Po Kau" /></a><br /><span class="wxPhotoPlace">Tai Po Kau</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/SLW_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/slw/latest_SLW.jpg" alt="Sha Lo Wan" title="Sha Lo Wan" /></a><br /><span class="wxPhotoPlace">Sha Lo Wan</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/CP1_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/cp1/latest_CP1.jpg" style="border: 0px;" alt="Central (Victoria Harbour)" title="Central (Victoria Harbour)" /></a><br /><span class="wxPhotoPlace">Central (Victoria Harbour)</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/WL2_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/wl2/latest_WL2.jpg" alt="Waglan Island (looking towards the north-northwest)" title="Waglan Island (looking towards the north-northwest)" /></a><br /><span class="wxPhotoPlace">Waglan Island (looking towards the north-northwest)</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/PE2_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/pe2/latest_PE2.jpg" alt="Peng Chau (overlooking Victoria Harbour)" title="Peng Chau (overlooking Victoria Harbour)" /></a><br /><span class="wxPhotoPlace">Peng Chau (overlooking Victoria Harbour)</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/CCE_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/cce/latest_CCE.jpg" alt="Cheung Chau Tung Wan" title="Cheung Chau Tung Wan" /></a><br /><span class="wxPhotoPlace">Cheung Chau Tung Wan</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/WGL_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/wgl/latest_WGL.jpg" alt="Waglan Island (looking towards the west)" title="Waglan Island (looking towards the west)" /></a> <br /><span class="wxPhotoPlace">Waglan Island (looking towards the west)</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/SWH_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/swh/latest_SWH.jpg" alt="Sai Wan Ho" title="Sai Wan Ho" /></a> <br /><span class="wxPhotoPlace">Sai Wan Ho</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/LAM_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/lam/latest_LAM.jpg" alt="Lamma Island" title="Lamma Island" /></a> <br /><span class="wxPhotoPlace">Lamma Island</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/VPA_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/vpa/latest_VPA.jpg" alt="Victoria Peak (looking towards the East)" title="Victoria Peak (looking towards the East)" /></a> <br /><span class="wxPhotoPlace">Victoria Peak (looking towards the East)</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/VPB_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/vpb/latest_VPB.jpg" alt="Victoria Peak (looking towards the north-northeast)" title="Victoria Peak (looking towards the north-northeast)" /></a> <br /><span class="wxPhotoPlace">Victoria Peak (looking towards the north-northeast)</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/CWA_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/cwa/latest_CWA.jpg" alt="Clear Water Bay (looking towards the east)" title="Clear Water Bay (looking towards the east)" /></a><br /><span class="wxPhotoPlace">Clear Water Bay (looking towards the east)</span></div>
+<div class="item"><a onclick="newWin(&quot;../../en/wxinfo/ts/webcam/CWB_photo.htm&quot;, 780, 700);"> <img src="../../en/fishermen-hong-kong-observatory/../../wxinfo/aws/hko_mica/cwb/latest_CWB.jpg" alt="Clear Water Bay (looking towards the southwest)" title="Clear Water Bay (looking towards the southwest)" /></a> <br /><span class="wxPhotoPlace">Clear Water Bay (looking towards the southwest)</span></div>
+</div>
+</div>
+<br />
+<div style="border-bottom: 3px solid #aaa; color: #1a58ab; font-size: 22px; font-weight: bold; padding-bottom: 10px;">Useful Links</div>
+<br class="lbuffer" />
+<div class="ulink-nav">
+<div class="ulink-title">Weather Forecast</div>
+<!-- Hamburger icon --> <input class="side-menu" type="checkbox" id="side-menu" /> <label class="hamb" for="side-menu" style="float: right;"><span class="fa fa-caret-down"></span> <span class="sr-only">Weahter Forecast</span> </label> <br /><!-- Menu --><nav class="nav">
+<div class="menu"><a href="../../en/wxinfo/currwx/fmar.htm"><img src="files/f_icon01.svg" alt="Marine Forecast" title="Marine Forecast" />Marine Forecast</a> <a href="../../en/wxinfo/currwx/flw.htm"><img src="files/f_icon02.svg" alt="Local Weather Forecast" title="Local Weather Forecast" />Local Weather Forecast</a> <a href="../../en/wxinfo/currwx/fnd.htm"><img src="files/f_icon03.svg" alt="9-day Weather Forecast" title="9-day Weather Forecast" />9-day Weather Forecast</a> <a href="https://maps.weather.gov.hk/ocf/index_e.html" target="_blank" rel="noopener noreferrer" class="right"><img src="files/f_icon04.svg" alt="Automatic Regional Weather Forecast in Hong Kong &amp; Pearl River Delta Region" title="Automatic Regional Weather Forecast in Hong Kong &amp; Pearl River Delta Region" />Automatic Regional Weather Forecast in Hong Kong &amp; Pearl River Delta Region</a></div>
+</nav></div>
+<br class="sbuffer" /><br />
+<div class="ulink-nav">
+<div class="ulink-title">Real-time Weather Information</div>
+<input class="side-menu" type="checkbox" id="side-menu2" /> <label class="hamb" for="side-menu2" style="float: right;"><span class="fa fa-caret-down"></span><span class="sr-only">Real-time Weather Information</span></label> <br /><nav class="nav">
+<div class="menu">
+<div><a target="_blank" href="https://maps.weather.gov.hk/llis/llaw_e.html#/map" rel="noopener"><img src="files/w_icon01.svg" alt="Lightning Location Information" title="Lightning Location Information" />Lightning Location Information</a> <a href="../../en/wxinfo/ts/index_wind.htm"><img src="files/w_icon02.svg" alt="Wind Distribution over Hong Kong" title="Wind Distribution over Hong Kong" />Wind Distribution over Hong Kong</a> <a href="../../en/wxinfo/radars/radar.htm"><img src="files/w_icon03.svg" alt="Radar Images" title="Radar Images" />Radar Images</a> <a href="../../en/wxinfo/intersat/satellite/sate.htm"><img src="files/w_icon04.svg" alt="Satellite Images" title="Satellite Images" />Satellite Images</a> <a href="../../en/tide/etide_main.htm"><img src="files/w_icon05.svg" alt="Tidal Information" title="Tidal Information" />Tidal Information</a> <a href="../../en/vis/vis_index.shtml"><img src="files/w_icon06.svg" alt="Visibility Readings in Hong Kong Waters" title="Visibility Readings in Hong Kong Waters" />Visibility Readings in Hong Kong Waters</a> <a href="../../en/wxinfo/currwx/wxcht.htm"><img src="files/w_icon07.svg" alt="Weather Charts" title="Weather Charts" />Weather Charts</a> <a href="../../en/wxinfo/ts/index_webcam.htm" class="right"><img src="files/w_icon08.svg" alt="Regional Weather Photo in Hong Kong" title="Regional Weather Photo in Hong Kong" />Regional Weather Photo in Hong Kong</a></div>
+</div>
+</nav></div>
+<br class="sbuffer" /><br />
+<div class="ulink-nav">
+<div class="ulink-title">Other useful reference</div>
+<input class="side-menu" type="checkbox" id="side-menu3" /> <label class="hamb" for="side-menu3" style="float: right;"><span class="fa fa-caret-down"></span><span class="sr-only">Other useful reference</span> </label> <br /><nav class="nav">
+<div class="menu">
+<div><a href="../../en/wservice/tsheet/pms/radio_schedule.htm?menu=services&amp;broadcast"><img src="files/o_icon01.svg" alt="Broadcast Schedule of Weather Information for South China Coastal Waters" title="Broadcast Schedule of Weather Information for South China Coastal Waters" />Broadcast Schedule of Weather Information for South China Coastal Waters</a> <a href="../../en/education/edu01met/wxobs/beaufort.htm"><img src="files/o_icon02.svg" alt="Beaufort Wind Scale" title="Beaufort Wind Scale" />Beaufort Wind Scale</a> <a href="https://www.hko.gov.hk/publica/gen_pub/sea_e.pdf" target="_blank" rel="noopener noreferrer" class="right"><img src="files/o_icon04.svg" alt="Danger from ocean leaflet" title="Danger from ocean leaflet" />Danger from ocean leaflet (pdf file)</a></div>
+<div class="sbuffer"><br /><br /><br /><br /></div>
+</div>
+</nav></div>
+<br />
+<div style="padding-top: 20px;">
+<p>For more information on fisheries services, please visit the web pages of the <a target="_blank" rel="noopener noreferrer" href="http://www.afcd.gov.hk/english/fisheries/fish_abt/fish_abt.html">Agriculture, Fisheries and Conservation Department</a></p>
+<p>For more information on port and hydrographic services, please visit the web pages of the <a target="_blank" rel="noopener noreferrer" href="https://www.mardep.gov.hk/en/home.html">Marine Department</a></p>
+<p>For enquiries on weather information, please call Dial-a-Weather hotline <strong>1878 200</strong> - <a target="_blank" rel="noopener noreferrer" href="../../en/abouthko/files/1878200_voice_E.pdf">Service Guide (pdf)</a></p>
+<p>For arrangement of provision of weather service, please contact Scientific Officer (Forecast Operations) at <strong>2926 8375</strong></p>
+<strong>Office Hour:</strong><br />Monday to Friday 8:30 am to 5:45 pm<br />Closed on Saturday, Sunday and public holidays</div>
+<script>var last_revision_date = '22 January 2024';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

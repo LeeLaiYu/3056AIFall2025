@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title> Lightning Location Information Service｜Hong Kong Observatory(HKO)｜Weather Monitoring Imagery</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Lightning Location Information Service">
+    <meta name="description" content="Lightning Location Information Service">
+    <meta name="recordId" content="2018123100000036594">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Lightning Location Information Service" />
+	<meta property="og:description" content="Lightning Location Information Service" />
+	<meta property="og:image" content="https://www.hko.gov.hk" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/wxinfo/llis/gm_index.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+		/*
+#div_total_group {
+			text-align:center;
+		}
+		#div_total_cg, #div_total_cc {
+			font-weight: bold;
+			display:inline-block;
+			padding: 5px 40px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: black;
+			margin-bottom: 5px;
+		}
+		#div_total_cc {
+			font-weight: bold;
+			display:inline-block;
+			padding: 5px 40px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: black;
+		}
+		#div_total_cg > label, #div_total_cc > label {
+			margin-bottom: 0px !important;
+		}
+		#wxinfo{
+			width: 1000px;
+			max-width: 100%;
+			height: 520px;
+			overflow: auto;
+			border: 0;
+		}
+		@media screen and (max-width: 1116px){
+			#wxinfo{
+				height: 670px !important;
+			}
+		}
+			#div_total_cg,#div_total_cc{
+			line-height: normal;
+		}
+*/
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '1323';
+var section_id = '2018010100000010800';
+
+         // document ready
+$(function() {
+
+  Tools.setupToggleButton();
+
+  LightningStrokeReader.initialize();
+
+  DistributionMap.initialize();
+
+  LightningStrokeReader.getLightningData();
+  
+  $("#togglePointToNote").on( "click", function() {
+  if($("#pointToNote").hasClass("in"))
+  	$("#togglePointToNote").attr("aria-expanded", "false");
+  else
+  	$("#togglePointToNote").attr("aria-expanded", "true");
+  });
+  $("#toggleAreaExplanation").on( "click", function() {
+  if($("#areaExplanation").hasClass("in"))
+  	$("#toggleAreaExplanation").attr("aria-expanded", "false");
+  else
+  	$("#toggleAreaExplanation").attr("aria-expanded", "true");
+  });
+
+  // reload page periodically
+  setTimeout(function() {
+    window.location.reload();
+  }, CONFIG.refreshTime);
+});
+
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1> Lightning Location Information Service</h1>
+                <div class="border_blank">
+                    <link rel="stylesheet" type="text/css" href="files/ol3.css">
+<link rel="stylesheet" type="text/css" href="files/llis.css">
+
+<div class="llis">
+  <div class="c-dock">
+    <a id="linkLLAW" href="https://maps.weather.gov.hk/llis/llaw_e.html" target="_blank" rel="noopener" class="c-btn-llaw"><span class="c-btn-llaw-content"><span class="c-icon-llaw"></span><span class="c-btn-llaw-text">Location-specific <span class="c-nowrap">Lightning Alert Webpage</span></span></span></a>
+  </div>
+
+  <section class="c-map-section" id="sectionRealtimeLightningLocation" style="display:none">
+    <h2>Real-time lightning location</h2>
+    
+    <div class="row">
+      <div class="col-md-12 col-lg-10">
+
+        <div class="c-map" id="mapContainer"></div>
+
+      </div>
+      <div class="col-md-12 col-lg-2">
+        <div class="row">
+          <div class="col-sm-8 col-md-9 col-lg-12">
+
+              <div class="c-map-triggers">
+                <fieldset class="c-fieldset">
+                  <legend>Layers</legend>
+                  <div class="c-fieldset-item">
+                    <input id="mapTriggerC2G" type="radio" name="layerOptions" value="C2G" autocomplete="off" checked="checked" title="Cloud-to-ground" />
+                    <label for="mapTriggerC2G">Cloud-to-ground lightning location</label>
+                  </div>
+                  <div class="c-fieldset-item">
+                    <input id="mapTriggerC2C" type="radio" name="layerOptions" value="C2C" autocomplete="off" title="Cloud-to-cloud" />
+                    <label for="mapTriggerC2C">Cloud-to-cloud lightning location</label>
+                  </div>
+                  <div class="c-fieldset-item">
+                    <input id="mapTriggerGust" type="radio" name="layerOptions" value="gust" autocomplete="off" title="Maximum Gust" />
+                    <label for="mapTriggerGust">Maximum Gust</label>
+                  </div>
+                </fieldset>
+              </div>
+
+          </div>
+          <div class="col-sm-4 col-md-3 col-lg-12">
+
+              <div class="c-map-legend" id="mapLightningLegend" style="display: none;"></div>
+              <div class="c-map-legend" id="mapGustLegend" style="display: none;"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Points to note -->
+    <div class="section-collapse l-spacing-top" id="section-point-to-note">
+      <button type="button" id="togglePointToNote" class="jsToggleButton btn btn-default btn-full-width" data-toggle="collapse" data-parent="section-point-to-note" data-target="#pointToNote" aria-expanded="false" aria-controls="pointToNote"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Points to note</button>
+
+      <div id="pointToNote" class="jsToggleContent collapse">
+        <div class="section-collapse-content">
+          <ul class="c-general-list">
+            <li>
+                <p>The Lightning Location Network is jointly operated by the Hong Kong Observatory, the Guangdong Meteorological Services and the Macao Meteorological and Geophysical Bureau.  Currently, it comprises nine stations located at Chung Hom Kok, Tsim Bei Tsui, Sha Tau Kok and Chek Lap Kok in Hong Kong, Sanshui, Huidong, Yangjiang and Dongao Island, Zhuhai in Guangdong, as well as Taipa in Macao.</p>
+                <div class="c-caption">
+                  <img class="c-caption-image" title="Locations of lightning detection stations" alt="Locations of lightning detection stations" src="images/englishmap.gif">
+                  <p class="c-caption-text">Locations of lightning detection stations</p>
+                </div>
+            </li>
+            <li>
+              <p>The image shows cloud-to-ground or cloud-to-cloud lightning strokes as detected by the Lightning Location Network over the Pearl River Estuary and nearby regions in the past 30 minutes. The lightning records are updated at 5-minute intervals. Cloud-to-cloud lightning strokes are those detected strokes that did not reach the ground. As such, they might not affect people or facilities on the ground.  However, it should be noted that they may sometimes precede cloud-to-ground strokes. The location as shown depicts roughly the starting point of the discharge from one cloud to the other.</p>
+            </li>
+            <li>
+              <p>The above map can be zoomed into street level so that the lightning symbol may be displayed over a street or a building. Please note that the actual location of the lightning stroke may be more than several hundred metres away from the displayed position. Although the map can be scaled down to show other parts of the world, it will only display lightning location within the vicinity of Hong Kong.</p>
+            </li>
+            <li>
+              <p>The accuracy of the enhanced system in determining the location of cloud-to-ground lightning strokes is about 250 m within the network when all stations are operative.  The lightning detection efficiency, i.e. the probability that a stroke with peak current greater than a certain level can be detected by the network, is estimated to reach 95%.  The efficiency of cloud-to-cloud lightning detection is more than 50%.  The location accuracy and detection efficiency will be reduced when the lightning stroke occurs outside of the network or when not all of the stations are operative.</p>
+            </li>
+            <li>
+              <p>There is no guarantee that all occurred lightning strokes can be detected and false detection of lightning strokes cannot be ruled out completely. As it takes time for communication and computation, there is normally a delay of a few minutes in the display of data. Other factors, including interruption to telecommunications services and power supply, can also affect the reliability and availability of the lightning information.</p>
+            </li>
+            <li>
+              <p>The lightning information displayed above is provisional. Only limited data validation has been carried out.</p>
+            </li>
+            <li>
+              <p>For Maximum Gust:</p>
+              <p>Gusts of below 70 km/h in <span class="c-gust-level-1">black</span></p>
+              <p>Gusts of 70 km/h to 87 km/h in <span class="c-gust-level-2">brown</span></p>
+              <p>Gusts of 88 km/h or above in <span class="c-gust-level-3">orange</span></p>
+              <p>M: Under Maintenance / Data Temporarily Not Available</p>
+              <p><img src="images/hill_icon.png" class="c-image-hill" alt="Hill icon" title="Hill icon">:  Station higher than 500 metres above mean sea level</p>
+            </li>
+            <li>
+              <p>The background geographical information in this page comes from OpenStreetMap and the usage is subject to <a href="https://www.openstreetmap.org/copyright/en" target="_blank" rel="noopener">OpenStreetMap's License Terms</a>.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="c-separator-major" />
+  </section>
+
+  <section>
+    <h2>Number of lightning strokes detected <span id="timestampLightning"></span></h2>
+
+    <div class="table-responsive">
+      <table class="table table-bordered c-data-table c-data-table--count-table">
+        <thead>
+          <tr>
+            <th scope="col" id="columnRegion"><span>Region</span></th>
+            <th scope="col" id="columnC2G">Cloud-to-ground lightning</th>
+            <th scope="col" id="columnC2C">Cloud-to-cloud lightning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" id="regionNTW">New Territories West</th>
+            <td class="c-data-value" headers="columnC2G regionNTW"><span id="c2gNTW"></span></td>
+            <td class="c-data-value" headers="columnC2C regionNTW"><span id="c2cNTW"></span></td>
+          </tr>
+          <tr>
+            <th scope="row" id="regionNTE">New Territories East</th>
+            <td class="c-data-value" headers="columnC2G regionNTE"><span id="c2gNTE"></span></td>
+            <td class="c-data-value" headers="columnC2C regionNTE"><span id="c2cNTE"></span></td>
+          </tr>
+          <tr>
+            <th scope="row" id="regionHKI">Hong Kong Island and Kowloon</th>
+            <td class="c-data-value" headers="columnC2G regionHKI"><span id="c2gHKI"></span></td>
+            <td class="c-data-value" headers="columnC2C regionHKI"><span id="c2cHKI"></span></td>
+          </tr>
+          <tr>
+            <th scope="row" id="regionLantau">Lantau</th>
+            <td class="c-data-value" headers="columnC2G regionLantau"><span id="c2gLantau"></span></td>
+            <td class="c-data-value" headers="columnC2C regionLantau"><span id="c2cLantau"></span></td>
+          </tr>
+          <tr class="c-data-table-row-separator">
+            <th scope="row" id="wholeHK">Hong Kong Whole Territory</th>
+            <td class="c-data-value" headers="columnC2G wholeHK"><span id="c2gWholeTerritory"></span></td>
+            <td class="c-data-value" headers="columnC2C wholeHK"><span id="c2cWholeTerritory"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="maintenanceTextRegionTable"></div>
+
+    <!-- Area explanation -->
+    <div class="section-collapse l-spacing-top" id="section-area-explanation">
+      <button type="button" id="toggleAreaExplanation" class="jsToggleButton btn btn-default btn-full-width" data-toggle="collapse" data-parent="section-area-explanation" data-target="#areaExplanation" aria-expanded="false" aria-controls="areaExplanation"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Points to note</button>
+      <div id="areaExplanation" class="jsToggleContent collapse">
+        <div class="section-collapse-content">
+          <ul class="c-general-list">
+            <li>
+              <p>The table shows the latest number of lightning strokes accumulated in 60 minutes. The figure is updated every 15 minutes.</p>
+            </li>
+            <li>
+              <p>The lightning information displayed above is provisional. Only limited data validation has been carried out.</p>
+            </li>
+            <li>
+                <p>Please refer to the picture below for the coverage of the regions.</p>
+                <div class="c-caption">
+                  <img class="c-caption-image" title="Region coverage of New Terrritories West, New Terrritories East, Lantau, Hong Kong Island and Kowloon" alt="Region coverage of New Terrritories West, New Terrritories East, Lantau, Hong Kong Island and Kowloon" src="images/4-areas.png">
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <hr class="c-separator-major" />
+    <h2>Statistical information</h2>
+    <ul>
+      <!--
+      <li><a href="https://www.hko.gov.hk/en/wxinfo/llis/gm/llis_past_hr.htm" target="_blank" title="open in new window">Cloud-to-ground lightning count distribution over Hong Kong in the past hour</a></li>
+    -->
+    
+      <li><a href="https://www.hko.gov.hk/en/wxinfo/llis/gm/llis_area_counts.htm" target="_blank" rel="noopener" title="open in new window">Recent cloud-to-ground lightning count distribution over Hong Kong</a></li>
+
+      <li><a href="https://www.hko.gov.hk/en/wxinfo/llis/stat.htm" target="_blank" rel="noopener" title="open in new window">Number of lightning strokes detected over the Hong Kong territory today and for the past three days</a></li>
+
+      <li><a href="https://www.youtube.com/embed/pV7Fy7jux2I" target="_blank" rel="noopener" title="open in new window">Video on how the Observatory detects lightning (in Chinese only)</a></li>
+
+      <li><a href="https://www.hko.gov.hk/en/wxinfo/llis/llis_map.htm" target="_blank" rel="noopener" title="open in new window">Maps of past lightning density in Hong Kong</a></li>
+    </ul>
+
+    <!-- Related links -->
+    <div>
+      <h3 class="l-spacing-top">Related weather information</h3>
+      <ul>
+        <li><a id="linkOCF" href="https://maps.weather.gov.hk/ocf/index_e.html?data=ncln" target="_blank" rel="noopener" title="open in new window">Automatic Regional Weather Forecast in Hong Kong &amp; Pearl River Delta Region</a></li>
+        <li><a id="linkRHR" href="https://www.hko.gov.hk/en/rhr/main.html" target="_blank" rel="noopener" title="open in new window">Regional Information on Heavy Rain and Thunderstorm</a></li>
+      </ul>
+    </div>
+
+    <!-- Reference links -->
+    <div>
+      <h3 class="l-spacing-top">Other reference information</h3>
+      <ul>
+        <li><a href="https://www.hko.gov.hk/en/wservice/warning/thunder.htm" target="_blank" rel="noopener" title="open in new window">Details of Thunderstorm Warning</a></li>
+        <li><a href="https://www.labour.gov.hk/eng/public/os/D/InclementWeather.pdf" target="_blank" rel="noopener" title="open in new window">Labour Department: Guide on Safety at Work in times of Inclement Weather</a></li>
+        <li><a href="http://www.oshc.org.hk/oshc_data/files/bulletins/ibsh/2016/CT326C.pdf" target="_blank" rel="noopener" title="open in new window">Occupational Safety and Health Council: Safety at Work in Times of Inclement Weather (Chinese Only)</a></li>
+        <li><a href="https://www.hko.gov.hk/en/school/files/Leaflet_English.pdf" target="_blank" rel="noopener" title="open in new window">Education Bureau: What do rainstorm warning signals mean to you?</a></li>
+      </ul>
+    </div>
+
+    <p>
+      <strong>If you have any comments on our website, please fill in the <a id="linkSuggestionForm" href="https://eforms.weather.gov.hk/eforms_v2/sugg.fm"> suggestion form</a> or send us an <a href="mailto:mailbox@hko.gov.hk">e-mail</a>.</strong>
+    </p>
+  </section>
+</div>
+<!--End .llis-->
+
+<!-- html templates START -->
+<script type="text/templates" id="tplMapLightningLegend">
+  <div class="c-map-legend-title">Lightning detection time</div>
+  <div class="c-map-date" id="mapDate">{{date}} <span class="c-map-time c-nowrap">{{time}}</span></div>
+  <div id="mapLegendLightningTime">{{list}}</div>
+</script>
+
+<script type="text/templates" id="tplMapGustLegend">
+  <div class="c-map-legend-title">Maximum Gust</div>
+  <p>Unit: kilometers per hour</p>
+  <p id="awsGustUpdateTime">{{timestamp}}</p>
+</script>
+<!-- html templates END -->
+
+<!-- language specific script START -->
+<script type="text/javascript" src="files/module-content.js"></script>
+<!-- language specific script END -->
+
+<!-- libraries START -->
+<script type="text/javascript" src="files/ol-3.15.1.js"></script>
+<!-- libraries END -->
+
+<script>
+  // dynamically add timestamp when calling JS files to avoid file caching
+  document.write("<script type='text/javascript' src='../../../wxinfo/llis/gm/awsstn_c.js?v=" + Date.now() + "'><\/script>");
+</script>
+
+<!-- independant modules START -->
+<script type="text/javascript" src="files/module-config.js"></script>
+<!-- independant modules END -->
+
+<!-- common dependent modules START -->
+<script type="text/javascript" src="files/module-tools.js"></script>
+<!-- common dependent modules END -->
+
+<!-- dependant modules START -->
+<script type="text/javascript" src="files/module-distribution-map.js"></script>
+<script type="text/javascript" src="files/module-lightning-stroke-reader.js"></script>
+<!-- dependant modules END -->
+<script>var last_revision_date = '5 March 2024';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

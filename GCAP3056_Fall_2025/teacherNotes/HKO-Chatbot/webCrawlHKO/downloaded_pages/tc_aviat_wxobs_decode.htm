@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-hk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>機場天氣報告 (METAR/SPECI)｜香港天文台(HKO)</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" 機場天氣報告 (METAR/SPECI)">
+    <meta name="description" content="機場天氣報告 (METAR/SPECI)">
+    <meta name="recordId" content="2018123100000035804">
+    <meta name="lang" content="tc">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="機場天氣報告 (METAR/SPECI)" />
+	<meta property="og:description" content="機場天氣報告 (METAR/SPECI)" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/tc/aviat/wxobs_decode.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+		
+        
+        a.wcag_link:link,
+        a.wcag_link:visited {
+            color: #0000EE;
+            /*text-decoration: none;*/
+        }
+        
+        a.wcag_link:hover {
+            color: #D70000;
+            text-decoration: underline;
+        }
+        
+        a.wcag_link_onfocus {
+            color: #D70000;
+            text-decoration: underline;
+        }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+	
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+    <script type="text/javascript">
+		
+var menu_id = '';
+var section_id = '2018010100000010024';
+
+
+        
+
+        $(function() {			
+            var vue = new Vue({
+                el: '#mainContent',
+                router: router,
+                data: function() {
+                    return {
+                        data: {
+						
+						}
+                    }
+                },
+                methods: {
+
+                },
+                mounted: function() {
+                    var self = this;
+                    var langFolderArr = ["metar_eng_revamp.json", "metar_chi_revamp.json", "metar_chi_revamp.json"];
+                    var dataByLang = "";
+                    if (lang == 1) {
+                        dataByLang = '../../aviat/' + langFolderArr[lang]
+                    } else if (lang == 2) {
+                        dataByLang = "../../dps/sc/aviat/" + langFolderArr[lang]
+                    }
+                    // dataByLang = '../../revamp/a1/'+langFolderArr[lang]
+                    $.ajax({
+                        url: dataByLang,
+                        success: function(data) {
+                            self.$data.data = data.metar_decode_chi_json;
+                            self.$data.data.remark.table = self.$data.data.remark.table
+                                .replace("decode_metar_ec.htm", "decode_metar.htm")
+                                .replace("../education/cloud/index_c.htm", "../education/edu01met/edu01cloudshk.htm")
+                                .replace("/aviat/edu_inst/clfcmi_c.htm", "../aviat/edu_inst/clfcmi.htm")
+                                .replace("100nm_c.htm", "100nm.htm")
+                                .replace("readmec.htm", "readme.htm")
+                                .replace("../img/sg.gif", "../../tc/aviat/images/sg.gif")
+                                .replace("../img/sg.gif", "../../tc/aviat/images/sg.gif");
+
+                            $('a[name="okta"]').parent().html("<a name=\"okta\"><strong>份：</strong></a>");
+                            $('a[name="qnh"]').parent().html("<a name=\"qnh\"><strong>QNH：</strong></a>");
+														
+                        },
+                        error: function(a) {}
+                    });
+                },
+                updated: function() {
+                    init_table_add_style();
+                    var oktacontent = $('a[name="okta"]').html();
+                    $('a[name="okta"]').html("");
+                    $('a[name="okta"]').parent().append(oktacontent);
+                    var qnhcontent = $('a[name="qnh"]').html();
+                    $('a[name="qnh"]').html("");
+                    $('a[name="qnh"]').parent().append(qnhcontent);
+					
+					init_anchor();
+					init_table_header();
+                }
+            });
+        });
+
+        function init_table_add_style() {
+            $('.table_add_style>table').addClass('table_cellpadding_10').addClass('table_border_1');
+            $($('.table_add_style>table')[1]).wrap('<div class="div_responsive_table_1"></div>');
+        }
+
+function init_table_header(){
+			$(".div_responsive_table_1>table>tbody>tr:first>td,.table_add_style>table:eq( 2 )>tbody>tr:first>td").each(function() {
+				$(this).replaceWith('<th>' + $(this).text() + '</th>');
+	
+			 });
+			 
+			$(".table_add_style>table:eq( 2 )>tbody>tr>td:first").each(function() {
+				$(this).replaceWith('<th>' + $(this).text() + '</th>');
+			 });
+		}
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">跳至主要內容</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>機場天氣報告 (METAR/SPECI)</h1>
+                <div class="border_blank">
+                    <p>
+                                <strong v-cloak><span style="color:#000000;">
+								{{data.content.header[0]}}
+								<br><br>
+								{{data.content.header[1]}}
+								<br><br>
+								{{data.content.header[2]}}
+								<br><br>
+								</span></strong>
+                            </p>
+
+                            <div v-html="data.content.table.content" class="table_add_style"></div>
+
+                            <br>
+                            <div v-html="data.remark.table"></div>
+
+                            <script>
+                                var last_revision_date = '5 June 2019';
+                            </script>
+<script>var last_revision_date = '2020年1月30日';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>
