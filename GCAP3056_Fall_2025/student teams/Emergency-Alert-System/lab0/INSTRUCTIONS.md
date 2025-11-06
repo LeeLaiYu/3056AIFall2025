@@ -2,7 +2,7 @@
 
 ## Input
 
-**Input Folder:** [Specify the input folder path here]
+**Input Folder:** /workspaces/3056AIFall2025/GCAP3056_Fall_2025/teacherNotes/Emergency-Alert-System/DiscussionNotes
 - Example: `../DiscussionNotes/`
 - Or: `../../teacherNotes/Emergency-Alert-System/DiscussionNotes/`
 
@@ -37,7 +37,7 @@ Reorganize or categorize files based on their content or metadata.
 
 ## Output
 
-**Output Folder:** `output/`
+**Output Folder:** `/workspaces/3056AIFall2025/GCAP3056_Fall_2025/student teams/Emergency-Alert-System/lab0/output`
 
 ### Output Requirements
 - [Describe what output files should be created]
